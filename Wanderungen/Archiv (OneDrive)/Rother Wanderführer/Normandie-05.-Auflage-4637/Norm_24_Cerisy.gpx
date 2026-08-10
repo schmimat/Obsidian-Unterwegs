@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1"
+creator="Smartprofil-Office - http://www.rother.de"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/1"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+
+<bounds minlat="49.184340108186007" minlon="-0.903740990906954" maxlat="49.204628672450781" maxlon="-0.856737373396754"/>
+</metadata>
+<wpt lat="49.193516531959176" lon="-0.864269519224763">
+<ele>131</ele>
+<name>24_Carrefour de l’Embranchement (1)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="49.204628672450781" lon="-0.867396723479033">
+<ele>116</ele>
+<name>24_Carrefour de la Chênesse (2)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="49.19769398868084" lon="-0.903740990906954">
+<ele>112</ele>
+<name>24_Route Forestière du Bois l'Abbé (3)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="49.184340108186007" lon="-0.897069917991757">
+<ele>124</ele>
+<name>24_Carrefour des Pins (4)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="49.185181567445397" lon="-0.865740543231368">
+<ele>111</ele>
+<name>24_D 122 (5)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<trk>
+<name>Norm_24_Cerisy</name>
+<trkseg>
+<trkpt lat="49.193516531959176" lon="-0.864269519224763">
+<ele>131</ele>
+</trkpt>
+<trkpt lat="49.197067189961672" lon="-0.856737373396754">
+<ele>126</ele>
+</trkpt>
+<trkpt lat="49.200943987816572" lon="-0.862261299043894">
+<ele>121</ele>
+</trkpt>
+<trkpt lat="49.204628672450781" lon="-0.867396723479033">
+<ele>116</ele>
+</trkpt>
+<trkpt lat="49.202647106721997" lon="-0.872556958347559">
+<ele>116</ele>
+</trkpt>
+<trkpt lat="49.20059253461659" lon="-0.877918023616076">
+<ele>115</ele>
+</trkpt>
+<trkpt lat="49.198119537904859" lon="-0.88294381275773">
+<ele>115</ele>
+</trkpt>
+<trkpt lat="49.196337796747684" lon="-0.886503020301461">
+<ele>114</ele>
+</trkpt>
+<trkpt lat="49.196755047887564" lon="-0.886872159317136">
+<ele>114</ele>
+</trkpt>
+<trkpt lat="49.199939919635653" lon="-0.891325799748302">
+<ele>114</ele>
+</trkpt>
+<trkpt lat="49.201693246141076" lon="-0.893837353214622">
+<ele>113</ele>
+</trkpt>
+<trkpt lat="49.202364049851894" lon="-0.894805882126093">
+<ele>113</ele>
+</trkpt>
+<trkpt lat="49.200208056718111" lon="-0.898890383541584">
+<ele>112</ele>
+</trkpt>
+<trkpt lat="49.19769398868084" lon="-0.903740990906954">
+<ele>112</ele>
+</trkpt>
+<trkpt lat="49.195953067392111" lon="-0.901607377454638">
+<ele>114</ele>
+</trkpt>
+<trkpt lat="49.195811916142702" lon="-0.901838634163141">
+<ele>115</ele>
+</trkpt>
+<trkpt lat="49.193203132599592" lon="-0.902703646570444">
+<ele>117</ele>
+</trkpt>
+<trkpt lat="49.190842201933265" lon="-0.903549799695611">
+<ele>119</ele>
+</trkpt>
+<trkpt lat="49.187732934951782" lon="-0.900472970679402">
+<ele>121</ele>
+</trkpt>
+<trkpt lat="49.184711510315537" lon="-0.897470572963357">
+<ele>122</ele>
+</trkpt>
+<trkpt lat="49.184340108186007" lon="-0.897069917991757">
+<ele>124</ele>
+</trkpt>
+<trkpt lat="49.184873951599002" lon="-0.888940645381808">
+<ele>121</ele>
+</trkpt>
+<trkpt lat="49.185326155275106" lon="-0.88132057338953">
+<ele>119</ele>
+</trkpt>
+<trkpt lat="49.187017120420933" lon="-0.877790618687868">
+<ele>116</ele>
+</trkpt>
+<trkpt lat="49.18599184602499" lon="-0.871587255969644">
+<ele>114</ele>
+</trkpt>
+<trkpt lat="49.185181567445397" lon="-0.865740543231368">
+<ele>111</ele>
+</trkpt>
+<trkpt lat="49.187867883592844" lon="-0.863643893972039">
+<ele>116</ele>
+</trkpt>
+<trkpt lat="49.191671339794993" lon="-0.86096478626132">
+<ele>121</ele>
+</trkpt>
+<trkpt lat="49.193126270547509" lon="-0.863730730488896">
+<ele>126</ele>
+</trkpt>
+<trkpt lat="49.193516531959176" lon="-0.864269519224763">
+<ele>131</ele>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

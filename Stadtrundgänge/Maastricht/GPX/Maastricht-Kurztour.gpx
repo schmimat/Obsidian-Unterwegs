@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Claudian - Obsidian Vault"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <name>Maastricht Kurztour – Altstadt (2-3h)</name>
+    <desc>Kompakte Stadtrundgang mit 8 Highlights + Nimm North Caves Option</desc>
+    <author>
+      <name>Claudian - Obsidian Vault</name>
+    </author>
+    <time>2026-05-27T09:00:00Z</time>
+  </metadata>
+
+  <!-- Waypoints für alle Stationen (Kurztour) -->
+  <wpt lat="50.8503" lon="5.6875">
+    <name>1. Sint Servaasbrug (START)</name>
+    <desc>Älteste Brücke der Niederlande, Startpunkt</desc>
+    <sym>parking</sym>
+  </wpt>
+
+  <wpt lat="50.8504" lon="5.6895">
+    <name>2. Sint Janskerk</name>
+    <desc>Gotische Kirche mit grünen Türmen</desc>
+    <sym>chapel</sym>
+  </wpt>
+
+  <wpt lat="50.8506" lon="5.6890">
+    <name>3. Vrijthof Square</name>
+    <desc>Hauptplatz mit Cafés - Kaffee-Stop!</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8503" lon="5.6880">
+    <name>4. Sint Servatiuskerk</name>
+    <desc>Älteste Kirche (6. Jh.), Eintritt €5</desc>
+    <sym>chapel</sym>
+  </wpt>
+
+  <wpt lat="50.8500" lon="5.6870">
+    <name>5. Boekhandel Dominicanen</name>
+    <desc>Wunderschöne Buchhandlung im Kloster</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8495" lon="5.6875">
+    <name>6. Markt (Markplatz)</name>
+    <desc>Traditioneller Markt, Mi & Sa</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8480" lon="5.6880">
+    <name>7. Helpoort</name>
+    <desc>Ältestes Stadttor der Niederlande (13. Jh.)</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8555" lon="5.6885">
+    <name>8. Nimm North Caves (Optional - UNESCO)</name>
+    <desc>UNESCO-Höhlen, Geführte Tour 45min, €12,50</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <!-- Track: Kurztour ohne Nimm Caves -->
+  <trk>
+    <name>Maastricht Kurztour - Hauptroute (2-3h)</name>
+    <desc>8 Stationen, 2-3 Stunden - Nimm Caves optional</desc>
+    <trkseg>
+      <trkpt lat="50.8503" lon="5.6875">
+        <ele>30</ele>
+        <time>2026-05-27T09:00:00Z</time>
+        <name>Sint Servaasbrug (START)</name>
+      </trkpt>
+      <trkpt lat="50.8504" lon="5.6890">
+        <ele>30</ele>
+        <time>2026-05-27T09:08:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8504" lon="5.6895">
+        <ele>30</ele>
+        <time>2026-05-27T09:10:00Z</time>
+        <name>Sint Janskerk</name>
+      </trkpt>
+      <trkpt lat="50.8505" lon="5.6893">
+        <ele>30</ele>
+        <time>2026-05-27T09:25:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8506" lon="5.6890">
+        <ele>30</ele>
+        <time>2026-05-27T09:30:00Z</time>
+        <name>Vrijthof Square</name>
+      </trkpt>
+      <trkpt lat="50.8504" lon="5.6885">
+        <ele>30</ele>
+        <time>2026-05-27T09:50:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8503" lon="5.6880">
+        <ele>30</ele>
+        <time>2026-05-27T09:55:00Z</time>
+        <name>Sint Servatiuskerk</name>
+      </trkpt>
+      <trkpt lat="50.8501" lon="5.6875">
+        <ele>30</ele>
+        <time>2026-05-27T10:15:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8500" lon="5.6870">
+        <ele>30</ele>
+        <time>2026-05-27T10:20:00Z</time>
+        <name>Boekhandel Dominicanen</name>
+      </trkpt>
+      <trkpt lat="50.8497" lon="5.6872">
+        <ele>30</ele>
+        <time>2026-05-27T10:40:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8495" lon="5.6875">
+        <ele>30</ele>
+        <time>2026-05-27T10:45:00Z</time>
+        <name>Markt</name>
+      </trkpt>
+      <trkpt lat="50.8488" lon="5.6877">
+        <ele>30</ele>
+        <time>2026-05-27T10:50:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8480" lon="5.6880">
+        <ele>30</ele>
+        <time>2026-05-27T10:55:00Z</time>
+        <name>Helpoort (ZIEL - ohne Nimm)</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+
+  <!-- Track: Mit Nimm Caves (optional) -->
+  <trk>
+    <name>Maastricht Kurztour - Mit Nimm North Caves (3h)</name>
+    <desc>8 Stationen + Nimm Caves Detour - insgesamt 3h</desc>
+    <trkseg>
+      <trkpt lat="50.8503" lon="5.6875">
+        <ele>30</ele>
+        <time>2026-05-27T09:00:00Z</time>
+        <name>Sint Servaasbrug (START)</name>
+      </trkpt>
+      <trkpt lat="50.8504" lon="5.6895">
+        <ele>30</ele>
+        <time>2026-05-27T09:25:00Z</time>
+        <name>Sint Janskerk</name>
+      </trkpt>
+      <trkpt lat="50.8506" lon="5.6890">
+        <ele>30</ele>
+        <time>2026-05-27T09:40:00Z</time>
+        <name>Vrijthof Square</name>
+      </trkpt>
+      <trkpt lat="50.8503" lon="5.6880">
+        <ele>30</ele>
+        <time>2026-05-27T10:00:00Z</time>
+        <name>Sint Servatiuskerk</name>
+      </trkpt>
+      <trkpt lat="50.8500" lon="5.6870">
+        <ele>30</ele>
+        <time>2026-05-27T10:20:00Z</time>
+        <name>Boekhandel Dominicanen</name>
+      </trkpt>
+      <trkpt lat="50.8495" lon="5.6875">
+        <ele>30</ele>
+        <time>2026-05-27T10:40:00Z</time>
+        <name>Markt</name>
+      </trkpt>
+      <trkpt lat="50.8480" lon="5.6880">
+        <ele>30</ele>
+        <time>2026-05-27T10:50:00Z</time>
+        <name>Helpoort</name>
+      </trkpt>
+      <trkpt lat="50.8490" lon="5.6880">
+        <ele>30</ele>
+        <time>2026-05-27T10:58:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8520" lon="5.6885">
+        <ele>35</ele>
+        <time>2026-05-27T11:08:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8555" lon="5.6885">
+        <ele>40</ele>
+        <time>2026-05-27T11:20:00Z</time>
+        <name>Nimm North Caves (UNESCO - Geführte Tour 45min)</name>
+      </trkpt>
+      <trkpt lat="50.8555" lon="5.6885">
+        <ele>40</ele>
+        <time>2026-05-27T12:05:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8503" lon="5.6875">
+        <ele>30</ele>
+        <time>2026-05-27T12:30:00Z</time>
+        <name>Zurück zum Startpunkt</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+
+</gpx>

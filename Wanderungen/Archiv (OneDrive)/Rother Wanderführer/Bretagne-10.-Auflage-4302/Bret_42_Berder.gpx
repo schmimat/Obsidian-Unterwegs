@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?><gpx creator="Garmin Desktop App" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v1 http://www8.garmin.com/xmlschemas/ActivityExtensionv1.xsd http://www.garmin.com/xmlschemas/AdventuresExtensions/v1 http://www8.garmin.com/xmlschemas/AdventuresExtensionv1.xsd http://www.garmin.com/xmlschemas/PressureExtension/v1 http://www.garmin.com/xmlschemas/PressureExtensionv1.xsd http://www.garmin.com/xmlschemas/TripExtensions/v1 http://www.garmin.com/xmlschemas/TripExtensionsv1.xsd http://www.garmin.com/xmlschemas/TripMetaDataExtensions/v1 http://www.garmin.com/xmlschemas/TripMetaDataExtensionsv1.xsd http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensions/v1 http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensionsv1.xsd http://www.garmin.com/xmlschemas/CreationTimeExtension/v1 http://www.garmin.com/xmlschemas/CreationTimeExtensionsv1.xsd http://www.garmin.com/xmlschemas/AccelerationExtension/v1 http://www.garmin.com/xmlschemas/AccelerationExtensionv1.xsd http://www.garmin.com/xmlschemas/PowerExtension/v1 http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd http://www.garmin.com/xmlschemas/VideoExtension/v1 http://www.garmin.com/xmlschemas/VideoExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtrx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:trp="http://www.garmin.com/xmlschemas/TripExtensions/v1" xmlns:adv="http://www.garmin.com/xmlschemas/AdventuresExtensions/v1" xmlns:prs="http://www.garmin.com/xmlschemas/PressureExtension/v1" xmlns:tmd="http://www.garmin.com/xmlschemas/TripMetaDataExtensions/v1" xmlns:vptm="http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensions/v1" xmlns:ctx="http://www.garmin.com/xmlschemas/CreationTimeExtension/v1" xmlns:gpxacc="http://www.garmin.com/xmlschemas/AccelerationExtension/v1" xmlns:gpxpx="http://www.garmin.com/xmlschemas/PowerExtension/v1" xmlns:vidx1="http://www.garmin.com/xmlschemas/VideoExtension/v1">
+
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2023-07-05T08:41:45Z</time>
+    <bounds maxlat="47.582768211141229" maxlon="-2.885204963386059" minlat="47.574644889682531" minlon="-2.891289554536343" />
+  </metadata>
+
+  <wpt lat="47.581563061103225" lon="-2.885366566479206">
+    <ele>3</ele>
+    <time>2023-07-05T07:40:53Z</time>
+    <name>42_Chapelle (3)</name>
+    <sym>Crossing</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2023-07-05T07:40:53Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.582477275282145" lon="-2.8900864161551">
+    <ele>3</ele>
+    <time>2023-07-05T07:40:53Z</time>
+    <name>42_Larmor-Baden (1)</name>
+    <sym>Crossing</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2023-07-05T07:40:53Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.574662826955318" lon="-2.889759186655283">
+    <ele>4.1796875</ele>
+    <time>2023-07-05T07:40:53Z</time>
+    <name>42_Île Berder Sud (2)</name>
+    <sym>Crossing</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2023-07-05T07:40:53Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <trk>
+    <name>BRET_42_Berder</name>
+    <extensions>
+      <gpxx:TrackExtension>
+        <gpxx:DisplayColor>DarkGray</gpxx:DisplayColor>
+      </gpxx:TrackExtension>
+    </extensions>
+    <trkseg>
+      <trkpt lat="47.582477275282145" lon="-2.8900864161551">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.582172090187669" lon="-2.888857210054994">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.581633804365993" lon="-2.888809349387884">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.581140026450157" lon="-2.888755621388555">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.580057000741363" lon="-2.88878227584064">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.579765310510993" lon="-2.889238754287362">
+        <ele>4</ele>
+      </trkpt>
+      <trkpt lat="47.579513769596815" lon="-2.88956405594945">
+        <ele>4</ele>
+      </trkpt>
+      <trkpt lat="47.579310592263937" lon="-2.889932356774807">
+        <ele>6.51953125</ele>
+      </trkpt>
+      <trkpt lat="47.579240435734391" lon="-2.890400569885969">
+        <ele>4</ele>
+      </trkpt>
+      <trkpt lat="47.579121915623546" lon="-2.890724781900644">
+        <ele>6.234375</ele>
+      </trkpt>
+      <trkpt lat="47.578814132139087" lon="-2.890858221799135">
+        <ele>4</ele>
+      </trkpt>
+      <trkpt lat="47.578338459134102" lon="-2.890911363065243">
+        <ele>4</ele>
+      </trkpt>
+      <trkpt lat="47.577995639294386" lon="-2.890852186828852">
+        <ele>4</ele>
+      </trkpt>
+      <trkpt lat="47.577510494738817" lon="-2.890904238447547">
+        <ele>4</ele>
+      </trkpt>
+      <trkpt lat="47.576807839795947" lon="-2.891289554536343">
+        <ele>6.48828125</ele>
+      </trkpt>
+      <trkpt lat="47.57648647762835" lon="-2.891151504591107">
+        <ele>4</ele>
+      </trkpt>
+      <trkpt lat="47.576181041076779" lon="-2.891164496541023">
+        <ele>4</ele>
+      </trkpt>
+      <trkpt lat="47.575430776923895" lon="-2.891180254518986">
+        <ele>4.015625</ele>
+      </trkpt>
+      <trkpt lat="47.575022159144282" lon="-2.890943298116326">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.574883690103889" lon="-2.890660995617509">
+        <ele>5.171875</ele>
+      </trkpt>
+      <trkpt lat="47.574878493323922" lon="-2.89022765122354">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.574695013463497" lon="-2.890050793066621">
+        <ele>5.12109375</ele>
+      </trkpt>
+      <trkpt lat="47.574644889682531" lon="-2.889785254374147">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.57472644560039" lon="-2.889513345435262">
+        <ele>2.7265625</ele>
+      </trkpt>
+      <trkpt lat="47.574869440868497" lon="-2.8893818333745">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.575242100283504" lon="-2.889413181692362">
+        <ele>7.92578125</ele>
+      </trkpt>
+      <trkpt lat="47.575686927884817" lon="-2.889056531712413">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.576163019984961" lon="-2.888327892869711">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.576899705454707" lon="-2.888093702495098">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.577292062342167" lon="-2.888010470196605">
+        <ele>4.234375</ele>
+      </trkpt>
+      <trkpt lat="47.577546453103423" lon="-2.887755325064063">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.577795144170523" lon="-2.887418456375599">
+        <ele>4.3515625</ele>
+      </trkpt>
+      <trkpt lat="47.577914753928781" lon="-2.886792495846748">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.578471731394529" lon="-2.886232919991016">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.578723272308707" lon="-2.885686419904232">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.578882947564125" lon="-2.885259781032801">
+        <ele>2.875</ele>
+      </trkpt>
+      <trkpt lat="47.579136500135064" lon="-2.885204963386059">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.579657519236207" lon="-2.885491289198399">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.579962955787778" lon="-2.88611582480371">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.580102849751711" lon="-2.886270806193352">
+        <ele>2.9140625</ele>
+      </trkpt>
+      <trkpt lat="47.5806456618011" lon="-2.886389074847102">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.580888150259852" lon="-2.886337023228407">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.581101804971695" lon="-2.886124206706882">
+        <ele>1.90234375</ele>
+      </trkpt>
+      <trkpt lat="47.581246476620436" lon="-2.885750792920589">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.581447642296553" lon="-2.885322645306587">
+        <ele>2.7109375</ele>
+      </trkpt>
+      <trkpt lat="47.581563061103225" lon="-2.885366566479206">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.581542022526264" lon="-2.885668817907572">
+        <ele>2.48828125</ele>
+      </trkpt>
+      <trkpt lat="47.581337336450815" lon="-2.885998729616404">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.581391232088208" lon="-2.886584289371967">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.58165174163878" lon="-2.887221900746226">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.581967068836093" lon="-2.887904439121485">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.582685062661767" lon="-2.887975098565221">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.582768211141229" lon="-2.888273829594255">
+        <ele>2.8671875</ele>
+      </trkpt>
+      <trkpt lat="47.582706101238728" lon="-2.88851011544466">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.582460092380643" lon="-2.888756543397903">
+        <ele>3.83203125</ele>
+      </trkpt>
+      <trkpt lat="47.582172090187669" lon="-2.888857210054994">
+        <ele>3</ele>
+      </trkpt>
+      <trkpt lat="47.582477275282145" lon="-2.8900864161551">
+        <ele>3</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+
+</gpx>

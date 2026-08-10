@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx version="1.1" creator="outdooractive - http://www.outdooractive.com" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" xmlns:oa="http://www.outdooractive.com/GPX/Extensions/1">
+  <metadata>
+    <name>31237-Tour29</name>
+    <author>
+      <name>Unknown User - TemporaryUserGroup</name>
+    </author>
+    <link href="https://www.outdooractive.com/r/228644368"/>
+    <time>2021-10-26T14:13:44.754</time>
+    <extensions>
+      <oa:oaCategory>hikingTourTrail</oa:oaCategory>
+    </extensions>
+  </metadata>
+  <trk>
+    <name>31237-Tour29</name>
+    <type>hikingTourTrail</type>
+    <trkseg>
+      <trkpt lat="49.579612" lon="11.616338">
+        <ele>458.22968</ele>
+        <name>TEST_GPX</name>
+        <extensions>
+          <oa:mapZoom>15</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="49.579652" lon="11.616338">
+        <ele>458.21602</ele>
+      </trkpt>
+      <trkpt lat="49.579664" lon="11.616169">
+        <ele>457.80277</ele>
+      </trkpt>
+      <trkpt lat="49.579685" lon="11.616057">
+        <ele>457.52685</ele>
+      </trkpt>
+      <trkpt lat="49.579706" lon="11.61597">
+        <ele>457.31624</ele>
+      </trkpt>
+      <trkpt lat="49.579749" lon="11.615815">
+        <ele>456.94803</ele>
+      </trkpt>
+      <trkpt lat="49.579816" lon="11.615643">
+        <ele>456.5635</ele>
+      </trkpt>
+      <trkpt lat="49.579845" lon="11.615579">
+        <ele>456.43155</ele>
+      </trkpt>
+      <trkpt lat="49.579907" lon="11.615459">
+        <ele>456.2108</ele>
+      </trkpt>
+      <trkpt lat="49.579983" lon="11.615326">
+        <ele>456.02738</ele>
+      </trkpt>
+      <trkpt lat="49.579974" lon="11.615159">
+        <ele>455.63654</ele>
+      </trkpt>
+      <trkpt lat="49.580055" lon="11.615198">
+        <ele>455.9417</ele>
+      </trkpt>
+      <trkpt lat="49.58009" lon="11.615201">
+        <ele>456.05739</ele>
+      </trkpt>
+      <trkpt lat="49.580183" lon="11.615193">
+        <ele>456.37001</ele>
+      </trkpt>
+      <trkpt lat="49.580368" lon="11.615164">
+        <ele>457.07637</ele>
+      </trkpt>
+      <trkpt lat="49.580462" lon="11.615156">
+        <ele>457.46508</ele>
+      </trkpt>
+      <trkpt lat="49.580558" lon="11.615159">
+        <ele>457.8857</ele>
+      </trkpt>
+      <trkpt lat="49.580622" lon="11.615165">
+        <ele>458.17959</ele>
+      </trkpt>
+      <trkpt lat="49.580693" lon="11.615182">
+        <ele>458.52617</ele>
+      </trkpt>
+      <trkpt lat="49.580863" lon="11.615216">
+        <ele>459.40908</ele>
+      </trkpt>
+      <trkpt lat="49.580982" lon="11.615278">
+        <ele>459.99063</ele>
+      </trkpt>
+      <trkpt lat="49.581272" lon="11.615424">
+        <ele>461.42672</ele>
+      </trkpt>
+      <trkpt lat="49.581508" lon="11.615561">
+        <ele>462.92226</ele>
+        <name>49.581508,11.615561</name>
+        <extensions>
+          <oa:mapZoom>15</oa:mapZoom>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

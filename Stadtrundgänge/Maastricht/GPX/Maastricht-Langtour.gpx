@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Claudian - Obsidian Vault"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <name>Maastricht Langtour – Komplett mit Höhlen & Museen (5,5-7h)</name>
+    <desc>Umfassende Stadtrundgang mit 17 Stationen, Underground, Nimm North Caves, Bonnefanten & Naturhistorisches Museum</desc>
+    <author>
+      <name>Claudian - Obsidian Vault</name>
+    </author>
+    <time>2026-05-27T09:00:00Z</time>
+  </metadata>
+
+  <!-- Waypoints für alle 16 Stationen (Langtour) -->
+  <wpt lat="50.8503" lon="5.6875">
+    <name>1. Sint Servaasbrug (START)</name>
+    <desc>Älteste Brücke der Niederlande</desc>
+    <sym>parking</sym>
+  </wpt>
+
+  <wpt lat="50.8504" lon="5.6895">
+    <name>2. Sint Janskerk</name>
+    <desc>Gotische Kirche mit grünen Türmen</desc>
+    <sym>chapel</sym>
+  </wpt>
+
+  <wpt lat="50.8506" lon="5.6890">
+    <name>3. Vrijthof Square</name>
+    <desc>Hauptplatz mit Cafés</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8503" lon="5.6880">
+    <name>4. Sint Servatiuskerk</name>
+    <desc>Älteste Kirche (6. Jh.)</desc>
+    <sym>chapel</sym>
+  </wpt>
+
+  <wpt lat="50.8500" lon="5.6870">
+    <name>5. Boekhandel Dominicanen</name>
+    <desc>Buchhandlung im Kloster</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8495" lon="5.6875">
+    <name>6. Markt</name>
+    <desc>Markplatz</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8480" lon="5.6880">
+    <name>7. Helpoort</name>
+    <desc>Ältestes Stadttor (13. Jh.)</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8490" lon="5.6895">
+    <name>8. Dinghuis</name>
+    <desc>Renaissance-Gerichtsgebäude</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8485" lon="5.6905">
+    <name>9. Onze Lieve Vrouwe Basiliek</name>
+    <desc>Liebfrauenbasilika mit Krypta</desc>
+    <sym>chapel</sym>
+  </wpt>
+
+  <wpt lat="50.8510" lon="5.6820">
+    <name>10. Maastricht Underground (Casemates)</name>
+    <desc>Unterirdische Tunnels, Geführte Tour 45min, €8,50</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8555" lon="5.6885">
+    <name>11. Nimm North Caves (UNESCO) ⭐ HIGHLIGHT</name>
+    <desc>UNESCO Weltkulturerbe-Höhlen, Tour 60min, €12,50</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8525" lon="5.6750">
+    <name>12. Fort Sint Pieter</name>
+    <desc>18. Jh. Befestigung mit Panoramablick</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8470" lon="5.7000">
+    <name>13. Jeker River Promenade</name>
+    <desc>Schöner Fluss-Spaziergang</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8445" lon="5.7050">
+    <name>14. Bonnefanten Museum (KUNSTHIGHLIGHT)</name>
+    <desc>Modernes Kunstmuseum, Eintritt €12,50</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8415" lon="5.6980">
+    <name>15. Naturhistorisches Museum (Mosasaurus-Fossil) ⭐ NEU</name>
+    <desc>Fossilien & Naturgeschichte, Eintritt €7-10, Di-So 11-17/13-17 Uhr</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8520" lon="5.6920">
+    <name>16. Wyck Quarter (Künstlerviertel)</name>
+    <desc>Bunte Häuser, Galerien, Cafés</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <wpt lat="50.8506" lon="5.6885">
+    <name>17. Stadhuis (Rathaus - ZIEL)</name>
+    <desc>Barockes Rathaus, Abschluss mit Kaffee!</desc>
+    <sym>scenic</sym>
+  </wpt>
+
+  <!-- Track: Langtour mit allen Stationen -->
+  <trk>
+    <name>Maastricht Langtour - Komplette Route (5-6h)</name>
+    <desc>16 Stationen mit Höhlen, Underground & Bonnefanten Museum</desc>
+    <trkseg>
+      <!-- Segment 1: Start bis Helpoort -->
+      <trkpt lat="50.8503" lon="5.6875">
+        <ele>30</ele>
+        <time>2026-05-27T09:00:00Z</time>
+        <name>Sint Servaasbrug (START)</name>
+      </trkpt>
+      <trkpt lat="50.8504" lon="5.6895">
+        <ele>30</ele>
+        <time>2026-05-27T09:25:00Z</time>
+        <name>Sint Janskerk</name>
+      </trkpt>
+      <trkpt lat="50.8506" lon="5.6890">
+        <ele>30</ele>
+        <time>2026-05-27T09:45:00Z</time>
+        <name>Vrijthof Square (Kaffee 1)</name>
+      </trkpt>
+      <trkpt lat="50.8503" lon="5.6880">
+        <ele>30</ele>
+        <time>2026-05-27T10:05:00Z</time>
+        <name>Sint Servatiuskerk</name>
+      </trkpt>
+      <trkpt lat="50.8500" lon="5.6870">
+        <ele>30</ele>
+        <time>2026-05-27T10:25:00Z</time>
+        <name>Boekhandel Dominicanen</name>
+      </trkpt>
+      <trkpt lat="50.8495" lon="5.6875">
+        <ele>30</ele>
+        <time>2026-05-27T10:45:00Z</time>
+        <name>Markt</name>
+      </trkpt>
+      <trkpt lat="50.8480" lon="5.6880">
+        <ele>30</ele>
+        <time>2026-05-27T10:55:00Z</time>
+        <name>Helpoort</name>
+      </trkpt>
+
+      <!-- Segment 2: Helpoort bis Underground -->
+      <trkpt lat="50.8485" lon="5.6890">
+        <ele>30</ele>
+        <time>2026-05-27T11:05:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8490" lon="5.6895">
+        <ele>30</ele>
+        <time>2026-05-27T11:08:00Z</time>
+        <name>Dinghuis</name>
+      </trkpt>
+      <trkpt lat="50.8485" lon="5.6905">
+        <ele>30</ele>
+        <time>2026-05-27T11:15:00Z</time>
+        <name>Onze Lieve Vrouwe</name>
+      </trkpt>
+      <trkpt lat="50.8510" lon="5.6820">
+        <ele>35</ele>
+        <time>2026-05-27T11:40:00Z</time>
+        <name>Maastricht Underground (Tour 11:50-12:35)</name>
+      </trkpt>
+
+      <!-- Segment 3: Underground bis Nimm North Caves -->
+      <trkpt lat="50.8520" lon="5.6840">
+        <ele>35</ele>
+        <time>2026-05-27T12:35:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8540" lon="5.6860">
+        <ele>38</ele>
+        <time>2026-05-27T12:45:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8555" lon="5.6885">
+        <ele>42</ele>
+        <time>2026-05-27T12:50:00Z</time>
+        <name>Nimm North Caves UNESCO (Tour 12:50-13:50)</name>
+      </trkpt>
+
+      <!-- Segment 4: Nimm Caves bis Fort Sint Pieter -->
+      <trkpt lat="50.8555" lon="5.6885">
+        <ele>42</ele>
+        <time>2026-05-27T13:50:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8540" lon="5.6820">
+        <ele>40</ele>
+        <time>2026-05-27T14:00:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8525" lon="5.6750">
+        <ele>50</ele>
+        <time>2026-05-27T14:20:00Z</time>
+        <name>Fort Sint Pieter (Pause & Aussicht)</name>
+      </trkpt>
+
+      <!-- Segment 5: Fort bis Jeker River -->
+      <trkpt lat="50.8515" lon="5.6850">
+        <ele>35</ele>
+        <time>2026-05-27T14:50:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8485" lon="5.6950">
+        <ele>30</ele>
+        <time>2026-05-27T15:00:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8470" lon="5.7000">
+        <ele>28</ele>
+        <time>2026-05-27T15:15:00Z</time>
+        <name>Jeker River Promenade</name>
+      </trkpt>
+
+      <!-- Segment 6: Jeker River bis Bonnefanten -->
+      <trkpt lat="50.8455" lon="5.7030">
+        <ele>28</ele>
+        <time>2026-05-27T15:25:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8445" lon="5.7050">
+        <ele>28</ele>
+        <time>2026-05-27T15:35:00Z</time>
+        <name>Bonnefanten Museum (Tour 15:35-16:35)</name>
+      </trkpt>
+
+      <!-- Segment 7: Bonnefanten bis Naturhistorisches Museum -->
+      <trkpt lat="50.8450" lon="5.7025">
+        <ele>28</ele>
+        <time>2026-05-27T16:35:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8430" lon="5.7000">
+        <ele>28</ele>
+        <time>2026-05-27T16:40:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8415" lon="5.6980">
+        <ele>28</ele>
+        <time>2026-05-27T16:45:00Z</time>
+        <name>Naturhistorisches Museum (Tour 16:45-17:25)</name>
+      </trkpt>
+
+      <!-- Segment 8: Museum bis Ziel -->
+      <trkpt lat="50.8425" lon="5.6960">
+        <ele>28</ele>
+        <time>2026-05-27T17:25:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8470" lon="5.6920">
+        <ele>30</ele>
+        <time>2026-05-27T17:35:00Z</time>
+      </trkpt>
+      <trkpt lat="50.8520" lon="5.6920">
+        <ele>30</ele>
+        <time>2026-05-27T17:40:00Z</time>
+        <name>Wyck Quarter (Künstlerviertel)</name>
+      </trkpt>
+      <trkpt lat="50.8506" lon="5.6890">
+        <ele>30</ele>
+        <time>2026-05-27T17:55:00Z</time>
+        <name>Stadhuis (Rathaus - ZIEL)</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+
+</gpx>

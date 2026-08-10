@@ -14,7 +14,7 @@ Projekt-Instruktionen für Claude Code beim Arbeiten im Unterwegs-Vault.
 
 Neuer Vault als Merge von `Urlaub` + `Touren` (beide LXC-203-Geschwister-Ordner) — Reiseplanung, Wanderungen, Stadtrundgänge, Sehenswürdigkeiten und ein geplantes Urlaubstagebuch, das die anderen Kategorien direkt verlinken kann (Hauptgrund für den Merge: Cross-Vault-Wikilinks funktionieren in Obsidian nicht). Details zur Entscheidungsfindung: `memory/project-unterwegs-vault-struktur.md` und `memory/project-touren-vault-soll-git-bekommen.md` im Cross-Vault-Root (`/home/claude/Obsidian-Vaults`).
 
-**Status (2026-08-10):** Vault-Shell auf Container 201+203 eingerichtet und synchronisiert (Migrationsplan-Phase 2/Task #3, abgeschlossen). Enthält aktuell nur die automatisch angelegte `Willkommen.md` — die eigentliche **Content-Migration aus `Urlaub/` und `Touren/` steht noch aus** (Phase 3/Task #4). Bis dahin bitte keine inhaltliche Vault-Struktur (Ordner wie `Wanderungen/`, `Reisen/` etc.) freihändig anlegen, sondern den Migrationsplan abwarten bzw. fortsetzen.
+**Status (2026-08-10):** Vault-Shell (Phase 2/Task #3), Claude-Vorbereitung + Plugins (Phase 5/Task #6) und Content-Migration (Phase 3/Task #4) abgeschlossen — Inhalte aus `Urlaub/` und `Touren/` sind als **Kopie** übernommen, die Quell-Vaults bleiben bis zur vollständigen Verifikation unangetastet (Rollback-Sicherheit). Noch offen: `Regionen/` ist ein neues Organisationskonzept ohne Vorlage in den Quell-Vaults und noch nicht angelegt; bekannte Bruchstellen (vault-präfixierte Excalidraw-Pfade in Wanderung-/Stadtrundgang-Templates) sind noch **nicht** gefixt (Phase 4/Task #5).
 
 ## Geplante Vault-Struktur (Zielbild, noch nicht umgesetzt)
 
@@ -34,6 +34,25 @@ Unterwegs/
 ```
 
 Leitprinzip: Wanderungen/Stadtrundgänge/Sehenswürdigkeiten bleiben eigenständiges, wiederverwendbares Wissen — ziehen NICHT in Reise-Unterordner um. Vollständiger Entwurf inkl. Tagebuch-Frontmatter: `memory/project-unterwegs-vault-struktur.md`.
+
+**Migrations-Herkunft der Ordner (2026-08-10):**
+
+| Ordner | Quelle | Hinweis |
+|---|---|---|
+| `Wanderungen/`, `Stadtrundgänge/`, `_template/`, `Ressourcen/` | Touren, 1:1 | GPX-Archiv vollständig (477 Dateien verifiziert) |
+| `Clippings/`, `Doku/` | Touren + Urlaub, zusammengeführt | `Doku/Claude – Änderungshistorie.md` neu begonnen, alte Verläufe als `Claude – Änderungshistorie (Archiv Touren/Urlaub).md` archiviert |
+| `Übernachtungen/`, `Einpacklisten/` | Urlaub, 1:1 | |
+| `_Wohnwagen-Technik/` | Urlaub (`Sackmarkise/` + `Wohnwagen-*.md`) | |
+| `Sehenswürdigkeiten/`, `Reisen/`, `OneNote-Archiv/` | Urlaub (`Ausflüge/`, `Reisen/`, `OneNote-Archiv/`) | Quellordner waren bereits leer, nur Zielordner angelegt |
+| `Regionen/` | — | Neu, noch nicht angelegt (kein Vorbild in den Quell-Vaults) |
+
+**Bewusst nicht migriert:** `Urlaub/thumbnails/` (Plugin-Cache, regeneriert sich selbst), `Urlaub/Recherchen/` (leer), `README.md`/`CLAUDE.md`/`Willkommen.md`/`start-claude.ps1` beider Quell-Vaults (vault-spezifische Meta-Dateien, durch Unterwegs' eigene ersetzt).
+
+## Autonomes Editieren: Änderungshistorie statt Rückfrage
+
+Für **inhaltliche Änderungen an `.md`-Notizen** (Text, Frontmatter-Updates, neue Notizen inkl. Index-Verlinkung, Umbenennen/Verschieben inkl. Link-Fix) fragst du **nicht** mehr einzeln nach Bestätigung — `.claude/settings.json` erlaubt `Edit`/`Write` auf `*.md` bereits automatisch. Stattdessen trägst du jede Änderung in [[Doku/Claude – Änderungshistorie]] ein; der User bestätigt/verwirft wöchentlich gesammelt.
+
+**Ausnahmen (weiterhin Rückfrage nötig):** Löschen von Dateien, strukturelle Auffälligkeiten, alles außerhalb von `.md`. Für den eigentlichen Verschiebe-Befehl (`mv`/Bash) gibt es bewusst keine automatische Freigabe.
 
 ## Sprache & Stil
 
@@ -75,6 +94,8 @@ Bewusst **nicht** übernommen: `obsidian-git` (projektweit seit 2026-08-04 deakt
 | `CLAUDE.md` | Diese Datei |
 | `CC-Session-Logs/` | Session-Logs (via `/compress` + `/preserve`) |
 | `_claude/` + `.claude` (Symlink) | cpr-Skills (`/compress`, `/preserve`, `/resume`) |
+| `Doku/Claude – Änderungshistorie.md` | Protokoll autonomer `.md`-Änderungen (wöchentliche Sammelbestätigung) |
+| `Doku/Claude – Änderungshistorie (Archiv Touren/Urlaub).md` | Änderungshistorien der Quell-Vaults bis zum Merge-Zeitpunkt |
 
 ## Arbeitsweise mit Claude Code
 
@@ -87,4 +108,4 @@ Bewusst **nicht** übernommen: `obsidian-git` (projektweit seit 2026-08-04 deakt
 ---
 
 **Zuletzt aktualisiert:** 2026-08-10
-**Status:** Vault-Shell eingerichtet, Claude-Vorbereitung (diese Datei, `.claude`, `_claude/`, `CC-Session-Logs/`) und Plugin-Installation abgeschlossen (Phase 5/Task #6); Content-Migration (Phase 3/Task #4) noch offen
+**Status:** Vault-Shell (Task #3), Claude-Vorbereitung + Plugins (Task #6) und Content-Migration (Task #4) abgeschlossen; offen: Link-/Konventions-Fixes (Task #5), `Regionen/`-Konzept, Mehrgeräte-Rollout (Task #7), Cross-Vault-Meta-Update (Task #8), Stilllegung Urlaub/Touren (Task #9)

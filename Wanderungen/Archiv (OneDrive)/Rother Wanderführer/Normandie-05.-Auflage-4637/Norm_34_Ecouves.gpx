@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1"
+creator="Smartprofil-Office - http://www.rother.de"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/1"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+
+<bounds minlat="48.546165721490979" minlon="0.027192989364266" maxlat="48.564819982275367" maxlon="0.083287870511413"/>
+</metadata>
+<wpt lat="48.550353907048702" lon="0.048462487757206">
+<ele>391</ele>
+<name>34_Carrefour de la Croix de Médavy (1)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="48.548534447327256" lon="0.07898636162281">
+<ele>345</ele>
+<name>34_Carrefour des Verreries (2)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="48.55943201109767" lon="0.073908101767302">
+<ele>384</ele>
+<name>34_Carrefour de la Branloire (3)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="48.564819982275367" lon="0.07113360799849">
+<ele>322</ele>
+<name>34_Carrefour du Chêne Bossu (4)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="48.550353907048702" lon="0.048462487757206">
+<ele>391</ele>
+<name>34_Carrefour de la Croix de Médavy (1)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="48.550827903673053" lon="0.036961007863283">
+<ele>392</ele>
+<name>34_Carrefour de la Verrerie (5)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="48.551407847553492" lon="0.028638113290071">
+<ele>397</ele>
+<name>34_Route Forestière des Carrouges (6)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="48.549979738891125" lon="0.034966450184584">
+<ele>413</ele>
+<name>34_Signal d’Écouves (7)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<wpt lat="48.550827903673053" lon="0.036961007863283">
+<ele>402</ele>
+<name>34_Carrefour de la Verrerie (5)</name>
+<cmt></cmt>
+<desc></desc>
+<sym>Crossing</sym>
+</wpt>
+
+<trk>
+<name>Norm_34_Ecouves</name>
+<trkseg>
+<trkpt lat="48.550353907048702" lon="0.048462487757206">
+<ele>391</ele>
+</trkpt>
+<trkpt lat="48.549510017037392" lon="0.049007479101419">
+<ele>387</ele>
+</trkpt>
+<trkpt lat="48.549361908808351" lon="0.049488097429276">
+<ele>383</ele>
+</trkpt>
+<trkpt lat="48.5485874209553" lon="0.050131576135755">
+<ele>378</ele>
+</trkpt>
+<trkpt lat="48.547927178442478" lon="0.050871698185802">
+<ele>374</ele>
+</trkpt>
+<trkpt lat="48.547578826546669" lon="0.057287206873298">
+<ele>370</ele>
+</trkpt>
+<trkpt lat="48.547314461320639" lon="0.062242839485407">
+<ele>366</ele>
+</trkpt>
+<trkpt lat="48.547014053910971" lon="0.067674145102501">
+<ele>362</ele>
+</trkpt>
+<trkpt lat="48.54666855186224" lon="0.074292495846748">
+<ele>358</ele>
+</trkpt>
+<trkpt lat="48.546435534954071" lon="0.078569278120995">
+<ele>353</ele>
+</trkpt>
+<trkpt lat="48.546165721490979" lon="0.083287870511413">
+<ele>349</ele>
+</trkpt>
+<trkpt lat="48.548534447327256" lon="0.07898636162281">
+<ele>345</ele>
+</trkpt>
+<trkpt lat="48.552545271813869" lon="0.0770855974406">
+<ele>358</ele>
+</trkpt>
+<trkpt lat="48.556088134646416" lon="0.075407959520817">
+<ele>371</ele>
+</trkpt>
+<trkpt lat="48.55943201109767" lon="0.073908101767302">
+<ele>384</ele>
+</trkpt>
+<trkpt lat="48.561480967327952" lon="0.07053354755044">
+<ele>372</ele>
+</trkpt>
+<trkpt lat="48.562310189008713" lon="0.070395832881331">
+<ele>359</ele>
+</trkpt>
+<trkpt lat="48.563638217747211" lon="0.070473616942763">
+<ele>347</ele>
+</trkpt>
+<trkpt lat="48.564203744754195" lon="0.070652319118381">
+<ele>334</ele>
+</trkpt>
+<trkpt lat="48.564819982275367" lon="0.07113360799849">
+<ele>322</ele>
+</trkpt>
+<trkpt lat="48.564482191577554" lon="0.069928793236613">
+<ele>329</ele>
+</trkpt>
+<trkpt lat="48.563346778973937" lon="0.066997306421399">
+<ele>336</ele>
+</trkpt>
+<trkpt lat="48.561498317867517" lon="0.062064556404948">
+<ele>343</ele>
+</trkpt>
+<trkpt lat="48.559623369947076" lon="0.05693013779819">
+<ele>350</ele>
+</trkpt>
+<trkpt lat="48.558649476617575" lon="0.054229153320193">
+<ele>356</ele>
+</trkpt>
+<trkpt lat="48.556896904483438" lon="0.049631763249636">
+<ele>363</ele>
+</trkpt>
+<trkpt lat="48.555448595434427" lon="0.045664859935641">
+<ele>370</ele>
+</trkpt>
+<trkpt lat="48.553613713011146" lon="0.046117985621095">
+<ele>377</ele>
+</trkpt>
+<trkpt lat="48.551573138684034" lon="0.047562271356583">
+<ele>384</ele>
+</trkpt>
+<trkpt lat="48.550353907048702" lon="0.048462487757206">
+<ele>391</ele>
+</trkpt>
+<trkpt lat="48.5506337787956" lon="0.042015630751848">
+<ele>392</ele>
+</trkpt>
+<trkpt lat="48.550827903673053" lon="0.036961007863283">
+<ele>392</ele>
+</trkpt>
+<trkpt lat="48.554006069898605" lon="0.036211246624589">
+<ele>393</ele>
+</trkpt>
+<trkpt lat="48.556757429614663" lon="0.035480177029967">
+<ele>393</ele>
+</trkpt>
+<trkpt lat="48.557340390980244" lon="0.033083539456129">
+<ele>394</ele>
+</trkpt>
+<trkpt lat="48.557780440896749" lon="0.031438339501619">
+<ele>395</ele>
+</trkpt>
+<trkpt lat="48.558211354538798" lon="0.03047090023756">
+<ele>395</ele>
+</trkpt>
+<trkpt lat="48.557997951284051" lon="0.027601271867752">
+<ele>396</ele>
+</trkpt>
+<trkpt lat="48.55447830632329" lon="0.028129667043686">
+<ele>396</ele>
+</trkpt>
+<trkpt lat="48.551407847553492" lon="0.028638113290071">
+<ele>397</ele>
+</trkpt>
+<trkpt lat="48.551392676308751" lon="0.027859853580594">
+<ele>400</ele>
+</trkpt>
+<trkpt lat="48.549138950183988" lon="0.027587106451392">
+<ele>403</ele>
+</trkpt>
+<trkpt lat="48.547332482412457" lon="0.027192989364266">
+<ele>407</ele>
+</trkpt>
+<trkpt lat="48.548806440085173" lon="0.031293081119657">
+<ele>410</ele>
+</trkpt>
+<trkpt lat="48.549979738891125" lon="0.034966450184584">
+<ele>413</ele>
+</trkpt>
+<trkpt lat="48.550827903673053" lon="0.036961007863283">
+<ele>402</ele>
+</trkpt>
+<trkpt lat="48.550578709691763" lon="0.038021821528673">
+<ele>400</ele>
+</trkpt>
+<trkpt lat="48.549707578495145" lon="0.040634041652083">
+<ele>399</ele>
+</trkpt>
+<trkpt lat="48.548895958811045" lon="0.042837141081691">
+<ele>397</ele>
+</trkpt>
+<trkpt lat="48.549229977652431" lon="0.044989781454206">
+<ele>396</ele>
+</trkpt>
+<trkpt lat="48.549642618745565" lon="0.046563316136599">
+<ele>394</ele>
+</trkpt>
+<trkpt lat="48.55002298951149" lon="0.047630332410336">
+<ele>393</ele>
+</trkpt>
+<trkpt lat="48.550353907048702" lon="0.048462487757206">
+<ele>391</ele>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
