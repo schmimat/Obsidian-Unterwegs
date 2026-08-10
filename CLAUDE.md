@@ -47,7 +47,26 @@ Läuft über das Container-201/203-Sync+Git-Backup-Muster (`obsidian-sync-unterw
 
 ## Plugins
 
-Noch nicht installiert — Auswahl aus den in `Urlaub`/`Touren` genutzten Plugins steht aus (Teil von Task #6, Migrationsplan Phase 5).
+Übernommen aus `Urlaub`/`Touren` (Plugin-Code kopiert, `data.json` bewusst nicht mitgenommen — startet mit Standardeinstellungen):
+
+| Plugin | Zweck |
+|--------|-------|
+| `calendar` | Kalenderansicht für Tagesnotizen |
+| `colored-tags` | Farbige Tags |
+| `drawio-editor` | Draw.io-Diagramme einbetten/bearbeiten |
+| `featured-image` | Automatisches Titelbild aus erstem Bild/YouTube-Link |
+| `notebook-navigator` | Zwei-Spalten-Dateiexplorer mit Tag-Browsing |
+| `obsidian-excalidraw-plugin` | Skizzen, handgezeichnete Karten |
+| `obsidian-map-view` | Interaktive Karte für Übernachtungen/Routen/Sehenswürdigkeiten |
+| `obsidian-outliner` | Listen wie in Workflowy/Roam |
+| `obsidian-style-settings` | Theme/Plugin-CSS-Einstellungen |
+| `pixel-perfect-image` | Bild-Resizing, Copy/Open im Explorer |
+| `settings-search` | Globale Einstellungssuche |
+| `tag-wrangler` | Tags umbenennen/mergen/durchsuchen |
+
+Bewusst **nicht** übernommen: `obsidian-git` (projektweit seit 2026-08-04 deaktiviert, Backup läuft über `git-backup-unterwegs.timer` auf Container 201), `drawio`/`drawio-obsidian` (redundant zu `drawio-editor`), `obsidian-local-rest-api` (unvollständig installiert in Touren, keine `manifest.json`), `obsidian42-brat` (User-Entscheidung 2026-08-10).
+
+**Hinweis:** Wie bei `Touren`/`Urlaub` fehlt auf diesem 203-Sync-Spiegel eine `.obsidian/community-plugins.json` (vermutlich von der Obsidian-Sync-Config ausgeschlossen, da reiner Client-UI-Zustand). Der Plugin-**Code** liegt bereit; ob die Plugins auf einem Client (z. B. ThinkPad X1) automatisch aktiviert sind oder dort einmalig manuell über Einstellungen → Community-Plugins eingeschaltet werden müssen, ist von hier aus nicht verifizierbar.
 
 ## Wichtige Dateien & Ordner
 
@@ -68,4 +87,4 @@ Noch nicht installiert — Auswahl aus den in `Urlaub`/`Touren` genutzten Plugin
 ---
 
 **Zuletzt aktualisiert:** 2026-08-10
-**Status:** Vault-Shell eingerichtet, Claude-Vorbereitung (diese Datei, `.claude`, `_claude/`, `CC-Session-Logs/`) abgeschlossen; Content-Migration und Plugin-Installation noch offen
+**Status:** Vault-Shell eingerichtet, Claude-Vorbereitung (diese Datei, `.claude`, `_claude/`, `CC-Session-Logs/`) und Plugin-Installation abgeschlossen (Phase 5/Task #6); Content-Migration (Phase 3/Task #4) noch offen
