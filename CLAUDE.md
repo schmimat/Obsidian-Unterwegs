@@ -101,6 +101,22 @@ Es gibt mehrere Frontmatter-Schemata nebeneinander — **keine Vereinheitlichung
 | Vergleichs-Übersicht | wie Tour-Detail, aber ohne `distance`/`stations`/`gpx_file`/`coordinates`, dafür `source` | `Stadtrundgänge/Maastricht/Maastricht - Touren Vergleich MIT EPOCHEN.md` |
 | Clippings (Web-Clipper-Standard, automatisch generiert) | `title`, `source`, `author`, `published`, `created`, `description`, `tags: [clippings]` | `Clippings/*.md`, `Stadtrundgänge/Maastricht/Gefundene Touren/*.md` |
 
+**Empfehlung — welches Schema für neue Notizen (Stand 2026-08-10, nach Abgleich mit Knowledge Base):**
+
+| Notiz-Typ | Zu verwendendes Schema |
+|-----------|------------------------|
+| Einfache Content-Notiz (Wanderung, Übernachtung, Wohnwagen-Technik) | Kern-Content: `tags`/`created`/`modified` (+ `location` falls Ort relevant) |
+| Index-/Sammelseite | Index-Schema: zusätzlich `sort_index` (+ optional `type: Index`) |
+| Domänenspezifische Detail-Notiz mit Fachfeldern (z. B. weitere Stadtrundgänge mit GPS/Distanz/Schwierigkeit) | eigenes erweitertes Schema analog „Tour-Detail mit Epochen" — bewusst nicht auf Kern-Content-Schema reduzieren |
+| Packliste/Notiz mit Lebenszyklus-Status | eigenes Schema mit `status`-Feld analog Einpacklisten |
+| Web-Clipping | automatisch generierter Web-Clipper-Standard — nie manuell anpassen |
+
+**Konsolidierte Referenznotiz (vaultübergreifend, nicht per Wikilink erreichbar):** `Knowledge Base/Obsidian/Frontmatter-Schema – Konventionen über alle Vaults.md` — enthält dieselbe Analyse plus die verifizierte Kernregel, wann Obsidian YAML-Frontmatter überhaupt parst (Quellenbeleg Obsidian-Forum/Help-Doku), inkl. einer Korrektur eines gegenteiligen Irrtums in Knowledge Base's eigener `CLAUDE.md`.
+
+**Abgleich mit Knowledge Base (513 Notizen ausgewertet, 2026-08-10):** Dort existieren mindestens 9 verschiedene Schemata (u. a. Kern-Content `tags/created/modified` [52×, identisch zu Unterwegs], Index mit `sort_index` [9×, identisch], Web-Clipper-Standard [~73×, identisch], domänenspezifische Geräte-/Infrastruktur-Schemata mit Fachfeldern [analog zu „Tour-Detail mit Epochen"], sowie `name/description/metadata` für die Auto-Memory-Dateien selbst). Bestätigt: kategorie-eigenes Schema statt Vereinheitlichung ist ein vaultübergreifend etabliertes, bewusstes Muster — kein Unterwegs-spezifischer Sonderfall.
+
+**Vorsicht bei künftiger `OneNote-Archiv/`-Migration:** In Knowledge Base dominiert zahlenmäßig (139×) das Schema `title`/`updated`/`created` — das ist aber praktisch komplett auf `IT@home/Archiv/…OneNote…/` konzentriert, also ein reines Migrations-Artefakt (nutzt `updated` statt `modified`), kein bewusster Standard. Wenn der noch offene `OneNote-Archiv/`-Zielordner (1:1-Übernahme aus `Urlaub/` geplant) gefüllt wird, ist zu erwarten, dass genau dieses Schema mitkommt — das ist dann ebenfalls erwartetes Import-Artefakt, keine neue Inkonsistenz und kein Anlass, es nachträglich anzugleichen.
+
 **Behobener Sonderfall (kein Schema-Problem, sondern ein Strukturfehler):** In `Wanderungen/README.md`, `Wanderungen/Template - Wanderung.md`, `Stadtrundgänge/README.md`, `Stadtrundgänge/Template - Stadtrundgang.md`, `Stadtrundgänge/Maastricht/GPX/README - GPX & Stadtplan Anleitung.md` stand vor dem `---`-Frontmatter-Block eine H1-Überschrift. Da YAML-Frontmatter in Obsidian nur erkannt wird, wenn `---` die allererste Zeile der Datei ist, wurde `tags`/`created`/`modified` in diesen fünf Dateien **nicht** als echtes Frontmatter geparst (kein Properties-Panel, nicht filterbar/suchbar über Obsidian-Properties) — reiner Fließtext, der wie Frontmatter aussah. Am 2026-08-10 gefixt: Frontmatter-Block an den Dateianfang verschoben, H1-Überschrift folgt jetzt danach; `modified` entsprechend aktualisiert. Herkunft geklärt: Der Bug stammt aus dem ursprünglichen Touren-Vault-Template (dort in 6 Dateien identisch vorhanden, inkl. `Touren/README.md`) und wurde beim Content-Merge 1:1 mitkopiert — kein Migrations-Artefakt.
 
 `_template/Seite.md` weicht zusätzlich in der Feldbenennung ab (`Reference link`, `Topics` groß/mit Leerzeichen statt kleingeschriebener snake_case-Felder wie überall sonst) — ebenfalls unangetastet gelassen.
