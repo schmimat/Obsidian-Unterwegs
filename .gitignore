@@ -1,0 +1,17 @@
+# Obsidian workspace (geraetespezifisch)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian Papierkorb
+.trash/
+
+# Claude Code runtime (Junction auf Windows, geraetespezifisch)
+.claude/
+
+# Claudian Plugin Sessions (fluechtig)
+.claudian/sessions/
+
+# OS-Systemdateien
+.DS_Store
+Thumbs.db
+desktop.ini
