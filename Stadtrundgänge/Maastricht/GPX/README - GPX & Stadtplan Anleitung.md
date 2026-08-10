@@ -89,12 +89,12 @@ Wenn du die Route manuell zeichnen möchtest (mit den Stationen):
 
 ### **Schritt 5: Screenshot in Obsidian einbinden**
 
-1. Screenshot speichern unter: `Touren/Stadtrundgänge/Screenshots/`
+1. Screenshot speichern unter: `Stadtrundgänge/Screenshots/`
 2. Benennung: `Maastricht-Stadtplan-Route.png`
 3. In der `.md`-Datei einfügen:
 
 ```markdown
-![[Touren/Stadtrundgänge/Screenshots/Maastricht-Stadtplan-Route.png]]
+![[Stadtrundgänge/Screenshots/Maastricht-Stadtplan-Route.png]]
 ```
 
 ---
@@ -105,7 +105,7 @@ Obsidian kann die `.md`-Datei direkt als PDF exportieren:
 
 ### **In Obsidian:**
 
-1. Öffne `Touren/Stadtrundgänge/Maastricht - Altstadt Highlights.md`
+1. Öffne `Stadtrundgänge/Maastricht - Altstadt Highlights.md`
 2. Oben rechts: **Mehr (⋯)** → **PDF-Export** *(falls Plugin installiert)*
 3. Falls nicht vorhanden: **Einstellungen** → **Community Plugins** → Suche **"PDF Export"** → Installieren
 
@@ -118,7 +118,7 @@ Obsidian kann die `.md`-Datei direkt als PDF exportieren:
 # Linux: sudo apt install pandoc
 
 # Konvertierung
-pandoc "Touren/Stadtrundgänge/Maastricht - Altstadt Highlights.md" -o "Maastricht-Stadtrundgang.pdf"
+pandoc "Stadtrundgänge/Maastricht - Altstadt Highlights.md" -o "Maastricht-Stadtrundgang.pdf"
 ```
 
 ### **Alternative: Im Browser als PDF speichern**

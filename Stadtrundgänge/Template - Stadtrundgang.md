@@ -31,7 +31,7 @@ modified: 2026-05-27
 
 Excalidraw-Routenskizze:
 
-![[Touren/Stadtrundgänge/Excalidraw/[Stadtkürzel]-Route.excalidraw.md]]
+![[Stadtrundgänge/Excalidraw/[Stadtkürzel]-Route.excalidraw.md]]
 
 *(Zeichnung nach Bedarf erstellen)*
 

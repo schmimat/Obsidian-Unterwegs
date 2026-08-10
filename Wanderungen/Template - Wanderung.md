@@ -32,7 +32,7 @@ modified: 2026-05-27
 
 Excalidraw-Routen-Zeichnung:
 
-![[Touren/Wanderungen/Excalidraw/[Routenname].excalidraw.md]]
+![[Wanderungen/Excalidraw/[Routenname].excalidraw.md]]
 
 *(Zeichnung nach Bedarf erstellen)*
 

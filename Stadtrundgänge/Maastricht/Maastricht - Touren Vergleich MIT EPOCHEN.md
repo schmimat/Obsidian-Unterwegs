@@ -66,7 +66,7 @@ source: "Claudian - Obsidian Vault"
 
 **Ideal für:** Mittelalter-Liebhaber & Erstbesucher  
 **Nicht enthalten:** Museen, moderne Kunst, Kriegsbunker  
-**👉 Datei:** [[Touren/Stadtrundgänge/Maastricht - Kurztour (2-3h) - mit Epochen]]
+**👉 Datei:** [[Stadtrundgänge/Maastricht - Kurztour (2-3h) - mit Epochen]]
 
 ---
 
@@ -97,7 +97,7 @@ source: "Claudian - Obsidian Vault"
 **Ideal für:** Balanced Mix zwischen Geschichte & Moderne  
 **Besonderheit:** Kriegsgeschichte-Fokus (WWII)  
 **Nicht enthalten:** Nimm North Caves, Naturhistorisches Museum  
-**👉 Datei:** [[Touren/Stadtrundgänge/Maastricht - Highlights (3-4h) - mit Epochen]]
+**👉 Datei:** [[Stadtrundgänge/Maastricht - Highlights (3-4h) - mit Epochen]]
 
 ---
 
@@ -124,7 +124,7 @@ source: "Claudian - Obsidian Vault"
 **Ideal für:** Kultur-Nerds & Paläontologie-Fans  
 **Besonderheit:** Komplettstes Maastricht-Erlebnis (Römerzeit bis heute!)  
 **Highlight:** Nimm North Caves (UNESCO + Kriegsgeschichte) ⭐⭐  
-**👉 Datei:** [[Touren/Stadtrundgänge/Maastricht - Langtour (5-6h) - mit Epochen]]
+**👉 Datei:** [[Stadtrundgänge/Maastricht - Langtour (5-6h) - mit Epochen]]
 
 ---
 
@@ -314,10 +314,10 @@ LANGTOUR (5,5–7h)
 
 ## 📥 Alle Dateien mit optimierter Frontmatter
 
-✅ [[Touren/Stadtrundgänge/Maastricht - Kurztour (2-3h) - mit Epochen]]  
-✅ [[Touren/Stadtrundgänge/Maastricht - Highlights (3-4h) - mit Epochen]]  
-✅ [[Touren/Stadtrundgänge/Maastricht - Langtour (5-6h) - mit Epochen]]  
-✅ [[Touren/Stadtrundgänge/Maastricht - Touren Vergleich MIT EPOCHEN]] (diese Datei)
+✅ [[Stadtrundgänge/Maastricht - Kurztour (2-3h) - mit Epochen]]  
+✅ [[Stadtrundgänge/Maastricht - Highlights (3-4h) - mit Epochen]]  
+✅ [[Stadtrundgänge/Maastricht - Langtour (5-6h) - mit Epochen]]  
+✅ [[Stadtrundgänge/Maastricht - Touren Vergleich MIT EPOCHEN]] (diese Datei)
 
 ---
 

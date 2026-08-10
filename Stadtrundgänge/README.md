@@ -18,25 +18,25 @@ modified: 2026-05-27
 
 | Tour | Dauer | Stationen | Highlights | GPX |
 |------|-------|-----------|-----------|-----|
-| [[Touren/Stadtrundgänge/Maastricht - Kurztour (2-3h)\|Kurztour]] | 2–3h | 8 | Altstadt + opt. Nimm Caves | [[Touren/Stadtrundgänge/GPX/Maastricht-Kurztour.gpx\|📥]] |
-| [[Touren/Stadtrundgänge/Maastricht - Langtour (5-6h)\|Langtour]] | 5–6h | 16 | Underground + Nimm + Bonnefanten | [[Touren/Stadtrundgänge/GPX/Maastricht-Langtour.gpx\|📥]] |
-| [[Touren/Stadtrundgänge/Maastricht - Altstadt Highlights\|Highlights (Classic)]] | 3,5h | 15 | Original Route | [[Touren/Stadtrundgänge/GPX/Maastricht-Route.gpx\|📥]] |
+| [[Stadtrundgänge/Maastricht - Kurztour (2-3h)\|Kurztour]] | 2–3h | 8 | Altstadt + opt. Nimm Caves | [[Stadtrundgänge/GPX/Maastricht-Kurztour.gpx\|📥]] |
+| [[Stadtrundgänge/Maastricht - Langtour (5-6h)\|Langtour]] | 5–6h | 16 | Underground + Nimm + Bonnefanten | [[Stadtrundgänge/GPX/Maastricht-Langtour.gpx\|📥]] |
+| [[Stadtrundgänge/Maastricht - Altstadt Highlights\|Highlights (Classic)]] | 3,5h | 15 | Original Route | [[Stadtrundgänge/GPX/Maastricht-Route.gpx\|📥]] |
 
 ---
 
 ## 📝 Template
 
-Nutze das [[Touren/Stadtrundgänge/Template - Stadtrundgang|Template]] als Startpunkt.
+Nutze das [[Stadtrundgänge/Template - Stadtrundgang|Template]] als Startpunkt.
 
 ---
 
 ## 🗺️ Excalidraw-Karten
 
-Stadtplan-Zeichnungen findest sich in: `Touren/Stadtrundgänge/Excalidraw/`
+Stadtplan-Zeichnungen findest sich in: `Stadtrundgänge/Excalidraw/`
 
 Einbinden mit:
 ```
-![[Touren/Stadtrundgänge/Excalidraw/Stadt-Route.excalidraw.md]]
+![[Stadtrundgänge/Excalidraw/Stadt-Route.excalidraw.md]]
 ```
 
 ---

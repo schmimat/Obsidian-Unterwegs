@@ -40,7 +40,7 @@ Nutze das [[Template - Wanderung|Template]] als Startpunkt für neue Wanderungen
 
 ## 🗺️ Excalidraw-Karten
 
-Routen-Zeichnungen findet sich in: `Touren/Wanderungen/Excalidraw/`
+Routen-Zeichnungen findet sich in: `Wanderungen/Excalidraw/`
 
 ---
 
