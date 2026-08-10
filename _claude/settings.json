@@ -1,0 +1,10 @@
+{
+  "language": "german",
+  "model": "sonnet",
+  "fastModePerSessionOptIn": true,
+  "permissions": {
+    "allow": [
+      "Edit(**/*.md)"
+    ]
+  }
+}
