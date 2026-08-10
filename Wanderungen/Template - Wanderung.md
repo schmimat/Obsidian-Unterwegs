@@ -1,13 +1,13 @@
-# [Tourenname einsetzen]
-
 ---
 tags:
   - wanderung
   - [region]
   - [jahreszeit oder schwierigkeit]
 created: 2026-05-27
-modified: 2026-05-27
+modified: 2026-08-10
 ---
+
+# [Tourenname einsetzen]
 
 > Kurzbeschreibung der Wanderung (1-2 Sätze).
 

@@ -1,5 +1,3 @@
-# 📍 GPX-Datei & Stadtplan – Anleitung
-
 ---
 tags:
   - gpx
@@ -7,8 +5,10 @@ tags:
   - maastricht
   - anleitung
 created: 2026-05-27
-modified: 2026-05-27
+modified: 2026-08-10
 ---
+
+# 📍 GPX-Datei & Stadtplan – Anleitung
 
 ## 📁 Verfügbare GPX-Dateien
 

@@ -1,5 +1,3 @@
-# 🏛️ Stadtrundgänge
-
 ---
 tags:
   - stadtrundgänge
@@ -7,8 +5,10 @@ tags:
   - kultur
   - architektur
 created: 2026-05-27
-modified: 2026-05-27
+modified: 2026-08-10
 ---
+
+# 🏛️ Stadtrundgänge
 
 > Kulturelle Stadtführungen und thematische Rundgänge durch Innenstädte.
 

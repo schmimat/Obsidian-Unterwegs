@@ -87,6 +87,24 @@ Bewusst **nicht** übernommen: `obsidian-git` (projektweit seit 2026-08-04 deakt
 
 **Hinweis:** Wie bei `Touren`/`Urlaub` fehlt auf diesem 203-Sync-Spiegel eine `.obsidian/community-plugins.json` (vermutlich von der Obsidian-Sync-Config ausgeschlossen, da reiner Client-UI-Zustand). Der Plugin-**Code** liegt bereit; ob die Plugins auf einem Client (z. B. ThinkPad X1) automatisch aktiviert sind oder dort einmalig manuell über Einstellungen → Community-Plugins eingeschaltet werden müssen, ist von hier aus nicht verifizierbar.
 
+## Frontmatter-Schema (bewusst uneinheitlich)
+
+Es gibt mehrere Frontmatter-Schemata nebeneinander — **keine Vereinheitlichung geplant**, jede Kategorie behält ihr eigenes Schema. Grund: Die Kategorien haben unterschiedliche Nutzungszwecke (Kern-Notiz vs. Index vs. Packliste vs. Tour-Detail mit Kartendaten); ein gemeinsames Schema würde entweder Felder erzwingen, die die meisten Kategorien nicht brauchen, oder auf kategoriespezifische Zusatzfelder verzichten.
+
+| Schema | Felder | Dateien |
+|--------|--------|---------|
+| Kern-Content | `tags`, `created`, `modified` (+ optional `location`) | `Übernachtungen/*`, `_Wohnwagen-Technik/*.md` + `Sackmarkise/Analyse – Sackmarkisen für Wohnwagen.md` |
+| Index (Archiv-Übersichten) | `title`, `tags`, `created`, `modified`, `type`, `sort_index` (+ optional `region`) | `Wanderungen/Archiv (OneDrive)/README.md`, `Rother-Übersicht.md`, `Komoot-Übersicht.md` |
+| Ressourcen/Anleitungen | `title`, `tags`, `created`, `modified`, `type` | `Ressourcen/GPX-Setup-Anleitung.md`, `Ressourcen/Tour-Template.md` |
+| Einpacklisten | `title`, `type`, `tags`, `reise`, `zeitraum`, `status`, `erstellt` (kein `created`/`modified`, sondern `erstellt`) | `Einpacklisten/*.md` |
+| Tour-Detail „mit Epochen" (reichhaltigstes Schema) | `title`, `tags`, `created`, `modified`, `difficulty`, `duration`, `distance`, `stations`, `epochen_focus`, `type`, `region`, `status`, `gpx_file`, `coordinates` | `Stadtrundgänge/Maastricht/Maastricht - Kurztour/Langtour/Highlights (…) - mit Epochen.md` |
+| Vergleichs-Übersicht | wie Tour-Detail, aber ohne `distance`/`stations`/`gpx_file`/`coordinates`, dafür `source` | `Stadtrundgänge/Maastricht/Maastricht - Touren Vergleich MIT EPOCHEN.md` |
+| Clippings (Web-Clipper-Standard, automatisch generiert) | `title`, `source`, `author`, `published`, `created`, `description`, `tags: [clippings]` | `Clippings/*.md`, `Stadtrundgänge/Maastricht/Gefundene Touren/*.md` |
+
+**Behobener Sonderfall (kein Schema-Problem, sondern ein Strukturfehler):** In `Wanderungen/README.md`, `Wanderungen/Template - Wanderung.md`, `Stadtrundgänge/README.md`, `Stadtrundgänge/Template - Stadtrundgang.md`, `Stadtrundgänge/Maastricht/GPX/README - GPX & Stadtplan Anleitung.md` stand vor dem `---`-Frontmatter-Block eine H1-Überschrift. Da YAML-Frontmatter in Obsidian nur erkannt wird, wenn `---` die allererste Zeile der Datei ist, wurde `tags`/`created`/`modified` in diesen fünf Dateien **nicht** als echtes Frontmatter geparst (kein Properties-Panel, nicht filterbar/suchbar über Obsidian-Properties) — reiner Fließtext, der wie Frontmatter aussah. Am 2026-08-10 gefixt: Frontmatter-Block an den Dateianfang verschoben, H1-Überschrift folgt jetzt danach; `modified` entsprechend aktualisiert. Herkunft geklärt: Der Bug stammt aus dem ursprünglichen Touren-Vault-Template (dort in 6 Dateien identisch vorhanden, inkl. `Touren/README.md`) und wurde beim Content-Merge 1:1 mitkopiert — kein Migrations-Artefakt.
+
+`_template/Seite.md` weicht zusätzlich in der Feldbenennung ab (`Reference link`, `Topics` groß/mit Leerzeichen statt kleingeschriebener snake_case-Felder wie überall sonst) — ebenfalls unangetastet gelassen.
+
 ## Wichtige Dateien & Ordner
 
 | Pfad | Inhalt |
@@ -108,4 +126,4 @@ Bewusst **nicht** übernommen: `obsidian-git` (projektweit seit 2026-08-04 deakt
 ---
 
 **Zuletzt aktualisiert:** 2026-08-10
-**Status:** Tasks #3, #4, #5, #6 abgeschlossen; offen: `Regionen/`-Konzept, Frontmatter-Vereinheitlichung, zwei vorbestehende tote Links in `Stadtrundgänge/README.md`, Mehrgeräte-Rollout (Task #7), Cross-Vault-Meta-Update (Task #8), Stilllegung Urlaub/Touren (Task #9)
+**Status:** Tasks #3, #4, #5, #6, #8 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich, kein Vereinheitlichungsbedarf), drei tote/fehlerhafte Links in `Stadtrundgänge/README.md` auf die „mit Epochen"-Dateien umgebogen + leere Stub-Datei gelöscht, Frontmatter-Strukturfehler (H1 vor `---`) in 5 README/Template-Dateien gefixt (Vault-weit gegen Knowledge Base/PKM-Dirigent geprüft, dort keine echten Treffer); offen: `Regionen/`-Konzept, Mehrgeräte-Rollout (Task #7), Stilllegung Urlaub/Touren (Task #9)

@@ -1,13 +1,13 @@
-# [Stadtrundgang-Name]
-
 ---
 tags:
   - stadtrundgang
   - [stadt]
   - [thema z.B. architektur, geschichte]
 created: 2026-05-27
-modified: 2026-05-27
+modified: 2026-08-10
 ---
+
+# [Stadtrundgang-Name]
 
 > Kurzbeschreibung des Stadtrundgangs (1-2 Sätze).
 

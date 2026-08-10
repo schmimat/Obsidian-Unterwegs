@@ -1,13 +1,13 @@
-# 🥾 Wanderungen
-
 ---
 tags:
   - wanderungen
   - touren
   - natur
 created: 2026-05-27
-modified: 2026-05-28
+modified: 2026-08-10
 ---
+
+# 🥾 Wanderungen
 
 > Mehrstündige bis mehrtägige Wanderrouten in Deutschland und Europa.
 
