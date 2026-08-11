@@ -1,7 +1,7 @@
 ---
 tags: [claude, workflow, meta]
 created: 2026-08-10
-modified: 2026-08-10
+modified: 2026-08-11
 ---
 
 # Claude – Änderungshistorie
@@ -65,5 +65,6 @@ _Noch keine abgeschlossene Woche._
 
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
+| 2026-08-11 | [[../CLAUDE.md]] | Plugins-Hinweis ergänzt: von X1 verifiziert, dass `.obsidian/plugins/` dort komplett fehlt (nicht nur Aktivierung offen) — betrifft aktiv genutzte `obsidian-map-view`-Einbettungen in 5 Dateien | Knowledge-Base-Session, User bat um Prüfung + Nachtrag nach Content-Migrations-Check | 🟡 offen |
 
 ---
