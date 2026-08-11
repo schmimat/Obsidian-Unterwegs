@@ -25,15 +25,15 @@ sort_index: 10000
 
 ## Bände im Archiv (336 Touren)
 
-| Band | Auflage | Touren | Kürzel | Übersicht |
-|------|---------|--------|--------|-----------|
-| 🇫🇷 Bretagne | 10. Auflage (Nr. 4302) | 51 | `Bret_xx` | [[Wanderungen/Archiv (OneDrive)/Rother-Bretagne-Übersicht]] |
-| 🇮🇹 Cinque Terre & Ligurien | 6. Auflage (Nr. 2573) | 49 | `CinTe_xx` | [[Wanderungen/Archiv (OneDrive)/Rother-CinqueTerre-Übersicht]] |
-| 🇩🇰 Dänemark – Jütland | 5. Auflage (Nr. 4639) | 52 | `DAN_xx` | [[Wanderungen/Archiv (OneDrive)/Rother-Daenemark-Übersicht]] |
-| 🇮🇹 Golf von Neapel | 8. Auflage (Nr. 4853) | 57 | `Neapel_xx` | [[Wanderungen/Archiv (OneDrive)/Rother-Neapel-Übersicht]] |
-| 🇪🇸 Mallorca | 21. Auflage (Nr. 4591) | 77 | `Mal_xx` | [[Wanderungen/Archiv (OneDrive)/Rother-Mallorca-Übersicht]] |
-| 🇫🇷 Normandie | 5. Auflage (Nr. 4637) | 50 | `Norm_xx` | [[Wanderungen/Archiv (OneDrive)/Rother-Normandie-Übersicht]] |
-| **Gesamt** | | **336** | | |
+| Band                         | Auflage                | Touren  | Kürzel      | Übersicht                                                      |
+| ---------------------------- | ---------------------- | ------- | ----------- | -------------------------------------------------------------- |
+| 🇫🇷 Bretagne                | 10. Auflage (Nr. 4302) | 51      | `Bret_xx`   | [[Wanderungen/Archiv (OneDrive)/Rother-Bretagne-Übersicht]]    |
+| 🇮🇹 Cinque Terre & Ligurien | 6. Auflage (Nr. 2573)  | 49      | `CinTe_xx`  | [[Wanderungen/Archiv (OneDrive)/Rother-CinqueTerre-Übersicht]] |
+| 🇩🇰 Dänemark – Jütland      | 5. Auflage (Nr. 4639)  | 52      | `DAN_xx`    | [[Wanderungen/Archiv (OneDrive)/Rother-Daenemark-Übersicht]]   |
+| 🇮🇹 Golf von Neapel         | 8. Auflage (Nr. 4853)  | 57      | `Neapel_xx` | [[Wanderungen/Archiv (OneDrive)/Rother-Neapel-Übersicht]]      |
+| 🇪🇸 Mallorca                | 21. Auflage (Nr. 4591) | 77      | `Mal_xx`    | [[Wanderungen/Archiv (OneDrive)/Rother-Mallorca-Übersicht]]    |
+| 🇫🇷 Normandie               | 5. Auflage (Nr. 4637)  | 50      | `Norm_xx`   | [[Wanderungen/Archiv (OneDrive)/Rother-Normandie-Übersicht]]   |
+| **Gesamt**                   |                        | **336** |             |                                                                |
 
 ---
 
