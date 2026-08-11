@@ -65,6 +65,8 @@ _Noch keine abgeschlossene Woche._
 
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
-| 2026-08-11 | [[../CLAUDE.md]] | Plugins-Hinweis ergänzt: von X1 verifiziert, dass `.obsidian/plugins/` dort komplett fehlt (nicht nur Aktivierung offen) — betrifft aktiv genutzte `obsidian-map-view`-Einbettungen in 5 Dateien | Knowledge-Base-Session, User bat um Prüfung + Nachtrag nach Content-Migrations-Check | 🟡 offen |
+| 2026-08-11 | [[../CLAUDE.md]] | Plugins-Abschnitt aktualisiert: Fehlender Plugin-Code auf X1 gefunden, Root Cause geklärt (`community-plugin`-Kategorie fehlte seit Erstinstallation in `ob sync-config` auf 201/203) und per Live-Fix auf beiden Containern behoben — X1 hat jetzt alle 12 Plugin-Ordner lokal, `Fully synced` verifiziert | Knowledge-Base-Session, User bat um Prüfung + Nachtrag, dann nach Screenshot um Config-Check auf 201/203 „siehe auch alle andere Vaults" → Fix auf alle 7 Vaults ausgeweitet | 🟢 bestätigt |
+| 2026-08-11 | [[../.obsidian/community-plugins.json]] (kein `.md`), [[../CLAUDE.md]] | 11 von 12 Plugins auf X1 aktiviert (`community-plugins.json` geschrieben + Obsidian komplett neu gestartet, User bestätigte Neustart); `settings-search` als leerer/unvollständiger Plugin-Ordner auf 203 entdeckt | User-Auftrag „Plugins auf X1 unter Community-Plugins aktivieren" | 🟢 bestätigt |
+| 2026-08-11 | [[../CLAUDE.md]] (Plugin-Tabelle + Root-Cause-Absatz) | Zusatzbefund per User-Screenshot: `settings-search` v1.3.10 vault-übergreifend inkompatibel mit Obsidian 1.13.6 (Update durch vorherigen Neustart ausgelöst) — betraf `Touren`/`Knowledge Base`, nicht direkt `Unterwegs` (hier nie vollständig installiert). Auf User-Entscheidung „überall deinstallieren" hin in `Touren`/`Knowledge Base` entfernt (nicht in diesem Vault, da hier ohnehin nicht funktionsfähig vorhanden); Tabelle hier bereinigt | User-Auftrag „Plugin überall deinstallieren" | 🟢 bestätigt |
 
 ---
