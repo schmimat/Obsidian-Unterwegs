@@ -22,10 +22,10 @@ sort_index: 1000
 
 | Sammlung | Touren | Region |
 |----------|--------|--------|
-| [[Wanderungen/Archiv (OneDrive)/Einzeltouren-Übersicht\|🇩🇪 Einzeltouren]] | 41 | Deutschland, Mallorca, Bretagne, Dänemark, Belgien, Niederlande, Eifel |
-| [[Wanderungen/Archiv (OneDrive)/Komoot-Übersicht\|🎽 Komoot]] | 25 | Kroatien, Rügen, Dänemark, Österreich, Frankreich, Mallorca |
-| [[Wanderungen/Archiv (OneDrive)/Vergessene-Pfade-Übersicht\|🥾 Vergessene Pfade Fränkische Schweiz]] | 41 | Fränkische Schweiz |
-| [[Wanderungen/Archiv (OneDrive)/Rother-Übersicht\|📖 Rother Wanderführer]] | 336 | Bretagne, Cinque Terre, Dänemark, Neapel, Mallorca, Normandie |
+| [[Wanderungen/Einzeltouren-Übersicht\|🇩🇪 Einzeltouren]] | 41 | Deutschland, Mallorca, Bretagne, Dänemark, Belgien, Niederlande, Eifel |
+| [[Wanderungen/Komoot-Übersicht\|🎽 Komoot]] | 25 | Kroatien, Rügen, Dänemark, Österreich, Frankreich, Mallorca |
+| [[Wanderungen/Vergessene-Pfade-Übersicht\|🥾 Vergessene Pfade Fränkische Schweiz]] | 41 | Fränkische Schweiz |
+| [[Wanderungen/Rother-Übersicht\|📖 Rother Wanderführer]] | 336 | Bretagne, Cinque Terre, Dänemark, Neapel, Mallorca, Normandie |
 | **Gesamt** | **443** | |
 
 ---
@@ -34,29 +34,29 @@ sort_index: 1000
 
 ### 🇩🇪 Einzeltouren (41)
 Persönlich gespeicherte Touren – vorwiegend Bayern, Harz, Thüringen, Alpen und einzelne europäische Ausflüge (Mallorca, Bretagne, Dänemark, Belgien, Niederlande, Eifel).
-→ [[Wanderungen/Archiv (OneDrive)/Einzeltouren-Übersicht]]
+→ [[Wanderungen/Einzeltouren-Übersicht]]
 
 ### 🎽 Komoot (25)
 Touren aus der Komoot-App – internationale Sammlung aus Kroatien, Rügen, Dänemark, Österreich, Frankreich, Mallorca u.a.
-→ [[Wanderungen/Archiv (OneDrive)/Komoot-Übersicht]]
+→ [[Wanderungen/Komoot-Übersicht]]
 
 ### 🥾 Vergessene Pfade Fränkische Schweiz (41)
 Touren 1–33 (inkl. Varianten) aus dem Tourenführer „Vergessene Pfade Fränkische Schweiz" (Esterl Verlag, Nr. 5205).
-→ [[Wanderungen/Archiv (OneDrive)/Vergessene-Pfade-Übersicht]]
+→ [[Wanderungen/Vergessene-Pfade-Übersicht]]
 
 ### 📖 Rother Wanderführer (336)
 Sechs komplette Rother-GPS-Sammlungen:
 
 | Band | Touren | Übersicht |
 |------|--------|-----------|
-| 🇫🇷 Bretagne (10. Aufl.) | 51 | [[Wanderungen/Archiv (OneDrive)/Rother-Bretagne-Übersicht]] |
-| 🇮🇹 Cinque Terre (6. Aufl.) | 49 | [[Wanderungen/Archiv (OneDrive)/Rother-CinqueTerre-Übersicht]] |
-| 🇩🇰 Dänemark – Jütland (5. Aufl.) | 52 | [[Wanderungen/Archiv (OneDrive)/Rother-Daenemark-Übersicht]] |
-| 🇮🇹 Golf von Neapel (8. Aufl.) | 57 | [[Wanderungen/Archiv (OneDrive)/Rother-Neapel-Übersicht]] |
-| 🇪🇸 Mallorca (21. Aufl.) | 77 | [[Wanderungen/Archiv (OneDrive)/Rother-Mallorca-Übersicht]] |
-| 🇫🇷 Normandie (5. Aufl.) | 50 | [[Wanderungen/Archiv (OneDrive)/Rother-Normandie-Übersicht]] |
+| 🇫🇷 Bretagne (10. Aufl.) | 51 | [[Wanderungen/Rother-Bretagne-Übersicht]] |
+| 🇮🇹 Cinque Terre (6. Aufl.) | 49 | [[Wanderungen/Rother-CinqueTerre-Übersicht]] |
+| 🇩🇰 Dänemark – Jütland (5. Aufl.) | 52 | [[Wanderungen/Rother-Daenemark-Übersicht]] |
+| 🇮🇹 Golf von Neapel (8. Aufl.) | 57 | [[Wanderungen/Rother-Neapel-Übersicht]] |
+| 🇪🇸 Mallorca (21. Aufl.) | 77 | [[Wanderungen/Rother-Mallorca-Übersicht]] |
+| 🇫🇷 Normandie (5. Aufl.) | 50 | [[Wanderungen/Rother-Normandie-Übersicht]] |
 
-→ [[Wanderungen/Archiv (OneDrive)/Rother-Übersicht]]
+→ [[Wanderungen/Rother-Übersicht]]
 
 ---
 

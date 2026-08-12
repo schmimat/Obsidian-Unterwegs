@@ -38,12 +38,12 @@ Zentrale Anlaufstelle für Dokumentation, Templates und Verwaltungsdateien des *
 
 ## 🎯 Schnell-Navigation
 
-### Touren-Archiv (388 GPX-Dateien)
-- **[[../Wanderungen/Archiv (OneDrive)/README|Archiv-Übersicht]]** — Alle 388 importierten Touren
-- **[[../Wanderungen/Archiv (OneDrive)/Einzeltouren-Übersicht|🇩🇪 Einzeltouren]]** — 36 deutsche Touren
-- **[[../Wanderungen/Archiv (OneDrive)/Komoot-Übersicht|🎽 Komoot]]** — 25 internationale Touren
-- **[[../Wanderungen/Archiv (OneDrive)/Vergessene-Pfade-Übersicht|🥾 Vergessene Pfade]]** — 41 Fränkische Schweiz
-- **[[../Wanderungen/Archiv (OneDrive)/Rother-Übersicht|📖 Rother Wanderführer]]** — 286 Touren in 5 Bänden
+### Touren-Archiv (438 GPX-Dateien)
+- **[[../Wanderungen/Touren-Archiv - Gesamtübersicht|Archiv-Übersicht]]** — Alle 438 importierten Touren
+- **[[../Wanderungen/Einzeltouren-Übersicht|🇩🇪 Einzeltouren]]** — 36 deutsche Touren
+- **[[../Wanderungen/Komoot-Übersicht|🎽 Komoot]]** — 25 internationale Touren
+- **[[../Wanderungen/Vergessene-Pfade-Übersicht|🥾 Vergessene Pfade]]** — 41 Fränkische Schweiz
+- **[[../Wanderungen/Rother-Übersicht|📖 Rother Wanderführer]]** — 336 Touren in 6 Bänden
 
 ### Aktiv dokumentierte Touren
 - **[[../Stadtrundgänge/Maastricht|Maastricht, Niederlande]]** — 3 Stadtrundgänge (2–7 Std.)

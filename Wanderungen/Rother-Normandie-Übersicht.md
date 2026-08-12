@@ -87,9 +87,9 @@ sort_index: 10600
 
 ## 🔗 Navigation
 
-- [[Wanderungen/Archiv (OneDrive)/Rother-Übersicht|↑ Rother Wanderführer – Übersicht]]
-- [[Wanderungen/Archiv (OneDrive)/README|↑↑ Archiv-Übersicht]]
+- [[Wanderungen/Rother-Übersicht|↑ Rother Wanderführer – Übersicht]]
+- [[Wanderungen/Touren-Archiv - Gesamtübersicht|↑↑ Archiv-Übersicht]]
 
 ---
 
-*GPX-Dateien liegen in: `Wanderungen/Archiv (OneDrive)/Rother Wanderführer/Normandie-05.-Auflage-4637/`*
+*GPX-Dateien liegen in: `Wanderungen/Rother Wanderführer/Normandie-05.-Auflage-4637/`*

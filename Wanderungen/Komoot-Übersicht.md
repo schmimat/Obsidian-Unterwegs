@@ -72,9 +72,9 @@ sort_index: 3000
 
 ## 🔗 Navigation
 
-- [[Wanderungen/Archiv (OneDrive)/README|↑ Archiv-Übersicht]]
+- [[Wanderungen/Touren-Archiv - Gesamtübersicht|↑ Archiv-Übersicht]]
 - [[Wanderungen/README|↑↑ Wanderungen]]
 
 ---
 
-*GPX-Dateien liegen in: `Wanderungen/Archiv (OneDrive)/Komoot/`*
+*GPX-Dateien liegen in: `Wanderungen/Komoot/`*

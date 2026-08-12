@@ -84,9 +84,9 @@ sort_index: 2000
 
 ## 🔗 Navigation
 
-- [[Wanderungen/Archiv (OneDrive)/README|↑ Archiv-Übersicht]]
+- [[Wanderungen/Touren-Archiv - Gesamtübersicht|↑ Archiv-Übersicht]]
 - [[Wanderungen/README|↑↑ Wanderungen]]
 
 ---
 
-*GPX-Dateien liegen in: `Wanderungen/Archiv (OneDrive)/Einzeltouren/`*
+*GPX-Dateien liegen in: `Wanderungen/Einzeltouren/`*

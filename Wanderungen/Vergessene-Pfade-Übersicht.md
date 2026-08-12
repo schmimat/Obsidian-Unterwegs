@@ -80,9 +80,9 @@ Die Tourenbezeichnungen (Tour 01–33) entsprechen den Kapiteln im Buch. Für To
 
 ## 🔗 Navigation
 
-- [[Wanderungen/Archiv (OneDrive)/README|↑ Archiv-Übersicht]]
+- [[Wanderungen/Touren-Archiv - Gesamtübersicht|↑ Archiv-Übersicht]]
 - [[Wanderungen/README|↑↑ Wanderungen]]
 
 ---
 
-*GPX-Dateien liegen in: `Wanderungen/Archiv (OneDrive)/Vergessene Pfade Fränkische Schweiz/`*
+*GPX-Dateien liegen in: `Wanderungen/Vergessene Pfade Fränkische Schweiz/`*

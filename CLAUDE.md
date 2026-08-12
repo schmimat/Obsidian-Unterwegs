@@ -107,7 +107,7 @@ Es gibt mehrere Frontmatter-Schemata nebeneinander — **keine Vereinheitlichung
 | Schema | Felder | Dateien |
 |--------|--------|---------|
 | Kern-Content | `tags`, `created`, `modified` (+ optional `location`) | `Übernachtungen/*`, `_Wohnwagen-Technik/*.md` + `Sackmarkise/Analyse – Sackmarkisen für Wohnwagen.md` |
-| Index (Archiv-Übersichten) | `title`, `tags`, `created`, `modified`, `type`, `sort_index` (+ optional `region`) | `Wanderungen/Archiv (OneDrive)/README.md`, `Rother-Übersicht.md`, `Komoot-Übersicht.md` |
+| Index (Archiv-Übersichten) | `title`, `tags`, `created`, `modified`, `type`, `sort_index` (+ optional `region`) | `Wanderungen/Touren-Archiv - Gesamtübersicht.md`, `Rother-Übersicht.md`, `Komoot-Übersicht.md` |
 | Ressourcen/Anleitungen | `title`, `tags`, `created`, `modified`, `type` | `Ressourcen/GPX-Setup-Anleitung.md`, `Ressourcen/Tour-Template.md` |
 | Einpacklisten | `title`, `type`, `tags`, `reise`, `zeitraum`, `status`, `erstellt` (kein `created`/`modified`, sondern `erstellt`) | `Einpacklisten/*.md` |
 | Tour-Detail „mit Epochen" (reichhaltigstes Schema) | `title`, `tags`, `created`, `modified`, `difficulty`, `duration`, `distance`, `stations`, `epochen_focus`, `type`, `region`, `status`, `gpx_file`, `coordinates` | `Stadtrundgänge/Maastricht/Maastricht - Kurztour/Langtour/Highlights (…) - mit Epochen.md` |

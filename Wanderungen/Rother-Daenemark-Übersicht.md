@@ -90,5 +90,5 @@ sort_index: 10300
 
 ## 🔗 Navigation
 
-- [[Wanderungen/Archiv (OneDrive)/Rother-Übersicht|↑ Rother Wanderführer]]
-- [[Wanderungen/Archiv (OneDrive)/README|↑↑ Archiv-Übersicht]]
+- [[Wanderungen/Rother-Übersicht|↑ Rother Wanderführer]]
+- [[Wanderungen/Touren-Archiv - Gesamtübersicht|↑↑ Archiv-Übersicht]]

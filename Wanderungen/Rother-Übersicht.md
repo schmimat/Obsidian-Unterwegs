@@ -27,12 +27,12 @@ sort_index: 10000
 
 | Band                         | Auflage                | Touren  | Kürzel      | Übersicht                                                      |
 | ---------------------------- | ---------------------- | ------- | ----------- | -------------------------------------------------------------- |
-| 🇫🇷 Bretagne                | 10. Auflage (Nr. 4302) | 51      | `Bret_xx`   | [[Wanderungen/Archiv (OneDrive)/Rother-Bretagne-Übersicht]]    |
-| 🇮🇹 Cinque Terre & Ligurien | 6. Auflage (Nr. 2573)  | 49      | `CinTe_xx`  | [[Wanderungen/Archiv (OneDrive)/Rother-CinqueTerre-Übersicht]] |
-| 🇩🇰 Dänemark – Jütland      | 5. Auflage (Nr. 4639)  | 52      | `DAN_xx`    | [[Wanderungen/Archiv (OneDrive)/Rother-Daenemark-Übersicht]]   |
-| 🇮🇹 Golf von Neapel         | 8. Auflage (Nr. 4853)  | 57      | `Neapel_xx` | [[Wanderungen/Archiv (OneDrive)/Rother-Neapel-Übersicht]]      |
-| 🇪🇸 Mallorca                | 21. Auflage (Nr. 4591) | 77      | `Mal_xx`    | [[Wanderungen/Archiv (OneDrive)/Rother-Mallorca-Übersicht]]    |
-| 🇫🇷 Normandie               | 5. Auflage (Nr. 4637)  | 50      | `Norm_xx`   | [[Wanderungen/Archiv (OneDrive)/Rother-Normandie-Übersicht]]   |
+| 🇫🇷 Bretagne                | 10. Auflage (Nr. 4302) | 51      | `Bret_xx`   | [[Wanderungen/Rother-Bretagne-Übersicht]]    |
+| 🇮🇹 Cinque Terre & Ligurien | 6. Auflage (Nr. 2573)  | 49      | `CinTe_xx`  | [[Wanderungen/Rother-CinqueTerre-Übersicht]] |
+| 🇩🇰 Dänemark – Jütland      | 5. Auflage (Nr. 4639)  | 52      | `DAN_xx`    | [[Wanderungen/Rother-Daenemark-Übersicht]]   |
+| 🇮🇹 Golf von Neapel         | 8. Auflage (Nr. 4853)  | 57      | `Neapel_xx` | [[Wanderungen/Rother-Neapel-Übersicht]]      |
+| 🇪🇸 Mallorca                | 21. Auflage (Nr. 4591) | 77      | `Mal_xx`    | [[Wanderungen/Rother-Mallorca-Übersicht]]    |
+| 🇫🇷 Normandie               | 5. Auflage (Nr. 4637)  | 50      | `Norm_xx`   | [[Wanderungen/Rother-Normandie-Übersicht]]   |
 | **Gesamt**                   |                        | **336** |             |                                                                |
 
 ---
@@ -53,9 +53,9 @@ Rother Wanderführer/
 
 ## 🔗 Navigation
 
-- [[Wanderungen/Archiv (OneDrive)/README|↑ Archiv-Übersicht]]
+- [[Wanderungen/Touren-Archiv - Gesamtübersicht|↑ Archiv-Übersicht]]
 - [[Wanderungen/README|↑↑ Wanderungen]]
 
 ---
 
-*GPX-Dateien liegen in: `Wanderungen/Archiv (OneDrive)/Rother Wanderführer/`*
+*GPX-Dateien liegen in: `Wanderungen/Rother Wanderführer/`*
