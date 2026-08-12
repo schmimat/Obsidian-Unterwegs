@@ -7,7 +7,7 @@ tags:
   - archiv
   - gpx
 created: 2026-05-28
-modified: 2026-08-10
+modified: 2026-08-12
 type: Index
 region: Deutschland, Bayern, Harz, Thüringen, Alpen, Belgien, Niederlande
 sort_index: 2000

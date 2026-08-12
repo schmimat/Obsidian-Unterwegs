@@ -5,7 +5,7 @@ tags:
   - ressourcen
   - referenz
 created: 2026-05-28
-modified: 2026-05-28
+modified: 2026-08-12
 type: "Index"
 ---
 
@@ -140,10 +140,10 @@ Touren-Vault/
 | Metrik | Stand |
 |--------|-------|
 | 🏙️ Stadtrundgänge | 3 (Maastricht) |
-| 🏔️ Wanderungen (Archiv) | 388 GPX-Dateien |
-| 🗺️ GPX-Dateien gesamt | 391 (388 Archiv + 3 Maastricht) |
+| 🏔️ Wanderungen (Archiv) | 438 GPX-Dateien |
+| 🗺️ GPX-Dateien gesamt | 441 (438 Archiv + 3 Maastricht) |
 | 🌍 Regionen im Archiv | 🇩🇪🇫🇷🇮🇹🇪🇸🇩🇰🇭🇷🇦🇹 |
 
 ---
 
-*Zuletzt aktualisiert: 2026-05-28*
+*Zuletzt aktualisiert: 2026-08-12*

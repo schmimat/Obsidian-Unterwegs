@@ -9,7 +9,7 @@ tags:
   - franken
   - bayern
 created: 2026-05-28
-modified: 2026-05-28
+modified: 2026-08-12
 type: Index
 region: Fränkische Schweiz, Bayern
 sort_index: 2001

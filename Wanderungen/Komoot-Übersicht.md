@@ -11,7 +11,7 @@ tags:
   - österreich
   - mallorca
 created: 2026-05-28
-modified: 2026-05-28
+modified: 2026-08-12
 type: Index
 region: Europa
 sort_index: 3000
