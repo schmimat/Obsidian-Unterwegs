@@ -110,7 +110,7 @@
     }
   ],
   "mapControlsSections": {
-    "filtersDisplayed": false,
+    "filtersDisplayed": true,
     "viewDisplayed": false,
     "linksDisplayed": false,
     "presetsDisplayed": false,
@@ -121,7 +121,7 @@
   "maxClusterRadiusPixels": 25,
   "searchProvider": "osm",
   "osmUser": "schmidl.matthias@t-online.de",
-  "searchDelayMs": 250,
+  "searchDelayMs": 200,
   "geocodingApiKey": "",
   "useGooglePlacesNew2025": false,
   "googlePlacesDataFields": "",
@@ -158,6 +158,6 @@
   "cacheAllTiles": true,
   "offlineMaxTileAgeMonths": 6,
   "offlineMaxStorageGb": 2,
-  "loadLayersAhead": true,
+  "loadLayersAhead": false,
   "handleGeoJsonCodeBlocks": true
 }
