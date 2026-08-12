@@ -1,24 +1,31 @@
 ---
-title: "Rund um Kornelimünster"
-source: "https://www.outdooractive.com/de/route/wanderung/eifel/rund-um-kornelimuenster/106255890/#caml=a4x,10u53m,8e32zk,0,0&dmdtab=oax-tab2"
+title: Rund um Kornelimünster
+source: https://www.outdooractive.com/de/route/wanderung/eifel/rund-um-kornelimuenster/106255890/#caml=a4x,10u53m,8e32zk,0,0&dmdtab=oax-tab2
 author:
 published: 2016-04-24
 created: 2026-05-29
-modified: 2026-05-29
-description: "Die Rundtour mit phantastischen weiten Blicken in die Eifel und Teilen von Aachen, führt durch Felder und Wiesen, entlang der Inde sowie durch das Frankenwäldchen und Klauserwäldchen."
-gpx_file: "Archiv (OneDrive)/Einzeltouren/t106255890_rund um kornelimuenster.gpx"
-region: "Eifel, Aachen, Stolberg"
-difficulty: "⭐ Sehr leicht"
-duration: "2:15 h"
-distance: "9,2 km"
+modified: 2026-08-12
+description: Die Rundtour mit phantastischen weiten Blicken in die Eifel und Teilen von Aachen, führt durch Felder und Wiesen, entlang der Inde sowie durch das Frankenwäldchen und Klauserwäldchen.
+gpx_file: Archiv (OneDrive)/Einzeltouren/t106255890_rund um kornelimuenster.gpx
+region: Eifel, Aachen, Stolberg
+difficulty: ⭐ Sehr leicht
+duration: 2:15 h
+distance: 9,2 km
 tags:
-  - "clippings"
-  - "einzeltouren"
-  - "eifel"
+  - clippings
+  - einzeltouren
+  - eifel
+feature: thumbnails/external/96e8846abb8bd20cd436083fc0b6cb22.jpg
+thumbnail: thumbnails/resized/39b6972cae2d2d5ed7b5b6c177c2aa45_86cf658e.webp
 ---
 ## 📍 Tour-Info
 
 - **GPX-Datei**: [[Archiv (OneDrive)/Einzeltouren/t106255890_rund um kornelimuenster.gpx|Rund um Kornelimünster GPX]]
+
+```mapview
+{"query": "path:\"kornelimuenster.gpx\"", "autoFit": true}
+```
+
 - **Länge**: 9,2 km
 - **Dauer**: 2:15 h
 - **Schwierigkeit**: ⭐ Sehr leicht

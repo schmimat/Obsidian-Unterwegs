@@ -1,7 +1,7 @@
 ---
 tags: [claude, workflow, meta]
 created: 2026-08-10
-modified: 2026-08-11
+modified: 2026-08-12
 ---
 
 # Claude – Änderungshistorie
@@ -65,6 +65,9 @@ _Noch keine abgeschlossene Woche._
 
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
+| 2026-08-12 | [[../Ressourcen/GPX-Setup-Anleitung]], [[../Ressourcen/GPX-Verwaltung]] | Falsche `mapview`-Codeblock-Syntax korrigiert: `{"geoDataUrl": "..."}`/`{"coordinates": [...], "zoom": ...}` existieren im Map-View-Plugin nicht (im Quellcode verifiziert, `src/main.ts`/`src/mapState.ts` — echte Felder sind `query`/`mapZoom`/`mapCenter`/`autoFit`, GPX-Datei über `path:`-Query-Operator ansprechen) | User fragte, warum ein GPX-Wikilink auf Android die Datei statt der Karte öffnet — Recherche ergab: keine Notiz im Vault hatte je einen funktionierenden Embed, weil die dokumentierte Syntax nie existiert hat | 🟡 offen |
+| 2026-08-12 | [[../Stadtrundgänge/Maastricht/Maastricht - Kurztour (2-3h) - mit Epochen]], [[../Stadtrundgänge/Maastricht/Maastricht - Langtour (5-6h) - mit Epochen]], [[../Clippings/Rund um Kornelimünster]] | Funktionierenden `mapview`-Codeblock (korrekte Syntax, s.o.) ergänzt — Langtour hatte zuvor gar keinen GPX-Abschnitt im Fließtext, nur Frontmatter | Gleicher Kontext wie oben — Fix auf alle 3 Notizen mit tatsächlich vorhandener GPX-Datei ausgeweitet | 🟡 offen |
+| 2026-08-12 | [[../Stadtrundgänge/Maastricht/Maastricht - Highlights (3-4h) - mit Epochen]], [[../Ressourcen/GPX-Verwaltung]] | Toten Verweis auf nicht existierende `Maastricht-Route.gpx` entfernt: `gpx_file`-Frontmatter in der Highlights-Notiz gelöscht, stattdessen Platzhalter-Abschnitt „Route fehlt noch" (inerter Beispiel-Codeblock zum späteren Nachtragen) eingefügt; Tabellenzeile + Ordnerstruktur in `GPX-Verwaltung.md` auf „⏳ Route fehlt noch" korrigiert | User-Bestätigung „Route fehlt noch, Notiz und Tabelle bitte anpassen" | 🟡 offen |
 | 2026-08-11 | [[../CLAUDE.md]] | Plugins-Abschnitt aktualisiert: Fehlender Plugin-Code auf X1 gefunden, Root Cause geklärt (`community-plugin`-Kategorie fehlte seit Erstinstallation in `ob sync-config` auf 201/203) und per Live-Fix auf beiden Containern behoben — X1 hat jetzt alle 12 Plugin-Ordner lokal, `Fully synced` verifiziert | Knowledge-Base-Session, User bat um Prüfung + Nachtrag, dann nach Screenshot um Config-Check auf 201/203 „siehe auch alle andere Vaults" → Fix auf alle 7 Vaults ausgeweitet | 🟢 bestätigt |
 | 2026-08-11 | [[../.obsidian/community-plugins.json]] (kein `.md`), [[../CLAUDE.md]] | 11 von 12 Plugins auf X1 aktiviert (`community-plugins.json` geschrieben + Obsidian komplett neu gestartet, User bestätigte Neustart); `settings-search` als leerer/unvollständiger Plugin-Ordner auf 203 entdeckt | User-Auftrag „Plugins auf X1 unter Community-Plugins aktivieren" | 🟢 bestätigt |
 | 2026-08-11 | [[../CLAUDE.md]] (Status-Zeilen, Task #9 abgeschlossen) | Touren + Urlaub archiviert nach User-Bestätigung „Unterwegs ist verifiziert": Container-201-Kopien read-only + umbenannt, 203 bereinigt, beide GitHub-Repos vom User manuell archiviert (kein `gh`-CLI/Token verfügbar) — Task #9 vollständig abgeschlossen | User-Auftrag „archiviere Touren und Urlaub im Github und nur auf 201 als lokaler Ordner aber ro und mit verändertem Namen", Bestätigung „Erledigt, beide archiviert" | 🟢 bestätigt |

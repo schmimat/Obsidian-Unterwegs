@@ -119,7 +119,7 @@
   "mapControlsMinimized": false,
   "maxClusterRadiusPixels": 25,
   "searchProvider": "osm",
-  "osmUser": "",
+  "osmUser": "schmidl.matthias@t-online.de",
   "searchDelayMs": 250,
   "geocodingApiKey": "",
   "useGooglePlacesNew2025": false,

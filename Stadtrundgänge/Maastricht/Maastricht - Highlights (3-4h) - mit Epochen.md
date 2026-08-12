@@ -13,7 +13,7 @@ tags:
   - niederlande
   - reisen
 created: 2026-05-27
-modified: 2026-05-28
+modified: 2026-08-12
 difficulty: "⭐⭐ Mittel"
 duration: "3–4 Stunden"
 distance: "5,2 km"
@@ -22,13 +22,24 @@ epochen_focus: "🏰 60% Historisch | ⚔️ 13% Kriegsgeschichte | ✨ 7% Moder
 type: "Stadtrundgang (Balanced)"
 region: "Maastricht, Niederlande"
 status: "published"
-gpx_file: "GPX/Maastricht-Route.gpx"
 coordinates: "50.8503°N, 5.6875°E"
 ---
 
 # 🚶 Maastricht – Highlights Rundgang (3–4 Stunden)
 
 > Die mittlere Tour: 15 Sehenswürdigkeiten mit Balance zwischen Historisch & Modern – perfekt für einen Mittag oder Nachmittag.
+
+---
+
+## 🗺️ Route & GPX-Daten
+
+⏳ **Noch keine eigene GPX-Datei vorhanden** — bislang existieren nur die GPX-Tracks für Kurztour und Langtour im `GPX/`-Ordner. Sobald eine Route für diese Tour nachgereicht wird: als `GPX/Maastricht-Highlights.gpx` (oder ähnlich) im `GPX/`-Ordner ablegen, dann `gpx_file`-Feld im Frontmatter + folgenden Codeblock ergänzen:
+
+```markdown
+​```mapview
+{"query": "path:\"Maastricht-Highlights.gpx\"", "autoFit": true}
+​```
+```
 
 ---
 

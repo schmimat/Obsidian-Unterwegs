@@ -3,7 +3,7 @@ tags:
   - claude
   - projekt
 created: 2026-08-10
-modified: 2026-08-11
+modified: 2026-08-12
 ---
 
 # CLAUDE.md — Unterwegs-Vault
@@ -97,6 +97,8 @@ Bewusst **nicht** übernommen: `obsidian-git` (projektweit seit 2026-08-04 deakt
 7. Fehlt eines: über Community-Plugins → Durchsuchen manuell nachinstallieren.
 
 Heads-up: `drawio-editor` bietet auf Mobile nur Vorschau, kein Editieren (siehe [[Knowledge Base/Obsidian/Draw.io Plugins für Obsidian – Vergleich|Draw.io Plugins – Vergleich]]).
+
+**Behoben (2026-08-12) — GPX-Wikilinks öffneten auf Android die Datei statt der Karte:** Root Cause war kein Android-spezifisches Verhalten, sondern eine falsche `mapview`-Codeblock-Syntax in `Ressourcen/GPX-Setup-Anleitung.md`/`GPX-Verwaltung.md` (`{"geoDataUrl": "..."}`, `{"coordinates": [...]}`) — diese Felder existieren im Map-View-Plugin gar nicht (im Quellcode verifiziert: `src/main.ts`/`src/mapState.ts` kennen nur `query`/`mapZoom`/`mapCenter`/`autoFit`). Dadurch hatte **keine** Tour-Notiz im Vault je einen funktionierenden Embed — nur einen reinen Datei-Wikilink, den Obsidian mangels eigenem GPX-Viewer auf Android an die OS-„Öffnen mit"-Auswahl weiterreicht. Korrekte Syntax (GPX-Datei über den `path:`-Query-Operator, Teilstring genügt): `​```mapview\n{"query": "path:\"Dateiname.gpx\"", "autoFit": true}\n​```` — jetzt in beiden Ressourcen-Notizen sowie in den 3 Tour-Notizen mit tatsächlich vorhandener GPX-Datei (Kurztour, Langtour, `Clippings/Rund um Kornelimünster`) eingebaut. **Ergänzung (2026-08-12):** `Maastricht - Highlights (3-4h) - mit Epochen.md` referenzierte `GPX/Maastricht-Route.gpx` — diese Datei existiert im `GPX/`-Ordner nicht (nur `Maastricht-Kurztour.gpx` + `Maastricht-Langtour.gpx` sind vorhanden). Auf User-Bestätigung („Route fehlt noch, Notiz und Tabelle bitte anpassen") hin bereinigt: `gpx_file`-Frontmatter aus der Highlights-Notiz entfernt, dort stattdessen ein „⏳ Route fehlt noch"-Platzhalterabschnitt mit inertem Beispiel-Codeblock zum späteren Nachtragen; Tabellenzeile + Ordnerstruktur-Diagramm in `GPX-Verwaltung.md` ebenfalls auf „Route fehlt noch" korrigiert (vorher fälschlich „✅ Aktiv"). Damit haben jetzt alle drei Maastricht-Stadtrundgänge-Notizen einen konsistenten „Route & GPX-Daten"-Abschnitt — zwei mit funktionierendem Embed, einer als dokumentierte Lücke.
 
 ## Frontmatter-Schema (bewusst uneinheitlich)
 

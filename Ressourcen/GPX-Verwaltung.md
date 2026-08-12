@@ -7,7 +7,7 @@ tags:
   - download
   - navigation
 created: 2026-05-28
-modified: 2026-05-28
+modified: 2026-08-12
 type: "Referenz"
 ---
 
@@ -24,7 +24,7 @@ type: "Referenz"
 | Tour | Schwierigkeit | Dauer | Distanz | GPX-Datei | Status |
 |------|---------------|-------|---------|-----------|--------|
 | [[Stadtrundgänge/Maastricht/Maastricht - Kurztour (2-3h) - mit Epochen\|Kurztour]] | ⭐ Sehr leicht | 2–3 h | 2,5 km | [[Stadtrundgänge/Maastricht/GPX/Maastricht-Kurztour.gpx\|Download]] | ✅ Aktiv |
-| [[Stadtrundgänge/Maastricht/Maastricht - Highlights (3-4h) - mit Epochen\|Highlights]] | ⭐ Sehr leicht | 3–4 h | 4 km | [[Stadtrundgänge/Maastricht/GPX/Maastricht-Route.gpx\|Download]] | ✅ Aktiv |
+| [[Stadtrundgänge/Maastricht/Maastricht - Highlights (3-4h) - mit Epochen\|Highlights]] | ⭐ Sehr leicht | 3–4 h | 4 km | — | ⏳ Route fehlt noch |
 | [[Stadtrundgänge/Maastricht/Maastricht - Langtour (5-6h) - mit Epochen\|Langtour]] | ⭐⭐ Leicht | 5–6 h | 6 km | [[Stadtrundgänge/Maastricht/GPX/Maastricht-Langtour.gpx\|Download]] | ✅ Aktiv |
 
 ---
@@ -40,8 +40,8 @@ Vault-Root/
 │       ├── Maastricht - Langtour (5-6h) - mit Epochen.md
 │       └── GPX/
 │           ├── Maastricht-Kurztour.gpx
-│           ├── Maastricht-Route.gpx
 │           └── Maastricht-Langtour.gpx
+│           (Highlights-Route fehlt noch)
 └── Wanderungen/
     └── [struktur für Wanderungen folgt gleichem Schema]
 ```
@@ -60,13 +60,14 @@ Vault-Root/
 2. **GPX-Dateien in Notizen einbinden:**
    ```markdown
    ```mapview
-   {"geoDataUrl": "GPX/Maastricht-Kurztour.gpx"}
+   {"query": "path:\"Maastricht-Kurztour.gpx\"", "autoFit": true}
    ```
    ```
+   **Korrigiert (2026-08-12):** Nicht `{"geoDataUrl": "..."}` verwenden — dieses Feld gibt es im Plugin nicht (im Quellcode verifiziert, `src/main.ts`/`src/mapState.ts`). Der `mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit`; die GPX-Datei wird über den `path:`-Query-Operator angesprochen (Teilstring des Dateinamens genügt). Details: [[Ressourcen/GPX-Setup-Anleitung#✅ Schritt 1: Map View Plugin installieren|GPX-Setup-Anleitung]] Methode B.
 
 3. **Automatische Kartenanzeige:**
    - Notizen mit `coordinates` Frontmatter-Feld zeigen Kartenpins
-   - Notizen mit `gpx_file` Feld können Routen visualisieren
+   - GPX-Dateien werden als eigenständige „Pfad"-Objekte erkannt, sobald sie irgendwo im Vault liegen — das `gpx_file`-Frontmatter-Feld selbst hat für Map View keine Funktion, es dient hier nur als Referenz für uns Menschen/für den `path:`-Query oben
 
 ---
 

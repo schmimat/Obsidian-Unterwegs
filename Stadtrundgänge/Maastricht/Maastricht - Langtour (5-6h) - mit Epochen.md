@@ -15,7 +15,7 @@ tags:
   - niederlande
   - reisen
 created: 2026-05-27
-modified: 2026-05-28
+modified: 2026-08-12
 difficulty: "⭐⭐ Mittel (lange Dauer)"
 duration: "5,5–7 Stunden"
 distance: "7 km"
@@ -31,6 +31,16 @@ coordinates: "50.8503°N, 5.6875°E"
 # 🚶 Maastricht – Langtour (5,5–7 Stunden)
 
 > Die umfassende Tour für Kulturbegeisterte – 17 Stationen, ein Spaziergang durch 2.000 Jahre Geschichte.
+
+---
+
+## 🗺️ Route & GPX-Daten
+
+📥 **GPX-Datei herunterladen:** [[GPX/Maastricht-Langtour.gpx|Maastricht-Langtour.gpx]]
+
+```mapview
+{"query": "path:\"Maastricht-Langtour.gpx\"", "autoFit": true}
+```
 
 ---
 

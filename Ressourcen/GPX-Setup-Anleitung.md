@@ -7,7 +7,7 @@ tags:
   - kartendarstellung
   - navigation
 created: 2026-05-28
-modified: 2026-05-28
+modified: 2026-08-12
 type: "Anleitung"
 ---
 
@@ -74,20 +74,22 @@ Wenn du Map View installiert hast, kannst du die Route visualisieren:
 
 ```markdown
 ```mapview
-{"geoDataUrl": "Stadtrundgänge/Maastricht/GPX/Maastricht-Kurztour.gpx", "height": "400px"}
+{"query": "path:\"Maastricht-Kurztour.gpx\"", "autoFit": true}
 ```
 ```
 
-Diese Codeblock-Syntax zeigt die Route in der Notiz als interaktive Karte an.
+Diese Codeblock-Syntax zeigt die Route in der Notiz als interaktive Karte an. **Korrigiert (2026-08-12):** Frühere Version dieser Anleitung nutzte `{"geoDataUrl": "...", "height": "..."}` — dieses Schema **existiert im Map-View-Plugin nicht** (im Quellcode verifiziert: `src/main.ts` parst den `mapview`-Codeblock über `stateFromParsedUrl`, dessen einzige relevante Felder `query`/`mapZoom`/`mapCenter`/`autoFit` sind, siehe `src/mapState.ts`). `geoDataUrl` wurde von Map View schlicht ignoriert — der Codeblock hätte nie die gewünschte Route angezeigt, sondern höchstens die Standard-Query. Deshalb den GPX-Pfad immer über den `path:`-Query-Operator ansprechen (Teilstring genügt, siehe [[Ressourcen/GPX-Verwaltung#🔧 GPX mit Obsidian-Plugins anzeigen|GPX-Verwaltung]]).
 
 ### Methode C: Koordinaten-Pin
-Für einzelne Orte (ohne komplette Route):
+Für einzelne Orte (ohne komplette Route) — ebenfalls über `query`, hier mit dem `distancefrom`-Operator auf einen sehr kleinen Radius:
 
 ```markdown
 ```mapview
-{"coordinates": [50.8503, 5.6875], "zoom": 15}
+{"query": "distancefrom:50.8503,5.6875<50m", "mapZoom": 15}
 ```
 ```
+
+**Hinweis:** Ein reiner Koordinaten-Pin ohne zugehörige Notiz/Geolocation-Eintrag lässt sich mit Map View nicht direkt platzieren — die Query filtert immer vorhandene Marker (aus Frontmatter-`coordinates` oder Inline-Geolocations), zeigt aber keinen freischwebenden Punkt ohne Datenquelle an.
 
 ---
 

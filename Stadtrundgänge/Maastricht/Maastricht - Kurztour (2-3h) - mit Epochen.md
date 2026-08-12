@@ -12,7 +12,7 @@ tags:
   - niederlande
   - reisen
 created: 2026-05-27
-modified: 2026-05-28
+modified: 2026-08-12
 difficulty: "⭐ Sehr leicht"
 duration: "2–3 Stunden"
 distance: "2,5 km"
@@ -33,7 +33,11 @@ coordinates: "50.8503°N, 5.6875°E"
 
 ## 🗺️ Route & GPX-Daten
 
-📥 **GPX-Datei herunterladen:** [[GPX/Maastricht-Kurztour.gpx|Maastricht-Kurztour.gpx]] | In Map View anzeigen (Plugin erforderlich)
+📥 **GPX-Datei herunterladen:** [[GPX/Maastricht-Kurztour.gpx|Maastricht-Kurztour.gpx]]
+
+```mapview
+{"query": "path:\"Maastricht-Kurztour.gpx\"", "autoFit": true}
+```
 
 **Route-Übersicht:**
 - 🏁 Start: Sint Servaasbrug (50.8503°N, 5.6875°E)
