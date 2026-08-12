@@ -8,7 +8,7 @@ tags:
   - archiv
   - gpx
 created: 2026-05-28
-modified: 2026-05-28
+modified: 2026-08-12
 type: Index
 region: Bretagne, Frankreich
 sort_index: 10100
@@ -17,6 +17,14 @@ sort_index: 10100
 # 🇫🇷 Rother Bretagne – Übersicht
 
 > 51 GPS-Tracks aus dem Rother Wanderführer **Bretagne** (10. Auflage, Nr. 4302). Küstenwanderungen und Inlandtouren entlang der gesamten bretonischen Küste von Nord nach Süd.
+
+---
+
+## 🗺️ Übersichtskarte (alle 51 Touren)
+
+```mapview
+{"query": "path:\"Bret_\"", "autoFit": true}
+```
 
 ---
 
