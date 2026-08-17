@@ -5,75 +5,73 @@
  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
   <metadata>
-    <name>Le Havre – Stationen für Tourenplanung</name>
-    <desc>Wegpunkte der Sehenswuerdigkeiten in Le Havre, als Klick-Vorlage fuer BRouter-Web. Keine fertige Route. Koordinaten per Nominatim/Overpass aus OpenStreetMap geocodiert (Stand 2026-08-17), Quelle: OpenStreetMap contributors, ODbL 1.0.</desc>
+    <name>Le Havre – Perret-Wiederaufbau &amp; Impressionismus</name>
+    <desc>Rundgang 7,7 km, Start und Ziel am kostenlosen Parkplatz Bd Clemenceau, Abschluss im MuMa. Koordinaten per Nominatim/Overpass aus OpenStreetMap geocodiert (Stand 2026-08-17), Quelle: OpenStreetMap contributors, ODbL 1.0. Distanzen per BRouter, Profil hiking-mountain.</desc>
     <author>
       <name>Claudian - Obsidian Vault</name>
     </author>
     <time>2026-08-17T00:00:00Z</time>
   </metadata>
 
-  <!-- === Start === -->
+  <!-- === Rundgang: Start = Ziel === -->
 
   <wpt lat="49.48679" lon="0.09894">
-    <name>00 Parkplatz Bd Clemenceau (kostenlos)</name>
+    <name>00 Parkplatz Bd Clemenceau (START + ZIEL)</name>
     <desc>Kostenlose Laengsparkplaetze am Boulevard Clemenceau gegenueber dem Meer, ca. 350 m zum MuMa. An Schoenwettertagen ab spaetem Vormittag voll - frueh da sein. Ausweichen: Docks Vauban oder Espace Coty (kostenpflichtig).</desc>
     <sym>Parking Area</sym>
   </wpt>
 
-  <!-- === Pflichtprogramm (Laufreihenfolge) === -->
-
-  <wpt lat="49.48502" lon="0.10266">
-    <name>01 MuMa - Musee Malraux</name>
-    <desc>2 bd Clemenceau. Di/Mi/Fr 11-18, Do 11-22, Sa/So 11-19, Mo geschlossen. ca. 10 EUR, Kasse nur vor Ort.</desc>
-    <sym>Museum</sym>
-  </wpt>
-
   <wpt lat="49.48485" lon="0.10719">
-    <name>02 Catene de conteneurs</name>
-    <desc>Containerbogen von Vincent Ganivet, 2017. Quai de Southampton, ca. 330 m oestlich vom MuMa - liegt am Hafenbecken, nicht am Strand.</desc>
+    <name>01 Catene de conteneurs</name>
+    <desc>Containerbogen von Vincent Ganivet, 2017. Quai de Southampton - liegt am Hafenbecken, nicht am Strand.</desc>
     <sym>Scenic Area</sym>
   </wpt>
 
   <wpt lat="49.48693" lon="0.11277">
-    <name>03 Maison de l'Armateur</name>
+    <name>02 Maison de l'Armateur</name>
     <desc>3 quai de l'Ile, Quartier Saint-Francois. Reederhaus um 1790 mit oktogonalem Lichthof.</desc>
     <sym>Museum</sym>
   </wpt>
 
   <wpt lat="49.48700" lon="0.10835">
-    <name>04 Cathedrale Notre-Dame</name>
+    <name>03 Cathedrale Notre-Dame</name>
     <desc>Rue des Drapiers. Renaissance, einer der wenigen Kriegsueberlebenden der Innenstadt.</desc>
     <sym>Church</sym>
   </wpt>
 
   <wpt lat="49.49046" lon="0.10463">
-    <name>05 Les Halles Centrales</name>
+    <name>04 Les Halles Centrales</name>
     <desc>Rue Bernardin de Saint-Pierre. Markthallen - Mittagspause / Proviant.</desc>
     <sym>Shopping Center</sym>
   </wpt>
 
   <wpt lat="49.49095" lon="0.10123">
-    <name>06 Eglise Saint-Joseph</name>
+    <name>05 Eglise Saint-Joseph</name>
     <desc>130 bd Francois 1er. Perret, 107 m Betonturm als Lichtschacht, Glas von Marguerite Hure. Eintritt frei. Pflichtstation.</desc>
     <sym>Church</sym>
   </wpt>
 
   <wpt lat="49.49034" lon="0.10697">
-    <name>07 Le Volcan</name>
+    <name>06 Le Volcan</name>
     <desc>Place Oscar Niemeyer. Niemeyer, 1982. Mediathek im Petit Volcan oeffentlich zugaenglich und kostenlos.</desc>
     <sym>Building</sym>
   </wpt>
 
   <wpt lat="49.49179" lon="0.10757">
-    <name>08 Appartement temoin Perret</name>
+    <name>07 Appartement temoin Perret</name>
     <desc>Maison du Patrimoine / Atelier Perret, 181 rue de Paris. NUR mit Fuehrung, ca. 1 Std. August taeglich 10:00 / 11:00 / 14:30 / 15:30 / 16:30. Anmeldung 02 35 22 31 22.</desc>
     <sym>Museum</sym>
   </wpt>
 
   <wpt lat="49.49409" lon="0.10790">
-    <name>09 Hotel de Ville</name>
-    <desc>Place de l'Hotel de Ville. Perret-Rathaus mit Turm, Hauptplatz des Wiederaufbaus.</desc>
+    <name>08 Hotel de Ville</name>
+    <desc>Place de l'Hotel de Ville. Perret-Rathaus mit Turm, Hauptplatz und Achsenkreuz des Wiederaufbaus.</desc>
+    <sym>Building</sym>
+  </wpt>
+
+  <wpt lat="49.49326" lon="0.10591">
+    <name>09 Quartier Perret / Avenue Foch</name>
+    <desc>Das UNESCO-Welterbe selbst: das Ensemble, nicht die Einzelbauten. Avenue Foch als Prachtachse mit den Perret-Wohnbloecken - hier sieht man das Raster als Ganzes. Punkt liegt auf dem OSM-Strassensegment, einfach die Achse Richtung Westen ablaufen.</desc>
     <sym>Building</sym>
   </wpt>
 
@@ -95,60 +93,65 @@
     <sym>Restaurant</sym>
   </wpt>
 
+  <wpt lat="49.48502" lon="0.10266">
+    <name>13 MuMa - Musee Malraux (ABSCHLUSS)</name>
+    <desc>2 bd Clemenceau. Di/Mi/Fr 11-18, Do 11-22, Sa/So 11-19, Mo geschlossen. Letzter Einlass 15 Min. vor Schliessung. ca. 10 EUR, Kasse nur vor Ort. Danach 350 m zurueck zum Auto.</desc>
+    <sym>Museum</sym>
+  </wpt>
+
+  <!-- === Optionen, NICHT Teil der Route === -->
+
   <wpt lat="49.50439" lon="0.09390">
-    <name>13 Jardins Suspendus</name>
-    <desc>Festung des 19. Jh. auf der Klippe, Themengaerten + Gewaechshaeuser. Beste Aussicht ueber Stadt, Hafen und Seine-Muendung. Steiler Anstieg!</desc>
+    <name>OPT Jardins Suspendus</name>
+    <desc>Festung des 19. Jh. auf der Klippe, Themengaerten + Gewaechshaeuser. Beste Aussicht ueber Stadt, Hafen und Seine-Muendung, Blick nach Westen - spaetes Licht. Mit dem Auto hochfahren, ca. 10 Min. ueber Sanvic.</desc>
     <sym>Park</sym>
   </wpt>
 
-  <!-- === Parkplaetze oben an den Jardins Suspendus (Variante: hochfahren statt hochlaufen) === -->
-
   <wpt lat="49.50619" lon="0.09558">
-    <name>P2 Parking Jardins Suspendus Nord</name>
+    <name>OPT-P Parking Jardins Suspendus Nord</name>
     <desc>110 Plaetze, laut OSM gebuehrenfrei. Haupt-Parkplatz am Garteneingang.</desc>
     <sym>Parking Area</sym>
   </wpt>
 
   <wpt lat="49.50251" lon="0.09418">
-    <name>P3 Parking Jardins Suspendus Sud</name>
-    <desc>20 Plaetze, laut OSM gebuehrenfrei. Kleine Alternative, wenn Nord voll ist.</desc>
+    <name>OPT-P Parking Jardins Suspendus Sud</name>
+    <desc>20 Plaetze, laut OSM gebuehrenfrei. Alternative, wenn Nord voll ist.</desc>
     <sym>Parking Area</sym>
   </wpt>
 
-  <!-- === Optional, ca. 1,5 km oestlich - eigener Abstecher === -->
-
   <wpt lat="49.49020" lon="0.12954">
-    <name>14 Docks Vauban</name>
-    <desc>70 quai Frissard. Backsteinlagerhaus von 1846, heute Einkaufszentrum mit Kino.</desc>
+    <name>OPT Docks Vauban</name>
+    <desc>70 quai Frissard, ca. 1,5 km oestlich. Backsteinlagerhaus von 1846, heute Einkaufszentrum mit Kino.</desc>
     <sym>Shopping Center</sym>
   </wpt>
 
   <wpt lat="49.48716" lon="0.12716">
-    <name>15 Les Bains des Docks</name>
+    <name>OPT Les Bains des Docks</name>
     <desc>Quai de la Reunion. Badelandschaft von Jean Nouvel. Regentag-Option.</desc>
     <sym>Swimming Area</sym>
   </wpt>
 
-  <!-- Luftlinien-Track durch die Stationen 00-13 in Laufreihenfolge.
+  <!-- Luftlinien-Track durch die Stationen 00-13 zurueck zum Parkplatz.
        KEINE gerouteten Wege - nur damit Track-Loader (z.B. BRouter-Web) die Datei annehmen
        und als Orientierung anzeigen. Die echte Route in BRouter selbst klicken. -->
   <trk>
-    <name>Le Havre - Stationen 00-13 (Luftlinie, nur Orientierung)</name>
+    <name>Le Havre - Rundgang 00-13 (Luftlinie, nur Orientierung)</name>
     <trkseg>
       <trkpt lat="49.48679" lon="0.09894"><name>00 Parkplatz Bd Clemenceau</name></trkpt>
-      <trkpt lat="49.48502" lon="0.10266"><name>01 MuMa</name></trkpt>
-      <trkpt lat="49.48485" lon="0.10719"><name>02 Catene de conteneurs</name></trkpt>
-      <trkpt lat="49.48693" lon="0.11277"><name>03 Maison de l'Armateur</name></trkpt>
-      <trkpt lat="49.48700" lon="0.10835"><name>04 Cathedrale Notre-Dame</name></trkpt>
-      <trkpt lat="49.49046" lon="0.10463"><name>05 Les Halles Centrales</name></trkpt>
-      <trkpt lat="49.49095" lon="0.10123"><name>06 Eglise Saint-Joseph</name></trkpt>
-      <trkpt lat="49.49034" lon="0.10697"><name>07 Le Volcan</name></trkpt>
-      <trkpt lat="49.49179" lon="0.10757"><name>08 Appartement temoin Perret</name></trkpt>
-      <trkpt lat="49.49409" lon="0.10790"><name>09 Hotel de Ville</name></trkpt>
+      <trkpt lat="49.48485" lon="0.10719"><name>01 Catene de conteneurs</name></trkpt>
+      <trkpt lat="49.48693" lon="0.11277"><name>02 Maison de l'Armateur</name></trkpt>
+      <trkpt lat="49.48700" lon="0.10835"><name>03 Cathedrale Notre-Dame</name></trkpt>
+      <trkpt lat="49.49046" lon="0.10463"><name>04 Les Halles Centrales</name></trkpt>
+      <trkpt lat="49.49095" lon="0.10123"><name>05 Eglise Saint-Joseph</name></trkpt>
+      <trkpt lat="49.49034" lon="0.10697"><name>06 Le Volcan</name></trkpt>
+      <trkpt lat="49.49179" lon="0.10757"><name>07 Appartement temoin Perret</name></trkpt>
+      <trkpt lat="49.49409" lon="0.10790"><name>08 Hotel de Ville</name></trkpt>
+      <trkpt lat="49.49326" lon="0.10591"><name>09 Quartier Perret / Avenue Foch</name></trkpt>
       <trkpt lat="49.49367" lon="0.09776"><name>10 Porte Oceane</name></trkpt>
       <trkpt lat="49.49606" lon="0.09141"><name>11 Plage / Strandkabinen</name></trkpt>
       <trkpt lat="49.49501" lon="0.09324"><name>12 Victor by Milot</name></trkpt>
-      <trkpt lat="49.50439" lon="0.09390"><name>13 Jardins Suspendus</name></trkpt>
+      <trkpt lat="49.48502" lon="0.10266"><name>13 MuMa</name></trkpt>
+      <trkpt lat="49.48679" lon="0.09894"><name>00 Parkplatz (Ziel)</name></trkpt>
     </trkseg>
   </trk>
 
