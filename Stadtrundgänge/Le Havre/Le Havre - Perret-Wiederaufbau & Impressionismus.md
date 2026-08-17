@@ -15,7 +15,7 @@ created: 2026-08-17
 modified: 2026-08-17
 difficulty: ⭐ Sehr leicht (flach)
 duration: Ganzer Tag (mit Museen)
-distance: 7,7 km
+distance: 7,8 km
 stations: 15
 type: Stadtrundgang
 region: Le Havre, Normandie, Frankreich
@@ -36,22 +36,22 @@ thumbnail: thumbnails/resized/59e2c7fe3f54fe1719e3c6b5f580e1e5_86cf658e.webp
 
 | # | Station | Was | Zeit | Hinweis | 📍 |
 |---|---------|-----|------|---------|---|
-| **00** | **Parkplatz Bd Clemenceau** | Start **und** Ziel | — | Kostenlos, früh da sein | [📍](https://www.google.com/maps/place/Parkplatz%20Bd%20Clemenceau/@49.48679,0.09894,17z) |
-| 01 | Catène de conteneurs | Container-Kunstwerk, 2017 | 10 Min | Am Hafenbecken, nicht am Strand | [📍](https://www.google.com/maps/place/Cat%C3%A8ne%20de%20conteneurs/@49.48485,0.10719,17z) |
-| 02 | Maison de l'Armateur | Reederhaus um 1790 | 45 Min | Eines der wenigen Vorkriegsgebäude | [📍](https://www.google.com/maps/place/Maison%20de%20l%27Armateur/@49.48693,0.11277,17z) |
-| 03 | Pont Notre-Dame | Brücke am Bassin du Roy | 5 Min | Gründungsort Le Havres, 1517 | [📍](https://www.google.com/maps/place/Pont%20Notre-Dame/@49.48775,0.11099,17z) |
-| 04 | Cathédrale Notre-Dame | Renaissance | 15 Min | Kriegsüberlebende | [📍](https://www.google.com/maps/place/Cath%C3%A9drale%20Notre-Dame/@49.487,0.10835,17z) |
-| 05 | Les Halles Centrales | Markthallen | 30 Min | Mittagspause / Proviant | [📍](https://www.google.com/maps/place/Les%20Halles%20Centrales/@49.49046,0.10463,17z) |
-| 06 | **Église Saint-Joseph** ⭐ | Perrets Meisterwerk | 30 Min | Eintritt frei, Pflichtstation | [📍](https://www.google.com/maps/place/%C3%89glise%20Saint-Joseph/@49.49095,0.10123,17z) |
-| 07 | Le Volcan | Niemeyer, 1982 | 20 Min | Mediathek innen, kostenlos | [📍](https://www.google.com/maps/place/Le%20Volcan/@49.49034,0.10697,17z) |
-| 08 | **Appartement témoin Perret** ⭐ | Musterwohnung 1955 | 60 Min | **Nur mit Führung, anmelden!** | [📍](https://www.google.com/maps/place/Appartement%20t%C3%A9moin%20Perret/@49.49179,0.10757,17z) |
-| 09 | Hôtel de Ville | Perret-Rathaus | 15 Min | Hauptplatz des Wiederaufbaus | [📍](https://www.google.com/maps/place/H%C3%B4tel%20de%20Ville/@49.49409,0.1079,17z) |
-| 10 | **Quartier Perret / Avenue Foch** ⭐ | Das UNESCO-Ensemble | 30 Min | Achse ablaufen, nicht nur ansehen | [📍](https://www.google.com/maps/place/Avenue%20Foch/@49.49326,0.10591,17z) |
-| 11 | Porte Océane | Stadttor zum Meer | 10 Min | Abschluss der Avenue Foch | [📍](https://www.google.com/maps/place/Porte%20Oc%C3%A9ane/@49.49367,0.09776,17z) |
-| 12 | Plage / Strandkabinen | Kiesstrand, Promenade | 20 Min | | [📍](https://www.google.com/maps/place/Plage/@49.49606,0.09141,17z) |
-| 13 | Victor by Milot | Frites-Kultimbiss seit 1927 | 20 Min | Saisonbetrieb | [📍](https://www.google.com/maps/place/Victor%20by%20Milot/@49.49501,0.09324,17z) |
-| 14 | **MuMa – Musée Malraux** ⭐ | Impressionisten | 120 Min | **Mo geschlossen**, Do bis 22 Uhr | [📍](https://www.google.com/maps/place/MuMa/@49.48502,0.10266,17z) |
-| ↩ | zurück zum Auto | 350 m ab MuMa | 5 Min | | [📍](https://www.google.com/maps/place/Parkplatz%20Bd%20Clemenceau/@49.48679,0.09894,17z) |
+| **00** | **Parkplatz Bd Clemenceau** | Start **und** Ziel | — | Kostenlos, früh da sein | [📍](https://www.google.com/maps/search/?api=1&query=49.48679%2C0.09894) |
+| 01 | Catène de conteneurs | Container-Kunstwerk, 2017 | 10 Min | Am Hafenbecken, nicht am Strand | [📍](https://www.google.com/maps/search/?api=1&query=49.48485%2C0.10719) |
+| 02 | Maison de l'Armateur | Reederhaus um 1790 | 45 Min | Eines der wenigen Vorkriegsgebäude | [📍](https://www.google.com/maps/search/?api=1&query=49.48693%2C0.11277) |
+| 03 | Pont Notre-Dame | Brücke am Bassin du Roy | 5 Min | Gründungsort Le Havres, 1517 | [📍](https://www.google.com/maps/search/?api=1&query=49.48775%2C0.11099) |
+| 04 | Cathédrale Notre-Dame | Renaissance | 15 Min | Kriegsüberlebende | [📍](https://www.google.com/maps/search/?api=1&query=49.487%2C0.10835) |
+| 05 | Les Halles Centrales | Markthallen | 30 Min | Mittagspause / Proviant | [📍](https://www.google.com/maps/search/?api=1&query=49.49046%2C0.10463) |
+| 06 | **Église Saint-Joseph** ⭐ | Perrets Meisterwerk | 30 Min | Eintritt frei, Pflichtstation | [📍](https://www.google.com/maps/search/?api=1&query=49.49095%2C0.10123) |
+| 07 | Le Volcan | Niemeyer, 1982 | 20 Min | Mediathek innen, kostenlos | [📍](https://www.google.com/maps/search/?api=1&query=49.49034%2C0.10697) |
+| 08 | **Appartement témoin Perret** ⭐ | Musterwohnung 1955 | 60 Min | **Nur mit Führung, anmelden!** | [📍](https://www.google.com/maps/search/?api=1&query=49.49179%2C0.10757) |
+| 09 | Hôtel de Ville | Perret-Rathaus | 15 Min | Hauptplatz des Wiederaufbaus | [📍](https://www.google.com/maps/search/?api=1&query=49.49409%2C0.1079) |
+| 10 | **Quartier Perret / Avenue Foch** ⭐ | Das UNESCO-Ensemble | 30 Min | Achse ablaufen, nicht nur ansehen | [📍](https://www.google.com/maps/search/?api=1&query=49.49326%2C0.10591) |
+| 11 | Porte Océane | Stadttor zum Meer | 10 Min | Abschluss der Avenue Foch | [📍](https://www.google.com/maps/search/?api=1&query=49.49367%2C0.09776) |
+| 12 | Plage / Strandkabinen | Kiesstrand, Promenade | 20 Min | | [📍](https://www.google.com/maps/search/?api=1&query=49.49606%2C0.09141) |
+| 13 | Victor by Milot | Frites-Kultimbiss seit 1927 | 20 Min | Saisonbetrieb | [📍](https://www.google.com/maps/search/?api=1&query=49.49501%2C0.09324) |
+| 14 | **MuMa – Musée Malraux** ⭐ | Impressionisten | 120 Min | **Mo geschlossen**, Do bis 22 Uhr | [📍](https://www.google.com/maps/search/?api=1&query=49.48502%2C0.10266) |
+| ↩ | zurück zum Auto | 350 m ab MuMa | 5 Min | | [📍](https://www.google.com/maps/search/?api=1&query=49.48679%2C0.09894) |
 
 **Optionen außerhalb der Route:** Jardins Suspendus (mit dem Auto) · Docks Vauban · Les Bains des Docks — siehe unten.
 
@@ -62,11 +62,11 @@ thumbnail: thumbnails/resized/59e2c7fe3f54fe1719e3c6b5f580e1e5_86cf658e.webp
 📥 **GPX-Datei:** [[GPX/Le-Havre-Stationen.gpx|Le-Havre-Stationen.gpx]]
 
 ```mapview
-{"query": "path:\"Le-Havre-Stationen.gpx\"", "autoFit": true}
+{"name":"Default","mapZoom":13,"centerLat":49.483962706659064,"centerLng":0.09853363037109376,"query":"path:\"Le-Havre-Stationen.gpx\"","chosenMapSource":0,"autoFit":true,"lock":false,"showLinks":false,"linkColor":"red","markerLabels":"off","embeddedHeight":300}
 ```
 
 **In BRouter-Web öffnen** (alle Punkte gesetzt, verschiebbar, Profil „Wandern"):
-[Rundgang 00–14 zurück zum Parkplatz](https://bikerouter.de/#map=14/49.4910/0.1040/standard&lonlats=0.09894,49.48679;0.10719,49.48485;0.11277,49.48693;0.11099,49.48775;0.10835,49.487;0.10463,49.49046;0.10123,49.49095;0.10697,49.49034;0.10757,49.49179;0.1079,49.49409;0.10591,49.49326;0.09776,49.49367;0.09141,49.49606;0.09324,49.49501;0.10266,49.48502;0.09894,49.48679&pois=0.09894,49.48679,Parkplatz%20Bd%20Clemenceau;0.10719,49.48485,Cat%C3%A8ne%20de%20conteneurs;0.11277,49.48693,Maison%20de%20l%27Armateur;0.11099,49.48775,Pont%20Notre-Dame;0.10835,49.487,Cath%C3%A9drale%20Notre-Dame;0.10463,49.49046,Les%20Halles%20Centrales;0.10123,49.49095,%C3%89glise%20Saint-Joseph;0.10697,49.49034,Le%20Volcan;0.10757,49.49179,Appartement%20t%C3%A9moin%20Perret;0.1079,49.49409,H%C3%B4tel%20de%20Ville;0.10591,49.49326,Avenue%20Foch;0.09776,49.49367,Porte%20Oc%C3%A9ane;0.09141,49.49606,Plage;0.09324,49.49501,Victor%20by%20Milot;0.10266,49.48502,MuMa&profile=hiking-mountain)
+[Rundgang 00–14 zurück zum Parkplatz](https://bikerouter.de/#map=14/49.4910/0.1040/standard&lonlats=0.09894,49.48679;0.10719,49.48485;0.11277,49.48693;0.11099,49.48775;0.10835,49.487;0.10463,49.49046;0.10123,49.49095;0.10697,49.49034;0.10757,49.49179;0.1079,49.49409;0.10591,49.49326;0.09776,49.49367;0.09141,49.49606;0.09324,49.49501;0.10266,49.48502;0.09894,49.48679&pois=0.09894,49.48679,Parkplatz%20Bd%20Clemenceau;0.10719,49.48485,Cat%C3%A8ne%20de%20conteneurs;0.11277,49.48693,Maison%20de%20l%27Armateur;0.11099,49.48775,Pont%20Notre-Dame;0.10835,49.487,Cath%C3%A9drale%20Notre-Dame;0.10463,49.49046,Les%20Halles%20Centrales;0.10123,49.49095,%C3%89glise%20Saint-Joseph;0.10697,49.49034,Le%20Volcan;0.10757,49.49179,Appartement%20t%C3%A9moin%20Perret;0.1079,49.49409,H%C3%B4tel%20de%20Ville;0.10591,49.49326,Avenue%20Foch;0.09776,49.49367,Porte%20Oc%C3%A9ane;0.09141,49.49606,Plage;0.09324,49.49501,Victor%20by%20Milot;0.10266,49.48502,MuMa&profile=hiking-beta)
 
 ![[Route-Übersicht (bikerouter.de).png]]
 *Screenshot der Route mit benannten POI-Markern auf bikerouter.de*
@@ -80,8 +80,8 @@ thumbnail: thumbnails/resized/59e2c7fe3f54fe1719e3c6b5f580e1e5_86cf658e.webp
 | **Stadt** | Le Havre, Seine-Maritime |
 | **Start & Ziel** | Parkplatz Bd Clemenceau (49.48679°N, 0.09894°E) |
 | **Abschluss** | MuMa, danach 350 m zum Auto |
-| **Distanz** | 7,7 km Rundweg |
-| **Reine Gehzeit** | ca. 1:32 Std. |
+| **Distanz** | 7,8 km Rundweg |
+| **Reine Gehzeit** | ca. 1:33 Std. |
 | **Höhenmeter** | praktisch keine — die Runde ist flach |
 | **Dauer gesamt** | Ganzer Tag mit MuMa + Appartement témoin |
 | **Schwierigkeit** | ⭐ Sehr leicht |
@@ -216,7 +216,7 @@ Ca. 1,5 km östlich, eigener Abstecher. Backsteinlagerhaus von 1846 (heute Einka
 - Rouen: [musees-rouen-normandie.fr](https://musees-rouen-normandie.fr/fr/sites/musee-des-beaux-arts) (offiziell)
 - Parken: [Normandie Lovers](https://normandielovers.fr/ou-se-garer-havre-parking/), [Office de Tourisme](https://www.lehavre-etretat-tourisme.com/en/practical-information/parking-and-getting-around-in-le-havre/)
 - **Koordinaten:** per Nominatim/Overpass aus OpenStreetMap geocodiert (Stand 2026-08-17), © OpenStreetMap contributors, ODbL 1.0
-- **Distanzen:** mit BRouter berechnet, Profil `hiking-mountain`
+- **Distanzen:** mit BRouter berechnet, Profil `hiking-beta`
 
 **Zeitangaben in der Übersichtstabelle** sind Schätzungen von mir, keine offiziellen Werte — nur die Führungsdauer beim Appartement témoin (ca. 1 Std.) stammt vom Tourismusbüro.
 

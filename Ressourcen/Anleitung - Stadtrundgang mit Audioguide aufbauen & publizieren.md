@@ -48,7 +48,7 @@ type: Anleitung
 5. **GPX-Datei**: `<wpt>` UND `<trkpt>` (im `<trk>`-Block) an der richtigen Position einfügen — beide, nicht nur eines. `<name>`-Tags **ohne** Nummer, nur Ortsname
 6. **Route neu berechnen** (nicht schätzen!) — BRouter-API direkt aufrufen:
    ```bash
-   curl -s "https://brouter.de/brouter?lonlats=LON1,LAT1%7CLON2,LAT2%7C...&profile=hiking-mountain&alternativeidx=0&format=gpx" -o /tmp/route.gpx
+   curl -s "https://brouter.de/brouter?lonlats=LON1,LAT1%7CLON2,LAT2%7C...&profile=hiking-beta&alternativeidx=0&format=gpx" -o /tmp/route.gpx
    grep -o 'track-length="[0-9]*"' /tmp/route.gpx   # Meter
    ```
    `%7C` = URL-encodetes `|` als Trenner zwischen den Punkten (Alternative: `;` im Browser-Link, s. Abschnitt 3c)
@@ -95,8 +95,10 @@ type: Anleitung
 **Frontend: `bikerouter.de`** (nicht `brouter.de/brouter-web/` — beide sind dieselbe brouter-web-Software von Norbert Renner, `bikerouter.de` läuft nur direkt auf der Root-URL statt unter `/brouter-web/`; die reine Routing-Berechnungs-API in Abschnitt 3a bleibt weiterhin `brouter.de/brouter` — `bikerouter.de` spiegelt diesen API-Endpunkt nicht, per `curl` verifiziert). Reihenfolge exakt wie im `<trk>`-Block der GPX, Format `lon,lat` (nicht `lat,lon`!), Punkte mit `;` getrennt:
 
 ```
-https://bikerouter.de/#map=14/<lat-mitte>/<lon-mitte>/standard&lonlats=LON1,LAT1;LON2,LAT2;...&profile=hiking-mountain
+https://bikerouter.de/#map=14/<lat-mitte>/<lon-mitte>/standard&lonlats=LON1,LAT1;LON2,LAT2;...&profile=hiking-beta
 ```
+
+**Profil-Wahl:** `hiking-beta` (allgemeines, mittelschweres Trekking-Profil) für normale, flache Stadtrundgänge — **nicht** `hiking-mountain`, das ist für anspruchsvolle Alpin-/Bergwanderungen gedacht (SAC-T3-Niveau) und bei Le Havre versehentlich verwendet worden, bis der User es korrigierte. Beide Profile existieren tatsächlich bei `bikerouter.de` (`/profiles/<name>.brf`, per `curl` verifiziert) — der Fehler war also keine Format-, sondern eine inhaltliche Falschwahl. Bei einem Rundgang mit echten Steigungen/Bergpfaden `hiking-mountain` bewusst prüfen und ggf. verwenden.
 
 **Optional: benannte POI-Marker zusätzlich zur Route** — eigener `pois=`-Parameter, Format im brouter-web-Quellcode verifiziert (`js/router/BRouter.js`, `_getLonLatsNameString`/`_parseLonLatNames`): `LON,LAT,URL-encodeter-Name`, mehrere Punkte mit `;` getrennt, an die bestehende `lonlats=`-Kette anhängen:
 
@@ -116,10 +118,16 @@ POI-Koordinaten können exakt auf den `lonlats`-Wegpunkten liegen — auf `biker
 ## 5. Google-Maps-Link-Format
 
 ```
-https://www.google.com/maps?q=LAT,LON
+https://www.google.com/maps/search/?api=1&query=LAT%2CLON
 ```
 
-Öffnet auf dem Smartphone die Google-Maps-App (falls installiert) direkt auf dem Punkt, von dort per Fingertipp navigierbar. Funktioniert auch im Browser. Kein API-Key nötig, keine Kosten.
+Offiziell dokumentiertes, garantiert funktionierendes Format (Googles „Maps URLs"-API) — öffnet auf dem Smartphone die Google-Maps-App (falls installiert) direkt auf dem Punkt, von dort per Fingertipp navigierbar. Funktioniert auch im Browser. Kein API-Key nötig, keine Kosten.
+
+⚠️ **Kein Namens-Label möglich ohne echte Google-Place-ID** — zwei andere Formate wurden ausprobiert und funktionierten **nicht zuverlässig**:
+- `maps?q=LAT,LON(Name)` — laut offizieller Google-Doku ausdrücklich nicht unterstützt, Name wird ignoriert.
+- `maps/place/<Name>/@LAT,LON,17z` — sieht wie ein offizielles Format aus (Google Maps generiert es selbst für geteilte Pins), ist aber ohne den zugehörigen `data=`-Feature-ID-Parameter nicht zuverlässig: kann fehlschlagen oder auf einen anderen, gleichnamigen Ort matchen (z. B. gäbe es zu „Pont Notre-Dame" auch ein berühmtes Gegenstück in Paris).
+
+**Deshalb:** Nur die reine Koordinaten-URL verwenden, der Stationsname steht ohnehin schon in der Tabellenspalte daneben — kein Namensversuch in der URL selbst nötig.
 
 ## 6. Bekannte Fallstricke
 

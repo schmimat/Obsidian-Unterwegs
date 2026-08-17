@@ -148,6 +148,33 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 
 **Bekanntes Muster:** Nach viel Datei-Hin-und-Her (Move/Restore/Cleanup, s.o.) zeigten die Map-View-Übersichtskarten vorübergehend keine Touren mehr an, obwohl GPX-Dateien + Codeblock-Syntax nachweislich korrekt waren (Dateizahlen, md5, XML-Validität alle geprüft) — Ursache: veralteter Map-View-interner Datei-Index auf dem Client. Fix: Obsidian komplett neu starten (App-Prozess killen, nicht nur Hintergrund) — analog zum bereits bekannten „Plugin-Aktivierung braucht Neustart"-Muster aus dem Plugins-Abschnitt oben.
 
+## Laufendes Projekt: Reise-Guides-Vault & Le-Havre-Audioguide (2026-08-17/18)
+
+**Status:** Neues, eigenständiges Vault `Reise-Guides` (Geschwisterordner von `Unterwegs`) angelegt — Audioguide zum Anhören unterwegs, veröffentlicht über Obsidian Publish (passwortgeschützt) statt Sync, da Sync keine granulare Zugriffssteuerung pro Datei kennt. Erster (und Referenz-)Rundgang: Le Havre, 15 Stationen + eine Zusatzstation (Kathedrale innen), alle mit TTS-mp3 (OpenAI `tts-1-hd`).
+
+**Live-Site:** https://publish.obsidian.md/reise-guides (Slug `reise-guides`, passwortgeschützt).
+
+**Architektur & vollständige Anleitung für künftige Rundgänge:** [[Ressourcen/Anleitung - Stadtrundgang mit Audioguide aufbauen & publizieren]] — Zwei-Vault-Muster, Nummerierungskonvention, Schritt-für-Schritt-Checkliste, bekannte Fallstricke. Referenz-Rundgang: [[Stadtrundgänge/Le Havre/Le Havre - Perret-Wiederaufbau & Impressionismus]].
+
+**Kernentscheidungen:**
+
+| Entscheidung | Begründung |
+|---|---|
+| `Reise-Guides` generisches, eigenständiges Vault statt Unterordner in `Unterwegs` | Publish veröffentlicht immer das ganze Vault — praktische Infos (Preise, Telefonnummern) müssen getrennt bleiben |
+| Keine Nummern in Dateinamen/Frontmatter/GPX-`<name>` — nur noch in den beiden Übersichtstabellen (Unterwegs-Notiz + Reise-Guides-Übersicht) | Nach zwei fehleranfälligen Umnummerierungsrunden (Datei-Rename-Kaskaden über zwei Vaults) auf User-Vorschlag umgestellt; Umsortieren ist jetzt reines Tabellenzeilen-Tauschen |
+| Cross-Referenzen zwischen Stationen im Fließtext als Wikilink, nie als Nummer | Wikilinks brechen beim Umsortieren nicht |
+| `bikerouter.de` statt `brouter.de/brouter-web/` für den interaktiven Karten-Link | User-Wunsch; identische Software (Norbert Renner), aber unterschiedliche Marker-Symbole für Routing- vs. POI-Punkte — auf bikerouter.de überdecken sie sich nicht |
+| TTS-Skript liegt im Vault (`Reise-Guides/_scripts/gen_tts.py`), nicht im Scratchpad | Scratchpad überlebt keine Session |
+
+**Wichtige technische Erkenntnisse (Details in der Anleitung oben):**
+- Obsidian Publish unterstützt keine Community-Plugins (Map View funktioniert dort nicht) und keine `.gpx`-Dateien (weder Link noch Embed) — Route auf der Publish-Seite läuft nur über den externen BRouter-Link
+- Google-Maps-Link mit Namens-Label: `maps?q=lat,lon(Name)` funktioniert nicht mehr (Place-ID nötig laut offizieller Google-Doku) — stattdessen `maps/place/<Name>/@<lat>,<lon>,17z`
+- bikerouter.de: eigener `pois=`-Parameter für benannte Marker (`LON,LAT,Name;...`, im Quellcode verifiziert), zusätzlich zu `lonlats=` für die Route selbst
+- IPv6 auf diesem Container (203) ist nicht erreichbar — `ob publish`/`ob sync`/OpenAI-Aufrufe brauchen gelegentlich Retries; `ob publish --yes` wird vom Auto-Mode-Klassifikator manchmal blockiert, dann pusht der User selbst per `!`-Präfix
+- Ein per Fork delegierter Recherche-Agent lieferte zweimal nur eine Zwischenmeldung statt echter Arbeit — Fix: über `SendMessage` an denselben Agent zurückschicken statt neuen Fork zu starten
+
+**Blocker/offen:** Finaler Live-Test durch die Ehefrau (Login mit Passwort, mp3s offline abspielbar) steht noch aus. Bei künftigen weiteren Reisen einfach `Reise-Guides/Stadtrundgänge/<Ort>/` als neuen Unterordner anlegen — Publish-Site existiert schon, kein neues Setup nötig.
+
 ## Wichtige Dateien & Ordner
 
 | Pfad | Inhalt |
@@ -169,7 +196,7 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 
 ---
 
-**Zuletzt aktualisiert:** 2026-08-17 — neuer Ordner `Aufgaben/` angelegt (Muster aus Knowledge Base übernommen), erste Aufgabe: Audio-Guide Le Havre für LXC 203
+**Zuletzt aktualisiert:** 2026-08-18 — Projekt „Reise-Guides-Vault & Le-Havre-Audioguide" (siehe oben): neues Publish-Vault aufgebaut, kompletter Rundgang mit Audioguide erstellt und veröffentlicht, Nummerierungsschema grundlegend überarbeitet, generische Anleitung für künftige Rundgänge angelegt
 
-**Vorherige Aktualisierung:** 2026-08-12
-**Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich, kein Vereinheitlichungsbedarf); Urlaub/Touren vollständig archiviert (Container-seitig + beide GitHub-Repos). **2026-08-12:** GPX/Map-View auf Android debuggt (echte Plugin-Syntax verifiziert, `GPX-Setup-Anleitung.md`/`GPX-Verwaltung.md` korrigiert, funktionierende Embeds in 3 Maastricht-Touren + 6 Rother-Regionen-Übersichtskarten ergänzt); `Wanderungen/Archiv (OneDrive)/`-Struktur komplett eliminiert (475 Dateien + 11 Notizen geflacht, ~64 Pfadreferenzen gefixt) — dabei ein eigener Fehler (überschriebene `Wanderungen/README.md`) passiert und über Git-Historie + User-Mithilfe vollständig recovert, siehe neue Abschnitte oben. Offen: `Regionen/`-Konzept, Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), Highlights-Route (`Maastricht - Highlights`) hat weiterhin keine eigene GPX-Datei (dokumentierte Lücke, kein Blocker)
+**Vorherige Aktualisierung:** 2026-08-17 — neuer Ordner `Aufgaben/` angelegt (Muster aus Knowledge Base übernommen), erste Aufgabe: Audio-Guide Le Havre für LXC 203
+**Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich, kein Vereinheitlichungsbedarf); Urlaub/Touren vollständig archiviert (Container-seitig + beide GitHub-Repos). Le-Havre-Audioguide + Reise-Guides-Vault live (siehe neuer Abschnitt oben), Live-Test durch die Ehefrau steht noch aus. Offen: `Regionen/`-Konzept, Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), Highlights-Route (`Maastricht - Highlights`) hat weiterhin keine eigene GPX-Datei (dokumentierte Lücke, kein Blocker)
