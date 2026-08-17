@@ -27,20 +27,25 @@ type: Anleitung
 
 ## 2. Nummerierungsschema
 
-- `00` = Parkplatz/Start (Start **und** Ziel, kein Audioguide-Inhalt nötig)
-- `01`–`NN` = Hauptstationen in echter Gehreihenfolge
-- **Buchstaben-Suffix (`01b`, `03b`, …) für nachträglich eingefügte Zwischenstopps** — bewusst statt Durchnummerieren (0004→0005 usw.), um nicht bei jeder Ergänzung alle Folgedateien umbenennen zu müssen. Der Buchstabe hängt an der **vorherigen** Stationsnummer.
+**Nummern stehen ausschließlich in den beiden Übersichtstabellen** (Unterwegs-Notiz + Reise-Guides-Übersicht) — **nirgends sonst**: nicht im Dateinamen, nicht im Frontmatter, nicht in GPX-`<name>`-Tags. Dateien/Notizen/Wegpunkte heißen einfach wie der Ort (`Pont Notre-Dame.md`, nicht `03 - Pont Notre-Dame.md`).
+
+**Warum:** Eine frühere Version dieses Rundgangs nummerierte Dateien direkt durch (`0001 - ...`, `0002b - ...`). Ein einziger neuer Zwischenstopp bedeutete dadurch: X Dateien umbenennen, Frontmatter+Embeds in jeder einzelnen anpassen, GPX-Namen verschieben, Cross-Referenzen im Fließtext („Station 03") korrigieren — quer über zwei Vaults, fehleranfällig, mehrfach nötig bei diesem Rundgang. Mit reinen Namen entfällt das komplett: Umsortieren heißt nur noch Tabellenzeilen tauschen und die `#`-Spalte anpassen.
+
+- `00` = Parkplatz/Start (kein Audioguide-Inhalt nötig)
+- `01`–`NN` = Hauptstationen in echter Gehreihenfolge, **durchlaufend, keine Lücken/Buchstaben nötig** — Einfügen einer neuen Station bedeutet nur: neue Tabellenzeile + Nachbar-Nummern in der `#`-Spalte hochzählen.
+- **Ausnahme, wo ein Buchstaben-Suffix (`04b`) weiterhin sinnvoll bleibt:** Zusatzinhalt am **selben physischen Ort** wie eine bestehende Station (z. B. „Kathedrale außen" = `04`, „Kathedrale innen" = `04b`) — das ist kein eigener Gehstopp, sondern optionales Bonusmaterial an derselben Stelle.
 - Optionale Stationen außerhalb der Route (`OPT`, `OPT-P`) bekommen keine Zahlnummer.
+- **Cross-Referenzen zwischen Stationen im Fließtext** (z. B. im Hintergrundartikel) immer als echten Wikilink schreiben (`[[Cathédrale Notre-Dame]]`), **nie** als Nummer („Station 04") — Wikilinks brechen beim Umsortieren nicht, Nummern-Text schon.
 
 ## 3. Checkliste: neue Station / Zwischenstopp hinzufügen
 
 ### 3a. `Unterwegs` — praktische Route (Pflicht, unabhängig davon ob es einen Audioguide gibt)
 
 1. **Koordinate ermitteln** — Nominatim: `https://nominatim.openstreetmap.org/search?q=<Suchbegriff>&format=json`
-2. Rundgang-Notiz — **Übersichtstabelle**: neue Zeile inkl. Google-Maps-Link (Format siehe Abschnitt 5)
-3. Dieselbe Notiz — **Detail-Abschnitt** `### NNb. Name` mit Ort/Was/Hinweis ergänzen
-4. Dieselbe Notiz — **Frontmatter** `stations:` und `distance:` hochzählen
-5. **GPX-Datei**: `<wpt>` UND `<trkpt>` (im `<trk>`-Block) an der richtigen Position einfügen — beide, nicht nur eines
+2. Rundgang-Notiz — **Übersichtstabelle**: neue Zeile inkl. Google-Maps-Link (Format siehe Abschnitt 5), Nachbar-Nummern in der `#`-Spalte hochzählen (keine Buchstaben nötig, außer Ausnahmefall aus Abschnitt 2)
+3. Dieselbe Notiz — **Detail-Abschnitt** `### NN. Name` (Nummer passend zur Tabelle) mit Ort/Was/Hinweis ergänzen, Folge-Abschnitte umnummerieren
+4. Dieselbe Notiz — **Frontmatter** `stations:` hochzählen (`distance:` erst nach Neuberechnung, s. u.)
+5. **GPX-Datei**: `<wpt>` UND `<trkpt>` (im `<trk>`-Block) an der richtigen Position einfügen — beide, nicht nur eines. `<name>`-Tags **ohne** Nummer, nur Ortsname
 6. **Route neu berechnen** (nicht schätzen!) — BRouter-API direkt aufrufen:
    ```bash
    curl -s "https://brouter.de/brouter?lonlats=LON1,LAT1%7CLON2,LAT2%7C...&profile=hiking-mountain&alternativeidx=0&format=gpx" -o /tmp/route.gpx
@@ -53,29 +58,30 @@ type: Anleitung
 10. **`Doku/Claude – Änderungshistorie.md`** — Eintrag ergänzen (Pflicht laut Vault-Policy für autonome `.md`-Änderungen)
 11. GPX-Datei zählt **nicht** als `.md` → fällt technisch unter „Rückfrage nötig", wird über den normalen Tool-Permission-Dialog abgefragt, keine separate Nachfrage nötig
 
+**Reihenfolge des Vorgehens beachten (Learning aus Le Havre):** Erst die reine Ortsbeschreibung schreiben, **Verweise auf Nachbarstationen im Fließtext („Nach dem Reederhaus...") erst ganz am Ende ergänzen** — nachdem die Reihenfolge final steht. Sonst muss der Text (und beim Audioguide die mp3) bei jeder Umsortierung neu erzeugt werden.
+
 ### 3b. `Reise-Guides` — Audioguide (nur falls die Station auch vorgelesen werden soll)
 
-1. Neue Notiz `Reise-Guides/Stadtrundgänge/<Ort>/Audioguide/NNNN - Name.md`, Format:
+1. Neue Notiz `Reise-Guides/Stadtrundgänge/<Ort>/Audioguide/Name.md` — **Dateiname ist nur der Ortsname, keine Nummer**. Format:
    ```yaml
    ---
    title: "..."
    tags: [<ort>, audioguide]
    created: YYYY-MM-DD
-   poi_number: "NNNN"
-   audio: "NNNN - Name.mp3"
+   audio: "Name.mp3"
    ---
    ```
-   danach `![[NNNN - Name.mp3]]`, dann 150–300 Wörter Fließtext (1–2 Min. Sprechzeit), dann **zwingend** ein `---`-Trenner + `## Quellen` mit Markdown-Links — sonst liest die TTS die URLs mit vor.
+   danach `![[Name.mp3]]`, dann 150–300 Wörter Fließtext (1–2 Min. Sprechzeit) — Verweise auf Nachbarstationen erst ganz am Schluss einfügen (s. o.) —, dann **zwingend** ein `---`-Trenner + `## Quellen` mit Markdown-Links — sonst liest die TTS die URLs mit vor. Cross-Referenzen auf andere Stationen als Wikilink (`[[Cathédrale Notre-Dame]]`), nie als Nummer.
 2. Recherche **per echter Websuche**, nicht aus Trainingswissen — Fakten vor der Nutzung verifizieren, unsichere Punkte im Artikel (nicht im gesprochenen Text) mit Einschränkung kennzeichnen statt zu erfinden.
-3. Optional: separate `NNNN - Name - Artikel.md` für Hintergrundwissen (kein Audio, ausführlicher, eigener Quellen-Abschnitt).
-4. **mp3 erzeugen** (Skript liegt **im Vault**, nicht im Scratchpad — Scratchpad-Dateien überleben eine Session nicht):
+3. Optional: separate `Name - Artikel.md` für Hintergrundwissen (kein Audio, ausführlicher, eigener Quellen-Abschnitt).
+4. **mp3 erzeugen — erst wenn der Text final ist** (Skript liegt **im Vault**, nicht im Scratchpad — Scratchpad-Dateien überleben eine Session nicht):
    ```bash
    export OPENAI_API_KEY='sk-...'   # vom User erfragen, nie raten
    python3 "/home/claude/Obsidian-Vaults/Reise-Guides/_scripts/gen_tts.py" \
      "/home/claude/Obsidian-Vaults/Reise-Guides/Stadtrundgänge/<Ort>/Audioguide" \
-     "NNNN - Name.md"
+     "Name.md"
    ```
-5. **`<Ort> - Übersicht.md`** (Reise-Guides): Stationstabelle ergänzen **und** — falls sich die Route geändert hat — **BRouter-Link + Distanz/Zeit synchron zur `Unterwegs`-Version nachziehen** (siehe Warnung in Abschnitt 1).
+5. **`<Ort> - Übersicht.md`** (Reise-Guides) ist die **einzige Stelle, an der die Station eine Nummer bekommt** — Tabellenzeile mit `#`-Wert + Wikilink ergänzen **und** — falls sich die Route geändert hat — **BRouter-Link + Distanz/Zeit synchron zur `Unterwegs`-Version nachziehen** (siehe Warnung in Abschnitt 1).
 6. Veröffentlichen:
    ```bash
    ob publish --path "/home/claude/Obsidian-Vaults/Reise-Guides" --all --dry-run --json   # erst prüfen

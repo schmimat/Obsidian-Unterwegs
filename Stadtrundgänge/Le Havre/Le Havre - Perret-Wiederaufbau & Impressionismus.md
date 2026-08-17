@@ -15,7 +15,7 @@ created: 2026-08-17
 modified: 2026-08-17
 difficulty: "⭐ Sehr leicht (flach)"
 duration: "Ganzer Tag (mit Museen)"
-distance: "7,9 km"
+distance: "7,7 km"
 stations: 15
 type: "Stadtrundgang"
 region: "Le Havre, Normandie, Frankreich"
@@ -36,19 +36,19 @@ coordinates: "49.4868°N, 0.0989°E"
 |---|---------|-----|------|---------|---|
 | **00** | **Parkplatz Bd Clemenceau** | Start **und** Ziel | — | Kostenlos, früh da sein | [📍](https://www.google.com/maps?q=49.48679,0.09894) |
 | 01 | Catène de conteneurs | Container-Kunstwerk, 2017 | 10 Min | Am Hafenbecken, nicht am Strand | [📍](https://www.google.com/maps?q=49.48485,0.10719) |
-| 01b | Pont Notre-Dame | Brücke am Bassin du Roy | 5 Min | Gründungsort Le Havres, 1517 | [📍](https://www.google.com/maps?q=49.48775,0.11099) |
 | 02 | Maison de l'Armateur | Reederhaus um 1790 | 45 Min | Eines der wenigen Vorkriegsgebäude | [📍](https://www.google.com/maps?q=49.48693,0.11277) |
-| 03 | Cathédrale Notre-Dame | Renaissance | 15 Min | Kriegsüberlebende | [📍](https://www.google.com/maps?q=49.487,0.10835) |
-| 04 | Les Halles Centrales | Markthallen | 30 Min | Mittagspause / Proviant | [📍](https://www.google.com/maps?q=49.49046,0.10463) |
-| 05 | **Église Saint-Joseph** ⭐ | Perrets Meisterwerk | 30 Min | Eintritt frei, Pflichtstation | [📍](https://www.google.com/maps?q=49.49095,0.10123) |
-| 06 | Le Volcan | Niemeyer, 1982 | 20 Min | Mediathek innen, kostenlos | [📍](https://www.google.com/maps?q=49.49034,0.10697) |
-| 07 | **Appartement témoin Perret** ⭐ | Musterwohnung 1955 | 60 Min | **Nur mit Führung, anmelden!** | [📍](https://www.google.com/maps?q=49.49179,0.10757) |
-| 08 | Hôtel de Ville | Perret-Rathaus | 15 Min | Hauptplatz des Wiederaufbaus | [📍](https://www.google.com/maps?q=49.49409,0.1079) |
-| 09 | **Quartier Perret / Avenue Foch** ⭐ | Das UNESCO-Ensemble | 30 Min | Achse ablaufen, nicht nur ansehen | [📍](https://www.google.com/maps?q=49.49326,0.10591) |
-| 10 | Porte Océane | Stadttor zum Meer | 10 Min | Abschluss der Avenue Foch | [📍](https://www.google.com/maps?q=49.49367,0.09776) |
-| 11 | Plage / Strandkabinen | Kiesstrand, Promenade | 20 Min | | [📍](https://www.google.com/maps?q=49.49606,0.09141) |
-| 12 | Victor by Milot | Frites-Kultimbiss seit 1927 | 20 Min | Saisonbetrieb | [📍](https://www.google.com/maps?q=49.49501,0.09324) |
-| 13 | **MuMa – Musée Malraux** ⭐ | Impressionisten | 120 Min | **Mo geschlossen**, Do bis 22 Uhr | [📍](https://www.google.com/maps?q=49.48502,0.10266) |
+| 03 | Pont Notre-Dame | Brücke am Bassin du Roy | 5 Min | Gründungsort Le Havres, 1517 | [📍](https://www.google.com/maps?q=49.48775,0.11099) |
+| 04 | Cathédrale Notre-Dame | Renaissance | 15 Min | Kriegsüberlebende | [📍](https://www.google.com/maps?q=49.487,0.10835) |
+| 05 | Les Halles Centrales | Markthallen | 30 Min | Mittagspause / Proviant | [📍](https://www.google.com/maps?q=49.49046,0.10463) |
+| 06 | **Église Saint-Joseph** ⭐ | Perrets Meisterwerk | 30 Min | Eintritt frei, Pflichtstation | [📍](https://www.google.com/maps?q=49.49095,0.10123) |
+| 07 | Le Volcan | Niemeyer, 1982 | 20 Min | Mediathek innen, kostenlos | [📍](https://www.google.com/maps?q=49.49034,0.10697) |
+| 08 | **Appartement témoin Perret** ⭐ | Musterwohnung 1955 | 60 Min | **Nur mit Führung, anmelden!** | [📍](https://www.google.com/maps?q=49.49179,0.10757) |
+| 09 | Hôtel de Ville | Perret-Rathaus | 15 Min | Hauptplatz des Wiederaufbaus | [📍](https://www.google.com/maps?q=49.49409,0.1079) |
+| 10 | **Quartier Perret / Avenue Foch** ⭐ | Das UNESCO-Ensemble | 30 Min | Achse ablaufen, nicht nur ansehen | [📍](https://www.google.com/maps?q=49.49326,0.10591) |
+| 11 | Porte Océane | Stadttor zum Meer | 10 Min | Abschluss der Avenue Foch | [📍](https://www.google.com/maps?q=49.49367,0.09776) |
+| 12 | Plage / Strandkabinen | Kiesstrand, Promenade | 20 Min | | [📍](https://www.google.com/maps?q=49.49606,0.09141) |
+| 13 | Victor by Milot | Frites-Kultimbiss seit 1927 | 20 Min | Saisonbetrieb | [📍](https://www.google.com/maps?q=49.49501,0.09324) |
+| 14 | **MuMa – Musée Malraux** ⭐ | Impressionisten | 120 Min | **Mo geschlossen**, Do bis 22 Uhr | [📍](https://www.google.com/maps?q=49.48502,0.10266) |
 | ↩ | zurück zum Auto | 350 m ab MuMa | 5 Min | | [📍](https://www.google.com/maps?q=49.48679,0.09894) |
 
 **Optionen außerhalb der Route:** Jardins Suspendus (mit dem Auto) · Docks Vauban · Les Bains des Docks — siehe unten.
@@ -64,7 +64,7 @@ coordinates: "49.4868°N, 0.0989°E"
 ```
 
 **In BRouter-Web öffnen** (alle Punkte gesetzt, verschiebbar, Profil „Wandern"):
-[Rundgang 00–13 (inkl. 01b) zurück zum Parkplatz](https://brouter.de/brouter-web/#map=14/49.4910/0.1040/standard&lonlats=0.09894,49.48679;0.10719,49.48485;0.11099,49.48775;0.11277,49.48693;0.10835,49.487;0.10463,49.49046;0.10123,49.49095;0.10697,49.49034;0.10757,49.49179;0.1079,49.49409;0.10591,49.49326;0.09776,49.49367;0.09141,49.49606;0.09324,49.49501;0.10266,49.48502;0.09894,49.48679&profile=hiking-mountain)
+[Rundgang 00–14 zurück zum Parkplatz](https://brouter.de/brouter-web/#map=14/49.4910/0.1040/standard&lonlats=0.09894,49.48679;0.10719,49.48485;0.11277,49.48693;0.11099,49.48775;0.10835,49.487;0.10463,49.49046;0.10123,49.49095;0.10697,49.49034;0.10757,49.49179;0.1079,49.49409;0.10591,49.49326;0.09776,49.49367;0.09141,49.49606;0.09324,49.49501;0.10266,49.48502;0.09894,49.48679&profile=hiking-mountain)
 
 ---
 
@@ -75,8 +75,8 @@ coordinates: "49.4868°N, 0.0989°E"
 | **Stadt** | Le Havre, Seine-Maritime |
 | **Start & Ziel** | Parkplatz Bd Clemenceau (49.48679°N, 0.09894°E) |
 | **Abschluss** | MuMa, danach 350 m zum Auto |
-| **Distanz** | 7,9 km Rundweg |
-| **Reine Gehzeit** | ca. 1:34 Std. |
+| **Distanz** | 7,7 km Rundweg |
+| **Reine Gehzeit** | ca. 1:32 Std. |
 | **Höhenmeter** | praktisch keine — die Runde ist flach |
 | **Dauer gesamt** | Ganzer Tag mit MuMa + Appartement témoin |
 | **Schwierigkeit** | ⭐ Sehr leicht |
@@ -108,60 +108,60 @@ Kostenlos ist auch die Innenstadt werktags 12–14 Uhr, ab 18 Uhr sowie sonntags
 - **Was:** Doppelbogen aus bunten Frachtcontainern von Vincent Ganivet, 2017.
 - ⚠️ Liegt am **Hafenbecken, nicht am Strand** — eine oft falsch erinnerte Lage.
 
-### 01b. Pont Notre-Dame
-- **Ort:** Verbindet die Quartiere Notre-Dame und Saint-François über den Bassin du Roy
-- **Was:** Bewegliche Brücke am ältesten Hafenbecken der Stadt — hier ließ König Franz I. 1517 den Hafen gründen, aus dem Le Havre hervorging. Älter als jede andere Station der Runde.
-- 💡 Kurzer Stopp mitten auf der Brücke, kein eigenes Zeitfenster nötig — der eigentliche Ursprungsort der Stadt.
-
 ### 02. Maison de l'Armateur
 - **Ort:** 3 quai de l'Île, Quartier Saint-François
 - **Was:** Reederhaus um 1790 um einen oktogonalen Lichthof.
 - **Wissenswertes:** Zeugnis des Dreieckshandels — Le Havres Wohlstand im 18. Jh. hing daran.
 
-### 03. Cathédrale Notre-Dame
+### 03. Pont Notre-Dame
+- **Ort:** Verbindet die Quartiere Notre-Dame und Saint-François über den Bassin du Roy
+- **Was:** Bewegliche Brücke am ältesten Hafenbecken der Stadt — hier ließ König Franz I. 1517 den Hafen gründen, aus dem Le Havre hervorging. Älter als jede andere Station der Runde.
+- 💡 Kurzer Stopp mitten auf der Brücke, kein eigenes Zeitfenster nötig — der eigentliche Ursprungsort der Stadt.
+
+### 04. Cathédrale Notre-Dame
 - **Ort:** Rue des Drapiers
 - **Was:** Renaissance, ebenfalls Kriegsüberlebende. Die Bombenschäden sind am Bau bis heute ablesbar.
 
-### 04. Les Halles Centrales
+### 05. Les Halles Centrales
 - **Ort:** Rue Bernardin de Saint-Pierre
 - **Was:** Markthallen — Mittagspause oder Proviant.
 
-### 05. Église Saint-Joseph ⭐
+### 06. Église Saint-Joseph ⭐
 - **Ort:** 130 boulevard François 1er · Eintritt frei
 - **Was:** Perrets Meisterwerk. 107 m Betonturm, von innen ein begehbarer Lichtschacht.
 - **Wissenswertes:** 12.768 farbige Glasstücke von Marguerite Huré, nach Himmelsrichtung gestaffelt — die Farbe im Raum wandert mit dem Sonnenstand. **Der stärkste Raum der Stadt.**
 
-### 06. Le Volcan
+### 07. Le Volcan
 - **Ort:** Place Oscar Niemeyer
 - **Was:** Niemeyers weißer Betonkegel, 1982. Die Mediathek im „Petit Volcan" ist öffentlich zugänglich und kostenlos — ein sehr schöner Innenraum.
 
-### 07. Appartement témoin Perret ⭐
+### 08. Appartement témoin Perret ⭐
 - **Ort:** Maison du Patrimoine / Atelier Perret, 181 rue de Paris · Tel. 02 35 22 31 22
 - **Was:** Original möblierte Musterwohnung von 1955.
 - ⚠️ **Nur mit Führung, ca. 1 Std.** Im August täglich 10:00 / 11:00 / 14:30 / 15:30 / 16:30. **Vorher anmelden** — das ist der einzige Punkt der Runde mit festem Termin, um den herum sich alles andere plant.
 
-### 08. Hôtel de Ville
+### 09. Hôtel de Ville
 - **Ort:** Place de l'Hôtel de Ville
 - **Was:** Perret-Rathaus mit Turm, Hauptplatz und Achsenkreuz des Wiederaufbaus.
 
-### 09. Quartier Perret / Avenue Foch ⭐
+### 10. Quartier Perret / Avenue Foch ⭐
 - **Ort:** Avenue Foch, zwischen Rathaus und Porte Océane
 - **Was:** **Das ist das eigentliche UNESCO-Welterbe** — ausgezeichnet wurde 2005 das Ensemble, nicht die Einzelbauten. Perret plante ab 1945 einen kompletten Stadtgrundriss auf einem 6,24-m-Raster, mit vorgefertigtem Sichtbeton als Leitmaterial.
 - **Wissenswertes:** Die Avenue Foch ist die Prachtachse, breiter angelegt als die Champs-Élysées, mit durchlaufenden Perret-Wohnblöcken. Hier sieht man das System als Ganzes statt einzelner Bauten.
 - 💡 **Nicht nur ansehen, ablaufen** — die Achse vom Rathaus westwärts bis zur Porte Océane, dann öffnet sich der Blick aufs Meer. Genau dafür wurde sie gebaut.
 - ℹ️ Der Wegpunkt sitzt auf dem OSM-Straßensegment der Avenue Foch, nicht auf einem bestimmten Gebäude.
 
-### 10. Porte Océane
+### 11. Porte Océane
 - **Was:** Perrets „Stadttor zum Meer", Abschluss der Avenue Foch.
 - ⚠️ Koordinate ist der OSM-Quartiersmittelpunkt, nicht das Bauwerk — ca. 100 m Unschärfe.
 
-### 11. Plage / Strandkabinen
+### 12. Plage / Strandkabinen
 - **Was:** Kiesstrand mit weißen Badekabinen, Promenade Richtung Sainte-Adresse. Ungewöhnlich für eine Industriestadt.
 
-### 12. Victor by Milot („Frites à Victor")
+### 13. Victor by Milot („Frites à Victor")
 - **Was:** Kultimbiss an der Promenade seit 1927. Saisonbetrieb, im August offen.
 
-### 13. MuMa – Musée d'art moderne André Malraux ⭐
+### 14. MuMa – Musée d'art moderne André Malraux ⭐
 - **Ort:** 2 boulevard Clemenceau · Tel. 02 35 19 62 62
 - **Öffnungszeiten:** Di/Mi/Fr 11–18, **Do 11–22**, Sa/So 11–19, **Montag geschlossen**. Letzter Einlass 15 Min. vor Schließung. Zusätzlich zu: 1.1., 1.5., 11.11., 25.12.
 - **Eintritt:** April–September 10 € / ermäßigt 6 €. **Tickets nur an der Museumskasse**, kein Online-Vorverkauf — Puffer einplanen.

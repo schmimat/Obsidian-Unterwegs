@@ -6,7 +6,7 @@
 
   <metadata>
     <name>Le Havre – Perret-Wiederaufbau &amp; Impressionismus</name>
-    <desc>Rundgang 7,9 km, Start und Ziel am kostenlosen Parkplatz Bd Clemenceau, Abschluss im MuMa. Koordinaten per Nominatim/Overpass aus OpenStreetMap geocodiert (Stand 2026-08-17), Quelle: OpenStreetMap contributors, ODbL 1.0. Distanzen per BRouter, Profil hiking-mountain.</desc>
+    <desc>Rundgang 7,7 km, Start und Ziel am kostenlosen Parkplatz Bd Clemenceau, Abschluss im MuMa. Koordinaten per Nominatim/Overpass aus OpenStreetMap geocodiert (Stand 2026-08-17), Quelle: OpenStreetMap contributors, ODbL 1.0. Distanzen per BRouter, Profil hiking-mountain.</desc>
     <author>
       <name>Claudian - Obsidian Vault</name>
     </author>
@@ -27,80 +27,80 @@
     <sym>Scenic Area</sym>
   </wpt>
 
-  <wpt lat="49.48775" lon="0.11099">
-    <name>01b Pont Notre-Dame</name>
-    <desc>Bewegliche Bruecke ueber den Bassin du Roy, verbindet Notre-Dame und Saint-Francois. Hier gruendete Koenig Franz I. 1517 den Hafen, aus dem Le Havre hervorging - aeltester Punkt der Runde.</desc>
-    <sym>Bridge</sym>
-  </wpt>
-
   <wpt lat="49.48693" lon="0.11277">
     <name>02 Maison de l'Armateur</name>
     <desc>3 quai de l'Ile, Quartier Saint-Francois. Reederhaus um 1790 mit oktogonalem Lichthof.</desc>
     <sym>Museum</sym>
   </wpt>
 
+  <wpt lat="49.48775" lon="0.11099">
+    <name>03 Pont Notre-Dame</name>
+    <desc>Bewegliche Bruecke ueber den Bassin du Roy, verbindet Notre-Dame und Saint-Francois. Hier gruendete Koenig Franz I. 1517 den Hafen, aus dem Le Havre hervorging - aeltester Punkt der Runde.</desc>
+    <sym>Bridge</sym>
+  </wpt>
+
   <wpt lat="49.48700" lon="0.10835">
-    <name>03 Cathedrale Notre-Dame</name>
+    <name>04 Cathedrale Notre-Dame</name>
     <desc>Rue des Drapiers. Renaissance, einer der wenigen Kriegsueberlebenden der Innenstadt.</desc>
     <sym>Church</sym>
   </wpt>
 
   <wpt lat="49.49046" lon="0.10463">
-    <name>04 Les Halles Centrales</name>
+    <name>05 Les Halles Centrales</name>
     <desc>Rue Bernardin de Saint-Pierre. Markthallen - Mittagspause / Proviant.</desc>
     <sym>Shopping Center</sym>
   </wpt>
 
   <wpt lat="49.49095" lon="0.10123">
-    <name>05 Eglise Saint-Joseph</name>
+    <name>06 Eglise Saint-Joseph</name>
     <desc>130 bd Francois 1er. Perret, 107 m Betonturm als Lichtschacht, Glas von Marguerite Hure. Eintritt frei. Pflichtstation.</desc>
     <sym>Church</sym>
   </wpt>
 
   <wpt lat="49.49034" lon="0.10697">
-    <name>06 Le Volcan</name>
+    <name>07 Le Volcan</name>
     <desc>Place Oscar Niemeyer. Niemeyer, 1982. Mediathek im Petit Volcan oeffentlich zugaenglich und kostenlos.</desc>
     <sym>Building</sym>
   </wpt>
 
   <wpt lat="49.49179" lon="0.10757">
-    <name>07 Appartement temoin Perret</name>
+    <name>08 Appartement temoin Perret</name>
     <desc>Maison du Patrimoine / Atelier Perret, 181 rue de Paris. NUR mit Fuehrung, ca. 1 Std. August taeglich 10:00 / 11:00 / 14:30 / 15:30 / 16:30. Anmeldung 02 35 22 31 22.</desc>
     <sym>Museum</sym>
   </wpt>
 
   <wpt lat="49.49409" lon="0.10790">
-    <name>08 Hotel de Ville</name>
+    <name>09 Hotel de Ville</name>
     <desc>Place de l'Hotel de Ville. Perret-Rathaus mit Turm, Hauptplatz und Achsenkreuz des Wiederaufbaus.</desc>
     <sym>Building</sym>
   </wpt>
 
   <wpt lat="49.49326" lon="0.10591">
-    <name>09 Quartier Perret / Avenue Foch</name>
+    <name>10 Quartier Perret / Avenue Foch</name>
     <desc>Das UNESCO-Welterbe selbst: das Ensemble, nicht die Einzelbauten. Avenue Foch als Prachtachse mit den Perret-Wohnbloecken - hier sieht man das Raster als Ganzes. Punkt liegt auf dem OSM-Strassensegment, einfach die Achse Richtung Westen ablaufen.</desc>
     <sym>Building</sym>
   </wpt>
 
   <wpt lat="49.49367" lon="0.09776">
-    <name>10 Porte Oceane</name>
+    <name>11 Porte Oceane</name>
     <desc>Perrets Stadttor zum Meer, Abschluss der Avenue Foch. Koordinate ist der Quartiers-Mittelpunkt aus OSM, nicht das Bauwerk selbst - ca. 100 m Unschaerfe.</desc>
     <sym>Building</sym>
   </wpt>
 
   <wpt lat="49.49606" lon="0.09141">
-    <name>11 Plage / Strandkabinen</name>
+    <name>12 Plage / Strandkabinen</name>
     <desc>Kiesstrand mit weissen Badekabinen, Promenade Richtung Sainte-Adresse.</desc>
     <sym>Beach</sym>
   </wpt>
 
   <wpt lat="49.49501" lon="0.09324">
-    <name>12 Victor by Milot (Frites a Victor)</name>
+    <name>13 Victor by Milot (Frites a Victor)</name>
     <desc>Kultimbiss an der Promenade seit 1927. Saisonbetrieb, im August offen.</desc>
     <sym>Restaurant</sym>
   </wpt>
 
   <wpt lat="49.48502" lon="0.10266">
-    <name>13 MuMa - Musee Malraux (ABSCHLUSS)</name>
+    <name>14 MuMa - Musee Malraux (ABSCHLUSS)</name>
     <desc>2 bd Clemenceau. Di/Mi/Fr 11-18, Do 11-22, Sa/So 11-19, Mo geschlossen. Letzter Einlass 15 Min. vor Schliessung. ca. 10 EUR, Kasse nur vor Ort. Danach 350 m zurueck zum Auto.</desc>
     <sym>Museum</sym>
   </wpt>
@@ -141,23 +141,23 @@
        KEINE gerouteten Wege - nur damit Track-Loader (z.B. BRouter-Web) die Datei annehmen
        und als Orientierung anzeigen. Die echte Route in BRouter selbst klicken. -->
   <trk>
-    <name>Le Havre - Rundgang 00-13 (Luftlinie, nur Orientierung)</name>
+    <name>Le Havre - Rundgang 00-14 (Luftlinie, nur Orientierung)</name>
     <trkseg>
       <trkpt lat="49.48679" lon="0.09894"><name>00 Parkplatz Bd Clemenceau</name></trkpt>
       <trkpt lat="49.48485" lon="0.10719"><name>01 Catene de conteneurs</name></trkpt>
-      <trkpt lat="49.48775" lon="0.11099"><name>01b Pont Notre-Dame</name></trkpt>
       <trkpt lat="49.48693" lon="0.11277"><name>02 Maison de l'Armateur</name></trkpt>
-      <trkpt lat="49.48700" lon="0.10835"><name>03 Cathedrale Notre-Dame</name></trkpt>
-      <trkpt lat="49.49046" lon="0.10463"><name>04 Les Halles Centrales</name></trkpt>
-      <trkpt lat="49.49095" lon="0.10123"><name>05 Eglise Saint-Joseph</name></trkpt>
-      <trkpt lat="49.49034" lon="0.10697"><name>06 Le Volcan</name></trkpt>
-      <trkpt lat="49.49179" lon="0.10757"><name>07 Appartement temoin Perret</name></trkpt>
-      <trkpt lat="49.49409" lon="0.10790"><name>08 Hotel de Ville</name></trkpt>
-      <trkpt lat="49.49326" lon="0.10591"><name>09 Quartier Perret / Avenue Foch</name></trkpt>
-      <trkpt lat="49.49367" lon="0.09776"><name>10 Porte Oceane</name></trkpt>
-      <trkpt lat="49.49606" lon="0.09141"><name>11 Plage / Strandkabinen</name></trkpt>
-      <trkpt lat="49.49501" lon="0.09324"><name>12 Victor by Milot</name></trkpt>
-      <trkpt lat="49.48502" lon="0.10266"><name>13 MuMa</name></trkpt>
+      <trkpt lat="49.48775" lon="0.11099"><name>03 Pont Notre-Dame</name></trkpt>
+      <trkpt lat="49.48700" lon="0.10835"><name>04 Cathedrale Notre-Dame</name></trkpt>
+      <trkpt lat="49.49046" lon="0.10463"><name>05 Les Halles Centrales</name></trkpt>
+      <trkpt lat="49.49095" lon="0.10123"><name>06 Eglise Saint-Joseph</name></trkpt>
+      <trkpt lat="49.49034" lon="0.10697"><name>07 Le Volcan</name></trkpt>
+      <trkpt lat="49.49179" lon="0.10757"><name>08 Appartement temoin Perret</name></trkpt>
+      <trkpt lat="49.49409" lon="0.10790"><name>09 Hotel de Ville</name></trkpt>
+      <trkpt lat="49.49326" lon="0.10591"><name>10 Quartier Perret / Avenue Foch</name></trkpt>
+      <trkpt lat="49.49367" lon="0.09776"><name>11 Porte Oceane</name></trkpt>
+      <trkpt lat="49.49606" lon="0.09141"><name>12 Plage / Strandkabinen</name></trkpt>
+      <trkpt lat="49.49501" lon="0.09324"><name>13 Victor by Milot</name></trkpt>
+      <trkpt lat="49.48502" lon="0.10266"><name>14 MuMa</name></trkpt>
       <trkpt lat="49.48679" lon="0.09894"><name>00 Parkplatz (Ziel)</name></trkpt>
     </trkseg>
   </trk>
