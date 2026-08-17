@@ -14,7 +14,7 @@ created: 2026-08-17
 modified: 2026-08-17
 ---
 
-> **Fortschritt (2026-08-17):** Vault `Reise-Guides/Le Havre/` angelegt (umbenannt von `Le-Havre-Audioguide/`, siehe Entscheidungs-Update unten), alle 14 Notizen (0000–0013) mit deutschen Fließtexten (1–2 Min. Sprechzeit) geschrieben, vertiefte Websuche durchgeführt, alle 3 ⚠️-Punkte in Abschnitt 3.4 verifiziert und in den Notiztexten korrigiert übernommen (Details siehe [[../Doku/Claude – Änderungshistorie]]). **Noch offen:** TTS-Erzeugung (14 mp3-Dateien) — wartet auf Klärung des API-Keys mit dem User, siehe Abschnitt 3.5; Publish-Einrichtung (Abschnitt 3.6, neu).
+> **Fortschritt (2026-08-17):** Vault `Reise-Guides/Le Havre/` angelegt (umbenannt von `Le-Havre-Audioguide/`, siehe Entscheidungs-Update unten), alle 14 Notizen (0000–0013) mit deutschen Fließtexten (1–2 Min. Sprechzeit) geschrieben, vertiefte Websuche durchgeführt, alle 3 ⚠️-Punkte in Abschnitt 3.4 verifiziert und in den Notiztexten korrigiert übernommen. Alle 14 mp3-Dateien per OpenAI `tts-1-hd` (Stimme `onyx`) erzeugt und verifiziert (19.680 Zeichen gesamt, Kosten ca. 0,59 $) — zwei Dateien brauchten wegen eines kurzen DNS-Aussetzers einen zweiten Anlauf, danach vollständig (Details siehe [[../Doku/Claude – Änderungshistorie]]). **Noch offen:** Publish-Einrichtung (Abschnitt 3.6) — Kosten/Passwort/Umfang mit User klären.
 >
 > **Entscheidungs-Update (2026-08-17):** Bereitstellung läuft **nicht** mehr über Obsidian Sync, sondern über **Obsidian Publish mit Passwortschutz** — User-Entscheidung nach kurzer Diskussion der Optionen (Sync teilt ganze Vaults ohne Read-only-Rolle; Publish erlaubt echten Passwortschutz und keinen Obsidian-Account für die Ehefrau). Deshalb auch der Namenswechsel: Statt eines Le-Havre-spezifischen Einwegvaults jetzt ein generisches `Reise-Guides/`-Vault, das künftige Ausflüge als weitere Unterordner aufnehmen kann (Le Havre ist der erste). Abschnitte 3.1/3.6/4/6 unten entsprechend aktualisiert.
 
@@ -181,7 +181,7 @@ curl https://api.openai.com/v1/audio/speech \
 ## 6. Abnahme
 
 - [x] Vault `Reise-Guides/Le Havre/` mit 14 Notizen (0000–0013) angelegt — 2026-08-17
-- [ ] 14 mp3-Dateien erzeugt (wartet auf API-Key)
+- [x] 14 mp3-Dateien erzeugt (OpenAI `tts-1-hd`, Stimme `onyx`) — 2026-08-17
 - [x] Reihenfolge/Nummerierung entspricht der Gehreihenfolge aus [[Stadtrundgänge/Le Havre/Le Havre - Perret-Wiederaufbau & Impressionismus]] — 2026-08-17
 - [x] Kein Text enthält Öffnungszeiten/Preise/Adressen — 2026-08-17
 - [x] ⚠️-markierte Fakten verifiziert oder mit Einschränkung umformuliert — 2026-08-17
