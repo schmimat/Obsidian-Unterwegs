@@ -153,6 +153,7 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 | Pfad | Inhalt |
 |------|--------|
 | `CLAUDE.md` | Diese Datei |
+| `Aufgaben/` | Ausformulierte Arbeitsaufträge für den Claude Code Worker (LXC 203) — je Auftrag eine `.md` mit Ziel, Ist-Zustand, Was-zu-tun-ist, Leitplanken und Abnahmekriterien. Neu seit 2026-08-17, Format übernommen aus `Knowledge Base/IT@home/Aufgaben/` (dort auch die Abgrenzung „Aufgaben/ = abarbeitbare Anweisung" vs. Einzeiler-ToDo dokumentiert) |
 | `CC-Session-Logs/` | Session-Logs (via `/compress` + `/preserve`) |
 | `_claude/` + `.claude` (Symlink) | cpr-Skills (`/compress`, `/preserve`, `/resume`) |
 | `Doku/Claude – Änderungshistorie.md` | Protokoll autonomer `.md`-Änderungen (wöchentliche Sammelbestätigung) |
@@ -168,5 +169,7 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 
 ---
 
-**Zuletzt aktualisiert:** 2026-08-12
+**Zuletzt aktualisiert:** 2026-08-17 — neuer Ordner `Aufgaben/` angelegt (Muster aus Knowledge Base übernommen), erste Aufgabe: Audio-Guide Le Havre für LXC 203
+
+**Vorherige Aktualisierung:** 2026-08-12
 **Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich, kein Vereinheitlichungsbedarf); Urlaub/Touren vollständig archiviert (Container-seitig + beide GitHub-Repos). **2026-08-12:** GPX/Map-View auf Android debuggt (echte Plugin-Syntax verifiziert, `GPX-Setup-Anleitung.md`/`GPX-Verwaltung.md` korrigiert, funktionierende Embeds in 3 Maastricht-Touren + 6 Rother-Regionen-Übersichtskarten ergänzt); `Wanderungen/Archiv (OneDrive)/`-Struktur komplett eliminiert (475 Dateien + 11 Notizen geflacht, ~64 Pfadreferenzen gefixt) — dabei ein eigener Fehler (überschriebene `Wanderungen/README.md`) passiert und über Git-Historie + User-Mithilfe vollständig recovert, siehe neue Abschnitte oben. Offen: `Regionen/`-Konzept, Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), Highlights-Route (`Maastricht - Highlights`) hat weiterhin keine eigene GPX-Datei (dokumentierte Lücke, kein Blocker)
