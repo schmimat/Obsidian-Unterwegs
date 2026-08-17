@@ -115,6 +115,8 @@ https://www.google.com/maps?q=LAT,LON
 
 ## 6. Bekannte Fallstricke
 
+- **Browser-Cache auf der Publish-Seite kann hartnäckiger sein als ein normaler Hard-Refresh.** Bei starkem Datei-Churn (z. B. nach einer Umbenennungswelle) reichte ein einfacher Reload nicht — auch Umschalt+F5/Strg+F5 (Hard-Refresh) halfen nicht zuverlässig, erst ein **kompletter Cache-Leeren** (Browser-Einstellungen → Browserdaten löschen → Bilder und Dateien im Cache) zeigte den aktuellen Stand. Server-seitig war der Inhalt nachweislich die ganze Zeit korrekt (`ob publish --dry-run` zeigte 0 offene Änderungen) — es lag rein am Client. Bei „ich sehe die Änderung nicht" auf der Publish-Seite zuerst serverseitig verifizieren (dry-run), dann bei Bedarf gleich zum kompletten Cache-Leeren raten statt nur zum Hard-Refresh.
+
 - **IPv6 auf Container 203 ist nicht erreichbar** — führt bei `ob publish`, `ob sync` und OpenAI-API-Aufrufen sporadisch zu `EAI_AGAIN`/`fetch failed`. Kein echtes Problem, einfach wiederholen (2–5 Versuche reichen praktisch immer).
 - **Obsidian Publish kennt keine `.gpx`-Dateien** — weder als Link noch als Embed werden sie hochgeladen. Die Route auf der Reise-Guides-Seite läuft deshalb nur über den externen BRouter-Web-Link, nicht über eine eingebettete Karte.
 - **Map View (`mapview`-Codeblock) funktioniert auf Obsidian Publish nicht** — Community-Plugins werden dort nicht unterstützt. Auf der `Unterwegs`-Seite (normale App) funktioniert die interaktive Karte weiterhin.

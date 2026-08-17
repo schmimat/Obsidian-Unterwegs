@@ -34,22 +34,22 @@ coordinates: "49.4868°N, 0.0989°E"
 
 | # | Station | Was | Zeit | Hinweis | 📍 |
 |---|---------|-----|------|---------|---|
-| **00** | **Parkplatz Bd Clemenceau** | Start **und** Ziel | — | Kostenlos, früh da sein | [📍](https://www.google.com/maps?q=49.48679,0.09894) |
-| 01 | Catène de conteneurs | Container-Kunstwerk, 2017 | 10 Min | Am Hafenbecken, nicht am Strand | [📍](https://www.google.com/maps?q=49.48485,0.10719) |
-| 02 | Maison de l'Armateur | Reederhaus um 1790 | 45 Min | Eines der wenigen Vorkriegsgebäude | [📍](https://www.google.com/maps?q=49.48693,0.11277) |
-| 03 | Pont Notre-Dame | Brücke am Bassin du Roy | 5 Min | Gründungsort Le Havres, 1517 | [📍](https://www.google.com/maps?q=49.48775,0.11099) |
-| 04 | Cathédrale Notre-Dame | Renaissance | 15 Min | Kriegsüberlebende | [📍](https://www.google.com/maps?q=49.487,0.10835) |
-| 05 | Les Halles Centrales | Markthallen | 30 Min | Mittagspause / Proviant | [📍](https://www.google.com/maps?q=49.49046,0.10463) |
-| 06 | **Église Saint-Joseph** ⭐ | Perrets Meisterwerk | 30 Min | Eintritt frei, Pflichtstation | [📍](https://www.google.com/maps?q=49.49095,0.10123) |
-| 07 | Le Volcan | Niemeyer, 1982 | 20 Min | Mediathek innen, kostenlos | [📍](https://www.google.com/maps?q=49.49034,0.10697) |
-| 08 | **Appartement témoin Perret** ⭐ | Musterwohnung 1955 | 60 Min | **Nur mit Führung, anmelden!** | [📍](https://www.google.com/maps?q=49.49179,0.10757) |
-| 09 | Hôtel de Ville | Perret-Rathaus | 15 Min | Hauptplatz des Wiederaufbaus | [📍](https://www.google.com/maps?q=49.49409,0.1079) |
-| 10 | **Quartier Perret / Avenue Foch** ⭐ | Das UNESCO-Ensemble | 30 Min | Achse ablaufen, nicht nur ansehen | [📍](https://www.google.com/maps?q=49.49326,0.10591) |
-| 11 | Porte Océane | Stadttor zum Meer | 10 Min | Abschluss der Avenue Foch | [📍](https://www.google.com/maps?q=49.49367,0.09776) |
-| 12 | Plage / Strandkabinen | Kiesstrand, Promenade | 20 Min | | [📍](https://www.google.com/maps?q=49.49606,0.09141) |
-| 13 | Victor by Milot | Frites-Kultimbiss seit 1927 | 20 Min | Saisonbetrieb | [📍](https://www.google.com/maps?q=49.49501,0.09324) |
-| 14 | **MuMa – Musée Malraux** ⭐ | Impressionisten | 120 Min | **Mo geschlossen**, Do bis 22 Uhr | [📍](https://www.google.com/maps?q=49.48502,0.10266) |
-| ↩ | zurück zum Auto | 350 m ab MuMa | 5 Min | | [📍](https://www.google.com/maps?q=49.48679,0.09894) |
+| **00** | **Parkplatz Bd Clemenceau** | Start **und** Ziel | — | Kostenlos, früh da sein | [📍](https://www.google.com/maps?q=49.48679,0.09894(Parkplatz%20Bd%20Clemenceau)) |
+| 01 | Catène de conteneurs | Container-Kunstwerk, 2017 | 10 Min | Am Hafenbecken, nicht am Strand | [📍](https://www.google.com/maps?q=49.48485,0.10719(Cat%C3%A8ne%20de%20conteneurs)) |
+| 02 | Maison de l'Armateur | Reederhaus um 1790 | 45 Min | Eines der wenigen Vorkriegsgebäude | [📍](https://www.google.com/maps?q=49.48693,0.11277(Maison%20de%20l%27Armateur)) |
+| 03 | Pont Notre-Dame | Brücke am Bassin du Roy | 5 Min | Gründungsort Le Havres, 1517 | [📍](https://www.google.com/maps?q=49.48775,0.11099(Pont%20Notre-Dame)) |
+| 04 | Cathédrale Notre-Dame | Renaissance | 15 Min | Kriegsüberlebende | [📍](https://www.google.com/maps?q=49.487,0.10835(Cath%C3%A9drale%20Notre-Dame)) |
+| 05 | Les Halles Centrales | Markthallen | 30 Min | Mittagspause / Proviant | [📍](https://www.google.com/maps?q=49.49046,0.10463(Les%20Halles%20Centrales)) |
+| 06 | **Église Saint-Joseph** ⭐ | Perrets Meisterwerk | 30 Min | Eintritt frei, Pflichtstation | [📍](https://www.google.com/maps?q=49.49095,0.10123(%C3%89glise%20Saint-Joseph)) |
+| 07 | Le Volcan | Niemeyer, 1982 | 20 Min | Mediathek innen, kostenlos | [📍](https://www.google.com/maps?q=49.49034,0.10697(Le%20Volcan)) |
+| 08 | **Appartement témoin Perret** ⭐ | Musterwohnung 1955 | 60 Min | **Nur mit Führung, anmelden!** | [📍](https://www.google.com/maps?q=49.49179,0.10757(Appartement%20t%C3%A9moin%20Perret)) |
+| 09 | Hôtel de Ville | Perret-Rathaus | 15 Min | Hauptplatz des Wiederaufbaus | [📍](https://www.google.com/maps?q=49.49409,0.1079(H%C3%B4tel%20de%20Ville)) |
+| 10 | **Quartier Perret / Avenue Foch** ⭐ | Das UNESCO-Ensemble | 30 Min | Achse ablaufen, nicht nur ansehen | [📍](https://www.google.com/maps?q=49.49326,0.10591(Avenue%20Foch)) |
+| 11 | Porte Océane | Stadttor zum Meer | 10 Min | Abschluss der Avenue Foch | [📍](https://www.google.com/maps?q=49.49367,0.09776(Porte%20Oc%C3%A9ane)) |
+| 12 | Plage / Strandkabinen | Kiesstrand, Promenade | 20 Min | | [📍](https://www.google.com/maps?q=49.49606,0.09141(Plage)) |
+| 13 | Victor by Milot | Frites-Kultimbiss seit 1927 | 20 Min | Saisonbetrieb | [📍](https://www.google.com/maps?q=49.49501,0.09324(Victor%20by%20Milot)) |
+| 14 | **MuMa – Musée Malraux** ⭐ | Impressionisten | 120 Min | **Mo geschlossen**, Do bis 22 Uhr | [📍](https://www.google.com/maps?q=49.48502,0.10266(MuMa)) |
+| ↩ | zurück zum Auto | 350 m ab MuMa | 5 Min | | [📍](https://www.google.com/maps?q=49.48679,0.09894(Parkplatz%20Bd%20Clemenceau)) |
 
 **Optionen außerhalb der Route:** Jardins Suspendus (mit dem Auto) · Docks Vauban · Les Bains des Docks — siehe unten.
 
@@ -64,7 +64,7 @@ coordinates: "49.4868°N, 0.0989°E"
 ```
 
 **In BRouter-Web öffnen** (alle Punkte gesetzt, verschiebbar, Profil „Wandern"):
-[Rundgang 00–14 zurück zum Parkplatz](https://brouter.de/brouter-web/#map=14/49.4910/0.1040/standard&lonlats=0.09894,49.48679;0.10719,49.48485;0.11277,49.48693;0.11099,49.48775;0.10835,49.487;0.10463,49.49046;0.10123,49.49095;0.10697,49.49034;0.10757,49.49179;0.1079,49.49409;0.10591,49.49326;0.09776,49.49367;0.09141,49.49606;0.09324,49.49501;0.10266,49.48502;0.09894,49.48679&profile=hiking-mountain)
+[Rundgang 00–14 zurück zum Parkplatz](https://brouter.de/brouter-web/#map=14/49.4910/0.1040/standard&lonlats=0.09894,49.48679;0.10719,49.48485;0.11277,49.48693;0.11099,49.48775;0.10835,49.487;0.10463,49.49046;0.10123,49.49095;0.10697,49.49034;0.10757,49.49179;0.1079,49.49409;0.10591,49.49326;0.09776,49.49367;0.09141,49.49606;0.09324,49.49501;0.10266,49.48502;0.09894,49.48679&pois=0.09901,49.48686,Parkplatz%20Bd%20Clemenceau;0.10726,49.48492,Cat%C3%A8ne%20de%20conteneurs;0.11284,49.487,Maison%20de%20l%27Armateur;0.11106,49.48782,Pont%20Notre-Dame;0.10842,49.48707,Cath%C3%A9drale%20Notre-Dame;0.1047,49.49053,Les%20Halles%20Centrales;0.1013,49.49102,%C3%89glise%20Saint-Joseph;0.10704,49.49041,Le%20Volcan;0.10764,49.49186,Appartement%20t%C3%A9moin%20Perret;0.10797,49.49416,H%C3%B4tel%20de%20Ville;0.10598,49.49333,Avenue%20Foch;0.09783,49.49374,Porte%20Oc%C3%A9ane;0.09148,49.49613,Plage;0.09331,49.49508,Victor%20by%20Milot;0.10273,49.48509,MuMa&profile=hiking-mountain)
 
 ---
 
