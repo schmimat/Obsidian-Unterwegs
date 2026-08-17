@@ -15,8 +15,8 @@ created: 2026-08-17
 modified: 2026-08-17
 difficulty: "⭐ Sehr leicht (flach)"
 duration: "Ganzer Tag (mit Museen)"
-distance: "7,7 km"
-stations: 14
+distance: "7,9 km"
+stations: 15
 type: "Stadtrundgang"
 region: "Le Havre, Normandie, Frankreich"
 status: "geplant"
@@ -32,23 +32,24 @@ coordinates: "49.4868°N, 0.0989°E"
 
 ## 📋 Stationen im Überblick
 
-| # | Station | Was | Zeit | Hinweis |
-|---|---------|-----|------|---------|
-| **00** | **Parkplatz Bd Clemenceau** | Start **und** Ziel | — | Kostenlos, früh da sein |
-| 01 | Catène de conteneurs | Container-Kunstwerk, 2017 | 10 Min | Am Hafenbecken, nicht am Strand |
-| 02 | Maison de l'Armateur | Reederhaus um 1790 | 45 Min | Eines der wenigen Vorkriegsgebäude |
-| 03 | Cathédrale Notre-Dame | Renaissance | 15 Min | Kriegsüberlebende |
-| 04 | Les Halles Centrales | Markthallen | 30 Min | Mittagspause / Proviant |
-| 05 | **Église Saint-Joseph** ⭐ | Perrets Meisterwerk | 30 Min | Eintritt frei, Pflichtstation |
-| 06 | Le Volcan | Niemeyer, 1982 | 20 Min | Mediathek innen, kostenlos |
-| 07 | **Appartement témoin Perret** ⭐ | Musterwohnung 1955 | 60 Min | **Nur mit Führung, anmelden!** |
-| 08 | Hôtel de Ville | Perret-Rathaus | 15 Min | Hauptplatz des Wiederaufbaus |
-| 09 | **Quartier Perret / Avenue Foch** ⭐ | Das UNESCO-Ensemble | 30 Min | Achse ablaufen, nicht nur ansehen |
-| 10 | Porte Océane | Stadttor zum Meer | 10 Min | Abschluss der Avenue Foch |
-| 11 | Plage / Strandkabinen | Kiesstrand, Promenade | 20 Min | |
-| 12 | Victor by Milot | Frites-Kultimbiss seit 1927 | 20 Min | Saisonbetrieb |
-| 13 | **MuMa – Musée Malraux** ⭐ | Impressionisten | 120 Min | **Mo geschlossen**, Do bis 22 Uhr |
-| ↩ | zurück zum Auto | 350 m ab MuMa | 5 Min | |
+| # | Station | Was | Zeit | Hinweis | 📍 |
+|---|---------|-----|------|---------|---|
+| **00** | **Parkplatz Bd Clemenceau** | Start **und** Ziel | — | Kostenlos, früh da sein | [📍](https://www.google.com/maps?q=49.48679,0.09894) |
+| 01 | Catène de conteneurs | Container-Kunstwerk, 2017 | 10 Min | Am Hafenbecken, nicht am Strand | [📍](https://www.google.com/maps?q=49.48485,0.10719) |
+| 01b | Pont Notre-Dame | Brücke am Bassin du Roy | 5 Min | Gründungsort Le Havres, 1517 | [📍](https://www.google.com/maps?q=49.48775,0.11099) |
+| 02 | Maison de l'Armateur | Reederhaus um 1790 | 45 Min | Eines der wenigen Vorkriegsgebäude | [📍](https://www.google.com/maps?q=49.48693,0.11277) |
+| 03 | Cathédrale Notre-Dame | Renaissance | 15 Min | Kriegsüberlebende | [📍](https://www.google.com/maps?q=49.487,0.10835) |
+| 04 | Les Halles Centrales | Markthallen | 30 Min | Mittagspause / Proviant | [📍](https://www.google.com/maps?q=49.49046,0.10463) |
+| 05 | **Église Saint-Joseph** ⭐ | Perrets Meisterwerk | 30 Min | Eintritt frei, Pflichtstation | [📍](https://www.google.com/maps?q=49.49095,0.10123) |
+| 06 | Le Volcan | Niemeyer, 1982 | 20 Min | Mediathek innen, kostenlos | [📍](https://www.google.com/maps?q=49.49034,0.10697) |
+| 07 | **Appartement témoin Perret** ⭐ | Musterwohnung 1955 | 60 Min | **Nur mit Führung, anmelden!** | [📍](https://www.google.com/maps?q=49.49179,0.10757) |
+| 08 | Hôtel de Ville | Perret-Rathaus | 15 Min | Hauptplatz des Wiederaufbaus | [📍](https://www.google.com/maps?q=49.49409,0.1079) |
+| 09 | **Quartier Perret / Avenue Foch** ⭐ | Das UNESCO-Ensemble | 30 Min | Achse ablaufen, nicht nur ansehen | [📍](https://www.google.com/maps?q=49.49326,0.10591) |
+| 10 | Porte Océane | Stadttor zum Meer | 10 Min | Abschluss der Avenue Foch | [📍](https://www.google.com/maps?q=49.49367,0.09776) |
+| 11 | Plage / Strandkabinen | Kiesstrand, Promenade | 20 Min | | [📍](https://www.google.com/maps?q=49.49606,0.09141) |
+| 12 | Victor by Milot | Frites-Kultimbiss seit 1927 | 20 Min | Saisonbetrieb | [📍](https://www.google.com/maps?q=49.49501,0.09324) |
+| 13 | **MuMa – Musée Malraux** ⭐ | Impressionisten | 120 Min | **Mo geschlossen**, Do bis 22 Uhr | [📍](https://www.google.com/maps?q=49.48502,0.10266) |
+| ↩ | zurück zum Auto | 350 m ab MuMa | 5 Min | | [📍](https://www.google.com/maps?q=49.48679,0.09894) |
 
 **Optionen außerhalb der Route:** Jardins Suspendus (mit dem Auto) · Docks Vauban · Les Bains des Docks — siehe unten.
 
@@ -63,7 +64,7 @@ coordinates: "49.4868°N, 0.0989°E"
 ```
 
 **In BRouter-Web öffnen** (alle Punkte gesetzt, verschiebbar, Profil „Wandern"):
-[Rundgang 00–13 zurück zum Parkplatz](https://brouter.de/brouter-web/#map=14/49.4910/0.1040/standard&lonlats=0.09894,49.48679;0.10719,49.48485;0.11277,49.48693;0.10835,49.487;0.10463,49.49046;0.10123,49.49095;0.10697,49.49034;0.10757,49.49179;0.1079,49.49409;0.10591,49.49326;0.09776,49.49367;0.09141,49.49606;0.09324,49.49501;0.10266,49.48502;0.09894,49.48679&profile=hiking-mountain)
+[Rundgang 00–13 (inkl. 01b) zurück zum Parkplatz](https://brouter.de/brouter-web/#map=14/49.4910/0.1040/standard&lonlats=0.09894,49.48679;0.10719,49.48485;0.11099,49.48775;0.11277,49.48693;0.10835,49.487;0.10463,49.49046;0.10123,49.49095;0.10697,49.49034;0.10757,49.49179;0.1079,49.49409;0.10591,49.49326;0.09776,49.49367;0.09141,49.49606;0.09324,49.49501;0.10266,49.48502;0.09894,49.48679&profile=hiking-mountain)
 
 ---
 
@@ -74,8 +75,8 @@ coordinates: "49.4868°N, 0.0989°E"
 | **Stadt** | Le Havre, Seine-Maritime |
 | **Start & Ziel** | Parkplatz Bd Clemenceau (49.48679°N, 0.09894°E) |
 | **Abschluss** | MuMa, danach 350 m zum Auto |
-| **Distanz** | 7,7 km Rundweg |
-| **Reine Gehzeit** | ca. 1:30 Std. |
+| **Distanz** | 7,9 km Rundweg |
+| **Reine Gehzeit** | ca. 1:34 Std. |
 | **Höhenmeter** | praktisch keine — die Runde ist flach |
 | **Dauer gesamt** | Ganzer Tag mit MuMa + Appartement témoin |
 | **Schwierigkeit** | ⭐ Sehr leicht |
@@ -106,6 +107,11 @@ Kostenlos ist auch die Innenstadt werktags 12–14 Uhr, ab 18 Uhr sowie sonntags
 - **Ort:** Quai de Southampton
 - **Was:** Doppelbogen aus bunten Frachtcontainern von Vincent Ganivet, 2017.
 - ⚠️ Liegt am **Hafenbecken, nicht am Strand** — eine oft falsch erinnerte Lage.
+
+### 01b. Pont Notre-Dame
+- **Ort:** Verbindet die Quartiere Notre-Dame und Saint-François über den Bassin du Roy
+- **Was:** Bewegliche Brücke am ältesten Hafenbecken der Stadt — hier ließ König Franz I. 1517 den Hafen gründen, aus dem Le Havre hervorging. Älter als jede andere Station der Runde.
+- 💡 Kurzer Stopp mitten auf der Brücke, kein eigenes Zeitfenster nötig — der eigentliche Ursprungsort der Stadt.
 
 ### 02. Maison de l'Armateur
 - **Ort:** 3 quai de l'Île, Quartier Saint-François
@@ -191,6 +197,7 @@ Ca. 1,5 km östlich, eigener Abstecher. Backsteinlagerhaus von 1846 (heute Einka
 
 ## 🔗 Verwandtes
 
+- **Wartung & Struktur (allgemein, nicht Le-Havre-spezifisch):** [[../../Ressourcen/Anleitung - Stadtrundgang mit Audioguide aufbauen & publizieren|Anleitung – Stadtrundgang mit Audioguide aufbauen & publizieren]] — was bei Änderungen an einem Rundgang mit Audioguide überall angepasst werden muss (GPX, Audioguide-Vault, Publish-Seite)
 - **Alternative für einen ganzen Tag:** Musée des Beaux-Arts Rouen — Caravaggio, Velázquez, Géricault, Monets Kathedrale. Täglich 10–18 Uhr, **dienstags geschlossen**, Dauerausstellung **kostenlos**. Aber ~70 km von Fécamp und nur als kompletter Stadttag sinnvoll.
 - **Regentag ohne Anfahrt:** Musée Les Pêcheries in Fécamp — Fischerei- und Stadtgeschichte, Kunstetage mit Boudin und Küstenmalerei, Dachterrasse über Hafen und Klippen.
 

@@ -33,6 +33,7 @@ Zentrale Anlaufstelle für Dokumentation, Templates und Verwaltungsdateien des *
 ### Anleitungen
 - **[[GPX-Setup-Anleitung]]** — Komplette Anleitung zur GPX-Integration
 - **[[GPX-Verwaltung]]** — Technische Übersicht aller GPX-Dateien
+- **[[Anleitung - Stadtrundgang mit Audioguide aufbauen & publizieren]]** — Zwei-Vault-Architektur (`Unterwegs` + `Reise-Guides`), Anpassungs-Checkliste, bekannte Fallstricke
 
 ---
 

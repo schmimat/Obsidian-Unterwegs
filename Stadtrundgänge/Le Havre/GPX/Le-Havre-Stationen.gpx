@@ -6,7 +6,7 @@
 
   <metadata>
     <name>Le Havre – Perret-Wiederaufbau &amp; Impressionismus</name>
-    <desc>Rundgang 7,7 km, Start und Ziel am kostenlosen Parkplatz Bd Clemenceau, Abschluss im MuMa. Koordinaten per Nominatim/Overpass aus OpenStreetMap geocodiert (Stand 2026-08-17), Quelle: OpenStreetMap contributors, ODbL 1.0. Distanzen per BRouter, Profil hiking-mountain.</desc>
+    <desc>Rundgang 7,9 km, Start und Ziel am kostenlosen Parkplatz Bd Clemenceau, Abschluss im MuMa. Koordinaten per Nominatim/Overpass aus OpenStreetMap geocodiert (Stand 2026-08-17), Quelle: OpenStreetMap contributors, ODbL 1.0. Distanzen per BRouter, Profil hiking-mountain.</desc>
     <author>
       <name>Claudian - Obsidian Vault</name>
     </author>
@@ -25,6 +25,12 @@
     <name>01 Catene de conteneurs</name>
     <desc>Containerbogen von Vincent Ganivet, 2017. Quai de Southampton - liegt am Hafenbecken, nicht am Strand.</desc>
     <sym>Scenic Area</sym>
+  </wpt>
+
+  <wpt lat="49.48775" lon="0.11099">
+    <name>01b Pont Notre-Dame</name>
+    <desc>Bewegliche Bruecke ueber den Bassin du Roy, verbindet Notre-Dame und Saint-Francois. Hier gruendete Koenig Franz I. 1517 den Hafen, aus dem Le Havre hervorging - aeltester Punkt der Runde.</desc>
+    <sym>Bridge</sym>
   </wpt>
 
   <wpt lat="49.48693" lon="0.11277">
@@ -139,6 +145,7 @@
     <trkseg>
       <trkpt lat="49.48679" lon="0.09894"><name>00 Parkplatz Bd Clemenceau</name></trkpt>
       <trkpt lat="49.48485" lon="0.10719"><name>01 Catene de conteneurs</name></trkpt>
+      <trkpt lat="49.48775" lon="0.11099"><name>01b Pont Notre-Dame</name></trkpt>
       <trkpt lat="49.48693" lon="0.11277"><name>02 Maison de l'Armateur</name></trkpt>
       <trkpt lat="49.48700" lon="0.10835"><name>03 Cathedrale Notre-Dame</name></trkpt>
       <trkpt lat="49.49046" lon="0.10463"><name>04 Les Halles Centrales</name></trkpt>

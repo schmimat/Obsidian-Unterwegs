@@ -21,7 +21,7 @@ modified: 2026-08-17
 | [[Maastricht - Kurztour (2-3h) - mit Epochen\|Kurztour]] | 2–3h | 8 | Altstadt + opt. Nimm Caves | [[Maastricht-Kurztour.gpx\|📥]] |
 | [[Maastricht - Langtour (5-6h) - mit Epochen\|Langtour]] | 5–6h | 16 | Underground + Nimm + Bonnefanten | [[Maastricht-Langtour.gpx\|📥]] |
 | [[Maastricht - Highlights (3-4h) - mit Epochen\|Highlights (Classic)]] | 3,5h | 15 | Original Route | ⚠️ kein GPX vorhanden |
-| [[Le Havre - Perret-Wiederaufbau & Impressionismus\|Le Havre]] | ganzer Tag | 14 | Perret-UNESCO + MuMa + Jardins Suspendus | [[Le-Havre-Stationen.gpx\|📥]] |
+| [[Le Havre - Perret-Wiederaufbau & Impressionismus\|Le Havre]] | ganzer Tag | 15 | Perret-UNESCO + MuMa + Jardins Suspendus | [[Le-Havre-Stationen.gpx\|📥]] |
 
 ---
 
