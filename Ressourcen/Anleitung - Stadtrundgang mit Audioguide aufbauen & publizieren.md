@@ -92,11 +92,19 @@ type: Anleitung
 
 ### 3c. GPX in einen anklickbaren BRouter-Web-Link umwandeln
 
-Reihenfolge exakt wie im `<trk>`-Block der GPX, Format `lon,lat` (nicht `lat,lon`!), Punkte mit `;` getrennt:
+**Frontend: `bikerouter.de`** (nicht `brouter.de/brouter-web/` — beide sind dieselbe brouter-web-Software von Norbert Renner, `bikerouter.de` läuft nur direkt auf der Root-URL statt unter `/brouter-web/`; die reine Routing-Berechnungs-API in Abschnitt 3a bleibt weiterhin `brouter.de/brouter` — `bikerouter.de` spiegelt diesen API-Endpunkt nicht, per `curl` verifiziert). Reihenfolge exakt wie im `<trk>`-Block der GPX, Format `lon,lat` (nicht `lat,lon`!), Punkte mit `;` getrennt:
 
 ```
-https://brouter.de/brouter-web/#map=14/<lat-mitte>/<lon-mitte>/standard&lonlats=LON1,LAT1;LON2,LAT2;...&profile=hiking-mountain
+https://bikerouter.de/#map=14/<lat-mitte>/<lon-mitte>/standard&lonlats=LON1,LAT1;LON2,LAT2;...&profile=hiking-mountain
 ```
+
+**Optional: benannte POI-Marker zusätzlich zur Route** — eigener `pois=`-Parameter, Format im brouter-web-Quellcode verifiziert (`js/router/BRouter.js`, `_getLonLatsNameString`/`_parseLonLatNames`): `LON,LAT,URL-encodeter-Name`, mehrere Punkte mit `;` getrennt, an die bestehende `lonlats=`-Kette anhängen:
+
+```
+&pois=LON1,LAT1,Name1;LON2,LAT2,Name2;...&profile=...
+```
+
+POI-Koordinaten können exakt auf den `lonlats`-Wegpunkten liegen — auf `bikerouter.de` haben POI- und Routing-Marker unterschiedliche Symbole und überdecken sich nicht (per User-Test bestätigt). Auf `brouter.de/brouter-web/` trat das Problem noch auf (identische Symbole, POI-Pin komplett verdeckt) — falls doch mal ein anderes brouter-web-Frontend genutzt wird und Marker sich gegenseitig verdecken, Koordinaten der POIs testweise leicht versetzen (z. B. +0,00007° auf lat/lon, ~8 m).
 
 ## 4. Neuen Rundgang von Grund auf anlegen (Kurzfassung)
 
