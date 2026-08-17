@@ -5,14 +5,18 @@ tags:
   - audioguide
   - tts
   - lxc203
-  - obsidian-sync
+  - obsidian-publish
 type: Arbeitsauftrag
-bearbeiter: Claude Code auf LXC 203 (Obsidian-Sync-Reichweite, kein Host-Admin-Zugriff nötig)
-status: offen
+bearbeiter: Claude Code auf LXC 203 (`ob`-CLI verfügbar, kein Host-Admin-Zugriff nötig)
+status: in Bearbeitung
 prioritaet: gering — Reise-Nice-to-have, kein Blocker für den Rundgang selbst
 created: 2026-08-17
 modified: 2026-08-17
 ---
+
+> **Fortschritt (2026-08-17):** Vault `Reise-Guides/Le Havre/` angelegt (umbenannt von `Le-Havre-Audioguide/`, siehe Entscheidungs-Update unten), alle 14 Notizen (0000–0013) mit deutschen Fließtexten (1–2 Min. Sprechzeit) geschrieben, vertiefte Websuche durchgeführt, alle 3 ⚠️-Punkte in Abschnitt 3.4 verifiziert und in den Notiztexten korrigiert übernommen (Details siehe [[../Doku/Claude – Änderungshistorie]]). **Noch offen:** TTS-Erzeugung (14 mp3-Dateien) — wartet auf Klärung des API-Keys mit dem User, siehe Abschnitt 3.5; Publish-Einrichtung (Abschnitt 3.6, neu).
+>
+> **Entscheidungs-Update (2026-08-17):** Bereitstellung läuft **nicht** mehr über Obsidian Sync, sondern über **Obsidian Publish mit Passwortschutz** — User-Entscheidung nach kurzer Diskussion der Optionen (Sync teilt ganze Vaults ohne Read-only-Rolle; Publish erlaubt echten Passwortschutz und keinen Obsidian-Account für die Ehefrau). Deshalb auch der Namenswechsel: Statt eines Le-Havre-spezifischen Einwegvaults jetzt ein generisches `Reise-Guides/`-Vault, das künftige Ausflüge als weitere Unterordner aufnehmen kann (Le Havre ist der erste). Abschnitte 3.1/3.6/4/6 unten entsprechend aktualisiert.
 
 # Aufgabe – Audio-Guide „Le Havre" erstellen (LXC 203)
 
@@ -27,51 +31,52 @@ Der User plant einen Stadtrundgang durch Le Havre (Normandie) zum Thema Perret-W
 **Diese Aufgabe hier ist etwas anderes:** ein separates, kleines Zusatz-Vault mit Audio-Dateien, die der User und seine Frau sich während des Rundgangs unterwegs am Handy anhören können — pro Station eine kurze historische Erzählung, keine praktischen Infos (die stehen schon in der verlinkten Notiz).
 
 **Nutzer-Entscheidungen aus der Planungs-Session (bereits getroffen, nicht mehr offen):**
-- Bereitstellung über **Obsidian Sync** (bestehende 201/203-Infrastruktur) — **kein** Web-Tunnel, keine Öffnung des Containers zum Internet
+- Bereitstellung über **Obsidian Publish mit Passwortschutz** (aktualisiert 2026-08-17, ursprünglich Obsidian Sync geplant — s. Entscheidungs-Update oben) — **kein** selbstgehosteter Web-Tunnel, keine Öffnung des Containers zum Internet, `ob publish-*` läuft über die offizielle Obsidian-Infrastruktur
 - TTS über eine **Cloud-API** (empfohlen: OpenAI TTS) statt lokal/offline
 
 ## 2. Ist-Zustand
 
 - Die Rundgang-Notiz [[Stadtrundgänge/Le Havre/Le Havre - Perret-Wiederaufbau & Impressionismus]] existiert bereits mit 13 Stationen in Laufreihenfolge, GPX-Route, Öffnungszeiten und Parkplätzen.
-- Ein Audio-Guide-Vault existiert noch nicht.
+- Das Audio-Guide-Vault `Reise-Guides/Le Havre/` existiert mit allen 14 Texten (Stand 2026-08-17) — noch offen sind mp3-Erzeugung und Publish-Einrichtung.
 - Ob ein OpenAI-API-Key (oder alternativ ElevenLabs) auf Container 203 verfügbar ist, ist **nicht bekannt** — das ist der wahrscheinlichste Blocker beim Start dieser Aufgabe.
 
 ## 3. Was zu tun ist
 
 ### 3.1 Neues Vault anlegen
 
-Eigenständiges, neues Obsidian-Vault (nicht Unterordner in `Unterwegs`), z. B. `Le-Havre-Audioguide` — Name/exakter Pfad nach der auf 201/203 etablierten Konvention für neue Vaults, siehe Referenz in Abschnitt 5.
+Eigenständiges, neues Obsidian-Vault (nicht Unterordner in `Unterwegs`), Name **`Reise-Guides`** — bewusst generisch statt Le-Havre-spezifisch, damit künftige Ausflüge mit eigenem Audioguide als weitere Unterordner dazukommen können, ohne dass jedes Mal ein neues Vault + eine neue Publish-Site aufgesetzt werden muss. Le Havre liegt darin als erster Unterordner. Exakter Pfad nach der auf 201/203 etablierten Konvention für neue Vaults, siehe Referenz in Abschnitt 5.
 
 ```
-Le-Havre-Audioguide/
-├── 0000 - Einführung.md
-├── 0000 - Einführung.mp3
-├── 0001 - Catène de conteneurs.md
-├── 0001 - Catène de conteneurs.mp3
-├── 0002 - Maison de l'Armateur.md
-├── 0002 - Maison de l'Armateur.mp3
-├── 0003 - Cathédrale Notre-Dame.md
-├── 0003 - Cathédrale Notre-Dame.mp3
-├── 0004 - Les Halles Centrales.md
-├── 0004 - Les Halles Centrales.mp3
-├── 0005 - Église Saint-Joseph.md
-├── 0005 - Église Saint-Joseph.mp3
-├── 0006 - Le Volcan.md
-├── 0006 - Le Volcan.mp3
-├── 0007 - Appartement témoin Perret.md
-├── 0007 - Appartement témoin Perret.mp3
-├── 0008 - Hôtel de Ville.md
-├── 0008 - Hôtel de Ville.mp3
-├── 0009 - Quartier Perret & Avenue Foch.md
-├── 0009 - Quartier Perret & Avenue Foch.mp3
-├── 0010 - Porte Océane.md
-├── 0010 - Porte Océane.mp3
-├── 0011 - Plage.md
-├── 0011 - Plage.mp3
-├── 0012 - Victor by Milot.md
-├── 0012 - Victor by Milot.mp3
-├── 0013 - MuMa.md
-└── 0013 - MuMa.mp3
+Reise-Guides/
+└── Le Havre/
+    ├── 0000 - Einführung.md
+    ├── 0000 - Einführung.mp3
+    ├── 0001 - Catène de conteneurs.md
+    ├── 0001 - Catène de conteneurs.mp3
+    ├── 0002 - Maison de l'Armateur.md
+    ├── 0002 - Maison de l'Armateur.mp3
+    ├── 0003 - Cathédrale Notre-Dame.md
+    ├── 0003 - Cathédrale Notre-Dame.mp3
+    ├── 0004 - Les Halles Centrales.md
+    ├── 0004 - Les Halles Centrales.mp3
+    ├── 0005 - Église Saint-Joseph.md
+    ├── 0005 - Église Saint-Joseph.mp3
+    ├── 0006 - Le Volcan.md
+    ├── 0006 - Le Volcan.mp3
+    ├── 0007 - Appartement témoin Perret.md
+    ├── 0007 - Appartement témoin Perret.mp3
+    ├── 0008 - Hôtel de Ville.md
+    ├── 0008 - Hôtel de Ville.mp3
+    ├── 0009 - Quartier Perret & Avenue Foch.md
+    ├── 0009 - Quartier Perret & Avenue Foch.mp3
+    ├── 0010 - Porte Océane.md
+    ├── 0010 - Porte Océane.mp3
+    ├── 0011 - Plage.md
+    ├── 0011 - Plage.mp3
+    ├── 0012 - Victor by Milot.md
+    ├── 0012 - Victor by Milot.mp3
+    ├── 0013 - MuMa.md
+    └── 0013 - MuMa.mp3
 ```
 
 Die Nummern entsprechen exakt der Stationsreihenfolge in [[Stadtrundgänge/Le Havre/Le Havre - Perret-Wiederaufbau & Impressionismus]] (00 Parkplatz ist dort keine eigene Audiostation; 01–13 = Gehreihenfolge, 13 = MuMa als Abschluss).
@@ -152,16 +157,16 @@ curl https://api.openai.com/v1/audio/speech \
 - Kostenschätzung: 14 Dateien × ~150–250 Wörter ≈ 15.000–20.000 Zeichen gesamt → im niedrigen Cent- bis unteren Euro-Bereich. Grobe Schätzung, aktuelle Preise bei OpenAI vor Ausführung prüfen.
 - Alternative falls kein OpenAI-Key vorhanden: ElevenLabs (ähnliches Prinzip, anderer Endpoint).
 
-### 3.6 Vault + Sync
+### 3.6 Vault + Publish
 
-1. Neues Vault-Verzeichnis anlegen (Struktur s. o.).
-2. In die bestehende Obsidian-Sync-Konfiguration auf 201/203 aufnehmen — gleiches Muster wie bei den anderen Vaults auf diesem Container (`ob sync-config`, `community-plugin`-Kategorie **nicht** nötig für reine Audio-Embeds, das ist Obsidian-Bordmittel). Referenz: `Knowledge Base/IT@home/Infrastruktur/Proxmox/LXC 201 – Vault-Sync (obsidian-headless + Git-Backup)` — dort steht das bereits etablierte Vorgehen für neue Vaults auf diesem Setup. *(Cross-Vault-Wikilink funktioniert in Obsidian nicht — Pfad ist als Klartext angegeben, siehe [[../CLAUDE.md]].)*
-3. Sync-Client so konfigurieren, dass beide Handys (User + Ehefrau) das neue Vault erhalten — falls für die Ehefrau noch kein Sync-Zugriff eingerichtet ist, das vorher beim User klären, das ist eine eigene kleine Vorab-Aufgabe.
-4. **Kein Webserver, kein Tunnel, keine Portfreigabe** — explizite User-Entscheidung.
+1. Neues Vault-Verzeichnis anlegen (Struktur s. o.) — **erledigt** (2026-08-17).
+2. Publish-Site einrichten und mit dem Vault verknüpfen — die `ob`-CLI auf 203 hat dafür eigene Befehle (`ob publish-create-site`, `ob publish-setup`, `ob publish`, `ob publish-config`, `ob publish-site-options`; per `ob --help` verifiziert, 2026-08-17). Passwortschutz gehört zu den Site-Options (`ob publish-site-options`) — vor dem ersten `ob publish` setzen, nicht danach nachträglich.
+3. Noch **nicht geklärt und vor der Einrichtung beim User zu erfragen:** Kosten/Tarif der Publish-Site (zusätzlich zum bestehenden Sync-Abo), gewünschtes Passwort, ob die Site nur `Reise-Guides/Le Havre/` oder das ganze `Reise-Guides/`-Vault veröffentlicht (bei nur einem fertigen Unterordner macht Teilveröffentlichung ggf. noch keinen Unterschied, wird aber relevant, sobald weitere Reisen dazukommen).
+4. **Kein Webserver, kein selbstgehosteter Tunnel, keine Portfreigabe** — explizite User-Entscheidung. Obsidian Publish läuft über die offizielle, gehostete Obsidian-Infrastruktur, fällt nicht unter dieses Verbot.
 
 ## 4. Wer das ausführen darf
 
-**LXC 203** ist für diese Aufgabe vorgesehen — anders als reine Infrastruktur-Aufgaben (Firewall, SSH, Host-Konfiguration), die laut den `Aufgaben/`-Konventionen im Knowledge-Base-Vault ausdrücklich **nicht** von 203 ausgeführt werden sollen. Diese Aufgabe braucht keinen Host-Admin-Zugriff — nur Obsidian-Sync-Reichweite (die 203 ohnehin hat) und einen API-Aufruf gegen eine externe TTS-API. Passt damit zum dokumentierten Einsatzzweck von 203 als Vault-Bearbeiter.
+**LXC 203** ist für diese Aufgabe vorgesehen — anders als reine Infrastruktur-Aufgaben (Firewall, SSH, Host-Konfiguration), die laut den `Aufgaben/`-Konventionen im Knowledge-Base-Vault ausdrücklich **nicht** von 203 ausgeführt werden sollen. Diese Aufgabe braucht keinen Host-Admin-Zugriff — nur die auf 203 bereits installierte `ob`-CLI (Sync **und** Publish) und einen API-Aufruf gegen eine externe TTS-API. Passt damit zum dokumentierten Einsatzzweck von 203 als Vault-Bearbeiter.
 
 ## 5. Leitplanken
 
@@ -169,17 +174,19 @@ curl https://api.openai.com/v1/audio/speech \
 - **API-Key nicht vorhanden → nachfragen, nicht raten.** Kein zweiter TTS-Dienst ungefragt einrichten, wenn OpenAI nicht verfügbar ist.
 - **⚠️-markierte Fakten (Abschnitt 3.4) vor Verwendung verifizieren** — falsche „historische Fakten" in einem Audioguide sind schlechter als gar keine Angabe.
 - **Keine Öffnungszeiten/Preise/Adressen in den POI-Texten** — Abgrenzung zur bestehenden Rundgang-Notiz bewusst einhalten.
-- Das ist ein **temporäres Zusatz-Vault** für einen einzelnen Ausflug — muss nicht ins langfristige Frontmatter-Schema der anderen `Unterwegs`-Kategorien passen (siehe Frontmatter-Schema-Abschnitt in [[../CLAUDE.md]] — bewusst uneinheitlich, jede Kategorie hat ihr eigenes Schema).
+- `Reise-Guides` ist ein **eigenständiges Zusatz-Vault außerhalb von `Unterwegs`**, gedacht für mehrere künftige Ausflüge (nicht mehr nur temporär für Le Havre) — muss trotzdem nicht ins langfristige Frontmatter-Schema der `Unterwegs`-Kategorien passen (siehe Frontmatter-Schema-Abschnitt in [[../CLAUDE.md]] — bewusst uneinheitlich, jede Kategorie hat ihr eigenes Schema).
+- **Publish-Passwort nicht selbst festlegen** — beim User erfragen, nicht raten oder einen Platzhalter setzen und vergessen.
 - Änderungen an dieser Aufgaben-Datei selbst (Statusupdate bei Fertigstellung) unter der normalen Vault-Policy — gehören in [[../Doku/Claude – Änderungshistorie]].
 
 ## 6. Abnahme
 
-- [ ] Vault mit 14 Notizen (0000–0013) + 14 mp3-Dateien angelegt
-- [ ] Reihenfolge/Nummerierung entspricht der Gehreihenfolge aus [[Stadtrundgänge/Le Havre/Le Havre - Perret-Wiederaufbau & Impressionismus]]
-- [ ] Kein Text enthält Öffnungszeiten/Preise/Adressen
-- [ ] ⚠️-markierte Fakten verifiziert oder mit Einschränkung umformuliert
-- [ ] Vault synct über 201/203 auf beide Handys, mp3s dort offline abspielbar getestet (nicht erst vor Ort merken, dass Mobilfunk in Frankreich fehlt)
-- [ ] Kein Webserver/Tunnel/offener Port eingerichtet
+- [x] Vault `Reise-Guides/Le Havre/` mit 14 Notizen (0000–0013) angelegt — 2026-08-17
+- [ ] 14 mp3-Dateien erzeugt (wartet auf API-Key)
+- [x] Reihenfolge/Nummerierung entspricht der Gehreihenfolge aus [[Stadtrundgänge/Le Havre/Le Havre - Perret-Wiederaufbau & Impressionismus]] — 2026-08-17
+- [x] Kein Text enthält Öffnungszeiten/Preise/Adressen — 2026-08-17
+- [x] ⚠️-markierte Fakten verifiziert oder mit Einschränkung umformuliert — 2026-08-17
+- [ ] Publish-Site eingerichtet, mit Passwort geschützt, auf beiden Handys ohne Obsidian-Account erreichbar getestet (nicht erst vor Ort merken, dass Mobilfunk in Frankreich fehlt)
+- [ ] Kein Webserver/Tunnel/offener Port eingerichtet (Publish selbst ist davon ausgenommen, s. Abschnitt 3.6)
 
 ## 🔗 Verwandte Notizen
 
