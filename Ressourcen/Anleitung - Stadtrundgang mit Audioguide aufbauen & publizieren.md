@@ -45,13 +45,13 @@ type: Anleitung
 2. Rundgang-Notiz — **Übersichtstabelle**: neue Zeile inkl. Google-Maps-Link (Format siehe Abschnitt 5), Nachbar-Nummern in der `#`-Spalte hochzählen (keine Buchstaben nötig, außer Ausnahmefall aus Abschnitt 2)
 3. Dieselbe Notiz — **Detail-Abschnitt** `### NN. Name` (Nummer passend zur Tabelle) mit Ort/Was/Hinweis ergänzen, Folge-Abschnitte umnummerieren
 4. Dieselbe Notiz — **Frontmatter** `stations:` hochzählen (`distance:` erst nach Neuberechnung, s. u.)
-5. **GPX-Datei**: `<wpt>` UND `<trkpt>` (im `<trk>`-Block) an der richtigen Position einfügen — beide, nicht nur eines. `<name>`-Tags **ohne** Nummer, nur Ortsname
-6. **Route neu berechnen** (nicht schätzen!) — BRouter-API direkt aufrufen:
+5. **GPX-Datei**: `<wpt>` an der richtigen Position einfügen. `<name>`-Tags **ohne** Nummer, nur Ortsname
+6. **Route neu berechnen und den `<trk>`-Block durch die echte BRouter-Route ersetzen** (nicht schätzen, nicht mit einer Luftlinie behelfen!) — BRouter-API direkt aufrufen, liefert die tatsächlich geroutete Strecke entlang echter Wege/Straßen inkl. Höhendaten, nicht nur die Distanz:
    ```bash
    curl -s "https://brouter.de/brouter?lonlats=LON1,LAT1%7CLON2,LAT2%7C...&profile=hiking-beta&alternativeidx=0&format=gpx" -o /tmp/route.gpx
-   grep -o 'track-length="[0-9]*"' /tmp/route.gpx   # Meter
+   grep -o 'track-length="[0-9]*"' /tmp/route.gpx   # Meter, für Distanzangabe
    ```
-   `%7C` = URL-encodetes `|` als Trenner zwischen den Punkten (Alternative: `;` im Browser-Link, s. Abschnitt 3c)
+   `%7C` = URL-encodetes `|` als Trenner zwischen den Punkten (Alternative: `;` im Browser-Link, s. Abschnitt 3c). Die `<trkpt>`-Liste aus `/tmp/route.gpx` (Feld `lon`/`lat`/`ele`) in den `<trk>`-Block der Vault-GPX übernehmen — **nicht** durch simple Geraden zwischen den Wegpunkten ersetzen, das ergibt eine unbrauchbare Luftlinie quer durch Gebäude (siehe Learning unten). Dadurch liegt die reale Strecke dauerhaft im Vault statt nur live auf bikerouter.de.
 7. Neue Distanz/Gehzeit in der Notiz eintragen (Tabelle **und** Frontmatter)
 8. **BRouter-Web-Link** in derselben Notiz aktualisieren (neuer Punkt in der `lonlats=`-Kette)
 9. **`Stadtrundgänge/README.md`** — Stationsanzahl in der Übersichtstabelle korrigieren
@@ -59,6 +59,8 @@ type: Anleitung
 11. GPX-Datei zählt **nicht** als `.md` → fällt technisch unter „Rückfrage nötig", wird über den normalen Tool-Permission-Dialog abgefragt, keine separate Nachfrage nötig
 
 **Reihenfolge des Vorgehens beachten (Learning aus Le Havre):** Erst die reine Ortsbeschreibung schreiben, **Verweise auf Nachbarstationen im Fließtext („Nach dem Reederhaus...") erst ganz am Ende ergänzen** — nachdem die Reihenfolge final steht. Sonst muss der Text (und beim Audioguide die mp3) bei jeder Umsortierung neu erzeugt werden.
+
+**Echte Route statt Luftlinie (Learning aus Le Havre):** Die Vault-GPX enthielt ursprünglich nur eine grobe Geraden-Näherung zwischen den Wegpunkten mit dem Kommentar „echte Route in BRouter selbst klicken" — die tatsächlich geroutete Strecke existierte dadurch nur live auf bikerouter.de, nirgends dauerhaft gespeichert. Zeigt man die GPX z. B. über das Map-View-Plugin in Obsidian an, sieht eine Luftlinie sichtbar unbrauchbar aus (Linie quer durch Gebäude/Wasser). Deshalb bei **jedem** neuen Rundgang gleich den echten `<trk>`-Block per BRouter-API abrufen (s. Schritt 6 oben), nicht nur für die Distanzberechnung nutzen und danach verwerfen.
 
 ### 3b. `Reise-Guides` — Audioguide (nur falls die Station auch vorgelesen werden soll)
 
