@@ -116,6 +116,13 @@ POI-Koordinaten können exakt auf den `lonlats`-Wegpunkten liegen — auf `biker
 2. Falls Audioguide gewünscht: in `Reise-Guides` einen neuen Unterordner `Stadtrundgänge/<Ort>/Audioguide/` anlegen, Stationen nach Schema 3b schreiben, `<Ort> - Übersicht.md` als Einstiegsseite anlegen.
 3. Publish-Site existiert bereits (`reise-guides`, ein Vault für alle Reisen) — nur `ob publish --all --yes` nötig, keine neue Site anlegen.
 4. Passwortschutz der Publish-Site gilt vault-weit, muss nicht pro Rundgang neu gesetzt werden.
+5. **Sidebar-Navigationsreihenfolge setzen**, damit die Übersichtsnotiz in der Publish-Seitenleiste vor dem Audioguide-Ordner steht (sonst sortiert Publish alphabetisch, „Audioguide" käme vor „Le Havre - Übersicht" o. Ä.):
+   ```bash
+   ob publish-site-options --path "/home/claude/Obsidian-Vaults/Reise-Guides" \
+     --nav-order "Stadtrundgänge/<Ort>/<Ort> - Übersicht.md,Stadtrundgänge/<Ort>/Audioguide" \
+     --json
+   ```
+   Bei mehreren Reisen im selben Vault: alle Pfade in der gewünschten Gesamtreihenfolge kommagetrennt auflisten, nicht nur die des neuen Rundgangs — sonst werden vorherige Einträge überschrieben. Wirkt sofort (reiner Site-Option-Call, kein `ob publish` nötig), per `curl .../options/<site-id>` verifizierbar.
 
 ## 5. Google-Maps-Link-Format
 
