@@ -165,13 +165,19 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 | Cross-Referenzen zwischen Stationen im Fließtext als Wikilink, nie als Nummer | Wikilinks brechen beim Umsortieren nicht |
 | `bikerouter.de` statt `brouter.de/brouter-web/` für den interaktiven Karten-Link | User-Wunsch; identische Software (Norbert Renner), aber unterschiedliche Marker-Symbole für Routing- vs. POI-Punkte — auf bikerouter.de überdecken sie sich nicht |
 | TTS-Skript liegt im Vault (`Reise-Guides/_scripts/gen_tts.py`), nicht im Scratchpad | Scratchpad überlebt keine Session |
+| GPX-`<trk>`-Block enthält die **echte, von BRouter berechnete Route** (Profil `hiking-beta`), nicht nur eine Luftlinie | Vorher existierte die reale Strecke nur live auf bikerouter.de; jetzt dauerhaft im Vault, sieht auch in Map View brauchbar aus |
+| Je ein Foto (Wikimedia Commons, frei lizenziert) pro Audioguide-Station, wo auffindbar | 15 von 16 Stationen bebildert; „Victor by Milot" bewusst ohne Bild — kein frei lizenziertes Foto auffindbar (auch außerhalb Commons geprüft: Openverse/Flickr), lieber ehrlich leer als Fehlgriff |
+| Bei bikerouter.de blieb es, uMap nur getestet | uMaps automatische Routenberechnung entlang echter Wege fehlt (nur Marker+Freihand-Linien) — genau das ist bikerouters Kernvorteil |
 
 **Wichtige technische Erkenntnisse (Details in der Anleitung oben):**
 - Obsidian Publish unterstützt keine Community-Plugins (Map View funktioniert dort nicht) und keine `.gpx`-Dateien (weder Link noch Embed) — Route auf der Publish-Seite läuft nur über den externen BRouter-Link
-- Google-Maps-Link mit Namens-Label: `maps?q=lat,lon(Name)` funktioniert nicht mehr (Place-ID nötig laut offizieller Google-Doku) — stattdessen `maps/place/<Name>/@<lat>,<lon>,17z`
-- bikerouter.de: eigener `pois=`-Parameter für benannte Marker (`LON,LAT,Name;...`, im Quellcode verifiziert), zusätzlich zu `lonlats=` für die Route selbst
+- Google-Maps-Link mit Namens-Label funktioniert nicht zuverlässig — weder `maps?q=lat,lon(Name)` noch `maps/place/<Name>/@lat,lon,17z` (beide ausprobiert, beide vom User als nicht funktionierend gemeldet). Zuverlässig ist nur das offiziell dokumentierte `maps/search/?api=1&query=lat,lon` **ohne** Namensversuch — Stationsname steht ohnehin in der Tabelle daneben
+- bikerouter.de: eigener `pois=`-Parameter für benannte Marker (`LON,LAT,Name;...`, im Quellcode verifiziert), zusätzlich zu `lonlats=` für die Route selbst; Sidebar-Reihenfolge auf der Publish-Seite per `ob publish-site-options --nav-order` steuerbar (überschreibt komplett, nicht additiv)
+- BRouter-Profile inhaltlich prüfen, nicht nur technisch: `hiking-mountain` ist für Alpin-/Bergwanderungen (SAC T3), `hiking-beta` für normale/flache Stadtrundgänge — beide Profile existieren real, ein falsches ist kein Format-, sondern ein Inhaltsfehler
+- Obsidian-Embeds (Bild wie Audio) im ganzen Vault als **reiner Dateiname** (`![[Name.jpg]]`), niemals mit Ordnerpfad-Präfix (`![[Images/Name.jpg]]`) — Publish rendert Pfad-Präfixe nicht zuverlässig, Obsidian löst ohnehin nach Basename auf
 - IPv6 auf diesem Container (203) ist nicht erreichbar — `ob publish`/`ob sync`/OpenAI-Aufrufe brauchen gelegentlich Retries; `ob publish --yes` wird vom Auto-Mode-Klassifikator manchmal blockiert, dann pusht der User selbst per `!`-Präfix
 - Ein per Fork delegierter Recherche-Agent lieferte zweimal nur eine Zwischenmeldung statt echter Arbeit — Fix: über `SendMessage` an denselben Agent zurückschicken statt neuen Fork zu starten
+- uMap erlaubt anonyme Kartenerstellung rein per HTTP+CSRF-Token (`/de/map/create/`, kein Login nötig) — aber das Datalayer-Erstellungsformat (Marker/Linien hinzufügen) ist nicht dokumentiert und ließ sich ohne echten Browser/Netzwerk-Inspektor nicht rekonstruieren; für vollautomatische Kartenerstellung deshalb kein praktikabler Ersatz
 
 **Blocker/offen:** Finaler Live-Test durch die Ehefrau (Login mit Passwort, mp3s offline abspielbar) steht noch aus. Bei künftigen weiteren Reisen einfach `Reise-Guides/Stadtrundgänge/<Ort>/` als neuen Unterordner anlegen — Publish-Site existiert schon, kein neues Setup nötig.
 
@@ -196,7 +202,7 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 
 ---
 
-**Zuletzt aktualisiert:** 2026-08-18 — Projekt „Reise-Guides-Vault & Le-Havre-Audioguide" (siehe oben): neues Publish-Vault aufgebaut, kompletter Rundgang mit Audioguide erstellt und veröffentlicht, Nummerierungsschema grundlegend überarbeitet, generische Anleitung für künftige Rundgänge angelegt
+**Zuletzt aktualisiert:** 2026-08-18 — Projekt „Reise-Guides-Vault & Le-Havre-Audioguide" fortgeschrieben: echte GPX-Route statt Luftlinie, 15/16 Stationen mit Wikimedia-Commons-Fotos bebildert, Google-Maps-Link-Format final auf zuverlässiges Koordinaten-Format korrigiert, BRouter-Profil-Fehler behoben (hiking-beta statt hiking-mountain), Publish-Sidebar-Reihenfolge gesetzt, uMap als Alternative getestet und bewusst verworfen
 
-**Vorherige Aktualisierung:** 2026-08-17 — neuer Ordner `Aufgaben/` angelegt (Muster aus Knowledge Base übernommen), erste Aufgabe: Audio-Guide Le Havre für LXC 203
+**Vorherige Aktualisierung:** 2026-08-18 — Projekt „Reise-Guides-Vault & Le-Havre-Audioguide" (siehe oben): neues Publish-Vault aufgebaut, kompletter Rundgang mit Audioguide erstellt und veröffentlicht, Nummerierungsschema grundlegend überarbeitet, generische Anleitung für künftige Rundgänge angelegt
 **Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich, kein Vereinheitlichungsbedarf); Urlaub/Touren vollständig archiviert (Container-seitig + beide GitHub-Repos). Le-Havre-Audioguide + Reise-Guides-Vault live (siehe neuer Abschnitt oben), Live-Test durch die Ehefrau steht noch aus. Offen: `Regionen/`-Konzept, Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), Highlights-Route (`Maastricht - Highlights`) hat weiterhin keine eigene GPX-Datei (dokumentierte Lücke, kein Blocker)
