@@ -9,7 +9,7 @@ tags:
   - archiv
   - gpx
 created: 2026-05-28
-modified: 2026-08-12
+modified: 2026-08-19
 type: Index
 region: Mallorca, Spanien
 sort_index: 104000
@@ -18,6 +18,9 @@ sort_index: 104000
 # 🇪🇸 Rother Mallorca – Übersicht
 
 > 77 GPS-Tracks aus dem Rother Wanderführer **Mallorca** (21. Auflage, Nr. 4591). Von der Sierra de Tramuntana über Küstenwanderungen bis zu einsamen Buchten – die vollständigste Wandersammlung der Insel.
+
+**Quelle:** `Rother Wanderführer/Mallorca-21.-Auflage-4591.zip` (Original-Download, inkl. GPS-Daten-Haftungsausschluss- und Ausgangspunkte-PDF im selben Ordner)
+
 
 ---
 

@@ -17,6 +17,8 @@ erstellt: 2026-07-29
 3 Wochen Frankreich mit Wohnwagen, ab Samstag 01.08.2026.
 Vorlage für zukünftige Reisen → bei Änderungen hier direkt pflegen.
 
+Reise-Kontext: [[Wanderungen/Rother-Bretagne-Übersicht|Rother Bretagne – Übersicht]] · [[Übernachtungen/Camping des Bondons (La Ferté-sous-Jouarre)|Camping des Bondons]] (Zwischenübernachtung auf der Anreise)
+
 ## Werkzeugkoffer & Handwerkzeug
 
 - [x] Schraubendreher-Koffer (Schlitz / PH / Torx, Standard + Feinmechaniker)

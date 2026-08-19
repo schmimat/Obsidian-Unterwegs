@@ -9,7 +9,7 @@ tags:
   - archiv
   - gpx
 created: 2026-05-28
-modified: 2026-08-12
+modified: 2026-08-19
 type: Index
 region: Cinque Terre, Ligurien, Italien
 sort_index: 10200
@@ -18,6 +18,9 @@ sort_index: 10200
 # 🇮🇹 Rother Cinque Terre & Ligurien – Übersicht
 
 > 49 GPS-Tracks aus dem Rother Wanderführer **Cinque Terre** (6. Auflage, Nr. 2573). Von Genua bis La Spezia – Küstenpfade, Höhenwege und der berühmte Sentiero Azzurro durch die Fünf-Dörfer-Region.
+
+**Quelle:** `Rother Wanderführer/Cinque-Terre-06.-Auflage-2573.zip` (Original-Download, inkl. GPS-Daten-Haftungsausschluss- und Ausgangspunkte-PDF im selben Ordner)
+
 
 ---
 

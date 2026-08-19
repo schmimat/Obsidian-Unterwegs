@@ -353,4 +353,10 @@ source: "Claudian - Obsidian Vault"
 
 ---
 
-**Zuletzt aktualisiert:** 2026-05-27
+## 📚 Recherche-Grundlage
+
+Die drei Touren wurden auf Basis vorab gefundener Stadtrundgänge zusammengestellt: [[Gefundene Touren/Tagesausflug nach Maastricht Ein Stadtrundgang mit Highlights & Tipps|Tagesausflug nach Maastricht]] sowie zwei weitere PDF-Quellen im selben Ordner (`Gefundene Touren/maastricht_stadtrundgang.pdf`, `Gefundene Touren/stadswandeling-maastricht.pdf`).
+
+---
+
+**Zuletzt aktualisiert:** 2026-08-19 (Recherche-Grundlage nachgetragen, Vault-Wartung)

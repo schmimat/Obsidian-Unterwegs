@@ -8,7 +8,7 @@ tags:
   - archiv
   - gpx
 created: 2026-08-10
-modified: 2026-08-12
+modified: 2026-08-19
 type: Index
 region: Normandie, Frankreich
 sort_index: 10600
@@ -17,6 +17,9 @@ sort_index: 10600
 # 🇫🇷 Rother Normandie – Übersicht
 
 > 50 GPS-Tracks aus dem Rother Wanderführer **Normandie** (5. Auflage, Nr. 4637). Küstenwanderungen entlang der Alabasterküste und Landtouren durch die Normandie.
+
+**Quelle:** `Rother Wanderführer/Normandie-05.-Auflage-4637.zip` (Original-Download, inkl. GPS-Daten-Haftungsausschluss- und Ausgangspunkte-PDF im selben Ordner)
+
 
 ---
 

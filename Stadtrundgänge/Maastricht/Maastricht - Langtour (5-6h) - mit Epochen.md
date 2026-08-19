@@ -15,7 +15,7 @@ tags:
   - niederlande
   - reisen
 created: 2026-05-27
-modified: 2026-08-12
+modified: 2026-08-19
 difficulty: "⭐⭐ Mittel (lange Dauer)"
 duration: "5,5–7 Stunden"
 distance: "7 km"
@@ -41,6 +41,8 @@ coordinates: "50.8503°N, 5.6875°E"
 ```mapview
 {"query": "path:\"Maastricht-Langtour.gpx\"", "autoFit": true}
 ```
+
+![[Maastricht-Langtour-Karte.excalidraw]]
 
 ---
 

@@ -12,7 +12,7 @@ tags:
   - archiv
   - gpx
 created: 2026-05-28
-modified: 2026-08-12
+modified: 2026-08-19
 type: Index
 region: Golf von Neapel, Amalfiküste, Italien
 sort_index: 105000
@@ -21,6 +21,9 @@ sort_index: 105000
 # 🇮🇹 Rother Golf von Neapel – Übersicht
 
 > 57 GPS-Tracks aus dem Rother Wanderführer **Golf von Neapel** (8. Auflage, Nr. 4853). Amalfiküste, Sorrentinische Halbinsel, Capri, Ischia und der Vesuv – mediterrane Bergwanderungen mit Meerblick.
+
+**Quelle:** `Rother Wanderführer/Golf-von-Neapel-08.-Auflage-4853.zip` (Original-Download, inkl. GPS-Daten-Haftungsausschluss- und Ausgangspunkte-PDF im selben Ordner)
+
 
 ---
 

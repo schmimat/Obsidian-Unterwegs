@@ -13,7 +13,7 @@ tags:
   - niederlande
   - reisen
 created: 2026-05-27
-modified: 2026-08-12
+modified: 2026-08-19
 difficulty: "⭐⭐ Mittel"
 duration: "3–4 Stunden"
 distance: "5,2 km"
@@ -40,6 +40,8 @@ coordinates: "50.8503°N, 5.6875°E"
 {"query": "path:\"Maastricht-Highlights.gpx\"", "autoFit": true}
 ​```
 ```
+
+![[Maastricht-Highlights-Karte.excalidraw]]
 
 ---
 

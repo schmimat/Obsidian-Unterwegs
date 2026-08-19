@@ -7,12 +7,14 @@ tags:
   - zwischenstopp
 location: [48.9497, 3.1470]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-08-19
 ---
 
 # Camping des Bondons (La Ferté-sous-Jouarre)
 
 Zwischenübernachtung auf der Anreise [[Forth-Eckental]] → Erquy (Frankreich), Wohnwagen.
+
+Reise-Kontext: [[Wanderungen/Rother-Bretagne-Übersicht|Rother Bretagne – Übersicht]] · [[Einpacklisten/Urlaub Frankreich 2026 – Werkzeug-Packliste|Werkzeug-Packliste]]
 
 ## Eckdaten
 

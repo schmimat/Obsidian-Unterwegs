@@ -8,7 +8,7 @@ tags:
   - archiv
   - gpx
 created: 2026-05-28
-modified: 2026-08-12
+modified: 2026-08-19
 type: Index
 region: Bretagne, Frankreich
 sort_index: 10100
@@ -17,6 +17,9 @@ sort_index: 10100
 # 🇫🇷 Rother Bretagne – Übersicht
 
 > 51 GPS-Tracks aus dem Rother Wanderführer **Bretagne** (10. Auflage, Nr. 4302). Küstenwanderungen und Inlandtouren entlang der gesamten bretonischen Küste von Nord nach Süd.
+
+**Quelle:** `Rother Wanderführer/Bretagne-10.-Auflage-4302.zip` (Original-Download, inkl. GPS-Daten-Haftungsausschluss- und Ausgangspunkte-PDF im selben Ordner)
+
 
 ---
 
@@ -85,6 +88,11 @@ sort_index: 10100
 | 50  | Rennes                         | [[Rother Wanderführer/Bretagne-10.-Auflage-4302/Bret_50_Rennes.gpx\|GPX]]                      |
 
 ---
+
+## 🧳 Reise-Kontext (Erquy-Trip)
+
+- [[Einpacklisten/Urlaub Frankreich 2026 – Werkzeug-Packliste|Werkzeug-Packliste]] — für dieselbe Frankreich-Reise
+- [[Übernachtungen/Camping des Bondons (La Ferté-sous-Jouarre)|Camping des Bondons]] — Zwischenübernachtung auf der Anreise nach Erquy
 
 ## 🔗 Navigation
 

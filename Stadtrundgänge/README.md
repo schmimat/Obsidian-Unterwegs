@@ -5,7 +5,7 @@ tags:
   - kultur
   - architektur
 created: 2026-05-27
-modified: 2026-08-17
+modified: 2026-08-19
 ---
 
 # 🏛️ Stadtrundgänge
@@ -39,6 +39,8 @@ Einbinden mit:
 ```
 ![[Stadtrundgänge/Excalidraw/Stadt-Route.excalidraw.md]]
 ```
+
+Ausführliche Anleitung (GPX-Import, Stadtplan-Aufbau): [[Stadtrundgänge/Maastricht/GPX/README - GPX & Stadtplan Anleitung|GPX & Stadtplan Anleitung]]
 
 ---
 

@@ -9,7 +9,7 @@ tags:
   - gpx
   - skandinavien
 created: 2026-05-28
-modified: 2026-08-12
+modified: 2026-08-19
 type: Index
 region: Jütland, Dänemark
 sort_index: 10300
@@ -18,6 +18,9 @@ sort_index: 10300
 # 🇩🇰 Rother Dänemark – Jütland – Übersicht
 
 > 52 GPS-Tracks aus dem Rother Wanderführer **Dänemark – Jütland** (5. Auflage, Nr. 4639). Küstenwanderungen, Dünen, Seen und Heide von Skagen im Norden bis zur Halbinsel Mols im Süden.
+
+**Quelle:** `Rother Wanderführer/Daenemark-–-Juetland-05.-Auflage-4639.zip` (Original-Download, inkl. GPS-Daten-Haftungsausschluss- und Ausgangspunkte-PDF im selben Ordner)
+
 
 ---
 
