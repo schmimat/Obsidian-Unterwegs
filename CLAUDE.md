@@ -3,7 +3,7 @@ tags:
   - claude
   - projekt
 created: 2026-08-10
-modified: 2026-08-12
+modified: 2026-08-19
 ---
 
 # CLAUDE.md — Unterwegs-Vault
@@ -191,6 +191,8 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 | `_claude/` + `.claude` (Symlink) | cpr-Skills (`/compress`, `/preserve`, `/resume`) |
 | `Doku/Claude – Änderungshistorie.md` | Protokoll autonomer `.md`-Änderungen (wöchentliche Sammelbestätigung) |
 | `Doku/Claude – Änderungshistorie (Archiv Touren/Urlaub).md` | Änderungshistorien der Quell-Vaults bis zum Merge-Zeitpunkt |
+
+**Vault-Wartung:** letzte vault-weite Wartungsrunde **2026-08-19** (davor 2026-08-10 im Rahmen der Merge-Migration, Teilumfang). Zentrale Übersicht + Methodik über alle 5 Vaults: `PKM-Dirigent/05 - Vault-Wartung.md` (anderer Vault).
 
 ## Arbeitsweise mit Claude Code
 
