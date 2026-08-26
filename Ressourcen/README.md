@@ -5,13 +5,13 @@ tags:
   - ressourcen
   - referenz
 created: 2026-05-28
-modified: 2026-08-12
+modified: 2026-08-26
 type: "Index"
 ---
 
 # 📚 Ressourcen – Übersicht
 
-Zentrale Anlaufstelle für Dokumentation, Templates und Verwaltungsdateien des **Touren**-Vaults.
+Zentrale Anlaufstelle für Dokumentation, Templates und Verwaltungsdateien des **Unterwegs**-Vaults.
 
 ---
 
@@ -47,7 +47,7 @@ Zentrale Anlaufstelle für Dokumentation, Templates und Verwaltungsdateien des *
 - **[[../Wanderungen/Rother-Übersicht|📖 Rother Wanderführer]]** — 336 Touren in 6 Bänden
 
 ### Aktiv dokumentierte Touren
-- **[[../Stadtrundgänge/Maastricht|Maastricht, Niederlande]]** — 3 Stadtrundgänge (2–7 Std.)
+- **[[../Stadtrundgänge/Maastricht/Maastricht - Touren Vergleich MIT EPOCHEN|Maastricht, Niederlande]]** — 3 Stadtrundgänge (2–7 Std.)
 - **[[../Wanderungen/README|Wanderungen]]** — Archiv-Übersicht
 
 ### Planung
