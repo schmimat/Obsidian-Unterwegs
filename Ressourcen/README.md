@@ -50,11 +50,8 @@ Zentrale Anlaufstelle für Dokumentation, Templates und Verwaltungsdateien des *
 - **[[../Stadtrundgänge/Maastricht/Maastricht - Touren Vergleich MIT EPOCHEN|Maastricht, Niederlande]]** — 3 Stadtrundgänge (2–7 Std.)
 - **[[../Wanderungen/README|Wanderungen]]** — Archiv-Übersicht
 
-### Planung
-- **[[../Planung|Planung]]** — Reisepläne und zukünftige Touren
-
-### Erfahrungsberichte
-- **[[../Erfahrungen|Erfahrungen]]** — Reiseberichte von absolvierter Touren
+### Reisen
+- **[[../Reisen|Reisen]]** — Reiseplanung und Tagebuch-Einträge je Reise (Ordner noch leer)
 
 ---
 
