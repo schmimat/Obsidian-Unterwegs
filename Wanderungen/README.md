@@ -4,7 +4,7 @@ tags:
   - touren
   - natur
 created: 2026-05-27
-modified: 2026-08-12
+modified: 2026-08-26
 ---
 
 # 🥾 Wanderungen
@@ -31,6 +31,8 @@ Die importierte Sammlung liegt unter:
 | [[Wanderungen/Rother-Normandie-Übersicht\|🇫🇷 Rother Normandie]] | 50 | Normandie, Frankreich |
 | **Gesamt** | **438** | |
 
+Gemeinsamer Index über alle 6 Rother-Bände: [[Wanderungen/Rother-Übersicht|📖 Rother Wanderführer – Übersicht]] (Auflage, Kürzel-Schema, Dateistruktur)
+
 ---
 
 ## 📝 Neue Wanderung dokumentieren
@@ -45,4 +47,4 @@ Routen-Zeichnungen findet sich in: `Wanderungen/Excalidraw/`
 
 ---
 
-**Zuletzt aktualisiert:** 2026-08-12
+**Zuletzt aktualisiert:** 2026-08-26 (Vault-Wartung Runde 5, Punkt B: gemeinsamer Rother-Index verlinkt)

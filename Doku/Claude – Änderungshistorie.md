@@ -1,7 +1,7 @@
 ---
 tags: [claude, workflow, meta]
 created: 2026-08-10
-modified: 2026-08-19
+modified: 2026-08-26
 ---
 
 # Claude – Änderungshistorie
@@ -70,6 +70,7 @@ _Noch keine abgeschlossene Woche._
 | 2026-08-19 | **Geändert (12 Dateien):** 6× `Wanderungen/Rother-*-Übersicht.md` (Quelle-Zeile mit dem jeweiligen ZIP-Archiv ergänzt), [[../Einpacklisten/Urlaub Frankreich 2026 – Werkzeug-Packliste]] + [[../Übernachtungen/Camping des Bondons (La Ferté-sous-Jouarre)]] (gegenseitig + mit `Rother-Bretagne-Übersicht` verlinkt), [[../Stadtrundgänge/README]] (Link auf „GPX & Stadtplan Anleitung" ergänzt), 3× `Stadtrundgänge/Maastricht/Maastricht - {Kurztour/Langtour/Highlights} - mit Epochen.md` (jeweils passende `*-Karte.excalidraw` eingebettet), `Stadtrundgänge/Maastricht/Maastricht - Touren Vergleich MIT EPOCHEN.md` (neuer Abschnitt „Recherche-Grundlage" mit Verweis auf `Gefundene Touren/`) | Review der Runde-2/3-Fundlisten „verwaiste Notizen"/„verwaiste Anhänge": 4 von 5 verwaisten Notizen jetzt verlinkt (`markdown-cheat-sheet.md` bewusst als eigenständiges Referenzmaterial belassen), 11 von 28 verwaisten Anhängen jetzt referenziert (3 Maastricht-Karten, 2 Maastricht-Rechercheque-PDFs, 6 Rother-ZIP-Archive); restliche 12 GPS-Daten/Koordinaten-PDFs + 2 Einzeltouren-PNGs bewusst unverlinkt gelassen (harmlose Paket-Beilagen bzw. passt zum bestehenden Tabellenformat ohne Bild-Spalte) | User bestätigte alle 5 Vorschläge (A–E) „Alle umsetzen" | 🟡 offen |
 | 2026-08-19 | `CLAUDE.md` (neue Zeile „Vault-Wartung" bei „Wichtige Dateien & Ordner", `modified`-Bump) | Dezentraler Pointer ergänzt: Datum der letzten vault-weiten Wartungsrunde + Verweis auf die zentrale Übersicht `PKM-Dirigent/05 - Vault-Wartung.md` (anderer Vault) | User-Auftrag „Vorschläge für weitere Wartungs-Checks + Ort prüfen", dann „mach beides" | 🟡 offen |
 | 2026-08-19 | `CLAUDE.md` | Vault-weite Wartungsrunde: 3 Cross-Vault-Wikilinks (technisch in Obsidian nie auflösbar) auf Klartext-Pfad-Hinweise umgestellt; veraltete Behauptung „zwei tote Wikilinks in Stadtrundgänge/README.md" korrigiert — die Links waren tatsächlich bereits seit der Migration am 2026-08-10 gefixt. 2 weitere gefundene Lücken (`Forth-Eckental`, `Stützlast messen`) bewusst nicht angefasst — echte Dokumentationslücken ohne fabrizierbares Ziel | Vault-Wartung (siehe `PKM-Dirigent/05 - Vault-Wartung.md`) | 🟡 offen |
+| 2026-08-26 | [[../Stadtrundgänge/README]] (Vergleichs-Übersicht der 3 Maastricht-Touren verlinkt), [[../Wanderungen/README]] (gemeinsamer Rother-Index verlinkt) | Vault-Wartung Runde 5, Punkt B (README-Vollständigkeit, Cross-Vault-Root-Session): Re-Scan aller README.md-Dateien gegen die tatsächlich vorhandenen Notizen im jeweiligen Geltungsbereich. Beide Funde waren echte, bereits vorhandene Übersichtsnotizen ohne Rückverweis von der zugehörigen README — kein fabrizierter Inhalt | Vault-Wartung Runde 5 (siehe `PKM-Dirigent/05 - Vault-Wartung.md`) | 🟡 offen |
 
 ---
 
