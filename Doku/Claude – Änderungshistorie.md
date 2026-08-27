@@ -1,7 +1,7 @@
 ---
 tags: [claude, workflow, meta]
 created: 2026-08-10
-modified: 2026-08-26
+modified: 2026-08-27
 ---
 
 # Claude – Änderungshistorie
