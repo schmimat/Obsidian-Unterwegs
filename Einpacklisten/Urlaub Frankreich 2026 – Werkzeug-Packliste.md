@@ -47,7 +47,7 @@ Reise-Kontext: [[Wanderungen/Rother-Bretagne-Übersicht|Rother Bretagne – Übe
 
 ## Camping-Spezifisch
 
-- [x] Kranwaage 300 kg (d = 100 g) mit Karabinern → [[Stützlast messen]]
+- [x] Kranwaage 300 kg (d = 100 g) mit Karabinern → [[#Stützlast messen]]
 - [x] Erdschrauben / Schraubheringe (Sechskant-Antrieb, per Akkuschrauber)
 - [x] Heringe (klassisch) + Zeltgummis / Expander
 - [x] Abspannleinen + Karabiner
