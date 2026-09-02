@@ -119,6 +119,7 @@
   "narrowSidebarCustomWidth": 350,
   "showTooltips": false,
   "showTooltipPath": true,
+  "showTooltipTags": false,
   "showTooltipWordCount": false,
   "desktopBackground": "separate",
   "desktopScale": 1,
@@ -153,6 +154,7 @@
   "deleteAttachments": "ask",
   "moveFileConflicts": "ask",
   "externalIconProviders": {},
+  "showReleaseNotes": true,
   "checkForUpdatesOnStart": true,
   "pinNavigationBanner": true,
   "showNoteCount": true,
@@ -552,7 +554,7 @@
     "#404040",
     "#404040"
   ],
-  "lastShownVersion": "3.3.4",
+  "lastShownVersion": "3.3.6",
   "rootFolderOrder": [],
   "rootTagOrder": [],
   "rootPropertyOrder": []
