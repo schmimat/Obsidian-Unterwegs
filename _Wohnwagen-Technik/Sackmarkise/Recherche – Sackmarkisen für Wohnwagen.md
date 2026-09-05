@@ -19,7 +19,7 @@ research_date: 2026-06-15
 > **Template-Version:** `1.0` · **Recherche-Version:** `1` (2026-06-15)
 
 *Ablageort: `Recherchen/` — eingefroren, Snapshot dieser Session*
-*Vorlage: [[Knowledge Base > Templates/Recherche-Vorlage]] (v1.0)*
+*Vorlage: `Knowledge Base/Templates/Recherche-Vorlage.md` (v1.0, anderer Vault)*
 
 ---
 
@@ -118,4 +118,4 @@ Im Bereich **2,4–2,9 m** stehen fünf Modelle von drei Herstellern zur Verfüg
 
 ---
 
-*Vorlage: [[Knowledge Base > Templates/Recherche-Vorlage]] (v1.0) · Recherche in Vault-Übersicht eintragen: [[README]]*
+*Vorlage: `Knowledge Base/Templates/Recherche-Vorlage.md` (v1.0, anderer Vault) · Recherche in Vault-Übersicht eintragen: [[README]]*

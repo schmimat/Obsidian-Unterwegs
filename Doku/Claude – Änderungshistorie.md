@@ -118,4 +118,9 @@ _Noch keine abgeschlossene Woche._
 
 ---
 
-**Zuletzt aktualisiert:** 2026-08-27 (Vault-Wartung Runde 5 Punkt B: strukturelle Auffälligkeit behoben — Fußzeile stand mitten im Dokument, 42 ältere Tabellenzeilen dahinter ohne Kopfzeile brachen das Tabellen-Rendering; zu einer durchgehenden, chronologisch sortierten Tabelle zusammengeführt, keine Zeile verloren)
+| 2026-09-05 | `_Wohnwagen-Technik/Sackmarkise/Recherche – Sackmarkisen für Wohnwagen.md` (2 Stellen) | Vault-Wartung Runde 8 (Cross-Vault-Root-Session): Cross-Vault-Wikilink-Versuch `[[Knowledge Base > Templates/Recherche-Vorlage]]` (in Obsidian technisch nie auflösbar, war schon am 2026-08-19 als offener Punkt dokumentiert) auf Klartext-Pfad `` `Knowledge Base/Templates/Recherche-Vorlage.md` `` umgestellt | User: „Alle 3 umsetzen" | 🟢 erledigt |
+
+---
+
+**Zuletzt aktualisiert:** 2026-09-05 (Vault-Wartung Runde 8: Cross-Vault-Recherche-Vorlage-Link behoben)  
+**Vorherige Aktualisierung:** 2026-08-27 (Vault-Wartung Runde 5 Punkt B: strukturelle Auffälligkeit behoben — Fußzeile stand mitten im Dokument, 42 ältere Tabellenzeilen dahinter ohne Kopfzeile brachen das Tabellen-Rendering; zu einer durchgehenden, chronologisch sortierten Tabelle zusammengeführt, keine Zeile verloren)
