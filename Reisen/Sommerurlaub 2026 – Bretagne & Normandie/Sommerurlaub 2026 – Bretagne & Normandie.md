@@ -28,28 +28,28 @@ modified: 2026-09-05
 
 | Datum | Wanderungen und/oder Orte |
 |---|---|
-| [[Tagebuch/2026-08-01|01.08.]] | Zuhause, Saarbrücken, Reims, Villeneuve-sur-Aisne *(Anreise)* |
-| [[Tagebuch/2026-08-02|02.08.]] | Villeneuve-sur-Aisne, Villaines-la-Gonais, Erquy *(Ankunft Campingplatz Erquy)* |
-| [[Tagebuch/2026-08-03|03.08.]] | **Wanderung: Cap d'Erquy** · Erquy |
-| [[Tagebuch/2026-08-04|04.08.]] | **Wanderung: Vallée de l'Arguenon (Tournemine)** · Plédéliac, Jugon-les-Lacs, Lamballe-Armor |
-| [[Tagebuch/2026-08-05|05.08.]] | **Wanderung: Anse d'Yffiniac / Lermot** · Hillion, Saint-Brieuc, Trégueux |
-| [[Tagebuch/2026-08-06|06.08.]] | **Wanderung: Le Gouffre de Plougrescant** · Plougrescant, Tréguier |
+| [[Tagebuch/2026-08-01|01.08.]] | Anreise über Reims (Kathedrale, Jeanne-d'Arc-Statue) → Villeneuve-sur-Aisne |
+| [[Tagebuch/2026-08-02|02.08.]] | Ankunft Erquy (Camping Saint-Michel), erster Strandbesuch |
+| [[Tagebuch/2026-08-03|03.08.]] | **Wanderung: Cap d'Erquy** (Rother Bretagne, Tour 08) — Highlight: Four à Boulets |
+| [[Tagebuch/2026-08-04|04.08.]] | **Wanderung: Vallée de l'Arguenon** (Rother Bretagne, Tour 06) — Waldsee Jugon-les-Lacs · Altstadt Lamballe-Armor |
+| [[Tagebuch/2026-08-05|05.08.]] | **Wanderung: Anse d'Yffiniac / Lermot** (Rother Bretagne, Tour 11) · Kathedrale Saint-Brieuc |
+| [[Tagebuch/2026-08-06|06.08.]] | **Wanderung: Le Gouffre de Plougrescant** (Rother Bretagne, Tour 15) — Grand Rocher, Rocher des Amoureux · Kathedrale Tréguier |
 | [[Tagebuch/2026-08-07|07.08.]] | Erquy *(Ruhetag: Strandtag mittags, abends Spaziergang zur Chapelle Saint-Michel + Grillabend am Camp)* |
-| [[Tagebuch/2026-08-08|08.08.]] | **Wanderung: Cap Fréhel** · Plévenon, Sables-d'Or-les-Pins |
+| [[Tagebuch/2026-08-08|08.08.]] | **Wanderung: Cap Fréhel** (Rother Bretagne, Tour 07) — Leuchtturm + Vauban-Turm · Sables-d'Or-les-Pins |
 | [[Tagebuch/2026-08-09|09.08.]] | Erquy, Gouvets, Surtainville *(Fahrtag: Tankstopp Gouvets, Ankunft + Aufbau Camping Les Mielles, erster Strandbesuch)* |
-| [[Tagebuch/2026-08-10|10.08.]] | **Wanderung: Nez de Jobourg** · Surtainville |
-| [[Tagebuch/2026-08-11|11.08.]] | **Wanderung: Omaha Beach** · Colleville-sur-Mer, Saint-Laurent-sur-Mer, Vierville-sur-Mer, Grandcamp-Maisy, Cricqueville-en-Bessin |
-| [[Tagebuch/2026-08-12|12.08.]] | **Wanderung: Cap de Flamanville** · Surtainville |
+| [[Tagebuch/2026-08-10|10.08.]] | **Wanderung: Nez de Jobourg** (Rother Normandie, Tour 16) — Sentier des Douaniers, La Hague |
+| [[Tagebuch/2026-08-11|11.08.]] | **Wanderung: Omaha Beach** (Rother Normandie, Tour 25) — Overlord Museum, D-Day-Landungsstrand, American Cemetery |
+| [[Tagebuch/2026-08-12|12.08.]] | **Wanderung: Cap de Flamanville** (Rother Normandie, Tour 14) — Mittagspause „Le Sémaphore" |
 | [[Tagebuch/2026-08-13|13.08.]] | Tagesausflug: Bayeux (Circuit du Vieux Bayeux) → Caen (Château de Caen) → zurück nach Surtainville |
-| [[Tagebuch/2026-08-14|14.08.]] | **Wanderung: Hatainville / Carteret** · Surtainville |
+| [[Tagebuch/2026-08-14|14.08.]] | **Wanderung: Hatainville / Carteret** (Rother Normandie, Tour 12) — Gleitschirmflieger, Église Saint-Germain |
 | [[Tagebuch/2026-08-15|15.08.]] | Yport, Fécamp *(Umzugstag: Aufbau Camping de Renéville, abends Palais Bénédictine)* |
-| [[Tagebuch/2026-08-16|16.08.]] | **Wanderung: Fonds d'Étigue** · Étretat, Bénouville, Yport |
-| [[Tagebuch/2026-08-17|17.08.]] | **Wanderung: Falaises des Dalles** · Saint-Martin-aux-Buneaux, Saint-Pierre-en-Port |
+| [[Tagebuch/2026-08-16|16.08.]] | **Wanderung: Fonds d'Étigue** (Rother Normandie, Tour 40) — Étretat-Klippenbögen, Falaise d'Aval |
+| [[Tagebuch/2026-08-17|17.08.]] | **Wanderung: Falaises des Dalles** (Rother Normandie, Tour 43) — Sente des Douaniers GR21 Richtung Petites Dalles |
 | [[Tagebuch/2026-08-18|18.08.]] | **Stadtrundgang: Le Havre – Perret-Wiederaufbau & Impressionismus** · + Auto-Option Jardins Suspendus |
-| [[Tagebuch/2026-08-19|19.08.]] | **Wanderung: Rouen (Stadtrundgang)** · Yport, Fécamp |
+| [[Tagebuch/2026-08-19|19.08.]] | **Wanderung/Stadtrundgang: Rouen** (Rother Normandie, Tour 50) — Kathedrale Notre-Dame, Abbatiale Saint-Ouen |
 | [[Tagebuch/2026-08-20|20.08.]] | *Fahrtag Rouen → Aachen (keine Fotos, nur ein versehentlicher Homescreen-Screenshot)* |
 | [[Tagebuch/2026-08-21|21.08.]] | Vaals (Übernachtung) → Aachen (Ankunft, Fahrzeugwechsel, Einkaufsbummel) |
-| [[Tagebuch/2026-08-22|22.08.]] | Aachen — Reit-Weltmeisterschaft (Fahrsport, Soers) mittags, Stadtfest (Dom, Riesenrad, Rathaus-Konzert) abends |
+| [[Tagebuch/2026-08-22|22.08.]] | Aachen — Reit-Weltmeisterschaft (Fahrsport, Soers) mittags, Stadtfest abends: Dom, Rathaus-Konzert, **Riesenradfahrt** bei Nacht |
 
 ---
 
