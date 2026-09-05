@@ -8,7 +8,7 @@ tags:
   - archiv
   - gpx
 created: 2026-05-28
-modified: 2026-08-19
+modified: 2026-09-05
 type: Index
 region: Bretagne, Frankreich
 sort_index: 10100
@@ -91,6 +91,7 @@ sort_index: 10100
 
 ## 🧳 Reise-Kontext (Erquy-Trip)
 
+- [[Reisen/Sommerurlaub 2026 – Bretagne & Normandie/Sommerurlaub 2026 – Bretagne & Normandie|Sommerurlaub 2026 – Bretagne & Normandie]] — vollständiges Reisetagebuch, 5 der Bretagne-Touren wurden tatsächlich gelaufen (03./04./05./06./08.08.)
 - [[Einpacklisten/Urlaub Frankreich 2026 – Werkzeug-Packliste|Werkzeug-Packliste]] — für dieselbe Frankreich-Reise
 - [[Übernachtungen/Camping des Bondons (La Ferté-sous-Jouarre)|Camping des Bondons]] — Zwischenübernachtung auf der Anreise nach Erquy
 

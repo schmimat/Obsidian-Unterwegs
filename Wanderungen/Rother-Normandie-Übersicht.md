@@ -8,7 +8,7 @@ tags:
   - archiv
   - gpx
 created: 2026-08-10
-modified: 2026-08-19
+modified: 2026-09-05
 type: Index
 region: Normandie, Frankreich
 sort_index: 10600
@@ -85,6 +85,12 @@ sort_index: 10600
 | 48  | Incheville       | [[Rother Wanderführer/Normandie-05.-Auflage-4637/Norm_48_Incheville.gpx\|GPX]]       |
 | 49  | Grandcourt       | [[Rother Wanderführer/Normandie-05.-Auflage-4637/Norm_49_Grandcourt.gpx\|GPX]]       |
 | 50  | Rouen            | [[Rother Wanderführer/Normandie-05.-Auflage-4637/Norm_50_Rouen.gpx\|GPX]]            |
+
+---
+
+## 🧳 Reise-Kontext (Bretagne/Normandie-Trip 2026)
+
+- [[Reisen/Sommerurlaub 2026 – Bretagne & Normandie/Sommerurlaub 2026 – Bretagne & Normandie|Sommerurlaub 2026 – Bretagne & Normandie]] — vollständiges Reisetagebuch, 7 der Normandie-Touren wurden tatsächlich gelaufen (10./11./12./14./16./17./19.08.)
 
 ---
 

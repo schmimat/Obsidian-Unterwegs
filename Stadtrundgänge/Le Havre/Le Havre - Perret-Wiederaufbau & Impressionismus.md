@@ -12,14 +12,14 @@ tags:
   - touren
   - reisen
 created: 2026-08-17
-modified: 2026-08-17
+modified: 2026-09-05
 difficulty: ⭐ Sehr leicht (flach)
 duration: Ganzer Tag (mit Museen)
 distance: 7,8 km
 stations: 15
 type: Stadtrundgang
 region: Le Havre, Normandie, Frankreich
-status: geplant
+status: durchgeführt
 gpx_file: GPX/Le-Havre-Stationen.gpx
 coordinates: 49.4868°N, 0.0989°E
 feature: Stadtrundgänge/Le Havre/Route-Übersicht (bikerouter.de).png
@@ -29,6 +29,8 @@ thumbnail: thumbnails/resized/59e2c7fe3f54fe1719e3c6b5f580e1e5_86cf658e.webp
 # 🏛️ Le Havre – Perret-Wiederaufbau & Impressionismus
 
 > Le Havre wurde 1944 fast vollständig zerstört und von Auguste Perret komplett in Beton neu gebaut — seit 2005 UNESCO-Welterbe. Die Runde verbindet diesen Wiederaufbau mit dem MuMa, das die zweitgrößte Impressionisten-Sammlung Frankreichs beherbergt. Rundweg: Start und Ziel am Auto, Abschluss im Museum.
+
+**✅ Durchgeführt am 18.08.2026** — per Fotodurchsicht bestätigt: Fußroute inkl. Église Saint-Joseph, Place Perret, Rue de Paris fotografiert; nachmittags zusätzlich die Auto-Option **Jardins Suspendus** angefahren. Details: [[../../Reisen/Sommerurlaub 2026 – Bretagne & Normandie/Tagebuch/2026-08-18|Reisetagebuch 18.08.]]
 
 ---
 
