@@ -181,11 +181,31 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 
 **Blocker/offen:** Finaler Live-Test durch die Ehefrau (Login mit Passwort, mp3s offline abspielbar) steht noch aus. Bei künftigen weiteren Reisen einfach `Reise-Guides/Stadtrundgänge/<Ort>/` als neuen Unterordner anlegen — Publish-Site existiert schon, kein neues Setup nötig.
 
+## `Reisen/` — Reise-Tagebücher aus Fotos rekonstruieren (Muster, Stand 2026-09-12)
+
+`Reisen/` ist real gefüllt: **Sommerurlaub 2026 – Bretagne & Normandie** (01.–22.08.2026, 22 Tage) und **Rügen & Dänemark 2025** (06.08.–02.09.2025, 28 Tage). Struktur wie im Zielbild: `Reisen/<Reisename>/{<Reisename>.md, Tagebuch/YYYY-MM-DD.md}`, Tagebuch-Frontmatter `tags/datum/reise/orte/created/modified` (+ optional `wanderung`).
+
+**Ablauf für eine neue Reise** (in dieser Reihenfolge, sonst doppelte Arbeit):
+
+1. **Fotoregister zuerst auswerten** — `Knowledge Base/Fotoverwaltung/Fotoregister_<person>.csv` (Spalten u. a. `Datum`/`Uhrzeit`/`Dateiname`/`Ort`/`Lat`/`Lon`/`Quell-Ordner`), gefiltert auf Reisezeitraum + `Quell-Ordner=Camera`. Liefert Tag→Ort ohne einen einzigen Bildzugriff.
+2. **digiKam-Urlaubsordner prüfen** — `\\10.12.40.242\storage\Bilder\digiKam\Jahre\<Jahr>\<MM.TT-MM.TT>_<Name>`: die DSLR-Fotos liegen dort oft schon kuratiert in Tagesordnern `MM.TT_Ort`, das ist die verlässlichste Tag→Ort-Quelle (Ordnernamen = bereits abgestimmter Reiseverlauf).
+3. **Pro Tag 2–3 repräsentative Fotos wirklich ansehen** (Read auf die Bilddatei) — ohne Bildsichtung bleiben die Einträge inhaltsleer; mit Sichtung entstehen die Details, die den Eintrag wertvoll machen (Sehenswürdigkeit, Infotafel-Text, Aktivität).
+4. Hauptnotiz mit Tabelle „Reiseverlauf" (`[[Tagebuch/YYYY-MM-DD\|TT.MM.]]`) + Abschnitte „Methodik"/„Bekannte Lücke" anlegen, danach die Tagesdateien.
+
+**Wiederverwendbare Erkenntnisse:**
+
+- **Fehlendes GPS ist oft echt, kein Pipeline-Fehler:** Matthias' Register hat von **Mai 2024 bis April 2026 durchgehend keine Koordinaten** (Standortfreigabe am Handy aus). EXIF-Beleg: `GPSInfo`-Block vorhanden, aber ohne `GPSLatitudeRef`/gültigen Fix (nur Kompassrichtung) — bekanntes Pixel-Verhalten, in `Fotoverwaltung/CLAUDE.md` dokumentiert. Claudias Register deckt denselben Zeitraum vollständig ab → bei Lücken immer beide Register prüfen.
+- **Tage ohne GPS/Ort lassen sich rein visuell rekonstruieren** (Baumarkt-Regal → Umbauprojekt zuhause; Paketaufkleber → Person). Personenbezogene Details (genaue Adresse, Nachname) bewusst **nicht** in die Notiz übernehmen.
+- **Reiseverlauf als Word-Datei:** liegt **im digiKam-Urlaubsordner**, nicht im Vault (`<Reisename> - Reiseverlauf.docx`; Querformat Letter, Ränder 539750 EMU, Tabellenstil `Light Grid Accent 1`, Heading 1 + kursiver Untertitel). Erzeugung per `python-docx`. **Fallstrick:** Eine Markdown-Tabellenzeile enthält bei Wikilinks ein zweites `|` (`[[Tagebuch/2026-08-01|01.08.]]`) — naiv am ersten Pipe zu splitten zerreißt die Zeile (Bug in der Bretagne-Datei, 2026-09-12 korrigiert). In Word gehört ohnehin Klartext-Datum, keine Wikilink-Syntax.
+- **Windows-Python + UNC:** Forward-Slash-Pfade (`//10.12.40.242/storage/...`) funktionieren zuverlässig, Backslash-Raw-Strings nicht; Umlaute in Dateinamen als `\uXXXX`-Escapes schreiben, `sys.stdout.reconfigure(encoding="utf-8")` gegen cp1252-Tracebacks.
+- **Handy-Fotos ins Foto-Archiv kopieren:** Standard ist **Vorher/Nachher-Inventar mit MD5** (Name, Größe, MD5 vor und nach der Aktion, paarweiser Vergleich) + eine `…_Dokumentation.md` **im Urlaubsordner selbst**. Umgesetzt für Rügen 2025: 297 Fotos (nur `Camera`, keine Screenshots) aus beiden `SofortUpload`-Ordnern in die Tagesordner **kopiert** (Originale unangetastet), 0 Abweichungen, 4 neue Tagesordner für Tage ohne DSLR-Fotos. Vor solchen Massenaktionen Zeitraum/Struktur/Screenshots-Frage mit dem User klären.
+
 ## Wichtige Dateien & Ordner
 
 | Pfad | Inhalt |
 |------|--------|
 | `CLAUDE.md` | Diese Datei |
+| `Reisen/<Reisename>/` | Reise-Hauptnotiz + `Tagebuch/` (siehe Abschnitt oben) |
 | `Aufgaben/` | Ausformulierte Arbeitsaufträge für den Claude Code Worker (LXC 203) — je Auftrag eine `.md` mit Ziel, Ist-Zustand, Was-zu-tun-ist, Leitplanken und Abnahmekriterien. Neu seit 2026-08-17, Format übernommen aus `Knowledge Base/IT@home/Aufgaben/` (dort auch die Abgrenzung „Aufgaben/ = abarbeitbare Anweisung" vs. Einzeiler-ToDo dokumentiert) |
 | `CC-Session-Logs/` | Session-Logs (via `/compress` + `/preserve`) |
 | `_claude/` + `.claude` (Symlink) | cpr-Skills (`/compress`, `/preserve`, `/resume`) |
@@ -204,7 +224,8 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 
 ---
 
-**Zuletzt aktualisiert:** 2026-08-18 — Projekt „Reise-Guides-Vault & Le-Havre-Audioguide" fortgeschrieben: echte GPX-Route statt Luftlinie, 15/16 Stationen mit Wikimedia-Commons-Fotos bebildert, Google-Maps-Link-Format final auf zuverlässiges Koordinaten-Format korrigiert, BRouter-Profil-Fehler behoben (hiking-beta statt hiking-mountain), Publish-Sidebar-Reihenfolge gesetzt, uMap als Alternative getestet und bewusst verworfen
+**Zuletzt aktualisiert:** 2026-09-12 — Reise „Rügen & Dänemark 2025" komplett angelegt (Hauptnotiz + 28 Tagebuch-Einträge, alle per Bildsichtung angereichert); Word-Reiseverlauf für beide Reisen im jeweiligen digiKam-Ordner (Bretagne-Datei von einem Wikilink-Parsing-Bug befreit); 297 Handy-Fotos MD5-verifiziert in die Tagesordner des Rügen-Urlaubsordners kopiert; neues Muster „Reise-Tagebücher aus Fotos rekonstruieren" dokumentiert (siehe Abschnitt oben)
 
-**Vorherige Aktualisierung:** 2026-08-18 — Projekt „Reise-Guides-Vault & Le-Havre-Audioguide" (siehe oben): neues Publish-Vault aufgebaut, kompletter Rundgang mit Audioguide erstellt und veröffentlicht, Nummerierungsschema grundlegend überarbeitet, generische Anleitung für künftige Rundgänge angelegt
-**Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich, kein Vereinheitlichungsbedarf); Urlaub/Touren vollständig archiviert (Container-seitig + beide GitHub-Repos). Le-Havre-Audioguide + Reise-Guides-Vault live (siehe neuer Abschnitt oben), Live-Test durch die Ehefrau steht noch aus. Offen: `Regionen/`-Konzept, Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), Highlights-Route (`Maastricht - Highlights`) hat weiterhin keine eigene GPX-Datei (dokumentierte Lücke, kein Blocker)
+**Vorherige Aktualisierung:** 2026-08-18 — Projekt „Reise-Guides-Vault & Le-Havre-Audioguide" fortgeschrieben: echte GPX-Route statt Luftlinie, 15/16 Stationen mit Wikimedia-Commons-Fotos bebildert, Google-Maps-Link-Format final korrigiert, BRouter-Profil-Fehler behoben, Publish-Sidebar-Reihenfolge gesetzt, uMap getestet und verworfen
+
+**Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich); Urlaub/Touren vollständig archiviert. Le-Havre-Audioguide + Reise-Guides-Vault live, Live-Test durch die Ehefrau steht weiterhin aus. `Reisen/` produktiv mit 2 Reisen. Offen: `Regionen/`-Konzept (jetzt mit 2 Reisen erstmals echter Anwendungsfall), Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), `Maastricht - Highlights` ohne eigene GPX-Datei (dokumentierte Lücke, kein Blocker), für Rügen 2025 existiert noch kein `Auswahl/`-Ordner mit kuratierten Tagesbestenlisten (beim Bretagne-Urlaub vorhanden)

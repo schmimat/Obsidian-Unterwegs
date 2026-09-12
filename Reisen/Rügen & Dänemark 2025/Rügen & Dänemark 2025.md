@@ -55,6 +55,6 @@ modified: 2026-09-12
 | [[Tagebuch/2025-08-28\|28.08.]] | Heimreise Richtung Franken, abends Regenbogen nahe Zuhause |
 | [[Tagebuch/2025-08-29\|29.08.]] | Zuhause: Baumarktbesuch, Beginn eines Umbau-/Renovierungsprojekts |
 | [[Tagebuch/2025-08-30\|30.08.]] | Zuhause: Weiterarbeit am Umbauprojekt |
-| [[Tagebuch/2025-08-31\|31.08.]] | *Separater Kurzbesuch (nicht Teil der Wohnwagenreise):* Aachen — Zimmer/Wohnung eingerichtet |
-| [[Tagebuch/2025-09-01\|01.09.]] | Aachen |
-| [[Tagebuch/2025-09-02\|02.09.]] | Aachen, Rückreise |
+| [[Tagebuch/2025-08-31\|31.08.]] | *Separater Kurzbesuch (nicht Teil der Wohnwagenreise):* Einzug bei Lena in Aachen — Küche installiert (Durchlauferhitzer, Geschirrspüler, Waschmaschine), Zimmer eingerichtet |
+| [[Tagebuch/2025-09-01\|01.09.]] | Aachen: Spüle/Siphon fertig installiert, Stadtbummel, Kellerabteil eingerichtet |
+| [[Tagebuch/2025-09-02\|02.09.]] | Aachen, letzter Blick durch die fertige Wohnung, Rückreise |
