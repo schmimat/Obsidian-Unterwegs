@@ -144,4 +144,4 @@ Touren-Vault/
 
 ---
 
-*Zuletzt aktualisiert: 2026-08-12*
+*Zuletzt aktualisiert: 2026-08-26*
