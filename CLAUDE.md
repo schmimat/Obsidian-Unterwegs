@@ -3,7 +3,7 @@ tags:
   - claude
   - projekt
 created: 2026-08-10
-modified: 2026-08-19
+modified: 2026-09-21
 ---
 
 # CLAUDE.md — Unterwegs-Vault
@@ -200,11 +200,26 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 - **Windows-Python + UNC:** Forward-Slash-Pfade (`//10.12.40.242/storage/...`) funktionieren zuverlässig, Backslash-Raw-Strings nicht; Umlaute in Dateinamen als `\uXXXX`-Escapes schreiben, `sys.stdout.reconfigure(encoding="utf-8")` gegen cp1252-Tracebacks.
 - **Handy-Fotos ins Foto-Archiv kopieren:** Standard ist **Vorher/Nachher-Inventar mit MD5** (Name, Größe, MD5 vor und nach der Aktion, paarweiser Vergleich) + eine `…_Dokumentation.md` **im Urlaubsordner selbst**. Umgesetzt für Rügen 2025: 297 Fotos (nur `Camera`, keine Screenshots) aus beiden `SofortUpload`-Ordnern in die Tagesordner **kopiert** (Originale unangetastet), 0 Abweichungen, 4 neue Tagesordner für Tage ohne DSLR-Fotos. Vor solchen Massenaktionen Zeitraum/Struktur/Screenshots-Frage mit dem User klären.
 
+## `_Wohnwagen-Technik/` — Defektdiagnose am Bürstner 4313 (Muster, Stand 2026-09-20)
+
+Erster Defekt-Fall in diesem Ordner dokumentiert: flackernde Leuchtstoffröhre in der Toilette. Voller Stand (Symptom, bereits Ausgeschlossenes, Ersatzteil-/LED-Tabelle mit Quellen) im Abschnitt „Defekt: Beleuchtung Toilette flackert" in [[_Wohnwagen-Technik/Wohnwagen-Bürstner-4313]].
+
+**Muster für Defekt-Dokumentation:** eigener Abschnitt in der Fachnotiz des betroffenen Objekts (nicht in `Aufgaben/` — das ist für Claude-Code-Worker-Aufträge, nicht für körperliche Reparaturen des Users). Struktur: Symptom → bereits erfolglos Geprüftes → verbleibender Verdacht → Recherche-Ergebnis/Bezugsquellen → „Offen"-Zeile mit dem nächsten konkreten Test.
+
+**Erkenntnisse:**
+- **Diagnose-Reihenfolge bei 12-V-Defekten:** erst Verbraucher (Leuchte/Leuchtmittel), dann Kontakte, dann Versorgung (Spannungsabfall/Batterie). Sind die ersten beiden erfolglos getauscht/gereinigt, ist Weitersuchen durch Anschauen sinnlos — ab da braucht es eine **Messung unter Last** (Spannungsvergleich Batterie → Sicherungskasten → Verbraucher; der größte Sprung markiert die Fehlerstelle).
+- **12-V-Leuchtstoffleuchten dieser Bauzeit sind meist „Transistorleuchten"** — elektronische Vorschaltung fest im Gehäuse, **kein separater Starter**. Manche Altbauformen haben stattdessen einen 12-V→230-V-Umformer für eine normale 230-V-Röhre; dann ist der alternde Umformer selbst ein plausibler Flacker-Grund, durch Röhrentausch nicht behebbar. Unterscheidung nur durch Öffnen der Fassung (rundes Steckteil = Starter, Platine = Transistorleuchte).
+- **Echte 12-V-DC-LED-Röhren brauchen weder Starter noch Vorschaltgerät** — umgehen alternde Leuchten-Elektronik, statt sie nur zu ersetzen. Bezugsweg generischer 12-V-Camping-Teilemarkt (HABA-Ersatzröhre ~5 €, Dometic 12V LED-Tube ~33 €), **nicht** Bürstner-Originalteil: für ein 1995er Modell nur noch über Fachhändler, für Kleinteile unverhältnismäßig.
+- Vor Bestellung immer erst **Röhre ausbauen, Länge + Sockeltyp messen** — die Produktdaten der Anbieter passen nur bei exakter Übereinstimmung.
+
+**Offen:** Multimeter-Spannungsvergleich unter Last noch nicht durchgeführt; Fassung öffnen zur Starter-/Platinen-Prüfung und Sichtkontrolle der Röhrenenden (Schwärzung) steht aus. Danach erst Entscheidung Ersatzröhre vs. LED-Umrüstung.
+
 ## Wichtige Dateien & Ordner
 
 | Pfad | Inhalt |
 |------|--------|
 | `CLAUDE.md` | Diese Datei |
+| `_Wohnwagen-Technik/` | Fahrzeugdaten, Stromversorgung und Defektdokumentation zum Bürstner 4313 (siehe Abschnitt oben) |
 | `Reisen/<Reisename>/` | Reise-Hauptnotiz + `Tagebuch/` (siehe Abschnitt oben) |
 | `Aufgaben/` | Ausformulierte Arbeitsaufträge für den Claude Code Worker (LXC 203) — je Auftrag eine `.md` mit Ziel, Ist-Zustand, Was-zu-tun-ist, Leitplanken und Abnahmekriterien. Neu seit 2026-08-17, Format übernommen aus `Knowledge Base/IT@home/Aufgaben/` (dort auch die Abgrenzung „Aufgaben/ = abarbeitbare Anweisung" vs. Einzeiler-ToDo dokumentiert) |
 | `CC-Session-Logs/` | Session-Logs (via `/compress` + `/preserve`) |
@@ -224,8 +239,10 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 
 ---
 
-**Zuletzt aktualisiert:** 2026-09-12 — Reise „Rügen & Dänemark 2025" komplett angelegt (Hauptnotiz + 28 Tagebuch-Einträge, alle per Bildsichtung angereichert); Word-Reiseverlauf für beide Reisen im jeweiligen digiKam-Ordner (Bretagne-Datei von einem Wikilink-Parsing-Bug befreit); 297 Handy-Fotos MD5-verifiziert in die Tagesordner des Rügen-Urlaubsordners kopiert; neues Muster „Reise-Tagebücher aus Fotos rekonstruieren" dokumentiert (siehe Abschnitt oben)
+**Zuletzt aktualisiert:** 2026-09-21 — Erster Defekt-Fall in `_Wohnwagen-Technik/` dokumentiert (flackernde Toiletten-Leuchtstoffröhre am Bürstner 4313): Diagnosestand, Starter-/Transistorleuchte-Recherche und Ersatzteil-/LED-Bezugsquellen in der Fahrzeugnotiz, neues Muster „Defektdiagnose" hier festgehalten
+
+**Vorherige Aktualisierung:** 2026-09-12 — Reise „Rügen & Dänemark 2025" komplett angelegt (Hauptnotiz + 28 Tagebuch-Einträge, alle per Bildsichtung angereichert); Word-Reiseverlauf für beide Reisen im jeweiligen digiKam-Ordner (Bretagne-Datei von einem Wikilink-Parsing-Bug befreit); 297 Handy-Fotos MD5-verifiziert in die Tagesordner des Rügen-Urlaubsordners kopiert; neues Muster „Reise-Tagebücher aus Fotos rekonstruieren" dokumentiert (siehe Abschnitt oben)
 
 **Vorherige Aktualisierung:** 2026-08-18 — Projekt „Reise-Guides-Vault & Le-Havre-Audioguide" fortgeschrieben: echte GPX-Route statt Luftlinie, 15/16 Stationen mit Wikimedia-Commons-Fotos bebildert, Google-Maps-Link-Format final korrigiert, BRouter-Profil-Fehler behoben, Publish-Sidebar-Reihenfolge gesetzt, uMap getestet und verworfen
 
-**Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich); Urlaub/Touren vollständig archiviert. Le-Havre-Audioguide + Reise-Guides-Vault live, Live-Test durch die Ehefrau steht weiterhin aus. `Reisen/` produktiv mit 2 Reisen. Offen: `Regionen/`-Konzept (jetzt mit 2 Reisen erstmals echter Anwendungsfall), Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), `Maastricht - Highlights` ohne eigene GPX-Datei (dokumentierte Lücke, kein Blocker), für Rügen 2025 existiert noch kein `Auswahl/`-Ordner mit kuratierten Tagesbestenlisten (beim Bretagne-Urlaub vorhanden)
+**Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich); Urlaub/Touren vollständig archiviert. Le-Havre-Audioguide + Reise-Guides-Vault live, Live-Test durch die Ehefrau steht weiterhin aus. `Reisen/` produktiv mit 2 Reisen. Offen: `Regionen/`-Konzept (jetzt mit 2 Reisen erstmals echter Anwendungsfall), Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), `Maastricht - Highlights` ohne eigene GPX-Datei (dokumentierte Lücke, kein Blocker), für Rügen 2025 existiert noch kein `Auswahl/`-Ordner mit kuratierten Tagesbestenlisten (beim Bretagne-Urlaub vorhanden); Toiletten-Beleuchtung Bürstner 4313 defekt, Diagnose wartet auf Multimeter-Messung + Öffnen der Fassung
