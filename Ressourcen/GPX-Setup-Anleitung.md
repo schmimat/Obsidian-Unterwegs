@@ -279,4 +279,4 @@ N50° 51' 1.08", E5° 41' 15.00"   ✅ Auch ok
 
 ---
 
-*Zuletzt aktualisiert: 2026-05-28*
+*Zuletzt aktualisiert: 2026-08-12*

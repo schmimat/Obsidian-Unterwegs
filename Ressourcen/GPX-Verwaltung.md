@@ -161,4 +161,4 @@ coordinates: "50.8503°N, 5.6875°E"
 
 ---
 
-*Zuletzt aktualisiert: 2026-05-28*
+*Zuletzt aktualisiert: 2026-08-12*

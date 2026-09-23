@@ -68,4 +68,4 @@ Sechs komplette Rother-GPS-Sammlungen:
 
 ---
 
-*Zuletzt aktualisiert: 2026-08-10 · 443 GPX-Dateien aus OneDrive-Sammlung*
+*Zuletzt aktualisiert: 2026-08-12 · 443 GPX-Dateien aus OneDrive-Sammlung*

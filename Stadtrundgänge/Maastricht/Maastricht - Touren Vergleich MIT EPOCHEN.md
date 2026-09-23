@@ -13,7 +13,7 @@ tags:
   - niederlande
   - reisen
 created: 2026-05-27
-modified: 2026-05-27
+modified: 2026-08-19
 difficulty: "⭐ bis ⭐⭐ (je nach Wahl)"
 duration: "2–7 Stunden"
 type: "Vergleichs-Übersicht"

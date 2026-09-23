@@ -3,7 +3,7 @@ tags:
   - claude
   - projekt
 created: 2026-08-10
-modified: 2026-09-21
+modified: 2026-09-23
 ---
 
 # CLAUDE.md — Unterwegs-Vault
@@ -227,7 +227,7 @@ Erster Defekt-Fall in diesem Ordner dokumentiert: flackernde Leuchtstoffröhre i
 | `Doku/Claude – Änderungshistorie.md` | Protokoll autonomer `.md`-Änderungen (wöchentliche Sammelbestätigung) |
 | `Doku/Claude – Änderungshistorie (Archiv Touren/Urlaub).md` | Änderungshistorien der Quell-Vaults bis zum Merge-Zeitpunkt |
 
-**Vault-Wartung:** letzte vault-weite Wartungsrunde **2026-08-19** (davor 2026-08-10 im Rahmen der Merge-Migration, Teilumfang). Zentrale Übersicht + Methodik über alle 5 Vaults: `PKM-Dirigent/05 - Vault-Wartung.md` (anderer Vault).
+**Vault-Wartung:** letzte vault-weite Wartungsrunde **2026-09-23** (Runde 10 — 5 Datums-Stempel-Fixes in Unterwegs; davor 2026-08-19, davor 2026-08-10 im Rahmen der Merge-Migration, Teilumfang). Zentrale Übersicht + Methodik über alle 6 Vaults: `PKM-Dirigent/05 - Vault-Wartung.md` (anderer Vault).
 
 ## Arbeitsweise mit Claude Code
 
@@ -239,10 +239,10 @@ Erster Defekt-Fall in diesem Ordner dokumentiert: flackernde Leuchtstoffröhre i
 
 ---
 
-**Zuletzt aktualisiert:** 2026-09-21 — Erster Defekt-Fall in `_Wohnwagen-Technik/` dokumentiert (flackernde Toiletten-Leuchtstoffröhre am Bürstner 4313): Diagnosestand, Starter-/Transistorleuchte-Recherche und Ersatzteil-/LED-Bezugsquellen in der Fahrzeugnotiz, neues Muster „Defektdiagnose" hier festgehalten
+**Zuletzt aktualisiert:** 2026-09-23 — Vault-weite Wartung Runde 10 (Cross-Vault-Root-Session): 5 Datums-Stempel-Diskrepanzen (Frontmatter `modified` vs. Footer) in Unterwegs synchronisiert, Vault-Wartung-Pointer aktualisiert. Details: `PKM-Dirigent/05 - Vault-Wartung.md` Abschnitt 4j (anderer Vault)
+
+**Vorherige Aktualisierung:** 2026-09-21 — Erster Defekt-Fall in `_Wohnwagen-Technik/` dokumentiert (flackernde Toiletten-Leuchtstoffröhre am Bürstner 4313): Diagnosestand, Starter-/Transistorleuchte-Recherche und Ersatzteil-/LED-Bezugsquellen in der Fahrzeugnotiz, neues Muster „Defektdiagnose" hier festgehalten
 
 **Vorherige Aktualisierung:** 2026-09-12 — Reise „Rügen & Dänemark 2025" komplett angelegt (Hauptnotiz + 28 Tagebuch-Einträge, alle per Bildsichtung angereichert); Word-Reiseverlauf für beide Reisen im jeweiligen digiKam-Ordner (Bretagne-Datei von einem Wikilink-Parsing-Bug befreit); 297 Handy-Fotos MD5-verifiziert in die Tagesordner des Rügen-Urlaubsordners kopiert; neues Muster „Reise-Tagebücher aus Fotos rekonstruieren" dokumentiert (siehe Abschnitt oben)
-
-**Vorherige Aktualisierung:** 2026-08-18 — Projekt „Reise-Guides-Vault & Le-Havre-Audioguide" fortgeschrieben: echte GPX-Route statt Luftlinie, 15/16 Stationen mit Wikimedia-Commons-Fotos bebildert, Google-Maps-Link-Format final korrigiert, BRouter-Profil-Fehler behoben, Publish-Sidebar-Reihenfolge gesetzt, uMap getestet und verworfen
 
 **Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich); Urlaub/Touren vollständig archiviert. Le-Havre-Audioguide + Reise-Guides-Vault live, Live-Test durch die Ehefrau steht weiterhin aus. `Reisen/` produktiv mit 2 Reisen. Offen: `Regionen/`-Konzept (jetzt mit 2 Reisen erstmals echter Anwendungsfall), Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), `Maastricht - Highlights` ohne eigene GPX-Datei (dokumentierte Lücke, kein Blocker), für Rügen 2025 existiert noch kein `Auswahl/`-Ordner mit kuratierten Tagesbestenlisten (beim Bretagne-Urlaub vorhanden); Toiletten-Beleuchtung Bürstner 4313 defekt, Diagnose wartet auf Multimeter-Messung + Öffnen der Fassung

@@ -1,7 +1,7 @@
 ---
 tags: [claude, workflow, meta]
 created: 2026-08-10
-modified: 2026-09-05
+modified: 2026-09-23
 ---
 
 # Claude – Änderungshistorie
@@ -65,6 +65,7 @@ _Noch keine abgeschlossene Woche._
 
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
+| 2026-09-23 | `Stadtrundgänge/Maastricht/Maastricht - Touren Vergleich MIT EPOCHEN.md`, `Ressourcen/GPX-Setup-Anleitung.md`, `Ressourcen/GPX-Verwaltung.md`, `Wanderungen/Touren-Archiv - Gesamtübersicht.md`, `CLAUDE.md` | Vault-Wartung Runde 10 (Cross-Vault-Root-Session): 5 Datums-Stempel-Diskrepanzen (Frontmatter `modified` vs. Footer „Zuletzt aktualisiert") auf das jeweils spätere Datum synchronisiert — reine Datumskorrektur, keine Inhaltsänderung. `CLAUDE.md` zusätzlich: Vault-Wartung-Pointer aktualisiert (Runde 10, 6 statt 5 Vaults) | Vault-Wartung Runde 10 (siehe `PKM-Dirigent/05 - Vault-Wartung.md` Abschnitt 4j) | 🟡 offen |
 | 2026-09-21 | `CLAUDE.md` | `/preserve`: neuer Abschnitt „`_Wohnwagen-Technik/` — Defektdiagnose am Bürstner 4313" (Muster für Defekt-Dokumentation, 4 Erkenntnisse zu 12-V-Diagnosereihenfolge/Transistorleuchte/LED-Bezugsweg, offene Punkte), neue Zeile `_Wohnwagen-Technik/` bei „Wichtige Dateien & Ordner", Footer + Status ergänzt, `modified`-Bump. 231 → 248 Zeilen (Richtwert <280 eingehalten, kein Archivieren nötig) | `/preserve` nach der Toilettenlicht-Session, alle 4 Kategorien gewählt | 🟡 offen |
 | 2026-09-20 | [[../_Wohnwagen-Technik/Wohnwagen-Bürstner-4313]] | Neuer Abschnitt „Defekt: Beleuchtung Toilette flackert" — Fehlerbild (Leuchtstoffröhre flackert/schwach), bereits erfolglos geprüfte Ursachen (Leuchte getauscht, Klemmen gereinigt), verbleibender Verdacht (Spannungsabfall/Batterie, noch offener Multimeter-Test), sowie Recherche-Ergebnis zu Starter (vermutlich „Transistorleuchte" ohne separaten Starter) und Ersatzteil-/LED-Optionen (HABA-Ersatzröhre, Dometic 12V-LED-Tube, generische 12V-LED-Röhren) mit Quellen | User meldete Defekt, bat um Internet-Recherche zu Starter/Ersatzteilen/LED-Alternative, bestätigte danach „ja" zum Dokumentieren | 🟡 offen |
 | 2026-08-27 | [[../Einpacklisten/Urlaub Frankreich 2026 – Werkzeug-Packliste]] | Vault-Wartung Runde 6, Punkt 4 (Cross-Vault-Root-Session): `[[Stützlast messen]]` war seit Runde 1 (19.08.) als „echte Dokumentationslücke ohne fabrizierbares Ziel" eingestuft — bei genauerer Prüfung stellte sich heraus, dass `### Stützlast messen` als Überschrift **in derselben Datei** existiert, nur ohne `#`-Präfix verlinkt war. Korrigiert auf `[[#Stützlast messen]]` (Heading-Link in derselben Notiz) — vorherige Einstufung war ein Fehlbefund, kein echter Content-Fix. `Forth-Eckental` (zweiter Fund derselben Zeile 19.08.) bleibt weiterhin ein echter Fehlbefund/echte Lücke — vermutlich Tippfehler für „Fürth-Eckental", aber auch mit korrigierter Schreibweise existiert keine Zielnotiz | Vault-Wartung Runde 6 (siehe `PKM-Dirigent/05 - Vault-Wartung.md`) | 🟡 offen |
@@ -138,7 +139,9 @@ _Noch keine abgeschlossene Woche._
 
 ---
 
-**Zuletzt aktualisiert:** 2026-09-13 (`Templates/Recherche-Vorlage.md` neu — Promotion vom KB-lokalen Template zur Dirigent-Schrank-Vorlage, Cross-Vault-Notbehelf durch echte lokale Kopie ersetzt)  
+**Zuletzt aktualisiert:** 2026-09-23 (Vault-Wartung Runde 10: 5 Datums-Stempel-Fixes)
+
+**Vorherige Aktualisierung:** 2026-09-13 (`Templates/Recherche-Vorlage.md` neu — Promotion vom KB-lokalen Template zur Dirigent-Schrank-Vorlage, Cross-Vault-Notbehelf durch echte lokale Kopie ersetzt)  
 **Vorherige Aktualisierung:** 2026-09-12 (neue Reise-Notiz „Rügen & Dänemark 2025" mit vollständigem Tagebuch angelegt)  
 **Vorherige Aktualisierung:** 2026-09-05 (Vault-Wartung Runde 8: Cross-Vault-Recherche-Vorlage-Link behoben)  
 **Vorherige Aktualisierung:** 2026-08-27 (Vault-Wartung Runde 5 Punkt B: strukturelle Auffälligkeit behoben — Fußzeile stand mitten im Dokument, 42 ältere Tabellenzeilen dahinter ohne Kopfzeile brachen das Tabellen-Rendering; zu einer durchgehenden, chronologisch sortierten Tabelle zusammengeführt, keine Zeile verloren)
