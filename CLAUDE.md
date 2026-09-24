@@ -229,6 +229,8 @@ Erster Defekt-Fall in diesem Ordner dokumentiert: flackernde Leuchtstoffröhre i
 
 **Vault-Wartung:** letzte vault-weite Wartungsrunde **2026-09-23** (Runde 10 — 5 Datums-Stempel-Fixes in Unterwegs; davor 2026-08-19, davor 2026-08-10 im Rahmen der Merge-Migration, Teilumfang). Zentrale Übersicht + Methodik über alle 6 Vaults: `PKM-Dirigent/05 - Vault-Wartung.md` (anderer Vault).
 
+**Arbeitsumgebung & technische Konventionen** (SSH-Zugriffswege, Standard-Verzeichnisse wie das Screenshot-Ablageziel): `PKM-Dirigent/07 - Arbeitsumgebung & Konventionen.md` (anderer Vault).
+
 ## Arbeitsweise mit Claude Code
 
 - Sessions mit `/resume` starten — lädt Session-History
