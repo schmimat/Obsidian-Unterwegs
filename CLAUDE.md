@@ -3,7 +3,7 @@ tags:
   - claude
   - projekt
 created: 2026-08-10
-modified: 2026-09-23
+modified: 2026-09-25
 ---
 
 # CLAUDE.md — Unterwegs-Vault
@@ -29,6 +29,7 @@ Unterwegs/
 ├── Regionen/                     (Bindeglied Reise ↔ Wanderung/Stadtrundgang)
 ├── Ressourcen/ · Clippings/ · Doku/   (aus beiden zusammengeführt)
 ├── _template/
+├── Templates/                    (vault-spezifisches Fach im PKM-Dirigent-Schrank, seit 2026-09-13 — aktuell nur `Recherche-Vorlage.md`)
 ├── _Wohnwagen-Technik/              (Sackmarkise/, Wohnwagen-*.md — eigener Unterordner)
 └── OneNote-Archiv/                   (1:1 aus Urlaub)
 ```
@@ -226,6 +227,7 @@ Erster Defekt-Fall in diesem Ordner dokumentiert: flackernde Leuchtstoffröhre i
 | `_claude/` + `.claude` (Symlink) | cpr-Skills (`/compress`, `/preserve`, `/resume`) |
 | `Doku/Claude – Änderungshistorie.md` | Protokoll autonomer `.md`-Änderungen (wöchentliche Sammelbestätigung) |
 | `Doku/Claude – Änderungshistorie (Archiv Touren/Urlaub).md` | Änderungshistorien der Quell-Vaults bis zum Merge-Zeitpunkt |
+| `Templates/Recherche-Vorlage.md` | Lokale Kopie aus dem PKM-Dirigent-Werkzeug-/Vorlagen-Schrank (vault-spezifisches Fach, `06 - Werkzeuge.md` im PKM-Dirigent-Vault) — ursprünglich nur in Knowledge Base, wurde generalisiert, nachdem Work und Unterwegs sie längst per kaputtem Cross-Vault-Link referenziert hatten (Vault-Wartung Runde 8, 2026-09-05) |
 
 **Vault-Wartung:** letzte vault-weite Wartungsrunde **2026-09-23** (Runde 10 — 5 Datums-Stempel-Fixes in Unterwegs; davor 2026-08-19, davor 2026-08-10 im Rahmen der Merge-Migration, Teilumfang). Zentrale Übersicht + Methodik über alle 6 Vaults: `PKM-Dirigent/05 - Vault-Wartung.md` (anderer Vault).
 
@@ -241,7 +243,9 @@ Erster Defekt-Fall in diesem Ordner dokumentiert: flackernde Leuchtstoffröhre i
 
 ---
 
-**Zuletzt aktualisiert:** 2026-09-23 — Vault-weite Wartung Runde 10 (Cross-Vault-Root-Session): 5 Datums-Stempel-Diskrepanzen (Frontmatter `modified` vs. Footer) in Unterwegs synchronisiert, Vault-Wartung-Pointer aktualisiert. Details: `PKM-Dirigent/05 - Vault-Wartung.md` Abschnitt 4j (anderer Vault)
+**Zuletzt aktualisiert:** 2026-09-25 — Vault-Wartung Check 10 „Inhaltliche Struktur-Review" (Cross-Vault-Root-Session): `Templates/Recherche-Vorlage.md` (lokale Kopie aus dem PKM-Dirigent-Schrank, seit 2026-09-13 real vorhanden) in Ordnerbaum + „Wichtige Dateien & Ordner"-Tabelle nachgetragen — war bisher hier undokumentiert. Details: `PKM-Dirigent/05 - Vault-Wartung.md` Abschnitt 4p (anderer Vault)
+
+**Vorherige Aktualisierung:** 2026-09-23 — Vault-weite Wartung Runde 10 (Cross-Vault-Root-Session): 5 Datums-Stempel-Diskrepanzen (Frontmatter `modified` vs. Footer) in Unterwegs synchronisiert, Vault-Wartung-Pointer aktualisiert. Details: `PKM-Dirigent/05 - Vault-Wartung.md` Abschnitt 4j (anderer Vault)
 
 **Vorherige Aktualisierung:** 2026-09-21 — Erster Defekt-Fall in `_Wohnwagen-Technik/` dokumentiert (flackernde Toiletten-Leuchtstoffröhre am Bürstner 4313): Diagnosestand, Starter-/Transistorleuchte-Recherche und Ersatzteil-/LED-Bezugsquellen in der Fahrzeugnotiz, neues Muster „Defektdiagnose" hier festgehalten
 
