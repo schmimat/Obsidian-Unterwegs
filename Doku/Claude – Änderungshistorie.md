@@ -47,7 +47,7 @@ Technisch umgesetzt über `.claude/settings.json` (Vault-Root, checked-in): `Edi
 |---|---|---|---|---|
 | YYYY-MM-DD | [[Wikilink]] | Kurzbeschreibung (1 Zeile) | Kurzkontext | 🟡 offen |
 
-- **Status:** 🟢 bestätigt (27.09., pauschal) → 🟢 bestätigt (nach Wochen-Review) bzw. 🔴 verworfen → Zeile wandert ins Archiv (Abschnitt 5)
+- **Status:** 🟡 offen → 🟢 bestätigt (nach Wochen-Review) bzw. 🔴 verworfen → Zeile wandert ins Archiv (Abschnitt 5)
 - Neue Einträge werden **oben** in der aktuellen Tabelle (Abschnitt 6) ergänzt (neueste zuerst)
 
 ## 4. Wochen-Workflow
@@ -59,9 +59,7 @@ Technisch umgesetzt über `.claude/settings.json` (Vault-Root, checked-in): `Edi
 
 ## 5. Archiv (bestätigte/verworfene Wochen)
 
-_Noch keine abgeschlossene Woche._
-
-## 6. Offene Änderungen (aktuelle Woche)
+### Woche bis 2026-09-27 — vollständig bestätigt (Änderungshistorien-Review, Cross-Vault-Root-Session)
 
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
@@ -137,6 +135,11 @@ _Noch keine abgeschlossene Woche._
 | 2026-09-12 | Neu: `Reisen/Rügen & Dänemark 2025/Rügen & Dänemark 2025.md` + `Tagebuch/2025-08-06.md` bis `.../2025-09-02.md` (28 Tagebuch-Dateien) | Neue Reise-Notiz angelegt (Zeitraum 06.08.–02.09.2025). Analyse zuerst: `Fotoregister_claudia.csv` deckt den gesamten Zeitraum mit GPS+Ort ab (140 Fotos, 49 Orte), `Fotoregister_matthias.csv` dagegen 0 Koordinaten im ganzen Zeitraum — EXIF-Stichprobe an einem Foto vom 14.08. bestätigt einen `GPSInfo`-Block ohne validen Fix (bekanntes Pixel-Verhalten, kein Pipeline-Fehler; betrifft laut Registerverlauf durchgehend Mai 2024–April 2026). Zusätzlich die bereits fertig kuratierte digiKam-DSLR-Ablage (`\\10.12.40.242\storage\Bilder\digiKam\Jahre\2025\08.06-09.03_Ruegen-Daenemark`, 18 Tages-/Ortsordner) ausgewertet und mit Claudias Ort-Daten abgeglichen (deckungsgleich). Alle 26 Tage der eigentlichen Wohnwagenreise (Rügen → Dänemark → Büdelsdorf/Hamburg/Dornumersiel) per echter Fotodurchsicht (2-3 Bilder/Tag) inhaltlich angereichert. Für die 3 Lücken-Tage 28.–30.08. (keine digiKam-/Claudia-Daten) sowie den separaten Aachen-Kurzbesuch 31.08.–02.09. (Claudia-Fotos zeigen offenbar Zimmereinrichtung, keine Reit-WM wie im Bretagne-Vorjahr) auf User-Wunsch ebenfalls per Bildsichtung rekonstruiert | User: „Neue Reise mit folgenden Fotos analysieren … Es sollten zu beiden SofortUpload die Koordinaten und Orte schon in einer Tabelle vorliegen. Diese zuerst analysieren." → Rückfrage per `AskUserQuestion` zu Detailtiefe/Lücken-Umgang/Titel → „Volle Bildsichtung", „Per Bildsichtung einordnen", Titel „Rügen & Dänemark 2025" bestätigt | 🟢 bestätigt (27.09., pauschal) |
 | 2026-09-12 | `Reisen/Rügen & Dänemark 2025/Tagebuch/2025-08-31.md`, `.../2025-09-01.md`, `.../2025-09-02.md` + Hauptübersicht (3× Tabellenzeile) | Die 3 Aachen-Tage nochmal per echter Bildsichtung (10 zusätzliche Fotos aus dem inzwischen kopierten `08.31-09.02_Aachen`-Ordner, s.o.) deutlich ausgebaut: Kurzbesuch ist ein Einzugs-/Renovierungs-Wochenende bei **Lena** (Name auf einem fotografierten Paketaufkleber identifiziert) — 31.08. Deckenriss dokumentiert, Küche installiert (Geschirrspüler, Waschmaschine, Vaillant-Durchlauferhitzer), Zimmer eingerichtet (Schreibtisch, Kleiderschrank); 01.09. Edelstahl-Spüle in die vorbereitete Arbeitsplatten-Öffnung eingesetzt + IKEA-„LILLVIKEN"-Siphon angeschlossen, Stadtbummel, Bambus-Eckregal im Kellerabteil aufgestellt; 02.09. letzter Kontrollgang durch die fertige Wohnung vor der Rückreise. Genaue Adresse bewusst nicht in die Notiz übernommen (Datenschutz) | User: „Auch die Aachen-Notizen im Vault nochmal per Bildsichtung genauer ausbauen" | 🟢 bestätigt (27.09., pauschal) |
 | 2026-09-13 | Neu: `Templates/Recherche-Vorlage.md`; Geändert: `_Wohnwagen-Technik/Sackmarkise/Recherche – Sackmarkisen für Wohnwagen.md` (2× Fußzeile: Klartext-Pfad auf `Knowledge Base/Templates/Recherche-Vorlage.md` durch funktionierenden lokalen Wikilink ersetzt) | PKM-Dirigent-Werkzeug-Schrank auf physische Zentralisierung erweitert (auch vault-spezifische Vorlagen/Tools wandern in den Schrank, mit Fach je Vault). `Recherche-Vorlage` wurde dabei als „eigentlich allgemein" erkannt (Unterwegs hatte sie schon vorher via Cross-Vault-Notbehelf referenziert, siehe Vault-Wartung Runde 8 vom 2026-09-05) und ins Fach für alle promotet — lokale Kopie jetzt hier vorhanden, macht den Runde-8-Notbehelf obsolet | Cross-Vault-Root-Session (PKM-Dirigent-Auftrag) | 🟢 bestätigt (27.09., pauschal) |
+
+## 6. Offene Änderungen (aktuelle Woche)
+
+| Datum | Dokument | Änderung | Session/Kontext | Status |
+|---|---|---|---|---|
 
 ---
 
