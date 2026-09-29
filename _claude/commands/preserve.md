@@ -212,5 +212,5 @@ These patterns are automatically identified as archivable:
 ## Technical Constraints
 
 - `AskUserQuestion`: max. **4 Optionen** pro Frage, max. **4 Fragen** pro Aufruf — mehr führt zu einem stillen Fehler
-- Diese Datei liegt in **6 Vaults** (`_claude/commands/`) **plus dem vault-übergreifenden `Obsidian-Vaults`-Root** (angelegt 2026-08-08 für Cross-Vault-Sessions, seit 2026-09-29 Inhalt in `PKM-Dirigent/Cross-Vault/`) — Änderungen synchron in **allen 7** Kopien durchführen. Die Root-Kopie liegt seit 2026-09-29 unter `PKM-Dirigent/Cross-Vault/_claude/commands/` (Obsidian-synced) und ist im Root nur verlinkt.
+- Diese Datei liegt in den **5 aktiven Vaults** (`_claude/commands/`: Knowledge Base, Konstruktionsbüro Schmidl, PKM-Dirigent, Unterwegs, Work) **plus der Cross-Vault-Kopie für den `Obsidian-Vaults`-Root** (angelegt 2026-08-08, seit 2026-09-29 Inhalt in `PKM-Dirigent/Cross-Vault/`) — Änderungen synchron in **allen 6** Kopien durchführen. Die Root-Kopie liegt seit 2026-09-29 unter `PKM-Dirigent/Cross-Vault/_claude/commands/` (Obsidian-synced) und ist im Root nur verlinkt.
 - `/compact` ist ein eingebautes Kommando — `compact.md` existiert bewusst nicht
