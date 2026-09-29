@@ -142,6 +142,7 @@ Technisch umgesetzt über `.claude/settings.json` (Vault-Root, checked-in): `Edi
 
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
+| 2026-09-29 | [[Ressourcen/Anleitung - Stadtrundgang mit Audioguide aufbauen & publizieren]], `CLAUDE.md` | `Reise-Guides` jetzt zusätzlich per Obsidian Sync auf 201+203 (nicht X1) nachgetragen; Begründung „Publish veröffentlicht immer das ganze Vault“ präzisiert (Teil-Publish technisch möglich, Trennung bleibt als Schutz) | User: „Ja, passe die Unterwegs-Doku an“ · Session in PKM-Dirigent (Einrichtung Sync für Reise-Guides) | 🟡 offen |
 
 ---
 

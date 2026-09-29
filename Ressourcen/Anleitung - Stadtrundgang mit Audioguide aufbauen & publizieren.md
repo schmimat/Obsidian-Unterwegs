@@ -2,7 +2,7 @@
 title: "Anleitung – Stadtrundgang mit Audioguide aufbauen & publizieren"
 tags: [stadtrundgang, audioguide, anleitung, publish]
 created: 2026-08-17
-modified: 2026-08-17
+modified: 2026-09-29
 type: Anleitung
 ---
 
@@ -16,10 +16,11 @@ type: Anleitung
 |---|---|---|
 | **Zweck** | Praktische Routenplanung: Öffnungszeiten, Parken, GPX-Navigation | Audioguide zum Anhören unterwegs (gesprochene Texte + mp3) |
 | **Zielgruppe** | Du selbst, über Obsidian Sync | Du + Familie/Mitreisende, über eine **öffentliche, passwortgeschützte** Website |
-| **Bereitstellung** | Obsidian Sync (`obsidian-sync-unterwegs.service` auf 201+203) | Obsidian Publish (`ob publish-*`), Site: **https://publish.obsidian.md/reise-guides** |
+| **Bereitstellung** | Obsidian Sync (`obsidian-sync-unterwegs.service` auf 201+203) | Obsidian Publish (`ob publish-*`), Site: **https://publish.obsidian.md/reise-guides** — veröffentlicht wird weiterhin von 203 aus |
+| **Sync & Backup** | Obsidian Sync + Git-Backup (201) | seit 2026-09-29 Obsidian Sync auf **201+203** (`obsidian-sync-reise-guides.service`, eigenes E2E-Passwort, **nicht** auf X1). Noch kein Git-Backup (kommt, sobald weitere Rundgänge dazukommen). Vorher lag das Vault nur auf 203 und war nirgends gesichert |
 | **Pfad je Rundgang** | `Stadtrundgänge/<Ort>/` | `Stadtrundgänge/<Ort>/Audioguide/` (im `Reise-Guides`-Vault) |
 
-**Warum getrennt statt einem Vault:** `Reise-Guides` wird komplett veröffentlicht (Publish kennt keine granulare Zugriffssteuerung pro Datei) — alles, was dort liegt, ist potenziell für jeden mit dem Passwort sichtbar. `Unterwegs` bleibt privat. Deshalb leben praktische Infos (Preise, Telefonnummern, Parkplatz-Tipps) **nur** in `Unterwegs`, niemals in `Reise-Guides`.
+**Warum getrennt statt einem Vault:** `Reise-Guides` wird komplett veröffentlicht (`ob publish --all`; der Passwortschutz gilt für die ganze Site, nicht pro Datei) — alles, was dort liegt, ist potenziell für jeden mit dem Passwort sichtbar. *Präzisierung 2026-09-29:* Technisch könnte Publish auch nur Teile eines Vaults veröffentlichen (`ob publish-config --includes/--excludes`); die Trennung bleibt trotzdem sinnvoll, weil ein versehentliches `--all` so nie private Notizen erwischen kann. `Unterwegs` bleibt privat. Deshalb leben praktische Infos (Preise, Telefonnummern, Parkplatz-Tipps) **nur** in `Unterwegs`, niemals in `Reise-Guides`.
 
 **`Reise-Guides` ist bewusst generisch** (nicht „Le-Havre-Audioguide" o. Ä. benannt) — jeder neue Rundgang bekommt darin einen eigenen Unterordner `Stadtrundgänge/<Ort>/`, statt für jede Reise ein neues Vault + eine neue Publish-Site aufzusetzen.
 

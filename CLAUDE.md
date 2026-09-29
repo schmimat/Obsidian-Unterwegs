@@ -3,7 +3,7 @@ tags:
   - claude
   - projekt
 created: 2026-08-10
-modified: 2026-09-25
+modified: 2026-09-29
 ---
 
 # CLAUDE.md — Unterwegs-Vault
@@ -155,13 +155,15 @@ Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` 
 
 **Live-Site:** https://publish.obsidian.md/reise-guides (Slug `reise-guides`, passwortgeschützt).
 
+**Sync & Backup (seit 2026-09-29):** Zusätzlich zu Publish per Obsidian Sync auf Container 201 + 203 (`obsidian-sync-reise-guides.service`, Remote-Vault `Reise-Guides` mit eigenem E2E-Passwort, bewusst **nicht** auf X1). Vorher existierte das Vault nur auf 203 und war nirgends gesichert (Vault-Dataset von 203 ist vom vzdump ausgenommen). Git-Backup folgt, sobald weitere Rundgänge dazukommen. Publish läuft unverändert von 203 (`ob publish --dry-run` nach der Umstellung: keine Änderungen). Übersicht im Dirigenten: `PKM-Dirigent/Vaults/Reise-Guides.md`.
+
 **Architektur & vollständige Anleitung für künftige Rundgänge:** [[Ressourcen/Anleitung - Stadtrundgang mit Audioguide aufbauen & publizieren]] — Zwei-Vault-Muster, Nummerierungskonvention, Schritt-für-Schritt-Checkliste, bekannte Fallstricke. Referenz-Rundgang: [[Stadtrundgänge/Le Havre/Le Havre - Perret-Wiederaufbau & Impressionismus]].
 
 **Kernentscheidungen:**
 
 | Entscheidung | Begründung |
 |---|---|
-| `Reise-Guides` generisches, eigenständiges Vault statt Unterordner in `Unterwegs` | Publish veröffentlicht immer das ganze Vault — praktische Infos (Preise, Telefonnummern) müssen getrennt bleiben |
+| `Reise-Guides` generisches, eigenständiges Vault statt Unterordner in `Unterwegs` | Publish veröffentlicht immer das ganze Vault — praktische Infos (Preise, Telefonnummern) müssen getrennt bleiben. *Präzisiert 2026-09-29:* technisch ginge auch Teil-Publish (`ob publish-config --includes/--excludes`), die Trennung bleibt als Schutz vor versehentlichem `--all` |
 | Keine Nummern in Dateinamen/Frontmatter/GPX-`<name>` — nur noch in den beiden Übersichtstabellen (Unterwegs-Notiz + Reise-Guides-Übersicht) | Nach zwei fehleranfälligen Umnummerierungsrunden (Datei-Rename-Kaskaden über zwei Vaults) auf User-Vorschlag umgestellt; Umsortieren ist jetzt reines Tabellenzeilen-Tauschen |
 | Cross-Referenzen zwischen Stationen im Fließtext als Wikilink, nie als Nummer | Wikilinks brechen beim Umsortieren nicht |
 | `bikerouter.de` statt `brouter.de/brouter-web/` für den interaktiven Karten-Link | User-Wunsch; identische Software (Norbert Renner), aber unterschiedliche Marker-Symbole für Routing- vs. POI-Punkte — auf bikerouter.de überdecken sie sich nicht |
