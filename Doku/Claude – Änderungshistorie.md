@@ -143,6 +143,7 @@ Technisch umgesetzt über `.claude/settings.json` (Vault-Root, checked-in): `Edi
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
 | 2026-09-29 | [[Ressourcen/Anleitung - Stadtrundgang mit Audioguide aufbauen & publizieren]], `CLAUDE.md` | `Reise-Guides` jetzt zusätzlich per Obsidian Sync auf 201+203 (nicht X1) nachgetragen; Begründung „Publish veröffentlicht immer das ganze Vault“ präzisiert (Teil-Publish technisch möglich, Trennung bleibt als Schutz) | User: „Ja, passe die Unterwegs-Doku an“ · Session in PKM-Dirigent (Einrichtung Sync für Reise-Guides) | 🟡 offen |
+| 2026-09-29 | `_claude/commands/preserve.md` + `compress.md` (Hinweis „6 Vaults + Root = 7 Kopien“ → „5 aktive Vaults + Cross-Vault = 6“; `compress.md`: fehlende Beispielzeile `Keywords` ergänzt, wo sie fehlte) | Alle 6 cpr-Kopien wieder byte-identisch; Kopienzahl war seit dem Unterwegs-Merge veraltet (Änderung in allen Vaults gleich, Details in PKM-Dirigent-Änderungshistorie) | User: „1, 2 und 4 beheben, Reise-Guides bewusst ausnehmen“ · Cross-Vault-Session (Container 203), Prüfung des Cross-Vault-Umbaus | 🟡 offen |
 
 ---
 
