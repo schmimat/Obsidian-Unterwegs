@@ -28,15 +28,11 @@ Examples:
 - `/resume auth` -> N=3, topic="auth"
 - `/resume 10 jira` -> N=10, topic="jira"
 
-### Step 2: Find and Read CLAUDE.md
+### Step 2: Use the CLAUDE.md already in context (do NOT re-read it)
 
-Search for project memory file:
-- `CLAUDE.md`
-- `Claude.md`
-- `.claude/CLAUDE.md`
-- `docs/CLAUDE.md`
+Claude Code already loaded the CLAUDE.md of the working directory and all parent directories at session start. **Do not `Read` them again** — that only duplicates tokens. Take the facts from the loaded context. Only if no CLAUDE.md is in context, look for one (`CLAUDE.md`, `.claude/CLAUDE.md`) and read it.
 
-Read and extract:
+Extract:
 - Project name/purpose
 - Current phase/status
 - Key paths and references
@@ -60,10 +56,21 @@ Read and extract:
 ls -1 "{project_root}/CC-Session-Logs/"*.md 2>/dev/null | wc -l
 ```
 
+**Sort chronologically, not by filename.** Filenames are `DD-MM-YYYY-HH_MM-…`, which sorts wrongly across month/year boundaries. Sort by the date parsed from the name:
+```bash
+ls -1 "{project_root}/CC-Session-Logs/" | grep -E '^[0-9]{2}-[0-9]{2}-[0-9]{4}-' \
+  | awk '{print substr($0,7,4) substr($0,4,2) substr($0,1,2) substr($0,12,5) "\t" $0}' \
+  | sort -r | cut -f2- | head -n {N}
+```
+
+**Also show sub-project activity (names only, cheap):** list the 5 newest log filenames from `CC-Session-Logs/` folders in subdirectories of project_root (e.g. `find "{project_root}" -mindepth 2 -type d -name CC-Session-Logs`), sorted the same way. Do not read them — just list `Unterprojekt: Datum – Thema`, so work done from other start folders is visible. Pointer files (one line "Siehe …") count as entries.
+
 ### Step 4: Read Session Summaries (Scaling Logic)
 
+**IF N > 5 or a topic search is requested:** delegate reading to the `log-zusammenfasser` subagent (Sonnet, starts without CLAUDE.md) and only merge its condensed result — keeps the main context small.
+
 **IF session logs < 100:**
-1. List all session log files, sorted by filename (newest first)
+1. List all session log files, sorted chronologically (newest first, see Step 3)
 2. Read the SUMMARY ONLY (everything BEFORE "## Raw Session Log") for the last N files
 3. If topic keyword provided, also scan all summaries for keyword matches
 
@@ -227,3 +234,12 @@ Example: `05-03-2026-17_30-api-auth-refactor.md`
 - **Max N=50:** Reasonable upper limit for summary scanning
 - **Summary-only reading:** Critical for token efficiency, never read raw logs in /resume
 - **Grep search:** Lightweight and available everywhere, no external dependencies needed
+- **No CLAUDE.md re-read:** it is already in context from session start
+- **Chronological sort:** parse `DD-MM-YYYY-HH_MM` from the filename; plain filename sort breaks at month boundaries
+
+---
+
+## Technical Constraints
+
+- Master dieser Datei: `PKM-Dirigent/_claude/commands/resume.md`. Identische Kopien in den **5 aktiven Vaults** (`_claude/commands/`), in `PKM-Dirigent/Cross-Vault/_claude/commands/` und gerätelokal in `~/.claude/commands/` — nach Änderungen alle Kopien per `cp` nachziehen und per MD5 prüfen.
+- `/resume` sieht Logs nur des Projekts (Startordner) plus Dateinamen aus Unterprojekten. Wer an einem Projekt mit eigener CLAUDE.md arbeitet, startet dort. Konzept: `PKM-Dirigent/Doku/CLAUDE.md-Konzept – Aufbau und Pflege.md`.

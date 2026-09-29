@@ -42,7 +42,7 @@ Read the target CLAUDE.md **and** the CLAUDE.md files above it (up to the root a
 
 ### Step 4: Generate Updates — replace, don't append
 
-**The five rules:**
+**The six rules:**
 
 | Rule | Meaning |
 |---|---|
@@ -51,6 +51,9 @@ Read the target CLAUDE.md **and** the CLAUDE.md files above it (up to the root a
 | **Each fact once, at the lowest level** | Global rules (model choice, agents) only in `CLAUDE-Global.md`. Parent files only point to child files. Never copy a pattern into a second CLAUDE.md — link it. |
 | **One line per entry** | Decisions as `**Entscheidung** — Grund (Datum)`. If it needs more than ~2 lines, the details belong in a note; CLAUDE.md links to it. |
 | **No history chains** | No "Zuletzt aktualisiert / Vorherige Aktualisierung / Davor" footers. At most one line with date + topic of the last update. |
+| **Absolute dates only** | Write `2026-09-29`, never "heute", "aktuell", "Heute: …", "letzte Woche" — they silently go stale. |
+
+Maintainer notes that Claude need not read can go in HTML comments (`<!-- … -->`): Claude Code strips them before loading, so they cost no tokens.
 
 **HIGH SIGNAL (include):** status changes, decisions + reason, new files/dirs (brief), safety-relevant facts, reusable pitfalls (one line + pointer), clear next steps.
 

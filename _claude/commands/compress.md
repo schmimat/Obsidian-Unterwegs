@@ -117,17 +117,23 @@ DD-MM-YYYY-HH_MM-{topic-name}.md
 ```
 Example: `05-03-2026-17_30-api-auth-refactor.md`
 
-**Detect project root:**
+**Pick the target project (same rule as /preserve — not blindly the working directory):**
 
 ```
-1. Get current working directory (pwd)
-2. Find project root: walk up from pwd looking for CLAUDE.md or .git
-3. If found: project_root = that directory
-4. If not found: project_root = pwd
-5. Session logs path: {project_root}/CC-Session-Logs/
-6. Create folder if it doesn't exist: mkdir -p "{project_root}/CC-Session-Logs/"
-7. Write session log there
+1. Collect the files this session created or changed.
+2. From their common topic folder, walk UP to the first CLAUDE.md → project_root.
+   (Projects without own CLAUDE.md belong to the parent CLAUDE.md's folder.)
+3. No files changed (pure analysis/Q&A)? → walk up from pwd instead.
+4. Several unrelated topics? → one log in the project with the most changes, plus a
+   one-line pointer file in each other project's CC-Session-Logs/:
+   {filename} containing only: "Siehe <path to main log> — <what concerned this project>"
+5. If /preserve ran in this session, use the same target(s).
+6. Session logs path: {project_root}/CC-Session-Logs/ (mkdir -p if missing)
 ```
+
+Tell the user the chosen path(s) in the confirmation.
+
+**Mask secrets before saving (mandatory):** The log is synced (Obsidian Sync, Git backup). Replace passwords, API keys, tokens, private keys, PINs and pre-shared keys in ALL sections, including the Raw Session Log, with `‹geheim: <what it was>›`. Keep non-secret identifiers (hostnames, IPs, IDs, ticket numbers). If a secret appeared in the conversation, add a Pending Task: "Secret X was exposed in chat — rotate".
 
 **Save the session log:**
 ```bash
@@ -170,10 +176,11 @@ The session log is saved locally. Use `/resume` to load context from recent sess
 - **Be concise:** Each bullet should be actionable or informative
 - **Use code blocks** for commands, paths, and code snippets
 - **Include file paths** with line numbers where relevant
-- **Preserve exact values:** Don't paraphrase credentials, IDs, or specific configs
+- **Preserve exact values:** Don't paraphrase IDs, paths or configs — but never credentials (mask them, see Step 5)
 - **Link context:** If something depends on something else, note the relationship
-- **Extract keywords:** The "Confidence keywords" field is critical for future AI scanning
-- **Full raw log:** The Raw Session Log must contain the COMPLETE conversation for searchability
+- **Keep the summary short:** Everything above `## Raw Session Log` is what `/resume` reads — target ≤ 3 KB. Keywords max. ~25 terms on one line.
+- **Full raw log:** The Raw Session Log must contain the COMPLETE conversation (secrets masked) for searchability
+- **Log = history, CLAUDE.md = current state.** Don't repeat the log into CLAUDE.md; `/preserve` distils only the current state there.
 
 ---
 
@@ -213,5 +220,6 @@ These keywords enable the `/resume` skill to find relevant sessions via search.
 ## Technical Constraints
 
 - `AskUserQuestion`: max. **4 Optionen** pro Frage, max. **4 Fragen** pro Aufruf — mehr führt zu einem stillen Fehler
-- Diese Datei liegt in den **5 aktiven Vaults** (`_claude/commands/`: Knowledge Base, Konstruktionsbüro Schmidl, PKM-Dirigent, Unterwegs, Work) **plus der Cross-Vault-Kopie für den `Obsidian-Vaults`-Root** (angelegt 2026-08-08, seit 2026-09-29 Inhalt in `PKM-Dirigent/Cross-Vault/`) — Änderungen synchron in **allen 6** Kopien durchführen. Die Root-Kopie liegt seit 2026-09-29 unter `PKM-Dirigent/Cross-Vault/_claude/commands/` (Obsidian-synced) und ist im Root nur verlinkt.
+- Master dieser Datei: `PKM-Dirigent/_claude/commands/compress.md`. Identische Kopien in den **5 aktiven Vaults** (`_claude/commands/`), in `PKM-Dirigent/Cross-Vault/_claude/commands/` und gerätelokal in `~/.claude/commands/` — nach Änderungen alle Kopien per `cp` nachziehen und per MD5 prüfen.
+- Themenwechsel in einer Session: Thema A mit `/preserve` → `/compress` → `/compact` abschließen, dann Thema B. Für ein anderes Projekt mit eigener CLAUDE.md besser eine neue Session in dessen Ordner starten. Konzept: `PKM-Dirigent/Doku/CLAUDE.md-Konzept – Aufbau und Pflege.md`.
 - `/compact` ist ein eingebautes Kommando — `compact.md` existiert bewusst nicht
