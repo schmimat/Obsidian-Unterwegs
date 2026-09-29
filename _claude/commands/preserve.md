@@ -7,19 +7,19 @@ allowed-tools: Read, Edit, Write, Glob, Bash, AskUserQuestion
 
 # /preserve - Preserve Session Knowledge to CLAUDE.md
 
-Updates the project's CLAUDE.md with key learnings from this session, optimized for context efficiency.
+Updates the **right** CLAUDE.md with key learnings from this session. CLAUDE.md is a *current-state* file, not a diary: every byte is loaded into every future session (and every subagent) below it.
+
+Concept and rationale: `PKM-Dirigent/Doku/CLAUDE.md-Konzept – Aufbau und Pflege.md`.
 
 ## Instructions for Claude
 
-### Step 1: Check for CLAUDE.md
+### Step 1: Pick the target CLAUDE.md (not blindly the working directory)
 
-Look for CLAUDE.md in the current working directory (or common variations):
-- `CLAUDE.md`
-- `Claude.md`
-- `.claude/CLAUDE.md`
-
-If not found, ask:
-"No CLAUDE.md found. Would you like me to create one, or output preservation notes to conversation instead?"
+1. Collect the files this session actually created or changed.
+2. For their common topic folder, walk **upward** until the first `CLAUDE.md` → that is the target (the lowest file responsible for the topic).
+3. If the topic is a project folder **without** its own CLAUDE.md (e.g. a pure documentation cluster with a `README.md`): the target is the parent CLAUDE.md, but only its short status block for that project (max. 5 lines). Details go into the project's `README.md` or a note, not into CLAUDE.md.
+4. If the session touched several unrelated topics, update each target separately.
+5. Tell the user which file(s) you will update and why. If no CLAUDE.md exists at all, go to Step 8.
 
 ### Step 2: Ask What to Preserve
 
@@ -33,105 +33,67 @@ Use AskUserQuestion with multi-select:
 3. **Patterns & Insights:** Reusable learnings, discovered constraints, "aha" moments
 4. **Blockers & Next Steps:** Warnings for future sessions, action items, pending work
 
-### Step 3: Review Current CLAUDE.md
+### Step 3: Read the target and its parents
 
-If CLAUDE.md exists, read it to understand:
-- Current structure and format
-- What sections exist
-- What needs updating vs adding
+Read the target CLAUDE.md **and** the CLAUDE.md files above it (up to the root and the global copy). Note:
+- existing sections and format
+- entries that this session makes **obsolete, completed or wrong**
+- facts that already live one level higher or lower (must not be duplicated)
 
-### Step 4: Generate Updates
+### Step 4: Generate Updates — replace, don't append
 
-Based on selections, prepare updates following these rules:
+**The five rules:**
 
-**HIGH SIGNAL (include):**
-- Status changes (1 line each)
-- Decisions + rationale (table row format)
-- New directories/files (brief tree or list)
-- Clear next steps
+| Rule | Meaning |
+|---|---|
+| **Current state only** | Rules, one-line decisions, open items, pointers. No narratives, no "how we found it". |
+| **Replace, don't append** | Update an existing entry in place. Remove items that are done (move them to the archive, Step 6). Correct wrong statements instead of adding a "Korrektur" paragraph. |
+| **Each fact once, at the lowest level** | Global rules (model choice, agents) only in `CLAUDE-Global.md`. Parent files only point to child files. Never copy a pattern into a second CLAUDE.md — link it. |
+| **One line per entry** | Decisions as `**Entscheidung** — Grund (Datum)`. If it needs more than ~2 lines, the details belong in a note; CLAUDE.md links to it. |
+| **No history chains** | No "Zuletzt aktualisiert / Vorherige Aktualisierung / Davor" footers. At most one line with date + topic of the last update. |
 
-**LOW SIGNAL (exclude):**
-- Verbose explanations (point to docs)
-- Implementation details (they're in files)
-- Full file contents
-- Timestamps or session logs
+**HIGH SIGNAL (include):** status changes, decisions + reason, new files/dirs (brief), safety-relevant facts, reusable pitfalls (one line + pointer), clear next steps.
 
-**FORMAT RULES:**
-- Tables for structured data
-- Single-line entries, not paragraphs
-- Point to files: "See `path/to/file.md`"
-- Target: CLAUDE.md under 280 lines
+**LOW SIGNAL (exclude):** explanations (point to docs), implementation details, full file contents, timestamps/session narration, completed items, anything already in a parent/child CLAUDE.md or in a note.
 
 ### Step 5: Apply Updates
 
-Edit CLAUDE.md directly, then summarize:
+Edit the target directly, then report:
 
 ```
-CLAUDE.md Updated
+CLAUDE.md Updated: <path>
 
 Preserved:
 - [What was added/changed]
-- [What was added/changed]
+Removed/archived:
+- [What was replaced or moved to the archive]
 
-CLAUDE.md is now [X] lines (target: <280)
+Size: [X] lines, [Y] KB (~[Y*1000/3.5] tokens) — target ≤ 12 KB, limit 15 KB
 ```
 
-### Step 6: Check Line Count & Archive Logic
+### Step 6: Size check & archive (bytes, not lines)
 
-After updating, count CLAUDE.md lines:
 ```bash
-wc -l CLAUDE.md
+wc -lc CLAUDE.md
 ```
 
-**IF lines > 280:**
+Long lines make line counts misleading — **bytes decide**.
 
-1. **Identify auto-archivable content:**
-   - `## Session Notes (DATE)` sections older than 7 days
-   - `## Completed Projects` section
+| Size | Action |
+|---|---|
+| ≤ 12 KB | fine |
+| 12–15 KB | propose archiving completed items and narrative sections |
+| > 15 KB | **archive before adding anything new**; ask the user which sections to move |
 
-2. **Calculate impact:**
-   - Current lines
-   - Lines after auto-archive
+Always archivable without asking: completed next steps, `(ARCHIVABLE)` sections, `## Session Notes (DATE)` older than 7 days, "Zuletzt aktualisiert" chains.
+Ask first for everything else. Never archive CORE or `(PROTECTED)` sections.
 
-3. **Report to user:**
-   ```
-   CLAUDE.md is [X] lines (target: <280).
-
-   Auto-archivable content found:
-   - Session Notes (2026-01-10) - 25 lines
-   - Completed Projects - 15 lines
-
-   Archiving would reduce to [Y] lines.
-
-   Archive now? [Yes / No, all content is essential]
-   ```
-
-4. **IF still > 280 after auto-archivable content:**
-
-   Identify other sections that are NOT in the CORE list and NOT marked PROTECTED:
-
-   ```
-   Still over 280 lines. These sections could also be archived:
-   - ## Old Reference Section - 12 lines
-   - ## [Other Section] - 8 lines
-
-   Archive these too? [Yes / No / Select which]
-   ```
-
-5. **IF user approves archiving:**
-   - Append archived content to `{project_root}/CLAUDE-Archive.md`
-   - Remove archived sections from CLAUDE.md
-   - Report result
+Archiving = **move verbatim** into `CLAUDE-Archive.md` next to the target (Step 7), then remove from CLAUDE.md. The archive is never loaded automatically; it is searched with Grep when needed.
 
 ### Step 7: Archive File Handling
 
-**Find project root** (same logic as /compress):
-```
-Walk up from pwd looking for CLAUDE.md or .git
-Archive to: {project_root}/CLAUDE-Archive.md
-```
+Archive file = `CLAUDE-Archive.md` in the **same folder as the target CLAUDE.md**.
 
-**Archive file format:**
 ```markdown
 # CLAUDE.md Archive
 
@@ -139,14 +101,14 @@ Archived content from CLAUDE.md to maintain context efficiency.
 
 ---
 
-## Archived: [DATE]
+## Archived: [DATE] ([short reason])
 
-[Archived section content]
+[Archived section content, verbatim]
 
 ---
 ```
 
-**If archive exists:** Append new content with date header.
+If the archive exists: append a new dated block. Never edit older archive blocks.
 
 ### Step 8: If No CLAUDE.md
 
@@ -165,52 +127,38 @@ Output a structured summary to conversation (similar to /compress):
 [2-3 sentences for future sessions]
 ```
 
-Then suggest: "Consider creating a CLAUDE.md to persist this across sessions."
+Then suggest a CLAUDE.md only if the folder has its own working rhythm (code, infrastructure, own safety rules). Pure documentation folders get a `README.md` and a status block in the parent CLAUDE.md instead.
 
 ---
 
 ## CORE Sections (Never Suggest Archiving)
 
-These are examples of section names you should NEVER suggest archiving. Adapt to the project's actual CLAUDE.md:
+Adapt to the project's actual CLAUDE.md:
 
-- `## Approach` / `## Philosophy`
-- `## Paths` / `## Structure`
+- `## Approach` / `## Philosophy` / `## Was ist dieses Projekt?`
+- `## Paths` / `## Structure` / `## Dateien`
 - `## Key References` / `## Links`
-- `## Skills` / `## Commands`
-- `## Key Patterns` / `## Conventions`
+- `## Key Decisions` (the one-liners themselves; their long explanations are archivable)
+- `## Key Patterns` / `## Conventions` / `## Stolpersteine`
+- Safety-relevant sections
 - Any section with `(PROTECTED` in the heading
 
-Customise this list by marking sections in your CLAUDE.md:
-- Add `(PROTECTED)` to any heading to prevent archiving
-- Add `(ARCHIVABLE)` to mark sections as safe to archive
-
----
-
-## Auto-Archivable Patterns
-
-These patterns are automatically identified as archivable:
-
-| Pattern | Rule |
-|---------|------|
-| `## Session Notes (DATE)` | Archive if DATE is > 7 days old |
-| `## Completed Projects` | Always archivable |
-| Sections with `(ARCHIVABLE)` | User-marked as archivable |
+Mark sections in CLAUDE.md with `(PROTECTED)` or `(ARCHIVABLE)` to steer this.
 
 ---
 
 ## Guidelines
 
-- **Context efficiency is paramount.** Future sessions pay for every token
-- **Signal over noise.** The "why" matters more than the "what"
-- **Point, don't duplicate.** Reference files instead of copying content
-- **Respect existing format.** Match the CLAUDE.md style already in use
-- **Never archive PROTECTED or CORE.** These are essential for Claude's operation
-- **Ask before archiving non-auto content.** User decides what's truly essential
+- **Context efficiency is paramount.** Future sessions and subagents pay for every token.
+- **Current state over history.** History belongs in session logs, the archive or notes.
+- **Point, don't duplicate.** Reference files instead of copying content.
+- **Respect existing format.** Match the CLAUDE.md style already in use.
+- **Ask before archiving non-auto content.** User decides what's truly essential.
 
 ---
 
 ## Technical Constraints
 
 - `AskUserQuestion`: max. **4 Optionen** pro Frage, max. **4 Fragen** pro Aufruf — mehr führt zu einem stillen Fehler
-- Diese Datei liegt in den **5 aktiven Vaults** (`_claude/commands/`: Knowledge Base, Konstruktionsbüro Schmidl, PKM-Dirigent, Unterwegs, Work) **plus der Cross-Vault-Kopie für den `Obsidian-Vaults`-Root** (angelegt 2026-08-08, seit 2026-09-29 Inhalt in `PKM-Dirigent/Cross-Vault/`) — Änderungen synchron in **allen 6** Kopien durchführen. Die Root-Kopie liegt seit 2026-09-29 unter `PKM-Dirigent/Cross-Vault/_claude/commands/` (Obsidian-synced) und ist im Root nur verlinkt.
+- Master dieser Datei: `PKM-Dirigent/_claude/commands/preserve.md`. Identische Kopien in den **5 aktiven Vaults** (`_claude/commands/`: Knowledge Base, Konstruktionsbüro Schmidl, PKM-Dirigent, Unterwegs, Work), in `PKM-Dirigent/Cross-Vault/_claude/commands/` (Root-Kopie, im `Obsidian-Vaults`-Root nur verlinkt) und gerätelokal in `~/.claude/commands/` — nach Änderungen alle Kopien per `cp` nachziehen und per MD5 prüfen.
 - `/compact` ist ein eingebautes Kommando — `compact.md` existiert bewusst nicht
