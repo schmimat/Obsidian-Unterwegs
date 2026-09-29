@@ -1,6 +1,6 @@
 {
   "language": "german",
-  "model": "sonnet",
+  "model": "opus",
   "fastModePerSessionOptIn": true,
   "permissions": {
     "allow": [
