@@ -12,8 +12,8 @@
       {
         "hooks": [
           {
-            "type": "command",
-            "command": "d=$(cygpath -u \"$CLAUDE_PROJECT_DIR\" 2>/dev/null || printf %s \"$CLAUDE_PROJECT_DIR\"); while [ \"$d\" != / ] && [ \"$d\" != . ] && [ ! -d \"$d/PKM-Dirigent/Cross-Vault\" ]; do d=$(dirname \"$d\"); done; grep -q CROSS-VAULT-ROOT-STUB \"$d/CLAUDE.md\" 2>/dev/null || echo \"HINWEIS: Der Obsidian-Vaults-Root ist auf diesem Geraet nicht eingerichtet (kein Cross-Vault-Stub in Obsidian-Vaults/CLAUDE.md), die globalen Regeln (Modellwahl, feste Agenten) fehlen in dieser Session. Bitte den User darauf hinweisen: PKM-Dirigent/Cross-Vault/root-einrichten.ps1 (Windows) bzw. root-einrichten.sh (Linux) ausfuehren.\"; exit 0"
+            "command": "d=$(cygpath -u \"$CLAUDE_PROJECT_DIR\" 2>/dev/null || printf %s \"$CLAUDE_PROJECT_DIR\"); while [ \"$d\" != / ] && [ \"$d\" != . ] && [ ! -d \"$d/PKM-Dirigent/Cross-Vault\" ]; do d=$(dirname \"$d\"); done; cv=\"$d/PKM-Dirigent/Cross-Vault\"; [ -f \"$cv/CLAUDE-Global.md\" ] || exit 0; if grep -q CROSS-VAULT-ROOT-STUB \"$d/CLAUDE.md\" 2>/dev/null; then cat \"$cv/root-stub.md\" \"$cv/CLAUDE-Global.md\" | cmp -s - \"$d/CLAUDE.md\" || { cat \"$cv/root-stub.md\" \"$cv/CLAUDE-Global.md\" > \"$d/CLAUDE.md\" && echo \"Hinweis: Obsidian-Vaults/CLAUDE.md wurde soeben aus PKM-Dirigent/Cross-Vault/CLAUDE-Global.md aktualisiert; die neue Fassung der globalen Regeln gilt ab der naechsten Session.\"; }; else echo \"HINWEIS: Der Obsidian-Vaults-Root ist auf diesem Geraet nicht eingerichtet (kein erzeugtes CLAUDE.md mit Cross-Vault-Marker), die globalen Regeln (Modellwahl, feste Agenten) fehlen in dieser Session. Bitte den User darauf hinweisen: PKM-Dirigent/Cross-Vault/root-einrichten.ps1 (Windows) bzw. root-einrichten.sh (Linux) ausfuehren.\"; fi; exit 0",
+            "type": "command"
           }
         ]
       }
