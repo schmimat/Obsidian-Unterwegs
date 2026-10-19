@@ -1,7 +1,7 @@
 ---
 tags: [claude, workflow, meta]
 created: 2026-08-10
-modified: 2026-10-13
+modified: 2026-10-19
 ---
 
 # Claude – Änderungshistorie
@@ -148,3 +148,4 @@ Technisch umgesetzt über `.claude/settings.json` (Vault-Root, checked-in): `Edi
 
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
+| 2026-10-19 | 3 Notizen, siehe `PKM-Dirigent/05a - Wartungsfunde.md` W-001–W-012 | `/wartung lauf`: 12 Wikilinks mit veraltetem Ordnerpfad auf das einzige Ziel korrigiert (Maastricht-Tourenvergleich 7, Sackmarkisen-Empfehlung 4, Clippings-Übersicht Sackmarkisen 1) | User: `/wartung lauf Unterwegs` · Cross-Vault-Session (203) | 🟡 offen |

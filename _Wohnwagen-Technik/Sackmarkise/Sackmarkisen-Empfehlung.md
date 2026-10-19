@@ -11,16 +11,16 @@ modified: 2026-06-29
 
 # Sackmarkisen-Empfehlung — Bürstner Club 4313
 
-*Basierend auf Recherche [[Recherchen/Recherche – Sackmarkisen für Wohnwagen]] (2026-06-15)*
-*Vollständige Analyse: [[Recherchen/Analyse – Sackmarkisen für Wohnwagen]]*
-*Clippings: [[Recherchen/Clippings-Übersicht – Sackmarkisen]]*
+*Basierend auf Recherche [[_Wohnwagen-Technik/Sackmarkise/Recherche – Sackmarkisen für Wohnwagen]] (2026-06-15)*
+*Vollständige Analyse: [[_Wohnwagen-Technik/Sackmarkise/Analyse – Sackmarkisen für Wohnwagen]]*
+*Clippings: [[_Wohnwagen-Technik/Sackmarkise/Clippings-Übersicht – Sackmarkisen]]*
 
 ---
 
 ## Status: KAUF ABGESCHLOSSEN ✓
 
 **Fiamma Caravanstore XL 280** (gebraucht, Kleinanzeigen) + **Seitenteile & Fronten** für zusammen **440 €** gekauft.
-→ Details: [[Clippings/Gekauft/Kauf – Sackmarkise & Seitenteile]]
+→ Details: [[_Wohnwagen-Technik/Sackmarkise/Kauf – Sackmarkise & Seitenteile]]
 
 ---
 

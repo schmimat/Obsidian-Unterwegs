@@ -111,7 +111,7 @@ Produktclippings von Camping Wagner (Nidda), Obelink und Fritz Berger.
 
 ## Gekaufte Artikel (Kleinanzeigen) ✓
 
-→ Alle Dateien in [[Clippings/Gekauft/Kauf – Sackmarkise & Seitenteile]]
+→ Alle Dateien in [[_Wohnwagen-Technik/Sackmarkise/Kauf – Sackmarkise & Seitenteile]]
 
 | Clipping | Artikel | Preis | Status |
 |---|---|---|---|
