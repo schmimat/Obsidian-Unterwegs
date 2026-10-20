@@ -3,7 +3,7 @@ tags:
   - claude
   - projekt
 created: 2026-08-10
-modified: 2026-09-29
+modified: 2026-10-20
 ---
 
 # CLAUDE.md — Unterwegs-Vault
@@ -262,3 +262,7 @@ Erster Defekt-Fall in diesem Ordner dokumentiert: flackernde Leuchtstoffröhre i
 - **An Sonnet-Subagent auslagern:** klar umrissene, mechanische Aufgaben mit prüfbarem Ergebnis (Office-Export nach etabliertem Ablauf, breite Suche über viele Dateien, Link-/Frontmatter-Fixes, Log-Zusammenfassungen). Was ein einzelner Befehl oder ein kurzes Skript erledigt, bleibt in der Hauptsession.
 - **Drei Stufen + feste Agenten (2026-09-29):** Opus (Denkarbeit) · Sonnet (mechanisch, fester Ablauf) · Haiku (reines Nachschlagen/Zählen). Wiederkehrende Aufgaben laufen über feste Subagenten mit eingestelltem Modell: `office-export` (Sonnet), `vault-suche` (Haiku), `log-zusammenfasser` (Sonnet), `fakten-pruefer` (Opus). Master in `PKM-Dirigent/Vorlagen/Claude-Agenten/`, aktiv als Kopie in `%USERPROFILE%\.claude\agents\`.
 - Vollständige Regel mit Tabelle: `C:\Users\matth\Obsidian-Vaults\CLAUDE.md` (nur auf dem `matth`-Gerät, nicht gesynct), Referenz in `Knowledge Base/CLAUDE.md` → „Model & Cost Configuration".
+
+## Nächste Schritte
+
+1. **`CLAUDE.md` verschlanken** (Wartungsfund W-013/W-014, 2026-10-20): 41 KB statt Ziel ≤ 12 KB (Grenze 15 KB). In einer Unterwegs-Session Erledigtes und Verlauf wörtlich nach `CLAUDE-Archive.md` (neu anlegen), doppelte globale Regeln (z. B. Abschnitt „Modellwahl“, steht in `PKM-Dirigent/Cross-Vault/CLAUDE-Global.md`) durch Verweis ersetzen; Fußzeile „Zuletzt aktualisiert“ (2026-09-25) passt nicht zu `modified`.

@@ -5,7 +5,7 @@ tags:
   - ressourcen
   - referenz
 created: 2026-05-28
-modified: 2026-08-26
+modified: 2026-10-20
 type: "Index"
 ---
 
@@ -51,7 +51,7 @@ Zentrale Anlaufstelle für Dokumentation, Templates und Verwaltungsdateien des *
 - **[[../Wanderungen/README|Wanderungen]]** — Archiv-Übersicht
 
 ### Reisen
-- **[[../Reisen|Reisen]]** — Reiseplanung und Tagebuch-Einträge je Reise (Ordner noch leer)
+- **Reisen** (Ordner `Reisen/`) — Reiseplanung und Tagebuch-Einträge je Reise: [[../Reisen/Rügen & Dänemark 2025/Rügen & Dänemark 2025|Rügen & Dänemark 2025]], [[../Reisen/Sommerurlaub 2026 – Bretagne & Normandie/Sommerurlaub 2026 – Bretagne & Normandie|Sommerurlaub 2026 – Bretagne & Normandie]]
 
 ---
 

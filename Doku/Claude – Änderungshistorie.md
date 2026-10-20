@@ -1,7 +1,7 @@
 ---
 tags: [claude, workflow, meta]
 created: 2026-08-10
-modified: 2026-10-19
+modified: 2026-10-20
 ---
 
 # Claude – Änderungshistorie
@@ -148,4 +148,5 @@ Technisch umgesetzt über `.claude/settings.json` (Vault-Root, checked-in): `Edi
 
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
+| 2026-10-20 | [[Ressourcen/README]] (Abschnitt Reisen), `CLAUDE.md` (neuer Abschnitt „Nächste Schritte“ #1, `modified`), **gelöscht:** `Willkommen.md`, `Doku/markdown-cheat-sheet.md` | Wartungs-Review W-013–W-026: Ordner-Link `[[../Reisen]]` + „(Ordner noch leer)“ durch Links auf beide Reise-Notizen ersetzt; Obsidian-Standarddatei und Kopie des Cheat-Sheets (identisch in Knowledge Base) gelöscht; Verschlanken der 41-KB-`CLAUDE.md` als Aufgabe | User: „alles wie empfohlen“ (`/wartung review`) · Cross-Vault-Session (203) | 🟡 offen |
 | 2026-10-19 | 3 Notizen, siehe `PKM-Dirigent/05a - Wartungsfunde.md` W-001–W-012 | `/wartung lauf`: 12 Wikilinks mit veraltetem Ordnerpfad auf das einzige Ziel korrigiert (Maastricht-Tourenvergleich 7, Sackmarkisen-Empfehlung 4, Clippings-Übersicht Sackmarkisen 1) | User: `/wartung lauf Unterwegs` · Cross-Vault-Session (203) | 🟡 offen |
