@@ -1,0 +1,1 @@
+Siehe PKM-Dirigent/Cross-Vault/CC-Session-Logs/23-10-2026-20_08-wartung-und-historien-review.md — Unterwegs: /wartung-Lauf 2026-10-19 (26 Funde, 12 Wikilink-Fixes, 2 Dateien gelöscht), Review 2026-10-20, neuer Abschnitt „Nächste Schritte“ in CLAUDE.md, Historie archiviert
