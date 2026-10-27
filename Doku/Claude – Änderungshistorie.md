@@ -59,6 +59,14 @@ Technisch umgesetzt über `.claude/settings.json` (Vault-Root, checked-in): `Edi
 
 ## 5. Archiv (bestätigte/verworfene Wochen)
 
+### Woche bis 2026-10-26 — vollständig bestätigt (Änderungshistorien-Review 2026-10-27, Cross-Vault-Session LXC 203)
+
+> Stichtag 2026-10-26; Zeilen vom 2026-10-27 bleiben in §6 offen. Text wörtlich, nur Status gesetzt (Work 2026-10-26: Steuerzeichen `\x82` im Pfad durch `\202` ersetzt).
+
+| Datum | Dokument | Änderung | Session/Kontext | Status |
+|---|---|---|---|---|
+| 2026-10-20 | [[Ressourcen/README]] (Abschnitt Reisen), `CLAUDE.md` (neuer Abschnitt „Nächste Schritte“ #1, `modified`), **gelöscht:** `Willkommen.md`, `Doku/markdown-cheat-sheet.md` | Wartungs-Review W-013–W-026: Ordner-Link `[[../Reisen]]` + „(Ordner noch leer)“ durch Links auf beide Reise-Notizen ersetzt; Obsidian-Standarddatei und Kopie des Cheat-Sheets (identisch in Knowledge Base) gelöscht; Verschlanken der 41-KB-`CLAUDE.md` als Aufgabe | User: „alles wie empfohlen“ (`/wartung review`) · Cross-Vault-Session (203) | 🟢 bestätigt (2026-10-27, Review) |
+
 ### Woche bis 2026-10-19 — vollständig bestätigt (Änderungshistorien-Review 2026-10-20, Cross-Vault-Session LXC 203)
 
 > Stichtag 2026-10-19; Zeilen vom 2026-10-20 bleiben in §6 offen. Zeilen ohne Statuszelle oder mit bloßem 🟢 haben die Sessions so geschrieben, bestätigt hat sie erst dieses Review. Text wörtlich, nur Status gesetzt bzw. ergänzt (Work 2026-10-16: Steuerzeichen `\x0b` im Pfad durch `\v` ersetzt).
@@ -156,4 +164,4 @@ Technisch umgesetzt über `.claude/settings.json` (Vault-Root, checked-in): `Edi
 
 | Datum | Dokument | Änderung | Session/Kontext | Status |
 |---|---|---|---|---|
-| 2026-10-20 | [[Ressourcen/README]] (Abschnitt Reisen), `CLAUDE.md` (neuer Abschnitt „Nächste Schritte“ #1, `modified`), **gelöscht:** `Willkommen.md`, `Doku/markdown-cheat-sheet.md` | Wartungs-Review W-013–W-026: Ordner-Link `[[../Reisen]]` + „(Ordner noch leer)“ durch Links auf beide Reise-Notizen ersetzt; Obsidian-Standarddatei und Kopie des Cheat-Sheets (identisch in Knowledge Base) gelöscht; Verschlanken der 41-KB-`CLAUDE.md` als Aufgabe | User: „alles wie empfohlen“ (`/wartung review`) · Cross-Vault-Session (203) | 🟡 offen |
+| 2026-10-27 | Diese Datei (§5 neuer Block „Woche bis 2026-10-26“, 1 Zeile) | Wochen-Review Stichtag 2026-10-26 per Inhalt gegen Snapshot archiviert | User: „alles wie empfohlen“ (Änderungshistorien-Review) · Cross-Vault-Session (203) | 🟡 offen |
