@@ -1,0 +1,279 @@
+# CLAUDE.md Archive
+
+Archived content from CLAUDE.md to maintain context efficiency.
+
+---
+
+## Archived: 2026-11-02 (Verschlankung 41,9 KB → Ziel ≤ 12 KB, vollständige Fassung vor dem Umbau, wörtlich)
+
+---
+tags:
+  - claude
+  - projekt
+created: 2026-08-10
+modified: 2026-10-20
+---
+
+# CLAUDE.md — Unterwegs-Vault
+
+Projekt-Instruktionen für Claude Code beim Arbeiten im Unterwegs-Vault.
+
+## Was ist dieses Vault?
+
+Neuer Vault als Merge von `Urlaub` + `Touren` (beide LXC-203-Geschwister-Ordner) — Reiseplanung, Wanderungen, Stadtrundgänge, Sehenswürdigkeiten und ein geplantes Urlaubstagebuch, das die anderen Kategorien direkt verlinken kann (Hauptgrund für den Merge: Cross-Vault-Wikilinks funktionieren in Obsidian nicht). Details zur Entscheidungsfindung: `memory/project-unterwegs-vault-struktur.md` und `memory/project-touren-vault-soll-git-bekommen.md` im Cross-Vault-Root (`/home/claude/Obsidian-Vaults`).
+
+**Status (2026-08-11):** Vault-Shell (Task #3), Claude-Vorbereitung + Plugins (Task #6), Content-Migration (Task #4), Link-/Konventions-Fixes (Task #5) und Stilllegung Urlaub/Touren (Task #9) abgeschlossen (User-Bestätigung „Unterwegs ist verifiziert" am 2026-08-11) — Inhalte aus `Urlaub/` und `Touren/` sind als **Kopie** übernommen. Die Quell-Vaults sind jetzt vollständig archiviert: auf Container 201 read-only umbenannt (`<Vault> (Archiv 2026-08-11)`), auf 203 vollständig entfernt, beide GitHub-Repos vom User manuell archiviert („Archive this repository", kein `gh`-CLI/Token in dieser Session verfügbar). X1 + Smartphone schaltet der User selbst ab. Details: LXC 201 – Vault-Sync (`Knowledge Base/IT@home/Infrastruktur/Proxmox/LXC 201 – Vault-Sync (obsidian-headless + Git-Backup).md`, anderer Vault) Abschnitt 5. Die vault-präfixierten Excalidraw-/README-Pfade (`Touren/Wanderungen/…`, `Touren/Stadtrundgänge/…`) sind auf die neue Vault-Struktur (`Wanderungen/…`, `Stadtrundgänge/…`) korrigiert. Noch offen: `Regionen/` ist ein neues Organisationskonzept ohne Vorlage in den Quell-Vaults und noch nicht angelegt; uneinheitliches Frontmatter-Schema zwischen `Wanderungen`/`Stadtrundgänge`/`Übernachtungen` (`tags`/`created`/`modified`) und `Einpacklisten` (`title`/`erstellt`/`reise`/`zeitraum`) ist erkannt, aber noch nicht vereinheitlicht; die zuvor toten Wikilinks in `Stadtrundgänge/README.md` wurden am 2026-08-10 auf die vollständigen „mit Epochen"-Dateien umgebogen (behoben, siehe Erkenntnisse im Root-CLAUDE.md des Cross-Vault-Roots).
+
+## Geplante Vault-Struktur (Zielbild, noch nicht umgesetzt)
+
+```
+Unterwegs/
+├── Reisen/<Reisename>/{<Reisename>.md, Tagebuch/YYYY-MM-DD.md}
+├── Wanderungen/            (1:1 aus Touren, inkl. GPX-Archiv)
+├── Stadtrundgänge/          (1:1 aus Touren)
+├── Sehenswürdigkeiten/       (ex-Ausflüge aus Urlaub)
+├── Übernachtungen/            (aus Urlaub)
+├── Einpacklisten/               (aus Urlaub)
+├── Regionen/                     (Bindeglied Reise ↔ Wanderung/Stadtrundgang)
+├── Ressourcen/ · Clippings/ · Doku/   (aus beiden zusammengeführt)
+├── _template/
+├── Templates/                    (vault-spezifisches Fach im PKM-Dirigent-Schrank, seit 2026-09-13 — aktuell nur `Recherche-Vorlage.md`)
+├── _Wohnwagen-Technik/              (Sackmarkise/, Wohnwagen-*.md — eigener Unterordner)
+└── OneNote-Archiv/                   (1:1 aus Urlaub)
+```
+
+Leitprinzip: Wanderungen/Stadtrundgänge/Sehenswürdigkeiten bleiben eigenständiges, wiederverwendbares Wissen — ziehen NICHT in Reise-Unterordner um. Vollständiger Entwurf inkl. Tagebuch-Frontmatter: `memory/project-unterwegs-vault-struktur.md`.
+
+**Migrations-Herkunft der Ordner (2026-08-10):**
+
+| Ordner | Quelle | Hinweis |
+|---|---|---|
+| `Wanderungen/`, `Stadtrundgänge/`, `_template/`, `Ressourcen/` | Touren, 1:1 | GPX-Archiv vollständig (477 Dateien verifiziert) |
+| `Clippings/`, `Doku/` | Touren + Urlaub, zusammengeführt | `Doku/Claude – Änderungshistorie.md` neu begonnen, alte Verläufe als `Claude – Änderungshistorie (Archiv Touren/Urlaub).md` archiviert |
+| `Übernachtungen/`, `Einpacklisten/` | Urlaub, 1:1 | |
+| `_Wohnwagen-Technik/` | Urlaub (`Sackmarkise/` + `Wohnwagen-*.md`) | |
+| `Sehenswürdigkeiten/`, `Reisen/`, `OneNote-Archiv/` | Urlaub (`Ausflüge/`, `Reisen/`, `OneNote-Archiv/`) | Quellordner waren bereits leer, nur Zielordner angelegt |
+| `Regionen/` | — | Neu, noch nicht angelegt (kein Vorbild in den Quell-Vaults) |
+
+**Bewusst nicht migriert:** `Urlaub/thumbnails/` (Plugin-Cache, regeneriert sich selbst), `Urlaub/Recherchen/` (leer), `README.md`/`CLAUDE.md`/`Willkommen.md`/`start-claude.ps1` beider Quell-Vaults (vault-spezifische Meta-Dateien, durch Unterwegs' eigene ersetzt).
+
+## Autonomes Editieren: Änderungshistorie statt Rückfrage
+
+Für **inhaltliche Änderungen an `.md`-Notizen** (Text, Frontmatter-Updates, neue Notizen inkl. Index-Verlinkung, Umbenennen/Verschieben inkl. Link-Fix) fragst du **nicht** mehr einzeln nach Bestätigung — `.claude/settings.json` erlaubt `Edit`/`Write` auf `*.md` bereits automatisch. Stattdessen trägst du jede Änderung in [[Doku/Claude – Änderungshistorie]] ein; der User bestätigt/verwirft wöchentlich gesammelt.
+
+**Ausnahmen (weiterhin Rückfrage nötig):** Löschen von Dateien, strukturelle Auffälligkeiten, alles außerhalb von `.md`. Für den eigentlichen Verschiebe-Befehl (`mv`/Bash) gibt es bewusst keine automatische Freigabe.
+
+## Sprache & Stil
+
+- **Deutsch** für alle Inhalte (englische Fachbegriffe wie Plugin/Sync bleiben)
+- Wikilinks `[[Notiz-Name]]` ohne `.md`-Endung
+- Frontmatter mit `tags`, `created`, `modified` (bei Bearbeitung `modified` auf heute bumpen); Touren-Vokabular (`region`, `difficulty`, `duration`) für Wanderungen/Stadtrundgänge übernehmen
+
+## Sync & Backup
+
+Läuft über das Container-201/203-Sync+Git-Backup-Muster (`obsidian-sync-unterwegs.service` auf 201+203, `git-backup-unterwegs.timer` auf 201 → Repo `Obsidian-Unterwegs`) — **nicht** über das lokale `obsidian-git`-Plugin (das ist projektweit seit 2026-08-04 deaktiviert). Details: `Knowledge Base/IT@home/Aufgaben/Aufgabe – Vault Unterwegs auf 201 und 203 einrichten.md`.
+
+## Plugins
+
+Übernommen aus `Urlaub`/`Touren` (Plugin-Code kopiert, `data.json` bewusst nicht mitgenommen — startet mit Standardeinstellungen):
+
+| Plugin | Zweck |
+|--------|-------|
+| `calendar` | Kalenderansicht für Tagesnotizen |
+| `colored-tags` | Farbige Tags |
+| `drawio-editor` | Draw.io-Diagramme einbetten/bearbeiten |
+| `featured-image` | Automatisches Titelbild aus erstem Bild/YouTube-Link |
+| `notebook-navigator` | Zwei-Spalten-Dateiexplorer mit Tag-Browsing |
+| `obsidian-excalidraw-plugin` | Skizzen, handgezeichnete Karten |
+| `obsidian-map-view` | Interaktive Karte für Übernachtungen/Routen/Sehenswürdigkeiten |
+| `obsidian-outliner` | Listen wie in Workflowy/Roam |
+| `obsidian-style-settings` | Theme/Plugin-CSS-Einstellungen |
+| `pixel-perfect-image` | Bild-Resizing, Copy/Open im Explorer |
+| `tag-wrangler` | Tags umbenennen/mergen/durchsuchen |
+
+Bewusst **nicht** übernommen: `obsidian-git` (projektweit seit 2026-08-04 deaktiviert, Backup läuft über `git-backup-unterwegs.timer` auf Container 201), `drawio`/`drawio-obsidian` (redundant zu `drawio-editor`), `obsidian-local-rest-api` (unvollständig installiert in Touren, keine `manifest.json`), `obsidian42-brat` (User-Entscheidung 2026-08-10), `settings-search` (seit Obsidian 1.13.6 vault-übergreifend inkompatibel, überall deinstalliert — User-Entscheidung 2026-08-11, siehe unten).
+
+**Behoben (2026-08-11):** Auf ThinkPad X1 fehlte `.obsidian/plugins/` für `Unterwegs` zunächst komplett (kein Ordner, keine `community-plugins.json`) — betraf u. a. aktiv genutzte `obsidian-map-view`-Einbettungen in `Ressourcen/GPX-Setup-Anleitung.md`, `Ressourcen/GPX-Verwaltung.md`, `Stadtrundgänge/README.md`, `Stadtrundgänge/Template - Stadtrundgang.md`, `Wanderungen/Template - Wanderung.md`. Root Cause: `ob sync-status` zeigte auf **beiden** Headless-Clients (201, 203) `Configs: …, community-plugin-data` — **`community-plugin` (Plugin-Code, `.js`/`.css`/`manifest.json`) fehlte**, seit der allerersten Vault-Einrichtung auf 201/203 (2026-08-03) fälschlich weggelassen (Zuordnungsfehler, Details `[E3]`/`[S14]` in Obsidian Sync – Headless Client (`Knowledge Base/Obsidian/Obsidian Sync – Headless Client (obsidian-headless).md`, anderer Vault) bzw. LXC 201 – Vault-Sync (`Knowledge Base/IT@home/Infrastruktur/Proxmox/LXC 201 – Vault-Sync (obsidian-headless + Git-Backup).md`, anderer Vault)). Container 203 hatte die 12 Plugin-Ordner lokal (aus `Urlaub`/`Touren` kopiert), pushte sie aber nie zur Sync-Cloud. **Fix:** `community-plugin` per `ob sync-config` bei allen 7 Vaults auf 201 **und** 203 ergänzt (nicht nur `Unterwegs` — schließt die Lücke grundsätzlich für künftige Vault-Neuinstallationen), Sync-Service für `Unterwegs` auf 203 neu gestartet, Upload verifiziert (`Fully synced`), 201 hat die Ordner sofort gezogen, X1 hat alle 12 Plugin-Ordner jetzt lokal (`ob sync-status` bestätigt end-to-end). Aktivierung der Plugins unter Einstellungen → Community-Plugins bleibt weiterhin ein manueller Schritt pro Gerät (bewusst nicht gesynct). **Auf X1 erledigt (2026-08-11):** 11 der 12 Plugins über `.obsidian/community-plugins.json` aktiviert + Obsidian komplett neu gestartet (Pflicht, da Plugin-Status nur beim App-Start neu eingelesen wird), Aktivierung per `data.json`-Erzeugung mehrerer Plugins verifiziert. **`settings-search` überall deinstalliert statt nachkopiert (2026-08-11):** Der leere Ordner auf Container 203 (unvollständige Migrationskopie aus `Touren`) wäre ohnehin kein funktionsfähiges Plugin gewesen — Zusatzbefund per User-Screenshot: `settings-search` v1.3.10 lädt seit einem nebenbei ausgelösten Obsidian-Update (1.13.4 → 1.13.6) auf **keinem** Vault des Geräts mehr, auch nicht dort, wo es vollständig installiert war (`Touren`, `Knowledge Base`) — „nicht kompatibel"-Fehler trotz erfüllter `minAppVersion: 0.12.17`, vermutlich weil das seit 3 Jahren unveränderte Plugin (Autor `javalent`) sich nicht mehr mit aktuellen internen Obsidian-APIs verträgt. User-Entscheidung: überall deinstallieren statt auf ein Update zu warten — betrifft `Unterwegs` gar nicht direkt (Plugin war hier nie vollständig installiert), wohl aber `Touren`/`Knowledge Base` (dort Ordner + `community-plugins.json`-Eintrag entfernt, lokal auf X1 sowie direkt auf 201/203). Details: Vault-Plugins – Übersicht (`Knowledge Base/Obsidian/Vault-Plugins – Übersicht & Gerätekonfiguration.md`, anderer Vault) Auffälligkeit 6.
+
+**Plugins auf Smartphone (Android) aktivieren — Anleitung:** Plugin-**Code** synct seit dem obigen Fix automatisch mit, die **Aktivierung** bleibt aber pro Gerät manuell (analog X1, s.o.):
+
+1. Vault „Unterwegs" öffnen bzw. erstmalig über Sync verbinden (Einstellungen → Sync → Remote-Vault auswählen), vollständig durchsynchronisieren lassen.
+2. **Wichtig, sonst kommt der Plugin-Code nicht an:** In den Sync-Einstellungen (Zahnrad-Icon im Sync-Tab) prüfen, dass **„Installed community plugins"** aktiviert ist.
+3. Warten bis „Fully synced".
+4. Einstellungen → Community-Plugins → Hauptschalter einschalten (Sicherheitswarnung bestätigen), falls noch aus.
+5. Alle 11 Plugins aus der Tabelle oben sollten jetzt unter „Installierte Plugins" auftauchen — jedes einzeln aktivieren.
+6. App danach **komplett neu starten** (voll beenden, nicht nur Hintergrund) — Plugin-Status wird nur beim App-Start neu eingelesen.
+7. Fehlt eines: über Community-Plugins → Durchsuchen manuell nachinstallieren.
+
+Heads-up: `drawio-editor` bietet auf Mobile nur Vorschau, kein Editieren (siehe Draw.io Plugins – Vergleich (`Knowledge Base/Obsidian/Draw.io Plugins für Obsidian – Vergleich.md`, anderer Vault)).
+
+**Behoben (2026-08-12) — GPX-Wikilinks öffneten auf Android die Datei statt der Karte:** Root Cause war kein Android-spezifisches Verhalten, sondern eine falsche `mapview`-Codeblock-Syntax in `Ressourcen/GPX-Setup-Anleitung.md`/`GPX-Verwaltung.md` (`{"geoDataUrl": "..."}`, `{"coordinates": [...]}`) — diese Felder existieren im Map-View-Plugin gar nicht (im Quellcode verifiziert: `src/main.ts`/`src/mapState.ts` kennen nur `query`/`mapZoom`/`mapCenter`/`autoFit`). Dadurch hatte **keine** Tour-Notiz im Vault je einen funktionierenden Embed — nur einen reinen Datei-Wikilink, den Obsidian mangels eigenem GPX-Viewer auf Android an die OS-„Öffnen mit"-Auswahl weiterreicht. Korrekte Syntax (GPX-Datei über den `path:`-Query-Operator, Teilstring genügt): `​```mapview\n{"query": "path:\"Dateiname.gpx\"", "autoFit": true}\n​```` — jetzt in beiden Ressourcen-Notizen sowie in den 3 Tour-Notizen mit tatsächlich vorhandener GPX-Datei (Kurztour, Langtour, `Clippings/Rund um Kornelimünster`) eingebaut. **Ergänzung (2026-08-12):** `Maastricht - Highlights (3-4h) - mit Epochen.md` referenzierte `GPX/Maastricht-Route.gpx` — diese Datei existiert im `GPX/`-Ordner nicht (nur `Maastricht-Kurztour.gpx` + `Maastricht-Langtour.gpx` sind vorhanden). Auf User-Bestätigung („Route fehlt noch, Notiz und Tabelle bitte anpassen") hin bereinigt: `gpx_file`-Frontmatter aus der Highlights-Notiz entfernt, dort stattdessen ein „⏳ Route fehlt noch"-Platzhalterabschnitt mit inertem Beispiel-Codeblock zum späteren Nachtragen; Tabellenzeile + Ordnerstruktur-Diagramm in `GPX-Verwaltung.md` ebenfalls auf „Route fehlt noch" korrigiert (vorher fälschlich „✅ Aktiv"). Damit haben jetzt alle drei Maastricht-Stadtrundgänge-Notizen einen konsistenten „Route & GPX-Daten"-Abschnitt — zwei mit funktionierendem Embed, einer als dokumentierte Lücke.
+
+## Frontmatter-Schema (bewusst uneinheitlich)
+
+Es gibt mehrere Frontmatter-Schemata nebeneinander — **keine Vereinheitlichung geplant**, jede Kategorie behält ihr eigenes Schema. Grund: Die Kategorien haben unterschiedliche Nutzungszwecke (Kern-Notiz vs. Index vs. Packliste vs. Tour-Detail mit Kartendaten); ein gemeinsames Schema würde entweder Felder erzwingen, die die meisten Kategorien nicht brauchen, oder auf kategoriespezifische Zusatzfelder verzichten.
+
+| Schema | Felder | Dateien |
+|--------|--------|---------|
+| Kern-Content | `tags`, `created`, `modified` (+ optional `location`) | `Übernachtungen/*`, `_Wohnwagen-Technik/*.md` + `Sackmarkise/Analyse – Sackmarkisen für Wohnwagen.md` |
+| Index (Archiv-Übersichten) | `title`, `tags`, `created`, `modified`, `type`, `sort_index` (+ optional `region`) | `Wanderungen/Touren-Archiv - Gesamtübersicht.md`, `Rother-Übersicht.md`, `Komoot-Übersicht.md` |
+| Ressourcen/Anleitungen | `title`, `tags`, `created`, `modified`, `type` | `Ressourcen/GPX-Setup-Anleitung.md`, `Ressourcen/Tour-Template.md` |
+| Einpacklisten | `title`, `type`, `tags`, `reise`, `zeitraum`, `status`, `erstellt` (kein `created`/`modified`, sondern `erstellt`) | `Einpacklisten/*.md` |
+| Tour-Detail „mit Epochen" (reichhaltigstes Schema) | `title`, `tags`, `created`, `modified`, `difficulty`, `duration`, `distance`, `stations`, `epochen_focus`, `type`, `region`, `status`, `gpx_file`, `coordinates` | `Stadtrundgänge/Maastricht/Maastricht - Kurztour/Langtour/Highlights (…) - mit Epochen.md` |
+| Vergleichs-Übersicht | wie Tour-Detail, aber ohne `distance`/`stations`/`gpx_file`/`coordinates`, dafür `source` | `Stadtrundgänge/Maastricht/Maastricht - Touren Vergleich MIT EPOCHEN.md` |
+| Clippings (Web-Clipper-Standard, automatisch generiert) | `title`, `source`, `author`, `published`, `created`, `description`, `tags: [clippings]` | `Clippings/*.md`, `Stadtrundgänge/Maastricht/Gefundene Touren/*.md` |
+
+**Empfehlung — welches Schema für neue Notizen (Stand 2026-08-10, nach Abgleich mit Knowledge Base):**
+
+| Notiz-Typ | Zu verwendendes Schema |
+|-----------|------------------------|
+| Einfache Content-Notiz (Wanderung, Übernachtung, Wohnwagen-Technik) | Kern-Content: `tags`/`created`/`modified` (+ `location` falls Ort relevant) |
+| Index-/Sammelseite | Index-Schema: zusätzlich `sort_index` (+ optional `type: Index`) |
+| Domänenspezifische Detail-Notiz mit Fachfeldern (z. B. weitere Stadtrundgänge mit GPS/Distanz/Schwierigkeit) | eigenes erweitertes Schema analog „Tour-Detail mit Epochen" — bewusst nicht auf Kern-Content-Schema reduzieren |
+| Packliste/Notiz mit Lebenszyklus-Status | eigenes Schema mit `status`-Feld analog Einpacklisten |
+| Web-Clipping | automatisch generierter Web-Clipper-Standard — nie manuell anpassen |
+
+**Konsolidierte Referenznotiz (vaultübergreifend, nicht per Wikilink erreichbar):** `Knowledge Base/Obsidian/Frontmatter-Schema – Konventionen über alle Vaults.md` — enthält dieselbe Analyse plus die verifizierte Kernregel, wann Obsidian YAML-Frontmatter überhaupt parst (Quellenbeleg Obsidian-Forum/Help-Doku), inkl. einer Korrektur eines gegenteiligen Irrtums in Knowledge Base's eigener `CLAUDE.md`.
+
+**Abgleich mit Knowledge Base (513 Notizen ausgewertet, 2026-08-10):** Dort existieren mindestens 9 verschiedene Schemata (u. a. Kern-Content `tags/created/modified` [52×, identisch zu Unterwegs], Index mit `sort_index` [9×, identisch], Web-Clipper-Standard [~73×, identisch], domänenspezifische Geräte-/Infrastruktur-Schemata mit Fachfeldern [analog zu „Tour-Detail mit Epochen"], sowie `name/description/metadata` für die Auto-Memory-Dateien selbst). Bestätigt: kategorie-eigenes Schema statt Vereinheitlichung ist ein vaultübergreifend etabliertes, bewusstes Muster — kein Unterwegs-spezifischer Sonderfall.
+
+**Vorsicht bei künftiger `OneNote-Archiv/`-Migration:** In Knowledge Base dominiert zahlenmäßig (139×) das Schema `title`/`updated`/`created` — das ist aber praktisch komplett auf `IT@home/Archiv/…OneNote…/` konzentriert, also ein reines Migrations-Artefakt (nutzt `updated` statt `modified`), kein bewusster Standard. Wenn der noch offene `OneNote-Archiv/`-Zielordner (1:1-Übernahme aus `Urlaub/` geplant) gefüllt wird, ist zu erwarten, dass genau dieses Schema mitkommt — das ist dann ebenfalls erwartetes Import-Artefakt, keine neue Inkonsistenz und kein Anlass, es nachträglich anzugleichen.
+
+**Behobener Sonderfall (kein Schema-Problem, sondern ein Strukturfehler):** In `Wanderungen/README.md`, `Wanderungen/Template - Wanderung.md`, `Stadtrundgänge/README.md`, `Stadtrundgänge/Template - Stadtrundgang.md`, `Stadtrundgänge/Maastricht/GPX/README - GPX & Stadtplan Anleitung.md` stand vor dem `---`-Frontmatter-Block eine H1-Überschrift. Da YAML-Frontmatter in Obsidian nur erkannt wird, wenn `---` die allererste Zeile der Datei ist, wurde `tags`/`created`/`modified` in diesen fünf Dateien **nicht** als echtes Frontmatter geparst (kein Properties-Panel, nicht filterbar/suchbar über Obsidian-Properties) — reiner Fließtext, der wie Frontmatter aussah. Am 2026-08-10 gefixt: Frontmatter-Block an den Dateianfang verschoben, H1-Überschrift folgt jetzt danach; `modified` entsprechend aktualisiert. Herkunft geklärt: Der Bug stammt aus dem ursprünglichen Touren-Vault-Template (dort in 6 Dateien identisch vorhanden, inkl. `Touren/README.md`) und wurde beim Content-Merge 1:1 mitkopiert — kein Migrations-Artefakt.
+
+`_template/Seite.md` weicht zusätzlich in der Feldbenennung ab (`Reference link`, `Topics` groß/mit Leerzeichen statt kleingeschriebener snake_case-Felder wie überall sonst) — ebenfalls unangetastet gelassen.
+
+## Wanderungen-Archiv: `Archiv (OneDrive)`-Struktur eliminiert (2026-08-12)
+
+Auf User-Wunsch „OneDrive und Archiv eliminieren" wurde der Wrapper-Ordner `Wanderungen/Archiv (OneDrive)/` komplett aufgelöst — 4 Unterordner (`Einzeltouren/`, `Komoot/`, `Rother Wanderführer/`, `Vergessene Pfade Fränkische Schweiz/`, zusammen 475 Dateien) + 11 Index-Notizen liegen jetzt direkt unter `Wanderungen/`. Die ehemalige `Archiv (OneDrive)/README.md` (Archiv-Gesamtübersicht, nicht die Wanderungen-Sektionsübersicht) heißt jetzt `Wanderungen/Touren-Archiv - Gesamtübersicht.md`. ~64 Pfadreferenzen vaultweit korrigiert (nur aktive Notizen — eingefrorene Archiv-Logs in `Doku/` bewusst unangetastet). Dabei zwei veraltete Touren-Zählungen mitkorrigiert (286→336 Rother-Touren/5→6 Bände, 388→438 GPX gesamt — beide fehlten die erst später ergänzte Normandie-Region).
+
+**Zwischenfall + Recovery (Muster für künftige Batch-Moves):** Beim Batch-Verschieben der 11 Index-Notizen wurde `Wanderungen/README.md` versehentlich durch `Archiv (OneDrive)/README.md` überschrieben — ein vorheriger Kollisions-Check hatte den Namenskonflikt zwar aufgelistet, wurde aber nicht pro Datei im Move-Loop selbst geprüft. **Lehre:** Bei Batch-Moves in ein gemeinsames Zielverzeichnis die Kollisionsprüfung *im Loop selbst* pro Datei durchführen, nicht nur einmal vorab eyeballen — generische Dateinamen wie `README.md` sind das Risiko (auch als Feedback-Memory gespeichert). Recovery gelang über die Git-Historie des `Obsidian-Unterwegs`-Repos (User hat den Commit vor dem Fehler selbst auf GitHub rausgesucht — Container 203 hat weder `git` installiert noch Push/Pull-Credentials fürs Repo, bewusste Architektur-Entscheidung, siehe „Sync & Backup" oben). Ein Nebenversuch, die Datei stattdessen über Obsidian Syncs Dateiwiederherstellung zu finden, führte zum versehentlichen Wiederherstellen von 52 Dateien (Duplikate bereits korrekter Inhalte + ein kaputtes leeres `.gpx.md`-Artefakt im Vault-Root) — beides per md5-Verifikation bestätigt und aufgeräumt. Volles Protokoll: [[Doku/Claude – Änderungshistorie]].
+
+## GPX / Map View — echte Plugin-Syntax (2026-08-12)
+
+Der `​```mapview`-Codeblock kennt nur `query`/`mapZoom`/`mapCenter`/`autoFit` (im Plugin-Quellcode `src/main.ts`/`src/mapState.ts` verifiziert) — **nicht** `geoDataUrl`/`coordinates`/`height`, wie es `Ressourcen/GPX-Setup-Anleitung.md`/`GPX-Verwaltung.md` ursprünglich fälschlich dokumentierten (seitdem korrigiert). GPX-Datei referenzieren über `{"query": "path:\"Dateiname.gpx\"", "autoFit": true}` (Teilstring genügt). Eingebaut in `Stadtrundgänge/Maastricht/*` (3 Touren, einzeln) sowie als **eine Übersichtskarte pro Rother-Region** (6 Regionen-Notizen unter `Wanderungen/`, Query auf das Dateinamen-Kürzel, z. B. `path:"Bret_"` für alle 51 Bretagne-Touren — bewusst nicht pro Einzeltour, da 336 Touren zu viele Einzel-Embeds wären).
+
+„Focus in Map View" (Kontextmenü-Eintrag) funktioniert auf Android nur beim **Datei-Explorer-Eintrag** bzw. der aktiv geöffneten Datei selbst (hängt an Obsidians `file-menu`-Event) — **nicht** beim Long-Press auf einen Wikilink innerhalb einer anderen Notiz (dafür gibt's auf Mobile kein Plugin-Hook, nur Obsidians eigenes nicht erweiterbares Link-Menü).
+
+**Bekanntes Muster:** Nach viel Datei-Hin-und-Her (Move/Restore/Cleanup, s.o.) zeigten die Map-View-Übersichtskarten vorübergehend keine Touren mehr an, obwohl GPX-Dateien + Codeblock-Syntax nachweislich korrekt waren (Dateizahlen, md5, XML-Validität alle geprüft) — Ursache: veralteter Map-View-interner Datei-Index auf dem Client. Fix: Obsidian komplett neu starten (App-Prozess killen, nicht nur Hintergrund) — analog zum bereits bekannten „Plugin-Aktivierung braucht Neustart"-Muster aus dem Plugins-Abschnitt oben.
+
+## Laufendes Projekt: Reise-Guides-Vault & Le-Havre-Audioguide (2026-08-17/18)
+
+**Status:** Neues, eigenständiges Vault `Reise-Guides` (Geschwisterordner von `Unterwegs`) angelegt — Audioguide zum Anhören unterwegs, veröffentlicht über Obsidian Publish (passwortgeschützt) statt Sync, da Sync keine granulare Zugriffssteuerung pro Datei kennt. Erster (und Referenz-)Rundgang: Le Havre, 15 Stationen + eine Zusatzstation (Kathedrale innen), alle mit TTS-mp3 (OpenAI `tts-1-hd`).
+
+**Live-Site:** https://publish.obsidian.md/reise-guides (Slug `reise-guides`, passwortgeschützt).
+
+**Sync & Backup (seit 2026-09-29):** Zusätzlich zu Publish per Obsidian Sync auf Container 201 + 203 (`obsidian-sync-reise-guides.service`, Remote-Vault `Reise-Guides` mit eigenem E2E-Passwort, bewusst **nicht** auf X1). Vorher existierte das Vault nur auf 203 und war nirgends gesichert (Vault-Dataset von 203 ist vom vzdump ausgenommen). Git-Backup folgt, sobald weitere Rundgänge dazukommen. Publish läuft unverändert von 203 (`ob publish --dry-run` nach der Umstellung: keine Änderungen). Übersicht im Dirigenten: `PKM-Dirigent/Vaults/Reise-Guides.md`.
+
+**Architektur & vollständige Anleitung für künftige Rundgänge:** [[Ressourcen/Anleitung - Stadtrundgang mit Audioguide aufbauen & publizieren]] — Zwei-Vault-Muster, Nummerierungskonvention, Schritt-für-Schritt-Checkliste, bekannte Fallstricke. Referenz-Rundgang: [[Stadtrundgänge/Le Havre/Le Havre - Perret-Wiederaufbau & Impressionismus]].
+
+**Kernentscheidungen:**
+
+| Entscheidung | Begründung |
+|---|---|
+| `Reise-Guides` generisches, eigenständiges Vault statt Unterordner in `Unterwegs` | Publish veröffentlicht immer das ganze Vault — praktische Infos (Preise, Telefonnummern) müssen getrennt bleiben. *Präzisiert 2026-09-29:* technisch ginge auch Teil-Publish (`ob publish-config --includes/--excludes`), die Trennung bleibt als Schutz vor versehentlichem `--all` |
+| Keine Nummern in Dateinamen/Frontmatter/GPX-`<name>` — nur noch in den beiden Übersichtstabellen (Unterwegs-Notiz + Reise-Guides-Übersicht) | Nach zwei fehleranfälligen Umnummerierungsrunden (Datei-Rename-Kaskaden über zwei Vaults) auf User-Vorschlag umgestellt; Umsortieren ist jetzt reines Tabellenzeilen-Tauschen |
+| Cross-Referenzen zwischen Stationen im Fließtext als Wikilink, nie als Nummer | Wikilinks brechen beim Umsortieren nicht |
+| `bikerouter.de` statt `brouter.de/brouter-web/` für den interaktiven Karten-Link | User-Wunsch; identische Software (Norbert Renner), aber unterschiedliche Marker-Symbole für Routing- vs. POI-Punkte — auf bikerouter.de überdecken sie sich nicht |
+| TTS-Skript liegt im Vault (`Reise-Guides/_scripts/gen_tts.py`), nicht im Scratchpad | Scratchpad überlebt keine Session |
+| GPX-`<trk>`-Block enthält die **echte, von BRouter berechnete Route** (Profil `hiking-beta`), nicht nur eine Luftlinie | Vorher existierte die reale Strecke nur live auf bikerouter.de; jetzt dauerhaft im Vault, sieht auch in Map View brauchbar aus |
+| Je ein Foto (Wikimedia Commons, frei lizenziert) pro Audioguide-Station, wo auffindbar | 15 von 16 Stationen bebildert; „Victor by Milot" bewusst ohne Bild — kein frei lizenziertes Foto auffindbar (auch außerhalb Commons geprüft: Openverse/Flickr), lieber ehrlich leer als Fehlgriff |
+| Bei bikerouter.de blieb es, uMap nur getestet | uMaps automatische Routenberechnung entlang echter Wege fehlt (nur Marker+Freihand-Linien) — genau das ist bikerouters Kernvorteil |
+
+**Wichtige technische Erkenntnisse (Details in der Anleitung oben):**
+- Obsidian Publish unterstützt keine Community-Plugins (Map View funktioniert dort nicht) und keine `.gpx`-Dateien (weder Link noch Embed) — Route auf der Publish-Seite läuft nur über den externen BRouter-Link
+- Google-Maps-Link mit Namens-Label funktioniert nicht zuverlässig — weder `maps?q=lat,lon(Name)` noch `maps/place/<Name>/@lat,lon,17z` (beide ausprobiert, beide vom User als nicht funktionierend gemeldet). Zuverlässig ist nur das offiziell dokumentierte `maps/search/?api=1&query=lat,lon` **ohne** Namensversuch — Stationsname steht ohnehin in der Tabelle daneben
+- bikerouter.de: eigener `pois=`-Parameter für benannte Marker (`LON,LAT,Name;...`, im Quellcode verifiziert), zusätzlich zu `lonlats=` für die Route selbst; Sidebar-Reihenfolge auf der Publish-Seite per `ob publish-site-options --nav-order` steuerbar (überschreibt komplett, nicht additiv)
+- BRouter-Profile inhaltlich prüfen, nicht nur technisch: `hiking-mountain` ist für Alpin-/Bergwanderungen (SAC T3), `hiking-beta` für normale/flache Stadtrundgänge — beide Profile existieren real, ein falsches ist kein Format-, sondern ein Inhaltsfehler
+- Obsidian-Embeds (Bild wie Audio) im ganzen Vault als **reiner Dateiname** (`![[Name.jpg]]`), niemals mit Ordnerpfad-Präfix (`![[Images/Name.jpg]]`) — Publish rendert Pfad-Präfixe nicht zuverlässig, Obsidian löst ohnehin nach Basename auf
+- IPv6 auf diesem Container (203) ist nicht erreichbar — `ob publish`/`ob sync`/OpenAI-Aufrufe brauchen gelegentlich Retries; `ob publish --yes` wird vom Auto-Mode-Klassifikator manchmal blockiert, dann pusht der User selbst per `!`-Präfix
+- Ein per Fork delegierter Recherche-Agent lieferte zweimal nur eine Zwischenmeldung statt echter Arbeit — Fix: über `SendMessage` an denselben Agent zurückschicken statt neuen Fork zu starten
+- uMap erlaubt anonyme Kartenerstellung rein per HTTP+CSRF-Token (`/de/map/create/`, kein Login nötig) — aber das Datalayer-Erstellungsformat (Marker/Linien hinzufügen) ist nicht dokumentiert und ließ sich ohne echten Browser/Netzwerk-Inspektor nicht rekonstruieren; für vollautomatische Kartenerstellung deshalb kein praktikabler Ersatz
+
+**Blocker/offen:** Finaler Live-Test durch die Ehefrau (Login mit Passwort, mp3s offline abspielbar) steht noch aus. Bei künftigen weiteren Reisen einfach `Reise-Guides/Stadtrundgänge/<Ort>/` als neuen Unterordner anlegen — Publish-Site existiert schon, kein neues Setup nötig.
+
+## `Reisen/` — Reise-Tagebücher aus Fotos rekonstruieren (Muster, Stand 2026-09-12)
+
+`Reisen/` ist real gefüllt: **Sommerurlaub 2026 – Bretagne & Normandie** (01.–22.08.2026, 22 Tage) und **Rügen & Dänemark 2025** (06.08.–02.09.2025, 28 Tage). Struktur wie im Zielbild: `Reisen/<Reisename>/{<Reisename>.md, Tagebuch/YYYY-MM-DD.md}`, Tagebuch-Frontmatter `tags/datum/reise/orte/created/modified` (+ optional `wanderung`).
+
+**Ablauf für eine neue Reise** (in dieser Reihenfolge, sonst doppelte Arbeit):
+
+1. **Fotoregister zuerst auswerten** — `Knowledge Base/Fotoverwaltung/Fotoregister_<person>.csv` (Spalten u. a. `Datum`/`Uhrzeit`/`Dateiname`/`Ort`/`Lat`/`Lon`/`Quell-Ordner`), gefiltert auf Reisezeitraum + `Quell-Ordner=Camera`. Liefert Tag→Ort ohne einen einzigen Bildzugriff.
+2. **digiKam-Urlaubsordner prüfen** — `\\10.12.40.242\storage\Bilder\digiKam\Jahre\<Jahr>\<MM.TT-MM.TT>_<Name>`: die DSLR-Fotos liegen dort oft schon kuratiert in Tagesordnern `MM.TT_Ort`, das ist die verlässlichste Tag→Ort-Quelle (Ordnernamen = bereits abgestimmter Reiseverlauf).
+3. **Pro Tag 2–3 repräsentative Fotos wirklich ansehen** (Read auf die Bilddatei) — ohne Bildsichtung bleiben die Einträge inhaltsleer; mit Sichtung entstehen die Details, die den Eintrag wertvoll machen (Sehenswürdigkeit, Infotafel-Text, Aktivität).
+4. Hauptnotiz mit Tabelle „Reiseverlauf" (`[[Tagebuch/YYYY-MM-DD\|TT.MM.]]`) + Abschnitte „Methodik"/„Bekannte Lücke" anlegen, danach die Tagesdateien.
+
+**Wiederverwendbare Erkenntnisse:**
+
+- **Fehlendes GPS ist oft echt, kein Pipeline-Fehler:** Matthias' Register hat von **Mai 2024 bis April 2026 durchgehend keine Koordinaten** (Standortfreigabe am Handy aus). EXIF-Beleg: `GPSInfo`-Block vorhanden, aber ohne `GPSLatitudeRef`/gültigen Fix (nur Kompassrichtung) — bekanntes Pixel-Verhalten, in `Fotoverwaltung/CLAUDE.md` dokumentiert. Claudias Register deckt denselben Zeitraum vollständig ab → bei Lücken immer beide Register prüfen.
+- **Tage ohne GPS/Ort lassen sich rein visuell rekonstruieren** (Baumarkt-Regal → Umbauprojekt zuhause; Paketaufkleber → Person). Personenbezogene Details (genaue Adresse, Nachname) bewusst **nicht** in die Notiz übernehmen.
+- **Reiseverlauf als Word-Datei:** liegt **im digiKam-Urlaubsordner**, nicht im Vault (`<Reisename> - Reiseverlauf.docx`; Querformat Letter, Ränder 539750 EMU, Tabellenstil `Light Grid Accent 1`, Heading 1 + kursiver Untertitel). Erzeugung per `python-docx`. **Fallstrick:** Eine Markdown-Tabellenzeile enthält bei Wikilinks ein zweites `|` (`[[Tagebuch/2026-08-01|01.08.]]`) — naiv am ersten Pipe zu splitten zerreißt die Zeile (Bug in der Bretagne-Datei, 2026-09-12 korrigiert). In Word gehört ohnehin Klartext-Datum, keine Wikilink-Syntax.
+- **Windows-Python + UNC:** Forward-Slash-Pfade (`//10.12.40.242/storage/...`) funktionieren zuverlässig, Backslash-Raw-Strings nicht; Umlaute in Dateinamen als `\uXXXX`-Escapes schreiben, `sys.stdout.reconfigure(encoding="utf-8")` gegen cp1252-Tracebacks.
+- **Handy-Fotos ins Foto-Archiv kopieren:** Standard ist **Vorher/Nachher-Inventar mit MD5** (Name, Größe, MD5 vor und nach der Aktion, paarweiser Vergleich) + eine `…_Dokumentation.md` **im Urlaubsordner selbst**. Umgesetzt für Rügen 2025: 297 Fotos (nur `Camera`, keine Screenshots) aus beiden `SofortUpload`-Ordnern in die Tagesordner **kopiert** (Originale unangetastet), 0 Abweichungen, 4 neue Tagesordner für Tage ohne DSLR-Fotos. Vor solchen Massenaktionen Zeitraum/Struktur/Screenshots-Frage mit dem User klären.
+
+## `_Wohnwagen-Technik/` — Defektdiagnose am Bürstner 4313 (Muster, Stand 2026-09-20)
+
+Erster Defekt-Fall in diesem Ordner dokumentiert: flackernde Leuchtstoffröhre in der Toilette. Voller Stand (Symptom, bereits Ausgeschlossenes, Ersatzteil-/LED-Tabelle mit Quellen) im Abschnitt „Defekt: Beleuchtung Toilette flackert" in [[_Wohnwagen-Technik/Wohnwagen-Bürstner-4313]].
+
+**Muster für Defekt-Dokumentation:** eigener Abschnitt in der Fachnotiz des betroffenen Objekts (nicht in `Aufgaben/` — das ist für Claude-Code-Worker-Aufträge, nicht für körperliche Reparaturen des Users). Struktur: Symptom → bereits erfolglos Geprüftes → verbleibender Verdacht → Recherche-Ergebnis/Bezugsquellen → „Offen"-Zeile mit dem nächsten konkreten Test.
+
+**Erkenntnisse:**
+- **Diagnose-Reihenfolge bei 12-V-Defekten:** erst Verbraucher (Leuchte/Leuchtmittel), dann Kontakte, dann Versorgung (Spannungsabfall/Batterie). Sind die ersten beiden erfolglos getauscht/gereinigt, ist Weitersuchen durch Anschauen sinnlos — ab da braucht es eine **Messung unter Last** (Spannungsvergleich Batterie → Sicherungskasten → Verbraucher; der größte Sprung markiert die Fehlerstelle).
+- **12-V-Leuchtstoffleuchten dieser Bauzeit sind meist „Transistorleuchten"** — elektronische Vorschaltung fest im Gehäuse, **kein separater Starter**. Manche Altbauformen haben stattdessen einen 12-V→230-V-Umformer für eine normale 230-V-Röhre; dann ist der alternde Umformer selbst ein plausibler Flacker-Grund, durch Röhrentausch nicht behebbar. Unterscheidung nur durch Öffnen der Fassung (rundes Steckteil = Starter, Platine = Transistorleuchte).
+- **Echte 12-V-DC-LED-Röhren brauchen weder Starter noch Vorschaltgerät** — umgehen alternde Leuchten-Elektronik, statt sie nur zu ersetzen. Bezugsweg generischer 12-V-Camping-Teilemarkt (HABA-Ersatzröhre ~5 €, Dometic 12V LED-Tube ~33 €), **nicht** Bürstner-Originalteil: für ein 1995er Modell nur noch über Fachhändler, für Kleinteile unverhältnismäßig.
+- Vor Bestellung immer erst **Röhre ausbauen, Länge + Sockeltyp messen** — die Produktdaten der Anbieter passen nur bei exakter Übereinstimmung.
+
+**Offen:** Multimeter-Spannungsvergleich unter Last noch nicht durchgeführt; Fassung öffnen zur Starter-/Platinen-Prüfung und Sichtkontrolle der Röhrenenden (Schwärzung) steht aus. Danach erst Entscheidung Ersatzröhre vs. LED-Umrüstung.
+
+## Wichtige Dateien & Ordner
+
+| Pfad | Inhalt |
+|------|--------|
+| `CLAUDE.md` | Diese Datei |
+| `_Wohnwagen-Technik/` | Fahrzeugdaten, Stromversorgung und Defektdokumentation zum Bürstner 4313 (siehe Abschnitt oben) |
+| `Reisen/<Reisename>/` | Reise-Hauptnotiz + `Tagebuch/` (siehe Abschnitt oben) |
+| `Aufgaben/` | Ausformulierte Arbeitsaufträge für den Claude Code Worker (LXC 203) — je Auftrag eine `.md` mit Ziel, Ist-Zustand, Was-zu-tun-ist, Leitplanken und Abnahmekriterien. Neu seit 2026-08-17, Format übernommen aus `Knowledge Base/IT@home/Aufgaben/` (dort auch die Abgrenzung „Aufgaben/ = abarbeitbare Anweisung" vs. Einzeiler-ToDo dokumentiert) |
+| `CC-Session-Logs/` | Session-Logs (via `/compress` + `/preserve`) |
+| `_claude/` + `.claude` (Symlink) | cpr-Skills (`/compress`, `/preserve`, `/resume`) |
+| `Doku/Claude – Änderungshistorie.md` | Protokoll autonomer `.md`-Änderungen (wöchentliche Sammelbestätigung) |
+| `Doku/Claude – Änderungshistorie (Archiv Touren/Urlaub).md` | Änderungshistorien der Quell-Vaults bis zum Merge-Zeitpunkt |
+| `Templates/Recherche-Vorlage.md` | Lokale Kopie aus dem PKM-Dirigent-Werkzeug-/Vorlagen-Schrank (vault-spezifisches Fach, `06 - Werkzeuge.md` im PKM-Dirigent-Vault) — ursprünglich nur in Knowledge Base, wurde generalisiert, nachdem Work und Unterwegs sie längst per kaputtem Cross-Vault-Link referenziert hatten (Vault-Wartung Runde 8, 2026-09-05) |
+
+**Vault-Wartung:** letzte vault-weite Wartungsrunde **2026-09-23** (Runde 10 — 5 Datums-Stempel-Fixes in Unterwegs; davor 2026-08-19, davor 2026-08-10 im Rahmen der Merge-Migration, Teilumfang). Zentrale Übersicht + Methodik über alle 6 Vaults: `PKM-Dirigent/05 - Vault-Wartung.md` (anderer Vault).
+
+**Arbeitsumgebung & technische Konventionen** (SSH-Zugriffswege, Standard-Verzeichnisse wie das Screenshot-Ablageziel): `PKM-Dirigent/07 - Arbeitsumgebung & Konventionen.md` (anderer Vault).
+
+## Arbeitsweise mit Claude Code
+
+- Sessions mit `/resume` starten — lädt Session-History
+- Mit `/preserve` am Ende speichern
+- Session-Logs via `/compress` anlegen, danach `/compact` (eingebaut, kein Skill)
+
+> **cpr-Skill-Pflege:** `/compress` und `/preserve` liegen jetzt in **8 Kopien** (6 ursprüngliche Vaults + Cross-Vault-Root + Unterwegs) — Änderungen synchron in allen 8 nachziehen.
+
+---
+
+**Zuletzt aktualisiert:** 2026-09-25 — Vault-Wartung Check 10 „Inhaltliche Struktur-Review" (Cross-Vault-Root-Session): `Templates/Recherche-Vorlage.md` (lokale Kopie aus dem PKM-Dirigent-Schrank, seit 2026-09-13 real vorhanden) in Ordnerbaum + „Wichtige Dateien & Ordner"-Tabelle nachgetragen — war bisher hier undokumentiert. Details: `PKM-Dirigent/05 - Vault-Wartung.md` Abschnitt 4p (anderer Vault)
+
+**Vorherige Aktualisierung:** 2026-09-23 — Vault-weite Wartung Runde 10 (Cross-Vault-Root-Session): 5 Datums-Stempel-Diskrepanzen (Frontmatter `modified` vs. Footer) in Unterwegs synchronisiert, Vault-Wartung-Pointer aktualisiert. Details: `PKM-Dirigent/05 - Vault-Wartung.md` Abschnitt 4j (anderer Vault)
+
+**Vorherige Aktualisierung:** 2026-09-21 — Erster Defekt-Fall in `_Wohnwagen-Technik/` dokumentiert (flackernde Toiletten-Leuchtstoffröhre am Bürstner 4313): Diagnosestand, Starter-/Transistorleuchte-Recherche und Ersatzteil-/LED-Bezugsquellen in der Fahrzeugnotiz, neues Muster „Defektdiagnose" hier festgehalten
+
+**Vorherige Aktualisierung:** 2026-09-12 — Reise „Rügen & Dänemark 2025" komplett angelegt (Hauptnotiz + 28 Tagebuch-Einträge, alle per Bildsichtung angereichert); Word-Reiseverlauf für beide Reisen im jeweiligen digiKam-Ordner (Bretagne-Datei von einem Wikilink-Parsing-Bug befreit); 297 Handy-Fotos MD5-verifiziert in die Tagesordner des Rügen-Urlaubsordners kopiert; neues Muster „Reise-Tagebücher aus Fotos rekonstruieren" dokumentiert (siehe Abschnitt oben)
+
+**Status:** Tasks #3, #4, #5, #6, #8, #9 abgeschlossen; Frontmatter-Schema dokumentiert (bewusst uneinheitlich); Urlaub/Touren vollständig archiviert. Le-Havre-Audioguide + Reise-Guides-Vault live, Live-Test durch die Ehefrau steht weiterhin aus. `Reisen/` produktiv mit 2 Reisen. Offen: `Regionen/`-Konzept (jetzt mit 2 Reisen erstmals echter Anwendungsfall), Mehrgeräte-Rollout (Task #7, nur Smartphone-Teilschritt), `Maastricht - Highlights` ohne eigene GPX-Datei (dokumentierte Lücke, kein Blocker), für Rügen 2025 existiert noch kein `Auswahl/`-Ordner mit kuratierten Tagesbestenlisten (beim Bretagne-Urlaub vorhanden); Toiletten-Beleuchtung Bürstner 4313 defekt, Diagnose wartet auf Multimeter-Messung + Öffnen der Fassung
+
+## Modellwahl: Opus als Standard, Sonnet gezielt für Subagenten (User-Entscheidung 2026-09-29)
+
+- **Standard ist Opus** (`"model": "opus"` in `.claude/settings.json`). Vor jeder größeren Teilaufgabe bewusst entscheiden, ob sie in Opus bleibt oder an einen Subagenten mit `model: "sonnet"` geht, und die Wahl kurz ansagen.
+- **In Opus behalten:** Recherche mit Faktenprüfung, Entscheidungen/Abwägungen, Rechnungen, Änderungen mit Folgewirkung über mehrere Dateien, Nachprüfen von Subagent-Ergebnissen.
+- **An Sonnet-Subagent auslagern:** klar umrissene, mechanische Aufgaben mit prüfbarem Ergebnis (Office-Export nach etabliertem Ablauf, breite Suche über viele Dateien, Link-/Frontmatter-Fixes, Log-Zusammenfassungen). Was ein einzelner Befehl oder ein kurzes Skript erledigt, bleibt in der Hauptsession.
+- **Drei Stufen + feste Agenten (2026-09-29):** Opus (Denkarbeit) · Sonnet (mechanisch, fester Ablauf) · Haiku (reines Nachschlagen/Zählen). Wiederkehrende Aufgaben laufen über feste Subagenten mit eingestelltem Modell: `office-export` (Sonnet), `vault-suche` (Haiku), `log-zusammenfasser` (Sonnet), `fakten-pruefer` (Opus). Master in `PKM-Dirigent/Vorlagen/Claude-Agenten/`, aktiv als Kopie in `%USERPROFILE%\.claude\agents\`.
+- Vollständige Regel mit Tabelle: `C:\Users\matth\Obsidian-Vaults\CLAUDE.md` (nur auf dem `matth`-Gerät, nicht gesynct), Referenz in `Knowledge Base/CLAUDE.md` → „Model & Cost Configuration".
+
+## Nächste Schritte
+
+1. **`CLAUDE.md` verschlanken** (Wartungsfund W-013/W-014, 2026-10-20): 41 KB statt Ziel ≤ 12 KB (Grenze 15 KB). In einer Unterwegs-Session Erledigtes und Verlauf wörtlich nach `CLAUDE-Archive.md` (neu anlegen), doppelte globale Regeln (z. B. Abschnitt „Modellwahl“, steht in `PKM-Dirigent/Cross-Vault/CLAUDE-Global.md`) durch Verweis ersetzen; Fußzeile „Zuletzt aktualisiert“ (2026-09-25) passt nicht zu `modified`.
+
+
+---
