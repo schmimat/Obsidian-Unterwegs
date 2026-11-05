@@ -74,6 +74,18 @@ Removed/archived:
 Size: [X] lines, [Y] KB (~[Y*1000/3.5] tokens) — target ≤ 12 KB, limit 15 KB
 ```
 
+### Step 5a: Keep linked overviews in sync
+
+Some vaults keep an overview that mirrors the open items of many CLAUDE.md files (e.g. Work: `Workload – ToDo-Übersicht.md`). If the target CLAUDE.md or one of its parents names such an overview with a sync rule (look for "bei /preserve mitziehen"):
+
+1. Find the row(s) for the topic(s) whose status, open items or next milestone this session changed.
+2. Replace those rows in place (same columns, *Stand vom* = date of this update); add a row only for a new project/area, remove the row of a completed one (and move it to "abgeschlossen" in the project index, if there is one).
+3. Remove deadlines that have passed from its date table, and "Zu klären" items this session answered.
+4. Run the generator the rule names (e.g. HTML view), then log the change wherever the vault logs autonomous edits.
+5. Mention it in the Step 5 report (`Overview synced: <file>, rows: …`).
+
+No sync rule in the chain → skip this step.
+
 ### Step 6: Size check & archive (bytes, not lines)
 
 ```bash
