@@ -19,11 +19,11 @@ Mehrere Synagogen und der Alte Jüdische Friedhof in der Josefstadt, mit einem g
 
 1. **Besucherzentrum:** Faltplan und Audioguide-Code (gültig bis 9.2.2027).
 2. **Maisel-Synagoge.**
-3. **Pinkas-Synagoge** mit den Kinderzeichnungen, Thema auch die Samtene Revolution.
+3. **Pinkas-Synagoge** mit den Kinderzeichnungen aus Theresienstadt und den Namen von 77.279 Opfern. Die Gedenkstätte war ab 1968 geschlossen, die Inschriften wurden erst nach der Wende 1992–95 erneuert.
 4. **Alter Jüdischer Friedhof** mit dem Grab von Rabbi Löw (Nr. 4 im Plan).
-5. **Klausen-Synagoge** am Friedhofsausgang: barockes Stuckgewölbe, großer Toraschrein. Auf der Frauenempore die Ausstellung „Durch Städte, Wälder und Felder“ mit Fotos und Tagebüchern von Jiří Fiedler.
-6. **Altneusynagoge** mit der Golem-Leiter. Der Audioguide erzählt die Legenden um Löws Frau Perl und den Golem.
-7. **Spanische Synagoge** (maurisch-golden ausgemalt) erst am Montag. Davor das **Kafka-Denkmal** von Jaroslav Róna.
+5. **Klausen-Synagoge** am Friedhofsausgang: frühbarock (1694), großer dreistufiger Toraschrein (1696). Auf der Frauenempore die Ausstellung „Městem, lesem, polem, kolem“ (etwa: Durch Stadt, Wald und Feld) mit Fotos und Tagebüchern von Jiří Fiedler, 15.10.2026–4.4.2027.
+6. **Altneusynagoge** mit der Leiter zum Dachboden, wo laut Legende der Golem liegt. Der Audioguide erzählt die Legenden um Löws Frau Perl und den Golem.
+7. **Spanische Synagoge** (maurisch-golden ausgemalt) erst am Montag. Davor das **Kafka-Denkmal** von Jaroslav Róna (2003).
 
 ## Praktisch
 
@@ -32,4 +32,12 @@ Mehrere Synagogen und der Alte Jüdische Friedhof in der Josefstadt, mit einem g
 
 ---
 
-*Inhalt aus dem Reisetagebuch [[Prag 2026]] (Chatverlauf mit Claude und Fotos). Erklärungen zu Geschichte und Kunst stammen aus dem Chat und sind nicht gegengeprüft. Standort aus dem GPS der Handyfotos.*
+*Inhalt aus dem Reisetagebuch [[Prag 2026]] (Chatverlauf mit Claude und Fotos). Kernaussagen am 2026-11-06 gegen Quellen geprüft (Agent `fakten-pruefer`) und korrigiert. Als „laut Audioguide“, „im Chat“ oder „vermutlich“ markierte Angaben sind nicht belegt. Standort aus dem GPS der Handyfotos.*
+
+**Quellen:**
+- https://www.jewishmuseum.cz/en/explore/sites/old-jewish-cemetery/
+- https://www.jewishmuseum.cz/en/explore/sites/klausen-synagogue/
+- https://de.wikipedia.org/wiki/Pinkas-Synagoge
+- https://en.wikipedia.org/wiki/Old_New_Synagogue
+- https://jaroslav-rona.cz/en/dilo/franz-kafka-monument/
+- https://www.seznamzpravy.cz/clanek/318295 (Fiedler-Ausstellung)

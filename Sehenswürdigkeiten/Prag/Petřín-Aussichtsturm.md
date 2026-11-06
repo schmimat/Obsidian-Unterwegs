@@ -26,4 +26,4 @@ Aussichtsturm auf dem Petřín-Hügel über der Kleinseite. Am [[Reisen/Prag 202
 
 ---
 
-*Inhalt aus dem Reisetagebuch [[Prag 2026]] (Chatverlauf mit Claude und Fotos). Erklärungen zu Geschichte und Kunst stammen aus dem Chat und sind nicht gegengeprüft. Standort aus dem GPS der Handyfotos.*
+*Inhalt aus dem Reisetagebuch [[Prag 2026]] (eigene Erfahrung, keine Fakten zur Prüfung). Standort aus dem GPS der Handyfotos.*

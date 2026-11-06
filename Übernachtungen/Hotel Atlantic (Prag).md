@@ -34,4 +34,4 @@ Unterkunft der Städtereise [[Prag 2026]], 4 Nächte vom 30.10. bis 03.11.2026, 
 
 ---
 
-*Inhalt aus dem Reisetagebuch [[Prag 2026]] (Chatverlauf mit Claude und Fotos). Erklärungen zu Geschichte und Kunst stammen aus dem Chat und sind nicht gegengeprüft. Standort aus dem GPS der Handyfotos.*
+*Inhalt aus dem Reisetagebuch [[Prag 2026]] (Chatverlauf mit Claude und Fotos). Standort aus dem GPS der Handyfotos.*

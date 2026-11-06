@@ -11,7 +11,7 @@ modified: 2026-11-06
 
 # Große Synagoge Pilsen
 
-Synagoge mit zwei Zwiebeltürmen am Rand der Pilsener Altstadt. Besucht am [[Reisen/Prag 2026/Tagebuch/2026-11-03|03.11.2026]] auf der Heimfahrt von [[Prag 2026|Prag]], etwa 12:20–13:30.
+Synagoge mit zwei 45 m hohen Zwiebeltürmen am Rand der Pilsener Altstadt, 1888–93, die zweitgrößte Europas. Besucht am [[Reisen/Prag 2026/Tagebuch/2026-11-03|03.11.2026]] auf der Heimfahrt von [[Prag 2026|Prag]], etwa 12:20–13:30.
 
 ## Was wir gesehen haben
 
@@ -22,8 +22,12 @@ Synagoge mit zwei Zwiebeltürmen am Rand der Pilsener Altstadt. Besucht am [[Rei
 
 ## Pilsen sonst
 
-Platz der Republik mit Rathaus (Renaissance-Sgraffito) und Bartholomäuskathedrale, J.-K.-Tyl-Theater, vermutlich die Alte Synagoge. Pilsen liegt auf dem Heimweg von Prag und reicht für einen halben Tag.
+Platz der Republik mit Rathaus (Renaissancebau, Sgraffito-Fassade von 1907–12 nach Jan Koula) und Bartholomäuskathedrale, J.-K.-Tyl-Theater, vermutlich die Alte Synagoge. Pilsen liegt auf dem Heimweg von Prag und reicht für einen halben Tag.
 
 ---
 
-*Inhalt aus dem Reisetagebuch [[Prag 2026]] (Chatverlauf mit Claude und Fotos). Erklärungen zu Geschichte und Kunst stammen aus dem Chat und sind nicht gegengeprüft. Standort aus dem GPS der Handyfotos.*
+*Inhalt aus dem Reisetagebuch [[Prag 2026]] (Chatverlauf mit Claude und Fotos). Kernaussagen am 2026-11-06 gegen Quellen geprüft (Agent `fakten-pruefer`) und korrigiert. Als „laut Audioguide“, „im Chat“ oder „vermutlich“ markierte Angaben sind nicht belegt. Standort aus dem GPS der Handyfotos.*
+
+**Quellen:**
+- https://en.wikipedia.org/wiki/Great_Synagogue_(Plzeň)
+- https://web.zcu.cz/plzen/landm/town-hall.html

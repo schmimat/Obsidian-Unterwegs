@@ -16,7 +16,8 @@ Prämonstratenserkloster oben am Hradschin, berühmt für seine barocke Biblioth
 
 ## Was wir gesehen haben
 
-- **Bibliothek:** Theologischer und Philosophischer Saal, Xylothek (Bücher aus Holz), Bücherrad, ein getrockneter Rochen als „Drache“, Schildkröten-Vitrine mit Zenons Paradoxon.
+- **Bibliothek:** Theologischer Saal (1670er-Jahre) mit dem Bücherrad von 1678 und Philosophischer Saal (1782–97, Deckenfresko von Maulbertsch).
+- **Kuriositätenkabinett:** die Xylothek (68 Bücher aus Holz, um 1825), ein „Drache“ aus Teilen eines Rochens und eine Vitrine mit Schildkröten (im Chat mit Zenons Paradoxon verbunden, nicht belegt).
 - **Gemäldegalerie, Refektorium, Kapelle und Norbert-Ausstellung.** Über die alten Meister in der Galerie sind wir schnell hinweggegangen.
 - **Basilika:** am Samstag wegen einer Hochzeit nur ein Blick durch die Tür, am Sonntag offen.
 - **Strahov-Garten und Hang Richtung Petřín:** Panoramablick über die Stadt bis zur Burg.
@@ -28,4 +29,8 @@ Prämonstratenserkloster oben am Hradschin, berühmt für seine barocke Biblioth
 
 ---
 
-*Inhalt aus dem Reisetagebuch [[Prag 2026]] (Chatverlauf mit Claude und Fotos). Erklärungen zu Geschichte und Kunst stammen aus dem Chat und sind nicht gegengeprüft. Standort aus dem GPS der Handyfotos.*
+*Inhalt aus dem Reisetagebuch [[Prag 2026]] (Chatverlauf mit Claude und Fotos). Kernaussagen am 2026-11-06 gegen Quellen geprüft (Agent `fakten-pruefer`) und korrigiert. Als „laut Audioguide“, „im Chat“ oder „vermutlich“ markierte Angaben sind nicht belegt. Standort aus dem GPS der Handyfotos.*
+
+**Quellen:**
+- https://www.strahovskyklaster.cz/en/for-visitors/what-you-can-visit/strahov-library
+- https://www.strahovskyklaster.cz/en/cabinet-of-curiosities-and-connecting-passage
