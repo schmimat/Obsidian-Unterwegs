@@ -3,7 +3,7 @@ tags:
   - claude
   - projekt
 created: 2026-08-10
-modified: 2026-11-02
+modified: 2026-11-07
 ---
 
 # CLAUDE.md — Unterwegs-Vault
@@ -22,7 +22,7 @@ Unterwegs/
 └── OneNote-Archiv/
 ```
 
-- **Leitprinzip:** Wanderungen/Stadtrundgänge/Sehenswürdigkeiten bleiben eigenständiges, wiederverwendbares Wissen und ziehen nicht in Reise-Ordner um. Der Tagebuch-Eintrag verlinkt sie.
+- **Leitprinzip:** Wanderungen/Stadtrundgänge/Sehenswürdigkeiten/Übernachtungen bleiben eigenständiges, wiederverwendbares Wissen und ziehen nicht in Reise-Ordner um. Der Tagebuch-Eintrag verlinkt sie bei der ersten Nennung. Vorbild: `Sehenswürdigkeiten/Prag/` + `Pilsen/` (je Notiz: Gesehen mit Datum-Link, Praktisch/Tipps, Quellenliste, `location` aus Foto-GPS) und `Übernachtungen/Hotel Atlantic (Prag)`.
 - **`Regionen/`** (Bindeglied Reise ↔ Wanderung/Stadtrundgang) ist geplant, aber noch nicht angelegt. Entwurf: `memory/project-unterwegs-vault-struktur.md` im Cross-Vault-Root.
 
 ## Autonomes Editieren: Änderungshistorie statt Rückfrage
@@ -78,13 +78,17 @@ Jede Kategorie behält ihr eigenes Schema, keine Vereinheitlichung geplant. Vaul
 
 ## `Reisen/` — Reise-Tagebücher
 
-Drei Reisen: **Sommerurlaub 2026 – Bretagne & Normandie**, **Rügen & Dänemark 2025** (beide aus Fotos rekonstruiert), **Prag 2026** (30.10.–03.11.2026, aus einem Claude-Chatverlauf, seit 2026-11-02). Hauptnotiz mit Tabelle „Reiseverlauf“ (`[[Tagebuch/YYYY-MM-DD\|TT.MM.]]`), danach die Tagesdateien.
+Drei Reisen: **Sommerurlaub 2026 – Bretagne & Normandie**, **Rügen & Dänemark 2025** (beide aus Fotos rekonstruiert), **Prag 2026** (30.10.–03.11.2026 mit Pilsen auf der Heimfahrt; Chatverlauf + alle Fotos, vollständig seit 2026-11-06, Word `Prag 2026 - Reiseverlauf.docx` im digiKam-Ordner). **Bretagne bleibt wie sie ist** (knapp, ohne Reisestil-Abschnitt) — User-Entscheidung 2026-11-06. Hauptnotiz mit Tabelle „Reiseverlauf“ (`[[Tagebuch/YYYY-MM-DD\|TT.MM.]]`), danach die Tagesdateien.
 
-**Quelle Fotos:** (1) `Knowledge Base/Fotoverwaltung/Fotoregister_<person>.csv` auf den Zeitraum filtern, liefert Tag → Ort ohne Bildzugriff; Matthias' Register hat von Mai 2024 bis April 2026 kein GPS, dann Claudias nehmen. (2) digiKam-Urlaubsordner `\\10.12.40.242\storage\Bilder\digiKam\Jahre\<Jahr>\<MM.TT-MM.TT>_<Name>` mit Tagesordnern `MM.TT_Ort`. (3) Pro Tag 2–3 Fotos wirklich ansehen. Personenbezogene Details (Adresse, Nachname) nicht übernehmen.
+**Quelle Fotos:** (1) `Knowledge Base/Fotoverwaltung/Fotoregister_<person>.csv` auf den Zeitraum filtern, liefert Tag → Ort ohne Bildzugriff; Matthias' Register hat von Mai 2024 bis April 2026 kein GPS, dann Claudias nehmen. (2) digiKam-Urlaubsordner `\\10.12.40.242\storage\Bilder\digiKam\Jahre\<Jahr>\<MM.TT-MM.TT>_<Name>` mit Tagesordnern `MM.TT_Ort`. (3) Pro Tag 2–3 Fotos wirklich ansehen. Personenbezogene Details (Adresse, Nachname) nicht übernehmen. (4) Fotos von Tickets, Schildern und Infotafeln liefern Titel und Namen.
+
+**Kamera-Uhr prüfen:** Die Lumix DC-TZ202 (`P103…`, kein GPS) stellt nicht auf Winterzeit um. Abgleich per Foto der Handy-Uhr; Korrektur nur der drei EXIF-Datumsfelder byte-genau im APP1-Segment (Bilddaten per MD5 unverändert), mtime mitziehen (Prag 2026: +1:00:32, 205 JPGs korrigiert). Handy `PXL_…`: Dateiname UTC, EXIF Ortszeit. Im Explorer nach Spalte **„Aufnahmedatum“** sortieren, „Erstelldatum“ ist der Kopierzeitpunkt aufs NAS.
+
+**Bilderkennung durch Claude/Subagent ist mittelmäßig** (Prag: Stiertreppe, Klausen-Synagoge, Kostüm-„Polizei“ vom User korrigiert): vor dem Eintragen Nachbarfotos + GPS ansehen, unsichere Orte als „vermutlich“ und als Frage an den User. Fakten aus dem Chat vor dem Wiederverwenden mit `fakten-pruefer` prüfen (Prag: 38 Aussagen, 0 falsch, 9 ungenau).
 
 **Quelle Claude-Chatverlauf** (Prag 2026): 1:1-Export als `.md` im Reiseordner, Bilder nur als Dateiname (liegen in der Nextcloud). Tagesgerüst aus den `## <Tag>`-Überschriften; der Inhalt steckt vor allem in Claudes Antworten, weil die User-Nachrichten meist nur Fotos sind. Erklärungen aus dem Chat in der Notiz als ungeprüft kennzeichnen, Tage ohne Chat als Platzhalter anlegen. Quelldatei per Dateiname verlinken (`[[Prag-Reise-2026-Chatverlauf|…]]`), so übersteht der Link ein Verschieben.
 
-**Weitere Erkenntnisse:** Word-Reiseverlauf liegt im digiKam-Urlaubsordner, nicht im Vault (Tabellenzeilen mit Wikilinks nicht am ersten `|` splitten). Windows-Python + UNC: Forward-Slash-Pfade, `sys.stdout.reconfigure(encoding="utf-8")`. Handy-Fotos ins Foto-Archiv nur kopieren, mit Vorher/Nachher-Inventar per MD5 und `…_Dokumentation.md` im Urlaubsordner.
+**Weitere Erkenntnisse:** Unterwegs möglichst wenig tippen lassen (User 2026-11-06: Chat lenkt vom Erleben ab) — Fotos machen, Tagebuch danach aus Fotos + Rückfragen. Word-Reiseverlauf liegt im digiKam-Urlaubsordner, nicht im Vault (Tabellenzeilen mit Wikilinks nicht am ersten `|` splitten). Windows-Python + UNC: Forward-Slash-Pfade, `sys.stdout.reconfigure(encoding="utf-8")`. Handy-Fotos ins Foto-Archiv nur kopieren, mit Vorher/Nachher-Inventar per MD5 und `…_Dokumentation.md` im Urlaubsordner.
 
 ## Reise-Guides-Vault (Audioguides)
 
@@ -108,9 +112,9 @@ Vault-Wartung: `PKM-Dirigent/05 - Vault-Wartung.md` und Fundtabelle `05a - Wartu
 
 ## Nächste Schritte
 
-1. **Prag 2026 vervollständigen:** 30.10. (Anreise), Nachmittag 02.11. (Kafka-Museum, Konzert in der Spanischen Synagoge) und 03.11. (Rückfahrt) nachtragen; optional mit Fotos aus der Nextcloud anreichern.
-2. **Wohnwagen:** Toiletten-Leuchte Bürstner 4313 — Spannung unter Last messen, Fassung öffnen (Starter oder Platine), dann Ersatzröhre oder LED. Stand in [[_Wohnwagen-Technik/Wohnwagen-Bürstner-4313]].
-3. **`Regionen/`-Konzept** entscheiden, jetzt mit drei Reisen als Anwendungsfall.
-4. Rügen 2025 hat noch keinen `Auswahl/`-Ordner mit kuratierten Tagesbestenlisten (Bretagne hat einen).
+1. **Wohnwagen:** Toiletten-Leuchte Bürstner 4313 — Spannung unter Last messen, Fassung öffnen (Starter oder Platine), dann Ersatzröhre oder LED. Stand in [[_Wohnwagen-Technik/Wohnwagen-Bürstner-4313]].
+2. **`Regionen/`-Konzept** entscheiden; konkreter Fall: Prag/Pilsen mit Reise, Sehenswürdigkeiten und Hotel.
+3. Rügen 2025 und Prag 2026 haben noch keinen `Auswahl/`-Ordner mit kuratierten Tagesbestenlisten (Bretagne hat einen).
+4. **Prag-Reste:** 3 Kamera-Videos (`P1034031/032/142.MP4`) haben noch die Zeit +1 h; Uhrenfoto `P1034162.JPG` löscht der User, dann die Zeile in `Fotoverschiebung-Tagesordner_Dokumentation.md` anpassen; Hotel-Eckdaten (Hausnummer, Preis, Parken) offen.
 
-Zuletzt aktualisiert: 2026-11-02 (/preserve: Prag 2026 angelegt, Datei von 41,9 KB verschlankt, alte Fassung in `CLAUDE-Archive.md`).
+Zuletzt aktualisiert: 2026-11-07 (/preserve: Prag 2026 vollständig aus Fotos, Sehenswürdigkeiten + Hotel extrahiert, Faktenprüfung, Kamera-Zeitabgleich).

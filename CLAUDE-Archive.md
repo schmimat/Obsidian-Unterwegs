@@ -277,3 +277,11 @@ Erster Defekt-Fall in diesem Ordner dokumentiert: flackernde Leuchtstoffröhre i
 
 
 ---
+
+## Archived: 2026-11-07 (erledigter nächster Schritt)
+
+1. **Prag 2026 vervollständigen:** 30.10. (Anreise), Nachmittag 02.11. (Kafka-Museum, Konzert in der Spanischen Synagoge) und 03.11. (Rückfahrt) nachtragen; optional mit Fotos aus der Nextcloud anreichern.
+
+*Erledigt 2026-11-06: alle Tage aus den Fotos ergänzt und abgeglichen.*
+
+---
