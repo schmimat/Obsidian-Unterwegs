@@ -250,6 +250,7 @@
   "frontmatterColorField": "color",
   "frontmatterBackgroundField": "background",
   "frontmatterNameField": "",
+  "frontmatterNameFormat": "{{name}}",
   "frontmatterCreatedField": "",
   "frontmatterModifiedField": "",
   "frontmatterDateFormat": "",
@@ -564,7 +565,7 @@
     "#404040",
     "#404040"
   ],
-  "lastShownVersion": "3.5.0",
+  "lastShownVersion": "3.5.1",
   "rootTagOrder": [],
   "rootPropertyOrder": []
 }

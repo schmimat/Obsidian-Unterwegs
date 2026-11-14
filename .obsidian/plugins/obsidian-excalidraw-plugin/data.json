@@ -1050,7 +1050,6 @@
   "pageTransclusionCharLimit": 200,
   "panWithRightMouseButton": false,
   "parseTODO": false,
-  "pasteCodeBlockAs": "ask",
   "pdfBorderBox": true,
   "pdfDirection": "right",
   "pdfFrame": false,
@@ -1117,5 +1116,6 @@
   "zoomToFitMaxLevel": 2,
   "zoomToFitOnOpen": true,
   "zoomToFitOnResize": false,
-  "zoteroCompatibility": false
+  "zoteroCompatibility": false,
+  "pasteCodeBlockAs": "ask"
 }
